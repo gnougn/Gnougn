@@ -1,0 +1,781 @@
+
+// Cursor
+
+// gui
+.gui_i {
+    background: url("./assets/gui/gui_i.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.gui_close {
+    background: url("./assets/gui/gui_close.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.gui_circle {
+    background: url("./assets/gui/gui_circle.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.gui_menu {
+    background: url("./assets/gui/gui_menu.svg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: contain;
+}
+
+.gui_logo {
+    background: url("./assets/gui/gui_logo.svg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: contain;
+}
+
+.gui_arrow_left {
+    background: url("./assets/gui/gui_arrow_left.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.gui_arrow_top_left {
+    background: url("./assets/gui/gui_arrow_top_left.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.gui_arrow_down_left {
+    background: url("./assets/gui/gui_arrow_down_left.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.gui_arrow_top {
+    background: url("./assets/gui/gui_arrow_top.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.gui_arrow_down {
+    background: url("./assets/gui/gui_arrow_down.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.gui_arrow_right {
+    background: url("./assets/gui/gui_arrow_right.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.gui_arrow_top_right {
+    background: url("./assets/gui/gui_arrow_top_right.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.gui_arrow_down_right {
+    background: url("./assets/gui/gui_arrow_down_right.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.gui_logo_combo {
+    background: url("./assets/gui/gui_logo_combo.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.gui_logo_combo_layers {
+    background: url("./assets/gui/gui_logo_combo_layers.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.gui_key {
+    background: url("./assets/gui/gui_key.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.gui_keyhole {
+    background: url("./assets/gui/gui_keyhole.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+// grid
+.grid_cross {
+    background: url("./assets/grid/grid_cross.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.grid_depth_90 {
+    background: url("./assets/grid/grid_depth_90.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.grid_depth_180 {
+    background: url("./assets/grid/grid_depth_180.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.grid_depth_270 {
+    background: url("./assets/grid/grid_depth_270.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.grid_depth_360 {
+    background: url("./assets/grid/grid_depth_360.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.grid_depth_450 {
+    background: url("./assets/grid/grid_depth_450.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.grid_depth_540 {
+    background: url("./assets/grid/grid_depth_540.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.grid_depth_630 {
+    background: url("./assets/grid/grid_depth_630.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.grid_depth_720 {
+    background: url("./assets/grid/grid_depth_720.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+// particle
+.particle_health_bar {
+    background: url("./assets/particle/particle_health_bar.svg");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: contain;
+}
+
+
+// pieces
+.piece_workspace_0_0 {
+    background: url("./assets/pieces/piece_workspace_0_0.svg");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: contain;
+}
+
+.piece_workspace_books_1_0_0 {
+    background: url("./assets/pieces/piece_workspace_books_1_0_0.svg");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: contain;
+}
+
+.piece_workspace_books_2_0_0 {
+    background: url("./assets/pieces/piece_workspace_books_2_0_0.svg");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: contain;
+}
+
+
+.piece_workspace_speaker_1_0_0 {
+    background: url("./assets/pieces/piece_workspace_speaker_1_0_0.svg");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: contain;
+}
+
+.piece_workspace_speaker_1_0_0 {
+    background: url("./assets/pieces/piece_workspace_speaker_1_0_0.svg");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: contain;
+}
+
+.piece_workspace_speaker_1_0_0 {
+    background: url("./assets/pieces/piece_workspace_speaker_1_0_0.svg");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: contain;
+}
+
+.piece_workspace_mic_0_0 {
+    background: url("./assets/pieces/piece_workspace_mic_0_0.svg");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: contain;
+}
+
+.piece_workspace_scarlett_0_0 {
+    background: url("./assets/pieces/piece_workspace_scarlett_0_0.svg");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: contain;
+}
+
+.piece_workspace_imac_0_0 {
+    background: url("./assets/pieces/piece_workspace_imac_0_0.svg");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: contain;
+}
+
+.piece_workspace_monitor_0_0 {
+    background: url("./assets/pieces/piece_workspace_monitor_0_0.svg");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: contain;
+}
+
+.piece_workspace_desk_0_0 {
+    background: url("./assets/pieces/piece_workspace_desk_0_0.svg");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: contain;
+}
+
+.piece_workspace_chair_sitting_0_0 {
+    background: url("./assets/pieces/piece_workspace_chair_sitting_0_0.svg");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: contain;
+}
+
+.piece_workspace_chair_0_0 {
+    background: url("./assets/pieces/piece_workspace_chair_0_0.svg");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: contain;
+}
+
+.piece_workspace_chair_2_0_0 {
+    background: url("./assets/pieces/piece_workspace_chair_2_0_0.svg");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: contain;
+}
+
+.interaction_workspace_man_standing_1 {
+    background: url("./assets/interaction/interaction_workspace_man_standing_1.svg");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: contain;
+}
+
+.interaction_workspace_man_standing_2 {
+    background: url("./assets/interaction/interaction_workspace_man_standing_2.svg");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: contain;
+}
+
+.interaction_workspace_man_standing_3 {
+    background: url("./assets/interaction/interaction_workspace_man_standing_3.svg");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: contain;
+}
+
+.interaction_workspace_man_standing_4 {
+    background: url("./assets/interaction/interaction_workspace_man_standing_4.svg");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: contain;
+}
+
+.interaction_workspace_man_standing_5 {
+    background: url("./assets/interaction/interaction_workspace_man_standing_5.svg");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: contain;
+}
+
+.interaction_workspace_man_standing_6 {
+    background: url("./assets/interaction/interaction_workspace_man_standing_6.svg");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: contain;
+}
+
+.interaction_workspace_man_standing_7 {
+    background: url("./assets/interaction/interaction_workspace_man_standing_7.svg");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: contain;
+}
+
+.interaction_workspace_man_standing_8 {
+    background: url("./assets/interaction/interaction_workspace_man_standing_8.svg");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: contain;
+}
+
+.interaction_workspace_man_standing_9 {
+    background: url("./assets/interaction/interaction_workspace_man_standing_9.svg");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: contain;
+}
+
+.interaction_workspace_man_standing_10 {
+    background: url("./assets/interaction/interaction_workspace_man_standing_10.svg");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: contain;
+}
+
+.interaction_workspace_man_standing_11 {
+    background: url("./assets/interaction/interaction_workspace_man_standing_11.svg");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: contain;
+}
+
+.interaction_workspace_man_standing_12 {
+    background: url("./assets/interaction/interaction_workspace_man_standing_12.svg");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: contain;
+}
+
+.interaction_workspace_man_standing_13 {
+    background: url("./assets/interaction/interaction_workspace_man_standing_13.svg");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: contain;
+}
+
+.interaction_workspace_man_standing_14 {
+    background: url("./assets/interaction/interaction_workspace_man_standing_14.svg");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: contain;
+}
+
+.interaction_workspace_man_standing_15 {
+    background: url("./assets/interaction/interaction_workspace_man_standing_15.svg");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: contain;
+}
+
+.interaction_workspace_man_standing_16 {
+    background: url("./assets/interaction/interaction_workspace_man_standing_16.svg");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: contain;
+}
+
+.interaction_hands {
+    background: url("./assets/interaction/interaction_hands.svg");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: contain;
+}
+
+.pieces_office_shoplight_on {
+    background: url("./assets/pieces/pieces_office_shoplight_on.svg");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: contain;
+}
+
+.pieces_office_shoplight_off {
+    background: url("./assets/pieces/pieces_office_shoplight_off.svg");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: contain;
+}
+
+// accent
+.accent_noise_1 {
+    background: url("./assets/accent/accent_noise_1.svg");
+    background-repeat: repeat;
+    background-position: center bottom;
+    background-size: 75%;
+}
+
+.accent_noise_2 {
+    background: url("./assets/accent/accent_noise_2.svg");
+    background-repeat: repeat;
+    background-position: center bottom;
+    background-size: 75%;
+}
+
+.accent_noise_3 {
+    background: url("./assets/accent/accent_noise_3.svg");
+    background-repeat: repeat;
+    background-position: center bottom;
+    background-size: 75%;
+}
+
+.accent_noise_4 {
+    background: url("./assets/accent/accent_noise_4.svg");
+    background-repeat: repeat;
+    background-position: center bottom;
+    background-size: 75%;
+}
+
+
+// effect
+.effect_vignette {
+    background: url("./assets/effect/effect_vignette.svg");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+}
+
+// stage
+.stage_wall_90 {
+    background: url("./assets/stage/stage_wall_90.svg");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+}
+
+.stage_wall_lines_90 {
+    background: url("./assets/stage/stage_wall_lines_90.svg");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+}
+
+.stage_floor_90 {
+    background: url("./assets/stage/stage_floor_90.svg");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+}
+
+.stage_office_wall {
+    background: url("./assets/stage/stage_office_wall.svg");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+}
+
+// Icons
+.icon_handdrawn_vr_0_0 {
+    background: url("./assets/icons/icon_handdrawn_vr_0_0.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.icon_handdrawn_head_0_0 {
+    background: url("./assets/icons/icon_handdrawn_head_0_0.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.icon_handdrawn_desktop_0_0 {
+    background: url("./assets/icons/icon_handdrawn_desktop_0_0.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.icon_handdrawn_iphone_0_0 {
+    background: url("./assets/icons/icon_handdrawn_iphone_0_0.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.icon_handdrawn_plus_lined {
+    background: url("./assets/icons/icon_handdrawn_plus_lined.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.icon_handdrawn_equal_lined {
+    background: url("./assets/icons/icon_handdrawn_equal_lined.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+// social
+.icon_social_instagram {
+    background: url("./assets/icons/social/instagram.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.icon_social_dribbble {
+    background: url("./assets/icons/social/dribbble.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.icon_social_facebook {
+    background: url("./assets/icons/social/facebook.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.icon_social_github {
+    background: url("./assets/icons/social/github.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.icon_social_google {
+    background: url("./assets/icons/social/google.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.icon_social_linkedin {
+    background: url("./assets/icons/social/linkedin.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.icon_social_reddit {
+    background: url("./assets/icons/social/reddit.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.icon_social_snapchat {
+    background: url("./assets/icons/social/snapchat.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.icon_social_tumblr {
+    background: url("./assets/icons/social/tumblr.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.icon_social_twitter {
+    background: url("./assets/icons/social/twitter.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.icon_social_vimeo {
+    background: url("./assets/icons/social/vimeo.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.icon_social_youtube {
+    background: url("./assets/icons/social/youtube.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+// frames
+
+.gui_logo_combo_frame_1 {
+    background: url("./assets/frames/gui_logo_combo_frame_1.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+
+.gui_logo_combo_frame_2 {
+    background: url("./assets/frames/gui_logo_combo_frame_2.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+
+.gui_logo_combo_frame_3 {
+    background: url("./assets/frames/gui_logo_combo_frame_3.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+
+.gui_logo_combo_frame_4 {
+    background: url("./assets/frames/gui_logo_combo_frame_4.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.icon_handdrawn_desktop_0_0_frame_1 {
+    background: url("./assets/frames/icon_handdrawn_desktop_0_0_frame_1.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+
+.icon_handdrawn_desktop_0_0_frame_2 {
+    background: url("./assets/frames/icon_handdrawn_desktop_0_0_frame_2.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+
+.icon_handdrawn_desktop_0_0_frame_3 {
+    background: url("./assets/frames/icon_handdrawn_desktop_0_0_frame_3.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+
+.icon_handdrawn_desktop_0_0_frame_4 {
+    background: url("./assets/frames/icon_handdrawn_desktop_0_0_frame_4.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.icon_handdrawn_vr_0_0_frame_1 {
+    background: url("./assets/frames/icon_handdrawn_vr_0_0_frame_1.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+
+.icon_handdrawn_vr_0_0_frame_2 {
+    background: url("./assets/frames/icon_handdrawn_vr_0_0_frame_2.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+
+.icon_handdrawn_vr_0_0_frame_3 {
+    background: url("./assets/frames/icon_handdrawn_vr_0_0_frame_3.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+
+.icon_handdrawn_vr_0_0_frame_4 {
+    background: url("./assets/frames/icon_handdrawn_vr_0_0_frame_4.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+
+.icon_handdrawn_head_0_0_frame_1 {
+    background: url("./assets/frames/icon_handdrawn_head_0_0_frame_1.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+
+.icon_handdrawn_head_0_0_frame_2 {
+    background: url("./assets/frames/icon_handdrawn_head_0_0_frame_2.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+
+.icon_handdrawn_head_0_0_frame_3 {
+    background: url("./assets/frames/icon_handdrawn_head_0_0_frame_3.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+
+.icon_handdrawn_head_0_0_frame_4 {
+    background: url("./assets/frames/icon_handdrawn_head_0_0_frame_4.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.icon_handdrawn_iphone_0_0_frame_1 {
+    background: url("./assets/frames/icon_handdrawn_iphone_0_0_frame_1.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+
+.icon_handdrawn_iphone_0_0_frame_2 {
+    background: url("./assets/frames/icon_handdrawn_iphone_0_0_frame_2.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+
+.icon_handdrawn_iphone_0_0_frame_3 {
+    background: url("./assets/frames/icon_handdrawn_iphone_0_0_frame_3.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+
+.icon_handdrawn_iphone_0_0_frame_4 {
+    background: url("./assets/frames/icon_handdrawn_iphone_0_0_frame_4.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}

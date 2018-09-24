@@ -1,0 +1,20 @@
+button,
+input,
+optgroup,
+select,
+textarea,
+input,
+optgroup,
+select,
+textarea {
+	float: left;
+};
+
+input[type=text]  {
+	background: $light-yellow-0;
+	border: 0.1vh solid $dark-yellow-9;
+	width: calc(100% - .2vh);
+	margin-bottom: 1vh;
+	line-height: 5vh;
+	float: left;
+};
