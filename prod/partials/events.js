@@ -5,7 +5,7 @@ let state = '';
 
 // Desktop
 if (!(/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent))) {
-    
+
     document.getElementById('component_app').addEventListener('click', (event) => {
         state = from_index.Handle_return_state();
 
@@ -602,14 +602,14 @@ if (!(/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent))) {
         };
 
         from_index.Handle_get_state_from_events();
-        from_index.values_update();
+        
     });
 
     document.getElementById('component_app').addEventListener('wheel', (event) => {
         state = from_index.Handle_return_state();
 
         // console.log('state in events');
-        
+
         console.log('wheel');
 
         if (event.deltaY < 0) {
@@ -621,7 +621,7 @@ if (!(/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent))) {
         };
 
         from_index.Handle_get_state_from_events();
-        from_index.values_update();
+        
     });
 
     document.getElementById('component_app').addEventListener('scroll', (event) => {
@@ -636,7 +636,7 @@ if (!(/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent))) {
         // console.log('state in events');
         console.log('mouseup');
         from_index.Handle_get_state_from_events();
-        from_index.values_update();
+        
     });
 
     document.getElementById('component_app').addEventListener('mousedown', (event) => {
@@ -645,7 +645,7 @@ if (!(/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent))) {
         // console.log('state in events');
         console.log('mousedown');
         from_index.Handle_get_state_from_events();
-        from_index.values_update();
+        
     });
 
     document.getElementById('component_app').addEventListener('mouseenter', (event) => {
@@ -655,7 +655,7 @@ if (!(/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent))) {
         // console.log('state in events');
         console.log('mouseenter');
         from_index.Handle_get_state_from_events();
-        from_index.values_update();
+        
     });
 
     document.getElementById('component_app').addEventListener('mouseleave', (event) => {
@@ -665,7 +665,7 @@ if (!(/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent))) {
         // console.log('state in events');
         console.log('mouseleave');
         from_index.Handle_get_state_from_events();
-        from_index.values_update();
+        
     });
 
     document.getElementById('component_app').addEventListener('mousemove', (event) => {
@@ -734,7 +734,7 @@ if (!(/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent))) {
 
         console.log('mousemove');
         from_index.Handle_get_state_from_events();
-        from_index.values_update();
+        
     });
 
     document.getElementById('component_app').addEventListener('keydown', (event) => {
@@ -901,7 +901,7 @@ if (!(/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent))) {
         };
 
         from_index.Handle_get_state_from_events();
-        from_index.values_update();
+        
     });
 
     document.getElementById('component_app').addEventListener('keyup', (event) => {
@@ -917,9 +917,9 @@ if (!(/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent))) {
         if (index > -1) {
             state.events.key.keys.splice(index, 1);
         };
-        
+
         from_index.Handle_get_state_from_events();
-        from_index.values_update();
+        
     });
 
 };

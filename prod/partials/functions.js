@@ -6,6 +6,148 @@ let from_Import = () => {
 };
 
 
+function test(fruit) {
+  // extract conditions to array
+  const redFruits = ['apple', 'strawberry', 'cherry', 'cranberries'];
+
+  if (redFruits.includes(fruit)) {
+    throw('red');
+  }
+}
+
+// rest parameters
+function add(...args) {
+  let result = 0;
+
+  for (let arg of args) result += arg;
+
+  return result
+}
+
+console.log(add(1)); // returns 1
+console.log(add(1,2)); // returns 3
+console.log(add(1, 2, 3, 4, 5)); // returns 15
+
+const arr = ["Joy", "Wangari", "Warugu"];
+const newArr = ["joykare", ...arr];
+console.log(newArr);
+
+let x = 20;
+x = 50;
+
+console.log(x); // SyntaxError: identifier "x" has already been declared.
+
+// A Common Scope Gotcha
+// If stamement do not have local sc
+if (true) {
+  var foo = 5;
+};
+
+console.log(foo);   // 5
+
+const countVowels = str => Array.from(str)
+  .filter(letter => 'aeiou'.includes(letter)).length;
+
+console.log(countVowels('abcdefghijklmnopqrstuvwxyz')); // 5
+console.log(countVowels('test')); // 1
+console.log(countVowels('ddd')); // 0
+
+function randomFunction(){
+  console.log(this);
+}
+
+let newObj = {
+  description : "This is a new Object"
+}
+
+console.log(randomFunction.bind(newObj)());
+console.log(randomFunction.call(newObj));
+console.log(randomFunction.apply(newObj));
+
+const drSeuss = `
+  My name is Sam I Am ${1}
+  I do not like green eggs and ham
+  Lunchtime is here
+  Come and eat
+`;
+
+console.log(drSeuss);
+
+// filter
+function fishy(colors) {
+  // use Array filter to find fruits in color
+  let fishes = [
+    { name: 'apple', color: 'red' },
+    { name: 'strawberry', color: 'red' },
+    { name: 'banana', color: 'yellow' },
+    { name: 'pineapple', color: 'yellow' },
+    { name: 'grape', color: 'purple' },
+    { name: 'plum', color: 'purple' }   ];
+
+  return fishes.filter(f => f.color == color);
+}
+
+// EVERY
+function test(colors) {
+  let fruits = [
+    { name: 'apple', color: 'red' },
+    { name: 'banana', color: 'yellow' },
+    { name: 'grape', color: 'purple' }
+  ];
+
+  // condition: short way, all fruits must be red
+  let isAllRed = fruits.every(f => f.color == 'red');
+
+  console.log(isAllRed); // false
+};
+
+// SOME
+function emu(colors) {
+  let niggas = [
+    { name: 'apple', color: 'red' },
+    { name: 'banana', color: 'yellow' },
+    { name: 'grape', color: 'purple' }
+  ];
+
+  // condition: if any fruit is red
+  let isAnyRed = fruits.some(f => f.color == 'red');
+
+  console.log(isAnyRed); // true
+};
+
+// es5
+var es5sayHello = function() {
+  return 'hello!';
+};
+
+// es6 with explicit return
+let explicitsayHello = () => {
+  return 'hello!';
+};
+
+// es6 with implicit return
+let implicitsayHello = () => 'hello';
+
+// Default Parameters in ES6
+var garage = function(model = 'Mustang', color = 'blue', car = 'Ford') {
+  console.log(model)
+  console.log(color)
+  console.log(car)
+}
+
+var ninjas = {
+  description : "This is a new Object",
+  randomFunction(){
+    var that = this;
+
+    return function() {
+      console.log(that);
+    }
+  }
+}
+
+ninjas.randomFunction()();
+
 // 5. Functions
 let Generate_new_fragment = document.createDocumentFragment();
 
@@ -14,11 +156,6 @@ let Generate_new_div = (innerHTML, classString, idString, index) => {
     g.setAttribute("id", idString + index);
     g.classList = classString;
     g.innerHTML = innerHTML;
-
-    g.addEventListener( 'click', function(){
-        from_index.Handle_check_route(this.innerText, '');
-    } );
-    
     return g
 };
 
@@ -27,11 +164,6 @@ let Generate_new_link = (innerHTML, classString, idString, index) => {
     g.setAttribute("id", idString + index);
     g.classList = classString;
     g.innerHTML = innerHTML;
-
-    g.addEventListener( 'click', function(){
-        from_index.Handle_check_route(this.innerText, '');
-    } );
-
     return g
 };
 
@@ -43,12 +175,22 @@ let Generate_new_span = (innerHTML, classString, idString, index) => {
     return g
 };
 
-let Generate_new_li = (innerHTML, classString, idString, index) => {
-    let g = document.createElement('li');
-    g.setAttribute("id", idString + index);
-    g.classList = classString;
-    g.innerHTML = innerHTML;
-    return g
+let Generate_new_li = (data) => {
+    console.log(data.title);
+    let ELEMENT = document.createElement('li');
+    ELEMENT.setAttribute("id", data.title);
+    ELEMENT.classList = data.title;
+    ELEMENT.innerHTML = `Hello peeps ${data.title}, yo`;
+
+    // Objects: Firebase Library Items
+    // console.log(document.querySelectorAll('#element_ol_firebase_library_posts'))
+    ELEMENT.addEventListener("click", function(event) {
+
+        from_index.Handle_check_route('library_preview', data);
+
+    });
+
+    return ELEMENT
 };
 
 // Handles

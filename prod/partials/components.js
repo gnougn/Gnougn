@@ -1,8 +1,10 @@
 import from_index from '../index.js';
 
+    let state = '';
+
     let get_components_handled = () => {
 
-        let state = from_index.Handle_return_state();
+        state = from_index.Handle_return_state();
 
         let components = [
 
@@ -97,7 +99,7 @@ import from_index from '../index.js';
                 component_state_display: state.ui.gui.bottom.display,
                 // component_state_opacity:  state.ui.gui.bottom.opacity
             },
-            
+
             {
                 component: 'component_app_gui_bottom_left',
                 component_state_transform: state.ui.gui.bottom_left.transform,
@@ -106,7 +108,7 @@ import from_index from '../index.js';
                 component_state_display: state.ui.gui.bottom_left.display,
                 // component_state_opacity:  state.ui.gui.bottom_left.opacity
             },
-            
+
             {
                 component: 'component_app_gui_bottom_right',
                 component_state_transform: state.ui.gui.bottom_right.transform,
@@ -115,7 +117,7 @@ import from_index from '../index.js';
                 component_state_display: state.ui.gui.bottom_right.display,
                 // component_state_opacity:  state.ui.gui.bottom_right.opacity
             },
-            
+
             {
                 component: 'component_app_gui_top_center',
                 component_state_transform: state.ui.gui.top.transform,
@@ -124,7 +126,7 @@ import from_index from '../index.js';
                 component_state_display: state.ui.gui.top.display,
                 // component_state_opacity:  state.ui.gui.top.opacity
             },
-            
+
             {
                 component: 'component_app_gui_top_left',
                 component_state_transform: state.ui.gui.top_left.transform,
@@ -133,7 +135,7 @@ import from_index from '../index.js';
                 component_state_display: state.ui.gui.top_left.display,
                 // component_state_opacity:  state.ui.gui.top_left.opacity
             },
-            
+
             {
                 component: 'component_app_gui_top_right',
                 component_state_transform: state.ui.gui.top_right.transform,
@@ -151,7 +153,7 @@ import from_index from '../index.js';
                 component_state_display: state.ui.gui.left.display,
                 // component_state_opacity:  state.ui.gui.left.opacity
             },
-            
+
             {
                 component: 'component_app_gui_right',
                 component_state_transform: state.ui.gui.right.transform,

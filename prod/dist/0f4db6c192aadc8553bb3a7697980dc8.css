@@ -18457,122 +18457,130 @@ input[type=text] {
     #element_ol_firebase_services > li button:hover {
       box-shadow: 0vh 0vh solid rgba(0, 0, 0, 0); }
 
+.card > li #content {
+  display: none; }
+
+.card > li #title {
+  display: none; }
+
+.card > li #interaction {
+  display: none; }
+
+.card > li #meta {
+  display: none; }
+
+.card > li #user {
+  display: none; }
+
+#element_ol_firebase_roster > li, #element_ol_firebase_library > li, #element_ol_firebase_skills > li, #element_ol_firebase_abilities > li, #element_ol_firebase_services > li, #element_ol_firebase_partners > li {
+  min-height: 33vh; }
+
 @media (min-width: 1401px) {
-  #element_ol_firebase_library.card li#element_ol_firebase_library_post #content {
-    display: none; }
-  #element_ol_firebase_library.card li#element_ol_firebase_library_post #title {
-    display: none; }
-  #element_ol_firebase_library.card li#element_ol_firebase_library_post #interaction {
-    display: none; }
-  #element_ol_firebase_library.card li#element_ol_firebase_library_post #meta {
-    display: none; }
-  #element_ol_firebase_library.card li#element_ol_firebase_library_post #user {
-    display: none; }
-  #element_ol_firebase_library.card > li {
+  #element_ol_firebase_roster > li, #element_ol_firebase_library > li, #element_ol_firebase_skills > li, #element_ol_firebase_abilities > li, #element_ol_firebase_services > li, #element_ol_firebase_partners > li {
     width: 10%; }
-    #element_ol_firebase_library.card > li #container {
+    #element_ol_firebase_roster > li #container, #element_ol_firebase_library > li #container, #element_ol_firebase_skills > li #container, #element_ol_firebase_abilities > li #container, #element_ol_firebase_services > li #container, #element_ol_firebase_partners > li #container {
       border: 0.1vh solid #233837; }
-  #element_ol_firebase_library.card li:nth-child(10n + 1) {
+  #element_ol_firebase_roster li:nth-child(10n + 1), #element_ol_firebase_library li:nth-child(10n + 1), #element_ol_firebase_skills li:nth-child(10n + 1), #element_ol_firebase_abilities li:nth-child(10n + 1), #element_ol_firebase_services li:nth-child(10n + 1), #element_ol_firebase_partners li:nth-child(10n + 1) {
     position: relative;
     float: left;
     clear: left; } }
 
 @media (max-width: 1400px) and (min-width: 1201px) {
-  #element_ol_firebase_library.card > li {
+  #element_ol_firebase_roster > li, #element_ol_firebase_library > li, #element_ol_firebase_skills > li, #element_ol_firebase_abilities > li, #element_ol_firebase_services > li, #element_ol_firebase_partners > li {
     width: 11.1111%; }
-    #element_ol_firebase_library.card > li #container {
+    #element_ol_firebase_roster > li #container, #element_ol_firebase_library > li #container, #element_ol_firebase_skills > li #container, #element_ol_firebase_abilities > li #container, #element_ol_firebase_services > li #container, #element_ol_firebase_partners > li #container {
       border: 0.1vh solid #233837; }
-  #element_ol_firebase_library.card li:nth-child(9n + 1) {
+  #element_ol_firebase_roster li:nth-child(9n + 1), #element_ol_firebase_library li:nth-child(9n + 1), #element_ol_firebase_skills li:nth-child(9n + 1), #element_ol_firebase_abilities li:nth-child(9n + 1), #element_ol_firebase_services li:nth-child(9n + 1), #element_ol_firebase_partners li:nth-child(9n + 1) {
     position: relative;
     float: left;
     clear: left; } }
 
 @media (max-width: 1200px) and (min-width: 1151px) {
-  #element_ol_firebase_library.card > li {
+  #element_ol_firebase_roster > li, #element_ol_firebase_library > li, #element_ol_firebase_skills > li, #element_ol_firebase_abilities > li, #element_ol_firebase_services > li, #element_ol_firebase_partners > li {
     width: 12.5%; }
-    #element_ol_firebase_library.card > li #container {
+    #element_ol_firebase_roster > li #container, #element_ol_firebase_library > li #container, #element_ol_firebase_skills > li #container, #element_ol_firebase_abilities > li #container, #element_ol_firebase_services > li #container, #element_ol_firebase_partners > li #container {
       border: 0.1vh solid #233837; }
-  #element_ol_firebase_library.card li:nth-child(8n + 1) {
+  #element_ol_firebase_roster li:nth-child(8n + 1), #element_ol_firebase_library li:nth-child(8n + 1), #element_ol_firebase_skills li:nth-child(8n + 1), #element_ol_firebase_abilities li:nth-child(8n + 1), #element_ol_firebase_services li:nth-child(8n + 1), #element_ol_firebase_partners li:nth-child(8n + 1) {
     position: relative;
     float: left;
     clear: left; } }
 
 @media (max-width: 120px) and (min-width: 1151px) {
-  #element_ol_firebase_library.card > li {
+  #element_ol_firebase_roster > li, #element_ol_firebase_library > li, #element_ol_firebase_skills > li, #element_ol_firebase_abilities > li, #element_ol_firebase_services > li, #element_ol_firebase_partners > li {
     width: 14.2857143%; }
-    #element_ol_firebase_library.card > li #container {
+    #element_ol_firebase_roster > li #container, #element_ol_firebase_library > li #container, #element_ol_firebase_skills > li #container, #element_ol_firebase_abilities > li #container, #element_ol_firebase_services > li #container, #element_ol_firebase_partners > li #container {
       border: 0.1vh solid #233837; }
-  #element_ol_firebase_library.card li:nth-child(7n + 1) {
+  #element_ol_firebase_roster li:nth-child(7n + 1), #element_ol_firebase_library li:nth-child(7n + 1), #element_ol_firebase_skills li:nth-child(7n + 1), #element_ol_firebase_abilities li:nth-child(7n + 1), #element_ol_firebase_services li:nth-child(7n + 1), #element_ol_firebase_partners li:nth-child(7n + 1) {
     position: relative;
     float: left;
     clear: left; } }
 
 @media (max-width: 1150px) and (min-width: 1101px) {
-  #element_ol_firebase_library.card > li {
+  #element_ol_firebase_roster > li, #element_ol_firebase_library > li, #element_ol_firebase_skills > li, #element_ol_firebase_abilities > li, #element_ol_firebase_services > li, #element_ol_firebase_partners > li {
     width: 16.6666%; }
-    #element_ol_firebase_library.card > li #container {
+    #element_ol_firebase_roster > li #container, #element_ol_firebase_library > li #container, #element_ol_firebase_skills > li #container, #element_ol_firebase_abilities > li #container, #element_ol_firebase_services > li #container, #element_ol_firebase_partners > li #container {
       border: 0.1vh solid #233837; }
-  #element_ol_firebase_library.card li:nth-child(6n + 1) {
+  #element_ol_firebase_roster li:nth-child(6n + 1), #element_ol_firebase_library li:nth-child(6n + 1), #element_ol_firebase_skills li:nth-child(6n + 1), #element_ol_firebase_abilities li:nth-child(6n + 1), #element_ol_firebase_services li:nth-child(6n + 1), #element_ol_firebase_partners li:nth-child(6n + 1) {
     position: relative;
     float: left;
     clear: left; } }
 
 @media (max-width: 1100px) and (min-width: 1001px) {
-  #element_ol_firebase_library.card > li {
+  #element_ol_firebase_roster > li, #element_ol_firebase_library > li, #element_ol_firebase_skills > li, #element_ol_firebase_abilities > li, #element_ol_firebase_services > li, #element_ol_firebase_partners > li {
     width: 20%; }
-    #element_ol_firebase_library.card > li #container {
+    #element_ol_firebase_roster > li #container, #element_ol_firebase_library > li #container, #element_ol_firebase_skills > li #container, #element_ol_firebase_abilities > li #container, #element_ol_firebase_services > li #container, #element_ol_firebase_partners > li #container {
       border: 0.1vh solid #233837; }
-  #element_ol_firebase_library.card li:nth-child(5n + 1) {
+  #element_ol_firebase_roster li:nth-child(5n + 1), #element_ol_firebase_library li:nth-child(5n + 1), #element_ol_firebase_skills li:nth-child(5n + 1), #element_ol_firebase_abilities li:nth-child(5n + 1), #element_ol_firebase_services li:nth-child(5n + 1), #element_ol_firebase_partners li:nth-child(5n + 1) {
     position: relative;
     float: left;
     clear: left; } }
 
 @media (max-width: 1000px) and (min-width: 901px) {
-  #element_ol_firebase_library.card > li {
+  #element_ol_firebase_roster > li, #element_ol_firebase_library > li, #element_ol_firebase_skills > li, #element_ol_firebase_abilities > li, #element_ol_firebase_services > li, #element_ol_firebase_partners > li {
     width: 25%; }
-    #element_ol_firebase_library.card > li #container {
+    #element_ol_firebase_roster > li #container, #element_ol_firebase_library > li #container, #element_ol_firebase_skills > li #container, #element_ol_firebase_abilities > li #container, #element_ol_firebase_services > li #container, #element_ol_firebase_partners > li #container {
       border: 0.1vh solid #233837; }
-  #element_ol_firebase_library.card li:nth-child(4n + 1) {
+  #element_ol_firebase_roster li:nth-child(4n + 1), #element_ol_firebase_library li:nth-child(4n + 1), #element_ol_firebase_skills li:nth-child(4n + 1), #element_ol_firebase_abilities li:nth-child(4n + 1), #element_ol_firebase_services li:nth-child(4n + 1), #element_ol_firebase_partners li:nth-child(4n + 1) {
     position: relative;
     float: left;
     clear: left; } }
 
 @media (max-width: 900px) and (min-width: 801px) {
-  #element_ol_firebase_library.card > li {
+  #element_ol_firebase_roster > li, #element_ol_firebase_library > li, #element_ol_firebase_skills > li, #element_ol_firebase_abilities > li, #element_ol_firebase_services > li, #element_ol_firebase_partners > li {
     width: 33%; }
-    #element_ol_firebase_library.card > li #container {
+    #element_ol_firebase_roster > li #container, #element_ol_firebase_library > li #container, #element_ol_firebase_skills > li #container, #element_ol_firebase_abilities > li #container, #element_ol_firebase_services > li #container, #element_ol_firebase_partners > li #container {
       border: 0.1vh solid #233837; }
-  #element_ol_firebase_library.card li:nth-child(3n + 1) {
+  #element_ol_firebase_roster li:nth-child(3n + 1), #element_ol_firebase_library li:nth-child(3n + 1), #element_ol_firebase_skills li:nth-child(3n + 1), #element_ol_firebase_abilities li:nth-child(3n + 1), #element_ol_firebase_services li:nth-child(3n + 1), #element_ol_firebase_partners li:nth-child(3n + 1) {
     width: 33%;
     position: relative;
     float: left;
     clear: left; }
-  #element_ol_firebase_library.card li:nth-child(3n + 2) {
+  #element_ol_firebase_roster li:nth-child(3n + 2), #element_ol_firebase_library li:nth-child(3n + 2), #element_ol_firebase_skills li:nth-child(3n + 2), #element_ol_firebase_abilities li:nth-child(3n + 2), #element_ol_firebase_services li:nth-child(3n + 2), #element_ol_firebase_partners li:nth-child(3n + 2) {
     width: 33%;
     position: relative;
     float: left;
     margin: 0% .5% 0; }
-  #element_ol_firebase_library.card li:nth-child(3n + 3) {
+  #element_ol_firebase_roster li:nth-child(3n + 3), #element_ol_firebase_library li:nth-child(3n + 3), #element_ol_firebase_skills li:nth-child(3n + 3), #element_ol_firebase_abilities li:nth-child(3n + 3), #element_ol_firebase_services li:nth-child(3n + 3), #element_ol_firebase_partners li:nth-child(3n + 3) {
     width: 33%;
     position: relative;
     float: left; } }
 
 @media (max-width: 800px) and (min-width: 601px) {
-  #element_ol_firebase_library.card > li {
+  #element_ol_firebase_library > li, #element_ol_firebase_roster > li {
     width: 50%;
     border-bottom: 0.1vh solid #233837; }
-  #element_ol_firebase_library.card > li:nth-child(3n + 1), #element_ol_firebase_library.card > li:nth-child(3n + 2), #element_ol_firebase_library.card > li:nth-child(3n + 3) {
+  #element_ol_firebase_library > li:nth-child(3n + 1), #element_ol_firebase_library > li:nth-child(3n + 2), #element_ol_firebase_library > li:nth-child(3n + 3), #element_ol_firebase_roster > li:nth-child(3n + 1), #element_ol_firebase_roster > li:nth-child(3n + 2), #element_ol_firebase_roster > li:nth-child(3n + 3) {
     width: 50% !important;
     margin: auto !important; }
-  #element_ol_firebase_library.card > li:after {
+  #element_ol_firebase_library > li:after, #element_ol_firebase_roster > li:after {
     position: absolute;
     left: .5vh;
     top: .5vh; }
-  #element_ol_firebase_library.card > li:before {
+  #element_ol_firebase_library > li:before, #element_ol_firebase_roster > li:before {
     position: absolute;
     left: 1.5vh;
     top: 1.5vh; }
-  #element_ol_firebase_library.card li > #container {
+  #element_ol_firebase_library li > #container, #element_ol_firebase_roster li > #container {
     margin: auto;
     width: calc(100% - 5vh);
     border: none; } }

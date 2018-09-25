@@ -60,157 +60,16 @@ Order of operations
 // Imports
 'use strict';
 
+// Imports
 import imported_state from './partials/state';
 import imported_functions from './partials/functions';
+import imported_events from './partials/events';
+import imported_defaults from './partials/defaults';
+import imported_components from './partials/components';
+// import imported_generators from './partials/generators';
+// import imported_elements from './partials/elements';
+import imported_ui from './partials/ui';
 
-function test(fruit) {
-  // extract conditions to array
-  const redFruits = ['apple', 'strawberry', 'cherry', 'cranberries'];
-
-  if (redFruits.includes(fruit)) {
-    throw('red');
-  }
-}
-
-// rest parameters
-function add(...args) {
-  let result = 0;
-
-  for (let arg of args) result += arg;
-
-  return result
-}
-
-console.log(add(1)); // returns 1
-console.log(add(1,2)); // returns 3
-console.log(add(1, 2, 3, 4, 5)); // returns 15
-
-const arr = ["Joy", "Wangari", "Warugu"];
-const newArr = ["joykare", ...arr];
-console.log(newArr);
-
-let x = 20;
-x = 50;
-
-console.log(x); // SyntaxError: identifier "x" has already been declared.
-
-// A Common Scope Gotcha
-// If stamement do not have local sc
-if (true) {
-  var foo = 5;
-};
-
-console.log(foo);   // 5
-
-const countVowels = str => Array.from(str)
-  .filter(letter => 'aeiou'.includes(letter)).length;
-
-console.log(countVowels('abcdefghijklmnopqrstuvwxyz')); // 5
-console.log(countVowels('test')); // 1
-console.log(countVowels('ddd')); // 0
-
-function randomFunction(){
-  console.log(this);
-}
-
-let newObj = {
-  description : "This is a new Object"
-}
-
-console.log(randomFunction.bind(newObj)());
-console.log(randomFunction.call(newObj));
-console.log(randomFunction.apply(newObj));
-
-const drSeuss = `
-  My name is Sam I Am ${1}
-  I do not like green eggs and ham
-  Lunchtime is here
-  Come and eat
-`;
-
-console.log(drSeuss);
-
-// filter
-function fishy(colors) {
-  // use Array filter to find fruits in color
-  let fishes = [
-    { name: 'apple', color: 'red' },
-    { name: 'strawberry', color: 'red' },
-    { name: 'banana', color: 'yellow' },
-    { name: 'pineapple', color: 'yellow' },
-    { name: 'grape', color: 'purple' },
-    { name: 'plum', color: 'purple' }   ];
-
-  return fishes.filter(f => f.color == color);
-}
-
-// EVERY
-function test(colors) {
-  let fruits = [
-    { name: 'apple', color: 'red' },
-    { name: 'banana', color: 'yellow' },
-    { name: 'grape', color: 'purple' }
-  ];
-
-  // condition: short way, all fruits must be red
-  let isAllRed = fruits.every(f => f.color == 'red');
-
-  console.log(isAllRed); // false
-};
-
-// SOME
-function emu(colors) {
-  let niggas = [
-    { name: 'apple', color: 'red' },
-    { name: 'banana', color: 'yellow' },
-    { name: 'grape', color: 'purple' }
-  ];
-
-  // condition: if any fruit is red
-  let isAnyRed = fruits.some(f => f.color == 'red');
-
-  console.log(isAnyRed); // true
-};
-
-// es5
-var es5sayHello = function() {
-  return 'hello!';
-};
-
-// es6 with explicit return
-let explicitsayHello = () => {
-  return 'hello!';
-};
-
-// es6 with implicit return
-let implicitsayHello = () => 'hello';
-
-// Default Parameters in ES6
-var garage = function(model = 'Mustang', color = 'blue', car = 'Ford') {
-  console.log(model)
-  console.log(color)
-  console.log(car)
-}
-
-var ninjas = {
-  description : "This is a new Object",
-  randomFunction(){
-    var that = this;
-
-    return function() {
-      console.log(that);
-    }
-  }
-}
-
-ninjas.randomFunction()();
-
-window.onload = () => {
-  garage('monster', 'monster');
-};
-
-
-// *********************************************
 
 // Declaration
 let state;
@@ -221,6 +80,8 @@ let components;
 // Assignment
 state = imported_state.default_state;
 functions = imported_functions;
+defaults = imported_defaults;
+components = imported_components;
 
 // Initialization
 let config = {
@@ -235,6 +96,7 @@ let config = {
 // Functions
 firebase.initializeApp(config);
 
+// Closures
 let Handle_Firebase_Refs_and_Render = () => {
     console.log('Handle_Firebase_Refs');
     const rootRef = firebase.database().ref();
@@ -358,7 +220,7 @@ let Handle_Firebase_Refs_and_Render = () => {
                         setTimeout(function() {
 
                             setInterval(function() {
-                                // Handle_check_states();
+                                Handle_check_states();
                             }, 1000 / 24);
 
                         }, 1000);
@@ -376,70 +238,9 @@ let Handle_Firebase_Refs_and_Render = () => {
 
 let Handle_firebase_render = () => {
 
-    // render roster
-    (() => {
-        setTimeout(function() {
-
-            let array = state.data.firebase;
-            let array_gnougn_roster = array.gnougn.roster.sort(find_sort());
-            let filtered_array_gnougn_roster = [];
-
-            for (var i = 0; i < array_gnougn_roster.length; i++) {
-                if (array_gnougn_roster[i].id.toString().toLowerCase().includes(document.getElementById('element_input_filter').value)) {
-                    filtered_array_gnougn_roster.push(array_gnougn_roster[i]);
-                };
-            };
-
-            document.getElementById('element_ol_firebase_roster').innerHTML = '';
-
-            for (var i = 0; i < filtered_array_gnougn_roster.length; i++) {
-                document.getElementById('element_ol_firebase_roster').appendChild(imported_functions.Generate_new_fragment.appendChild(imported_functions.Generate_new_li('\
-                <div id="container">\
-                    <div id="section">\
-                        \
-                        <div id="background">\
-                            \
-                            <div class="position_absolute left_0 top_0 width_100 height_100 ' + filtered_array_gnougn_roster[i].character + ' ">\
-                            </div>\
-                            \
-                        </div>\
-                        \
-                        <div id="image">\
-                            \
-                            <div class="position_absolute left_0 top_0 width_100 height_100 ' + filtered_array_gnougn_roster[i].character + ' ">\
-                            </div>\
-                            \
-                            \
-                        </div>\
-                        \
-                        <div id="content">\
-                          <h1 id="title">' + 'id: ' + filtered_array_gnougn_roster[i].id + '</h1>\
-                          <h1 id="title">' + 'title: ' + filtered_array_gnougn_roster[i].title + '</h1>\
-                          <h1 id="likes">' + 'likes: ' + filtered_array_gnougn_roster[i].likes + '</h1>\
-                          <a id="preview" href="#">' + 'preview' + '</a>\
-                        </div>\
-                        \
-                        <div id="interaction" class="position_relative width_100 float_right display_webkit_box webkit_box_pack_center webkit_box_align">\
-                        </div>\
-                        \
-                        <div id="meta">\
-                          <a id="preview" href="#">' + 'preview' + '</a>\
-                        </div>\
-                        \
-                        <div id="user">\
-                          <a id="preview" href="#">' + 'preview' + '</a>\
-                        </div>\
-                        \
-                    </div>\
-                </div>\
-                ', [], 'element_ol_firebase_roster_post', '')))
-            }
-
-        }, 0);
-    })();
-
     // render library
     (() => {
+
         setTimeout(function() {
 
             // *********************** "Order of operations" ************************
@@ -463,509 +264,318 @@ let Handle_firebase_render = () => {
 
             // 5.) fill ol element
             for (var i = 0; i < filtered_array_gnougn_library.length; i++) {
-                document.getElementById('element_ol_firebase_library').appendChild(imported_functions.Generate_new_fragment.appendChild(imported_functions.Generate_new_li('\
-                        <div id="container">\
-                            <div id="section">\
-                                \
-                                <div id="title">\
-                                    \
-                                    title:\
-                                </div>\
-                                \
-                                <div id="image">\
-                                \
-                                </div>\
-                                \
-                                <div id="content">\
-                                    <h1 id="title">' + 'id: ' + filtered_array_gnougn_library[i].id + '</h1>\
-                                    <h1 id="title">' + 'title: ' + filtered_array_gnougn_library[i].title + '</h1>\
-                                    <h1 id="likes">' + 'likes: ' + filtered_array_gnougn_library[i].likes + '</h1>\
-                                    \
-                                    \
-                                </div>\
-                                \
-                                <div id="interaction" class="position_relative width_100 float_right display_webkit_box webkit_box_pack_center webkit_box_align">\
-                                </div>\
-                                \
-                                <div id="meta">\
-                                    \
-                                    <div class="position_relative gui_arrow_left width_5vh height_5vh float_right">\
-                                    \
-                                    </div>\
-                                    \
-                                    <div class="position_relative gui_arrow_left width_5vh height_5vh float_right">\
-                                    \
-                                    </div>\
-                                    \
-                                    <div class="position_relative gui_arrow_left width_5vh height_5vh float_right">\
-                                    \
-                                    </div>\
-                                    \
-                                    <h1>' + 'meta: ' + filtered_array_gnougn_library[i].title + '</h1>\
-                                    \
-                                </div>\
-                                \
-                                <div id="user">\
-                                    \
-                                    <div class="position_relative width_5vh height_5vh border_radius_circle float_right">\
-                                        \
-                                        <div id="profile_picture" class="position_absolute overflow_hidden box_shadow_bottom_left_1vh_dark border_radius_circle left_0 top_0 right_0 bottom_0 margin_auto width_50 height_50 ' + filtered_array_gnougn_library[i].author.profile_picture + ' ">\
-                                        </div>\
-                                    </div>\
-                                    \
-                                    <div class="position_relative width_100 height_5vh float_right">\
-                                        \
-                                        <div id="author_id" class="position_relative float_left width_100">\
-                                            ' + filtered_array_gnougn_library[i].author.id + ' \
-                                        </div>\
-                                    </div>\
-                                    \
-                                    <div class="position_relative width_100 height_5vh float_right">\
-                                        \
-                                    </div>\
-                                    \
-                                    <h1>' + 'user: ' + filtered_array_gnougn_library[i].title + '</h1>\
-                                    \
-                                </div>\
-                                \
-                            </div>\
-                        </div>\
-                        ', '' + filtered_array_gnougn_library[i].type + '', 'element_ol_firebase_library_post', '')))
+                // console.log(filtered_array_gnougn_library[i]);
+                document.getElementById('element_ol_firebase_library').appendChild(imported_functions.Generate_new_fragment.appendChild(
+                  imported_functions.Generate_new_li(filtered_array_gnougn_library[i])
+                    )
+                )
             }
 
             // 6.) add events later
-
-        }, 0);
-    })();
-
-    // render abilities
-    (() => {
-        setTimeout(function() {
-
-            let array = state.data.firebase;
-            let array_gnougn_abilities = array.gnougn.abilities.sort(find_sort());
-            let filtered_array_gnougn_abilities = [];
-
-            for (var i = 0; i < array_gnougn_abilities.length; i++) {
-                if (array_gnougn_abilities[i].id.toString().toLowerCase().includes(document.getElementById('element_input_filter').value)) {
-                    filtered_array_gnougn_abilities.push(array_gnougn_abilities[i]);
-                };
-            };
-
-            document.getElementById('element_ol_firebase_abilities').innerHTML = '';
-            for (var i = 0; i < filtered_array_gnougn_abilities.length; i++) {
-                document.getElementById('element_ol_firebase_abilities').appendChild(imported_functions.Generate_new_fragment.appendChild(imported_functions.Generate_new_li('\
-                        <div id="container">\
-                            <div id="section">\
-                                \
-                                <div id="background">\
-                                \
-                                <div class="position_absolute left_0 top_0 width_100 height_100 ' + filtered_array_gnougn_abilities[i].character + ' ">\
-                                </div>\
-                                \
-                                </div>\
-                                \
-                                <div id="image">\
-                                    \
-                                </div>\
-                                \
-                                <div id="content">\
-                                  <h1 id="title">' + 'id: ' + filtered_array_gnougn_abilities[i].id + '</h1>\
-                                  <h1 id="title">' + 'title: ' + filtered_array_gnougn_abilities[i].title + '</h1>\
-                                  <h1 id="likes">' + 'likes: ' + filtered_array_gnougn_abilities[i].likes + '</h1>\
-                                  <a id="preview" href="#">' + 'preview' + '</a>\
-                                </div>\
-                                \
-                                <div id="interaction" class="position_relative width_100 float_right display_webkit_box webkit_box_pack_center webkit_box_align">\
-                                </div>\
-                                \
-                                <div id="meta">\
-                                  <a id="preview" href="#">' + 'preview' + '</a>\
-                                </div>\
-                                \
-                                <div id="user">\
-                                  <a id="preview" href="#">' + 'preview' + '</a>\
-                                </div>\
-                                \
-                            </div>\
-                        </div>\
-                        ', [], 'element_ol_firebase_abilities_post', '')))
-            }
-
-        }, 0);
-    })();
-
-    // render partners
-    (() => {
-        setTimeout(function() {
-
-            let array = state.data.firebase;
-            let array_gnougn_partners = array.gnougn.partners.sort(find_sort());
-            let filtered_array_gnougn_partners = [];
-
-            for (var i = 0; i < array_gnougn_partners.length; i++) {
-                if (array_gnougn_partners[i].id.toString().toLowerCase().includes(document.getElementById('element_input_filter').value)) {
-                    filtered_array_gnougn_partners.push(array_gnougn_partners[i]);
-                };
-            };
-
-            document.getElementById('element_ol_firebase_partners').innerHTML = '';
-            for (var i = 0; i < filtered_array_gnougn_partners.length; i++) {
-                document.getElementById('element_ol_firebase_partners').appendChild(imported_functions.Generate_new_fragment.appendChild(imported_functions.Generate_new_li('\
-                        <div id="container">\
-                            <div id="section">\
-                                \
-                                <div id="background">\
-                                \
-                                <div class="position_absolute left_0 top_0 width_100 height_100 ' + filtered_array_gnougn_partners[i].character + ' ">\
-                                </div>\
-                                \
-                                </div>\
-                                \
-                                <div id="image">\
-                                    \
-                                </div>\
-                                \
-                                <div id="content">\
-                                  <h1 id="title">' + 'id: ' + filtered_array_gnougn_partners[i].id + '</h1>\
-                                  <h1 id="title">' + 'title: ' + filtered_array_gnougn_partners[i].title + '</h1>\
-                                  <h1 id="likes">' + 'likes: ' + filtered_array_gnougn_partners[i].likes + '</h1>\
-                                  <a id="preview" href="#">' + 'preview' + '</a>\
-                                </div>\
-                                \
-                                <div id="interaction" class="position_relative width_100 float_right display_webkit_box webkit_box_pack_center webkit_box_align">\
-                                </div>\
-                                \
-                                <div id="meta">\
-                                  <a id="preview" href="#">' + 'preview' + '</a>\
-                                </div>\
-                                \
-                                <div id="user">\
-                                  <a id="preview" href="#">' + 'preview' + '</a>\
-                                </div>\
-                                \
-                            </div>\
-                        </div>\
-                        ', [], 'element_ol_firebase_partners_post', '')))
-            }
-
-        }, 0);
-    })();
-
-    // render skills
-    (() => {
-        setTimeout(function() {
-
-            let array = state.data.firebase;
-            let array_gnougn_skills = array.gnougn.skills.sort(find_sort());
-            let filtered_array_gnougn_skills = [];
-
-            for (var i = 0; i < array_gnougn_skills.length; i++) {
-                if (array_gnougn_skills[i].id.toString().toLowerCase().includes(document.getElementById('element_input_filter').value)) {
-                    filtered_array_gnougn_skills.push(array_gnougn_skills[i]);
-                };
-            };
-
-            document.getElementById('element_ol_firebase_skills').innerHTML = '';
-            for (var i = 0; i < filtered_array_gnougn_skills.length; i++) {
-                document.getElementById('element_ol_firebase_skills').appendChild(imported_functions.Generate_new_fragment.appendChild(imported_functions.Generate_new_li('\
-                        <div id="container">\
-                            <div id="section">\
-                                \
-                                <div id="background">\
-                                \
-                                <div class="position_absolute left_0 top_0 width_100 height_100 ' + filtered_array_gnougn_skills[i].character + ' ">\
-                                </div>\
-                                \
-                                </div>\
-                                \
-                                <div id="image">\
-                                    \
-                                </div>\
-                                \
-                                <div id="content">\
-                                  <h1 id="title">' + 'id: ' + filtered_array_gnougn_skills[i].id + '</h1>\
-                                  <h1 id="title">' + 'title: ' + filtered_array_gnougn_skills[i].title + '</h1>\
-                                  <h1 id="likes">' + 'likes: ' + filtered_array_gnougn_skills[i].likes + '</h1>\
-                                  <a id="preview" href="#">' + 'preview' + '</a>\
-                                </div>\
-                                \
-                                <div id="interaction" class="position_relative width_100 float_right display_webkit_box webkit_box_pack_center webkit_box_align">\
-                                </div>\
-                                \
-                                <div id="meta">\
-                                  <a id="preview" href="#">' + 'preview' + '</a>\
-                                </div>\
-                                \
-                                <div id="user">\
-                                  <a id="preview" href="#">' + 'preview' + '</a>\
-                                </div>\
-                                \
-                            </div>\
-                        </div>\
-                        ', [], 'element_ol_firebase_skills_post', '')))
-            }
-
-        }, 0);
-    })();
-
-    // render services
-    (() => {
-        setTimeout(function() {
-
-            let array = state.data.firebase;
-            let array_gnougn_services = array.gnougn.services.sort(find_sort());
-            let filtered_array_gnougn_services = [];
-
-            for (var i = 0; i < array_gnougn_services.length; i++) {
-                if (array_gnougn_services[i].id.toString().toLowerCase().includes(document.getElementById('element_input_filter').value)) {
-                    filtered_array_gnougn_services.push(array_gnougn_services[i]);
-                };
-            };
-
-            document.getElementById('element_ol_firebase_services').innerHTML = '';
-            for (var i = 0; i < filtered_array_gnougn_services.length; i++) {
-                document.getElementById('element_ol_firebase_services').appendChild(imported_functions.Generate_new_fragment.appendChild(imported_functions.Generate_new_li('\
-                        <div id="container">\
-                            <div id="section">\
-                                \
-                                <div id="background">\
-                                \
-                                <div class="position_absolute left_0 top_0 width_100 height_100 ' + filtered_array_gnougn_services[i].character + ' ">\
-                                </div>\
-                                \
-                                </div>\
-                                \
-                                <div id="image">\
-                                    \
-                                </div>\
-                                \
-                                <div id="content">\
-                                  <h1 id="title">' + 'id: ' + filtered_array_gnougn_services[i].id + '</h1>\
-                                  <h1 id="title">' + 'title: ' + filtered_array_gnougn_services[i].title + '</h1>\
-                                  <h1 id="likes">' + 'likes: ' + filtered_array_gnougn_services[i].likes + '</h1>\
-                                  <a id="preview" href="#">' + 'preview' + '</a>\
-                                </div>\
-                                \
-                                <div id="interaction" class="position_relative width_100 float_right display_webkit_box webkit_box_pack_center webkit_box_align">\
-                                </div>\
-                                \
-                                <div id="meta">\
-                                  <a id="preview" href="#">' + 'preview' + '</a>\
-                                </div>\
-                                \
-                                <div id="user">\
-                                  <a id="preview" href="#">' + 'preview' + '</a>\
-                                </div>\
-                                \
-                            </div>\
-                        </div>\
-                        ', [], 'element_ol_firebase_services_post', '')))
-            }
-
-        }, 0);
-    })();
-
-    // add event listeners
-    (() => {
-        setTimeout(function() {
-
-            let array_gnougn_library = state.data.firebase.gnougn.library;
-            let filtered_array_gnougn_library = [];
-
-            for (var i = 0; i < array_gnougn_library.length; i++) {
-                if (array_gnougn_library[i].id.toString().toLowerCase().includes(document.getElementById('element_input_filter').value)) {
-                    filtered_array_gnougn_library.push(array_gnougn_library[i]);
-                };
-            };
-
-            let array_gnougn_roster = state.data.firebase.gnougn.roster;
-            let filtered_array_gnougn_roster = [];
-
-            for (var i = 0; i < array_gnougn_roster.length; i++) {
-                if (array_gnougn_roster[i].id.toString().toLowerCase().includes(document.getElementById('element_input_filter').value)) {
-                    filtered_array_gnougn_roster.push(array_gnougn_roster[i]);
-                };
-            };
-
-            let array_gnougn_partners = state.data.firebase.gnougn.partners;
-            let filtered_array_gnougn_partners = [];
-
-            for (var i = 0; i < array_gnougn_partners.length; i++) {
-                if (array_gnougn_partners[i].id.toString().toLowerCase().includes(document.getElementById('element_input_filter').value)) {
-                    filtered_array_gnougn_partners.push(array_gnougn_partners[i]);
-                };
-            };
-
-            let array_gnougn_abilities = state.data.firebase.gnougn.abilities;
-            let filtered_array_gnougn_abilities = [];
-
-            for (var i = 0; i < array_gnougn_abilities.length; i++) {
-                if (array_gnougn_abilities[i].id.toString().toLowerCase().includes(document.getElementById('element_input_filter').value)) {
-                    filtered_array_gnougn_abilities.push(array_gnougn_abilities[i]);
-                };
-            };
-
-            let array_gnougn_skills = state.data.firebase.gnougn.skills;
-            let filtered_array_gnougn_skills = [];
-
-            for (var i = 0; i < array_gnougn_skills.length; i++) {
-                if (array_gnougn_skills[i].id.toString().toLowerCase().includes(document.getElementById('element_input_filter').value)) {
-                    filtered_array_gnougn_skills.push(array_gnougn_skills[i]);
-                };
-            };
-
-            let array_gnougn_services = state.data.firebase.gnougn.services;
-            let filtered_array_gnougn_services = [];
-
-            for (var i = 0; i < array_gnougn_services.length; i++) {
-                if (array_gnougn_services[i].id.toString().toLowerCase().includes(document.getElementById('element_input_filter').value)) {
-                    filtered_array_gnougn_services.push(array_gnougn_services[i]);
-                };
-            };
-
-            // Objects: Firebase roster Items
-            // console.log(document.querySelectorAll('#element_ol_firebase_roster_posts'))
-            let element_ol_firebase_roster_posts = document.querySelectorAll('#element_ol_firebase_roster_post');
-            for (let i = 0; i < element_ol_firebase_roster_posts.length; i++) {
-
-                let passed_roster = filtered_array_gnougn_roster;
-
-                element_ol_firebase_roster_posts[i].children[0].addEventListener("click", function(event) {
-                // route
-                    Handle_check_route('roster_preview', '');
-
-                });
-
-            };
-
-            // Objects: Firebase Library Items
-            // console.log(document.querySelectorAll('#element_ol_firebase_library_posts'))
-            let element_ol_firebase_library_posts = document.querySelectorAll('#element_ol_firebase_library_post');
-            for (let i = 0; i < element_ol_firebase_library_posts.length; i++) {
-
-                let passed_library = filtered_array_gnougn_library;
-
-                element_ol_firebase_library_posts[i].children[0].addEventListener("click", function(event) {
-
-                    Handle_check_route('library_preview', array_gnougn_library[i]);
-
-                });
-
-            };
-
-            // Objects: Firebase abilities Items
-            // console.log(document.querySelectorAll('#element_ol_firebase_abilities_posts'))
-            let element_ol_firebase_abilities_posts = document.querySelectorAll('#element_ol_firebase_abilities_post');
-            for (let i = 0; i < element_ol_firebase_abilities_posts.length; i++) {
-
-                let passed_abilities = filtered_array_gnougn_abilities;
-
-                element_ol_firebase_abilities_posts[i].children[0].children[0].children[2].children[2].addEventListener("click", function(event) {
-
-                    // Listing data();
-                    console.log(array_gnougn_abilities[i]);
-
-                    // render
-                    let abilities_preview_page = imported_generators.component_generator('abilities_preview', 'state', state.data.firebase.gnougn.abilities, array_gnougn_abilities[i]);
-                    document.getElementById('component_app_modal_element_page_top').innerHTML = '';
-                    document.getElementById('component_app_modal_element_page_top').appendChild(imported_functions.Generate_new_fragment.appendChild(imported_functions.Generate_new_div(abilities_preview_page, 'position_relative width_100 height_100vh float_left', 'id', '')));
-
-                    // route
-                    state.app.route = 'abilities_preview'
-                    Handle_check_route(state.app.route, '');
-
-                });
-
-            };
-
-            // Objects: Firebase services Items
-            // console.log(document.querySelectorAll('#element_ol_firebase_services_posts'))
-            let element_ol_firebase_services_posts = document.querySelectorAll('#element_ol_firebase_services_post');
-            for (let i = 0; i < element_ol_firebase_services_posts.length; i++) {
-
-                let passed_services = filtered_array_gnougn_services;
-
-                element_ol_firebase_services_posts[i].children[0].children[0].children[2].children[2].addEventListener("click", function(event) {
-
-                    // Listing data();
-                    console.log(array_gnougn_services[i]);
-
-                    // render
-                    let services_preview_page = imported_generators.component_generator('services_preview', 'state', state.data.firebase.gnougn.services, array_gnougn_services[i]);
-                    document.getElementById('component_app_modal_element_page_top').innerHTML = '';
-                    document.getElementById('component_app_modal_element_page_top').appendChild(imported_functions.Generate_new_fragment.appendChild(imported_functions.Generate_new_div(services_preview_page, 'position_relative width_100 height_100vh float_left', 'id', '')));
-
-                    // route
-                    state.app.route = 'services_preview'
-                    Handle_check_route(state.app.route, '');
-
-                });
-
-            };
-
-            // Objects: Firebase skills Items
-            // console.log(document.querySelectorAll('#element_ol_firebase_skills_posts'))
-            let element_ol_firebase_skills_posts = document.querySelectorAll('#element_ol_firebase_skills_post');
-            for (let i = 0; i < element_ol_firebase_skills_posts.length; i++) {
-
-                let passed_skills = filtered_array_gnougn_skills;
-
-                element_ol_firebase_skills_posts[i].children[0].children[0].children[2].children[2].addEventListener("click", function(event) {
-
-                    // Listing data();
-                    console.log(array_gnougn_skills[i]);
-
-                    // render
-                    let skills_preview_page = imported_generators.component_generator('skills_preview', 'state', state.data.firebase.gnougn.skills, array_gnougn_skills[i]);
-                    document.getElementById('component_app_modal_element_page_top').innerHTML = '';
-                    document.getElementById('component_app_modal_element_page_top').appendChild(imported_functions.Generate_new_fragment.appendChild(imported_functions.Generate_new_div(skills_preview_page, 'position_relative width_100 height_100vh float_left', 'id', '')));
-
-                    // route
-                    state.app.route = 'skills_preview'
-                    Handle_check_route(state.app.route, '');
-
-                });
-
-            };
-
-            // Objects: Firebase partners Items
-            // console.log(document.querySelectorAll('#element_ol_firebase_partners_posts'))
-            let element_ol_firebase_partners_posts = document.querySelectorAll('#element_ol_firebase_partners_post');
-            for (let i = 0; i < element_ol_firebase_partners_posts.length; i++) {
-
-                let passed_partners = filtered_array_gnougn_partners;
-
-                element_ol_firebase_partners_posts[i].children[0].children[0].children[2].children[2].addEventListener("click", function(event) {
-
-                    // Listing data();
-                    console.log(array_gnougn_partners[i]);
-
-                    // render
-                    let partners_preview_page = imported_generators.component_generator('partners_preview', 'state', state.data.firebase.gnougn.partners, array_gnougn_partners[i]);
-                    document.getElementById('component_app_modal_element_page_top').innerHTML = '';
-                    document.getElementById('component_app_modal_element_page_top').appendChild(imported_functions.Generate_new_fragment.appendChild(imported_functions.Generate_new_div(partners_preview_page, 'position_relative width_100 height_100vh float_left', 'id', '')));
-
-                    // route
-                    state.app.route = 'partners_preview'
-                    Handle_check_route(state.app.route, '');
-
-                });
-
-            };
-
             find_view();
             find_type();
 
         }, 0);
+
     })();
 
-
     state.data.refs = true;
+
+};
+
+let Handle_return_state = () => { return state };
+
+let Handle_check_route = (route, info) => {
+
+    state.app.route = route;
+
+    alert(state.app.route);
+
+};
+
+let Handle_render = () => {
+
+    document.getElementById('component_app').innerHTML = '';
+    for (var i = 0; i < defaults.colors.length; i++) {
+        console.log('defaults.colors[i]: ' + defaults.colors[i]);
+        document.getElementById(defaults.colors[i].parent).appendChild(imported_functions.Generate_new_fragment.appendChild(imported_functions.Generate_new_div(defaults.colors[i].innerHTML, defaults.colors[i].classList, defaults.colors[i].id, '')))
+    };
+
+};
+
+let Handle_display_with_delay = () => {
+
+    for (var i = 0; i < components.length; i++) {
+        // console.log(components[i].component);
+        // console.log(components[i].component_state);
+
+        // colors
+        if ((document.getElementById(components[i].component)) != null) {
+            imported_functions.Toggle_functions_IF_State(imported_functions.Toggle_display_and_opacity_on_with_no_delay, imported_functions.Toggle_display_and_opacity_off_with_delay, components[i].component, components[i].component_state_display);
+        };
+    };
+};
+
+let Handle_transform = () => {
+
+    for (var i = 0; i < components.length; i++) {
+        // console.log(components[i].component);
+        // console.log(components[i].component_state);
+
+        // colors
+        if ((document.getElementById(components[i].component)) != null) {
+            imported_functions.Toggle_classes_IF_State(components[i].component_state_transform_false, components[i].component_state_transform_true, components[i].component, components[i].component_state_transform);
+        };
+    };
+};
+
+let Handle_opacity = () => {
+
+    for (var i = 0; i < components.length; i++) {
+
+        // colors
+        if ((document.getElementById(components[i].component)) != null) {
+            imported_functions.Toggle_classes_IF_State('opacity_0', 'opacity_1', components[i].component, components[i].component_state_opacity);
+        };
+    };
+};
+
+let Handle_init = () => {
+  console.log('Handle_init');
+};
+
+let Handle_check_states = () => {
+  console.log('Handle_check_states');
+  components = imported_components.get_components_handled();
+  imported_ui.Handle_ui();
+  Handle_display_with_delay();
+  Handle_opacity();
+  Handle_transform();
+  Handle_init();
+};
+
+let Handle_get_state_from_events = () => {
+    state = imported_events.Handle_return_state_from_events();
+    console.log('state in index from events');
+    // console.log(state);
+};
+
+// Create
+let addListings = (child) => {
+
+    let default_item = {
+        id: 0,
+        title: document.getElementById('element_input_title').value,
+        subtitle: document.getElementById('element_input_subtitle').value,
+        paragraph: document.getElementById('element_input_paragraph').value,
+        category: document.getElementById('element_input_category').value,
+        tag: document.getElementById('element_input_tag').value,
+        type: document.getElementById('element_input_type').value,
+        feature: [{
+            title: "interaction_workspace_man_standing_1"
+        }, {
+            title: "interaction_workspace_man_standing_2"
+        }, {
+            title: "interaction_workspace_man_standing_3"
+        }, {
+            title: "interaction_workspace_man_standing_4"
+        }, {
+            title: "interaction_workspace_man_standing_5"
+        }, {
+            title: "interaction_workspace_man_standing_6"
+        }, {
+            title: "interaction_workspace_man_standing_7"
+        }, {
+            title: "interaction_workspace_man_standing_8"
+        }, {
+            title: "interaction_workspace_man_standing_9"
+        }, {
+            title: "interaction_workspace_man_standing_10"
+        }, {
+            title: "interaction_workspace_man_standing_11"
+        }, {
+            title: "interaction_workspace_man_standing_12"
+        }, {
+            title: "interaction_workspace_man_standing_13"
+        }, {
+            title: "interaction_workspace_man_standing_14"
+        }, {
+            title: "interaction_workspace_man_standing_15"
+        }, {
+            title: "interaction_workspace_man_standing_16"
+        }],
+        categories: [{
+            title: "developer"
+        }, {
+            title: "design"
+        }, {
+            title: "graphic"
+        }, {
+            title: "motion"
+        }, {
+            title: "strategy"
+        }, {
+            title: "content"
+        }],
+        tags: [{
+            title: "developer"
+        }, {
+            title: "design"
+        }, {
+            title: "graphic"
+        }, {
+            title: "motion"
+        }, {
+            title: "strategy"
+        }, {
+            title: "content"
+        }],
+        character: "interaction_workspace_man_standing_1",
+        author: {
+            "profile_picture": "photo_person1",
+        },
+
+        dislikes: 0,
+        likes: 0,
+        views: 0,
+        meh: 0,
+        previews: 0,
+        "abilities": [{
+            "fullname": "4240",
+            "id": "-LGHD8-62MwWnnPzUw7g",
+            "likescount": 0,
+            "title": "dummy420",
+            "employers": [{
+                "fullname": "4240",
+                "id": "-LGHD8-62MwWnnPzUw7g",
+                "likescount": 0,
+                "title": "dummy420"
+            }, {
+                "fullname": "420",
+                "id": "-LGHD8-62MwWnn23",
+                "likescount": 0,
+                "title": "dummy420"
+            }],
+        }, {
+            "fullname": "420",
+            "id": "-LGHD8-62MwWnn23",
+            "likescount": 0,
+            "title": "dummy420",
+            "employers": [{
+                "fullname": "4240",
+                "id": "-LGHD8-62MwWnnPzUw7g",
+                "likescount": 0,
+                "title": "dummy420"
+            }, {
+                "fullname": "420",
+                "id": "-LGHD8-62MwWnn23",
+                "likescount": 0,
+                "title": "dummy420"
+            }],
+        }],
+        "info": {
+            "subtitle": "and 3d animator",
+            "summary": "If the formula doesn't work, we change the formula.",
+            "testimonials": [{
+                "experience": 7,
+                "id": 1
+            }],
+        }
+    };
+
+    document.getElementById('element_input_title').value = '';
+
+    // Firebase References
+    // Firebase Database
+    const rootRef = firebase.database().ref();
+    const gnougnRef = rootRef.child('gnougn');
+    const Ref = gnougnRef.child(child);
+
+    Ref.push(default_item).then((snap) => {
+        const key = snap.key;
+        console.log('from addListing' + key);
+        // update created item with snap.key
+        Ref.child(key).update({
+            id: key
+        });
+
+        // Set firebase data
+        setTimeout(function() {
+            Handle_Firebase_Refs_and_Render();
+        }, 0);
+
+    });
+};
+
+// Delete
+let deleteWhoListings = (child, id) => {
+
+    // Firebase References
+    // Firebase Database
+    const rootRef = firebase.database().ref();
+    const gnougnRef = rootRef.child('gnougn');
+    const Ref = gnougnRef.child(child);
+    console.log(id, 'from deleteWhoListings service');
+    Ref.child(id).remove();
+
+    // Set firebase data
+    setTimeout(function() {
+        Handle_Firebase_Refs_and_Render();
+    }, 0);
+};
+
+// Update
+let likeWhoListings = (child, id) => {
+
+    // Firebase References
+    // Firebase Database
+    const rootRef = firebase.database().ref();
+    const gnougnRef = rootRef.child('gnougn');
+    const Ref = gnougnRef.child(child);
+    console.log(id, 'from likeWhoListings service');
+    var changeThisValue;
+    Ref.child(id).once('value', function(snap) {
+        changeThisValue = snap.val(); // Keep the local user object synced with the Firebase userRef
+    });
+
+    changeThisValue.likes += 1;
+    Ref.child(id).set(changeThisValue);
+    console.log(id);
+    // Set firebase data
+    setTimeout(function() {
+        Handle_Firebase_Refs_and_Render();
+    }, 0);
+};
+
+// Update
+let dislikeWhoListings = (child, id) => {
+
+    // Firebase References
+    // Firebase Database
+    const rootRef = firebase.database().ref();
+    const gnougnRef = rootRef.child('gnougn');
+    const Ref = gnougnRef.child(child);
+    console.log(id, 'from likeWhoListings service');
+    var changeThisValue;
+    Ref.child(id).once('value', function(snap) {
+        changeThisValue = snap.val(); // Keep the local user object synced with the Firebase userRef
+    });
+
+    changeThisValue.likes -= 1;
+
+    Ref.child(id).set(changeThisValue);
+
+    console.log(id);
+    console.log(changeThisValue);
+
+    // Set firebase data
+    setTimeout(function() {
+        Handle_Firebase_Refs_and_Render();
+    }, 0);
 };
 
 let find_sort = () => {
-    if ((document.getElementById('element_input_sort').value) == 'likesup') {
+    if ((document.getElementById('element_input_sort').value) == 'likesup' || '') {
         return function(a, b) {
             return a.likes - b.likes
         }
@@ -978,7 +588,7 @@ let find_sort = () => {
 };
 
 let find_view = () => {
-    if ((document.getElementById('element_input_view').value) == 'card') {
+    if ((document.getElementById('element_input_view').value == 'card') || (document.getElementById('element_input_view').value == '')) {
         document.getElementById('element_ol_firebase_library').classList.add('card');
         document.getElementById('element_ol_firebase_library').classList.remove('grid');
         document.getElementById('element_ol_firebase_library').classList.remove('list');
@@ -989,9 +599,37 @@ let find_view = () => {
         document.getElementById('element_ol_firebase_library').classList.remove('card');
         document.getElementById('element_ol_firebase_library').classList.remove('list');
     };
+
+    if ((document.getElementById('element_input_view').value) == 'list') {
+        document.getElementById('element_ol_firebase_library').classList.add('list');
+        document.getElementById('element_ol_firebase_library').classList.remove('card');
+        document.getElementById('element_ol_firebase_library').classList.remove('grid');
+    };
 };
 
 let find_type = () => {
+    if ((document.getElementById('element_input_type').value == 'ux/ui') || (document.getElementById('element_input_type').value == '')) {
+        document.getElementById('element_ol_firebase_library').classList.add('ux/ui');
+        document.getElementById('element_ol_firebase_library').classList.remove('slider');
+        document.getElementById('element_ol_firebase_library').classList.remove('photo');
+        document.getElementById('element_ol_firebase_library').classList.remove('graphic');
+        document.getElementById('element_ol_firebase_library').classList.remove('read');
+        document.getElementById('element_ol_firebase_library').classList.remove('video');
+        document.getElementById('element_ol_firebase_library').classList.remove('code');
+        document.getElementById('element_ol_firebase_library').classList.remove('gallery');
+    };
+
+    if ((document.getElementById('element_input_type').value) == 'code') {
+        document.getElementById('element_ol_firebase_library').classList.add('code');
+        document.getElementById('element_ol_firebase_library').classList.remove('slider');
+        document.getElementById('element_ol_firebase_library').classList.remove('photo');
+        document.getElementById('element_ol_firebase_library').classList.remove('graphic');
+        document.getElementById('element_ol_firebase_library').classList.remove('read');
+        document.getElementById('element_ol_firebase_library').classList.remove('video');
+        document.getElementById('element_ol_firebase_library').classList.remove('gallery');
+        document.getElementById('element_ol_firebase_library').classList.remove('ux/ui');
+    };
+
     if ((document.getElementById('element_input_type').value) == 'gallery') {
         document.getElementById('element_ol_firebase_library').classList.add('gallery');
         document.getElementById('element_ol_firebase_library').classList.remove('slider');
@@ -1002,11 +640,67 @@ let find_type = () => {
         document.getElementById('element_ol_firebase_library').classList.remove('code');
         document.getElementById('element_ol_firebase_library').classList.remove('ux/ui');
     };
+
+    if ((document.getElementById('element_input_type').value) == 'video') {
+        document.getElementById('element_ol_firebase_library').classList.add('video');
+        document.getElementById('element_ol_firebase_library').classList.remove('slider');
+        document.getElementById('element_ol_firebase_library').classList.remove('photo');
+        document.getElementById('element_ol_firebase_library').classList.remove('graphic');
+        document.getElementById('element_ol_firebase_library').classList.remove('read');
+        document.getElementById('element_ol_firebase_library').classList.remove('gallery');
+        document.getElementById('element_ol_firebase_library').classList.remove('code');
+        document.getElementById('element_ol_firebase_library').classList.remove('ux/ui');
+    };
+
+    if ((document.getElementById('element_input_type').value) == 'read') {
+        document.getElementById('element_ol_firebase_library').classList.add('read');
+        document.getElementById('element_ol_firebase_library').classList.remove('slider');
+        document.getElementById('element_ol_firebase_library').classList.remove('photo');
+        document.getElementById('element_ol_firebase_library').classList.remove('graphic');
+        document.getElementById('element_ol_firebase_library').classList.remove('video');
+        document.getElementById('element_ol_firebase_library').classList.remove('gallery');
+        document.getElementById('element_ol_firebase_library').classList.remove('code');
+        document.getElementById('element_ol_firebase_library').classList.remove('ux/ui');
+    };
+
+    if ((document.getElementById('element_input_type').value) == 'graphic') {
+        document.getElementById('element_ol_firebase_library').classList.add('graphic');
+        document.getElementById('element_ol_firebase_library').classList.remove('slider');
+        document.getElementById('element_ol_firebase_library').classList.remove('photo');
+        document.getElementById('element_ol_firebase_library').classList.remove('video');
+        document.getElementById('element_ol_firebase_library').classList.remove('read');
+        document.getElementById('element_ol_firebase_library').classList.remove('gallery');
+        document.getElementById('element_ol_firebase_library').classList.remove('code');
+        document.getElementById('element_ol_firebase_library').classList.remove('ux/ui');
+    };
+
+    if ((document.getElementById('element_input_type').value) == 'photo') {
+        document.getElementById('element_ol_firebase_library').classList.add('photo');
+        document.getElementById('element_ol_firebase_library').classList.remove('slider');
+        document.getElementById('element_ol_firebase_library').classList.remove('video');
+        document.getElementById('element_ol_firebase_library').classList.remove('graphic');
+        document.getElementById('element_ol_firebase_library').classList.remove('read');
+        document.getElementById('element_ol_firebase_library').classList.remove('gallery');
+        document.getElementById('element_ol_firebase_library').classList.remove('code');
+        document.getElementById('element_ol_firebase_library').classList.remove('ux/ui');
+    };
+
+    if ((document.getElementById('element_input_type').value) == 'slider') {
+        document.getElementById('element_ol_firebase_library').classList.add('slider');
+        document.getElementById('element_ol_firebase_library').classList.remove('video');
+        document.getElementById('element_ol_firebase_library').classList.remove('photo');
+        document.getElementById('element_ol_firebase_library').classList.remove('graphic');
+        document.getElementById('element_ol_firebase_library').classList.remove('read');
+        document.getElementById('element_ol_firebase_library').classList.remove('gallery');
+        document.getElementById('element_ol_firebase_library').classList.remove('code');
+        document.getElementById('element_ol_firebase_library').classList.remove('ux/ui');
+    };
 };
 
 // Lifecycle hooks
 window.onload = () => {
 
+    // garage('monster', 'monster');
     console.log(localStorage);
     console.log(localStorage.username);
     console.log(localStorage.userid);
@@ -1023,9 +717,60 @@ window.onload = () => {
     console.log(location.pathname);
 
     // render view
-    // Handle_render();
+    Handle_render();
 
     // render firebase data
     Handle_Firebase_Refs_and_Render();
 
+};
+
+// resize
+window.onresize = () => {
+
+    console.log('onresize');
+
+    state.ux = {
+        browser: {
+            height: window.outerHeight,
+            width: window.outerWidth
+        },
+
+        window: {
+            height: window.innerHeight,
+            width: window.innerWidth
+        },
+
+        screen: {
+            height: window.screen.height,
+            width: window.screen.width,
+            orientation: window.screen.orientation
+        },
+
+        dimensions: {
+            current: 8,
+            height: window.innerHeight,
+            width: window.innerWidth,
+            height8: window.innerHeight / 8,
+            width8: window.innerWidth / 8,
+            height16: window.innerHeight / 16,
+            width16: window.innerWidth / 16,
+            height32: window.innerHeight / 32,
+            width32: window.innerWidth / 32,
+            height64: window.innerHeight / 64,
+            width64: window.innerWidth / 64,
+            height128: window.innerHeight / 128,
+            width128: window.innerWidth / 128,
+            height256: window.innerHeight / 256,
+            width256: window.innerWidth / 256,
+        },
+    };
+
+    values_update();
+};
+
+// Exports
+export default {
+  Handle_get_state_from_events,
+  Handle_return_state,
+  Handle_check_route
 };
