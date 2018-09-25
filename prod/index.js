@@ -1,5 +1,65 @@
+/*
+es2015 or es6
+
+Phrases to empasises:
+  1) Imports
+  2) Best practices
+  3) Delclarions
+  4) Assignments
+  5) Initialize
+  6) Higher Order Functions - Returning state after filter/sort
+  7) Closures - Data Encapsulation for particular concern (If game items choose path do "WHAT?")
+  8) Boilerplate - allows Intermediate control of state ie (Filter and return result)
+  9) Edge case
+  10) Case study
+
+Questions To Answer:
+  - Node Bots?
+  - Social Presents?
+  - brand 6
+
+Question To know the answers to:
+  use strict?
+
+Design Patterns
+  Creational patterns:
+  - Module
+  - Builder
+  - Module
+  Structural patterns:
+  - Facade
+  - Composites
+  - Module
+  Behavioral patterns:
+  - Observer
+  - Static
+  - Reactionary
+
+Development Pattern
+  - test driven development
+
+Programming Pattern
+  - O.O.P.
+  - Functional - Partial App & Currying(Seperating concerns with functions to provide fewer parameters)
+  - procedural
+  - event driven
+  - imperative
+  - declarative
+
+Order of operations
+  1) Imports
+  2) Delclarions
+  3) Assignments
+  4) Initialize
+  5) Closures
+  5) Lifecycle Hooks
+
+*/
+
 
 // Imports
+'use strict';
+
 import imported_state from './partials/state';
 import imported_functions from './partials/functions';
 
@@ -71,9 +131,9 @@ const drSeuss = `
 console.log(drSeuss);
 
 // filter
-function fishy(color) {
+function fishy(colors) {
   // use Array filter to find fruits in color
-  const fruits = [
+  let fishes = [
     { name: 'apple', color: 'red' },
     { name: 'strawberry', color: 'red' },
     { name: 'banana', color: 'yellow' },
@@ -81,33 +141,33 @@ function fishy(color) {
     { name: 'grape', color: 'purple' },
     { name: 'plum', color: 'purple' }   ];
 
-  return fruits.filter(f => f.color == color);
+  return fishes.filter(f => f.color == color);
 }
 
 // EVERY
-function test(fruits) {
-  const fruits = [
+function test(colors) {
+  let fruits = [
     { name: 'apple', color: 'red' },
     { name: 'banana', color: 'yellow' },
     { name: 'grape', color: 'purple' }
   ];
 
   // condition: short way, all fruits must be red
-  const isAllRed = fruits.every(f => f.color == 'red');
+  let isAllRed = fruits.every(f => f.color == 'red');
 
   console.log(isAllRed); // false
 };
 
 // SOME
-function emu(fruits) {
-  const fruits = [
+function emu(colors) {
+  let niggas = [
     { name: 'apple', color: 'red' },
     { name: 'banana', color: 'yellow' },
     { name: 'grape', color: 'purple' }
   ];
 
   // condition: if any fruit is red
-  const isAnyRed = fruits.some(f => f.color == 'red');
+  let isAnyRed = fruits.some(f => f.color == 'red');
 
   console.log(isAnyRed); // true
 };
@@ -943,23 +1003,6 @@ let find_type = () => {
         document.getElementById('element_ol_firebase_library').classList.remove('ux/ui');
     };
 };
-
-/* Types of Design Patterns
-
-    Creational patterns:
-    - Module
-    - Builder
-    - Module
-    Structural patterns:
-    - Facade
-    - Composites
-    - Module
-    Behavioral patterns:
-    - Observer
-    - Static
-    - Reactionary
-
-*/
 
 // Lifecycle hooks
 window.onload = () => {
