@@ -289,9 +289,33 @@ let Handle_check_route = (route, info) => {
 
     state.app.route = route;
 
-    alert(state.app.route);
+    (() => {
+
+        // null
+        if (route == 'null') {
+
+            if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
+
+                state.ui.colors.load_light_yellow_0.transform = true;
+                state.ui.colors.load_light_yellow_0.display = true;
+
+            };
+
+            if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
+
+                state.ui.colors.load_light_yellow_0.transform = true;
+                state.ui.colors.load_light_yellow_0.display = true;
+                
+            };
+        };
+
+    })();
 
 };
+
+let values_update = () => {
+
+}
 
 let Handle_render = () => {
 

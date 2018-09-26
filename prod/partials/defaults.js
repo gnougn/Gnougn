@@ -20,9 +20,56 @@ let colors = [
       ${imported_elements.element_particles()}
       ${imported_elements.element_interaction_player()}
       ${imported_elements.element_guis()}
+
+      ${imported_elements.element_pop_top}
+      ${imported_elements.element_pop_left}
+      ${imported_elements.element_pop_bottom}
+      ${imported_elements.element_pop_right}
+
+      ${imported_elements.element_page_top}
+      ${imported_elements.element_page_left}
+      ${imported_elements.element_page_bottom}
+      ${imported_elements.element_page_right}
+
+      ${imported_elements.element_menu_top}
+      ${imported_elements.element_menu_left}
+      ${imported_elements.element_menu_bottom}
+      ${imported_elements.element_menu_right}
+
+      ${imported_elements.element_morph_top}
+      ${imported_elements.element_morph_left}
+      ${imported_elements.element_morph_bottom}
+      ${imported_elements.element_morph_right}
+
+      ${imported_elements.element_fade_top}
+      ${imported_elements.element_fade_left}
+      ${imported_elements.element_fade_bottom}
+      ${imported_elements.element_fade_right}
+
+      ${imported_elements.element_gradient_top}
+      ${imported_elements.element_gradient_left}
+      ${imported_elements.element_gradient_bottom}
+      ${imported_elements.element_gradient_right}
+
+      ${imported_elements.element_corner_top}
+      ${imported_elements.element_corner_left}
+      ${imported_elements.element_corner_bottom}
+      ${imported_elements.element_corner_right}
+
+      ${imported_elements.element_overlay_top}
+      ${imported_elements.element_overlay_left}
+      ${imported_elements.element_overlay_bottom}
+      ${imported_elements.element_overlay_right}
+
+      ${imported_elements.element_nav_top}
+      ${imported_elements.element_nav_left}
+      ${imported_elements.element_nav_bottom}
+      ${imported_elements.element_nav_right}
+
     </div>
 
     <div id="component" class="width_100 float_left position_relative">
+
       <div id="component" class="width_100 height_100vh float_left position_relative display opacity_1 overflow_hidden">
 
         <div id="component_app_gui_logo_combo_feature_container" class="position_absolute width_0 height_0 margin_auto float_left">
@@ -39,6 +86,20 @@ let colors = [
         </div>
 
       </div>
+
+
+      ${imported_elements.element_gradient('gradient_light_yellow_0_bottom')}
+
+      ${imported_elements.element_title('feature: element_slider_1')}
+
+      ${imported_elements.element_container(
+        imported_elements.element_container(
+            imported_elements.element_container(
+              imported_elements.element_slider_1(),
+              'calc_4vh padding_1vh margin_1vh float_left position_relative border_01vh_dark_yellow_9 background_light_yellow_9'),
+              'width_33 float_left position_relative background_light_yellow_0'
+          )
+        )}
 
       ${imported_elements.wp_home_posts()}
       ${imported_elements.element_title(imported_elements.randomizer())}
