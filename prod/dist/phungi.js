@@ -915,7 +915,7 @@ exports.default = {
   from_Import,
   default_state
 };
-},{}],4:[function(require,module,exports) {
+},{}],6:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -1219,7 +1219,7 @@ exports.default = {
   Toggle_display_and_opacity_on_with_no_delay,
   Toggle_display_and_opacity_off_with_delay
 };
-},{"../index.js":3}],6:[function(require,module,exports) {
+},{"../index.js":3}],7:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -1960,7 +1960,7 @@ exports.default = {
   state,
   Handle_return_state_from_events
 };
-},{"../index.js":3}],121:[function(require,module,exports) {
+},{"../index.js":3}],122:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -1992,6 +1992,235 @@ let element_grid_depth_90 = () => {
     <div id="grid_depth_90" class="display_none opacity_0 width_100 height_100 position_absolute top_0 left_0 bottom_0 right_0 margin_auto grid_depth_90 easing_01">
     </div>
   `;
+
+  return component;
+};
+
+let pieces_workspace = () => {
+  let component = '\
+                <div id="component_app_pieces_workspace" class=" width_100 height_100 float_left position_absolute bottom_0 left_0 display_none opacity_0 easing_01">\
+                 \
+                 <div id="component_app_pieces_workspace_imac" class="easing_01 piece_workspace_imac_0_0 width_100 height_100 float_left position_absolute bottom_0 left_0 display_none opacity_0">\
+                 </div>\
+                 <div id="component_app_pieces_workspace_monitor" class="easing_01 piece_workspace_monitor_0_0 width_100 height_100 float_left position_absolute bottom_0 left_0 display_none opacity_0">\
+                 </div>\
+                 <div id="component_app_pieces_workspace_mic" class="easing_01 piece_workspace_mic_0_0 width_100 height_100 float_left position_absolute bottom_0 left_0 display_none opacity_0">\
+                 </div>\
+                 <div id="component_app_pieces_workspace_scarlett" class="easing_01 piece_workspace_scarlett_0_0 width_100 height_100 float_left position_absolute bottom_0 left_0 display_none opacity_0">\
+                 </div>\
+                 <div id="component_app_pieces_workspace_speaker_1" class="easing_01 piece_workspace_speaker_1_0_0 width_100 height_100 float_left position_absolute bottom_0 left_0 display_none opacity_0">\
+                 </div>\
+                 <div id="component_app_pieces_workspace_speaker_2" class="easing_01 piece_workspace_speaker_2_0_0 width_100 height_100 float_left position_absolute bottom_0 left_0 display_none opacity_0">\
+                 </div>\
+                 <div id="component_app_pieces_workspace_speaker_3" class="easing_01 piece_workspace_speaker_3_0_0 width_100 height_100 float_left position_absolute bottom_0 left_0 display_none opacity_0">\
+                 </div>\
+                 <div id="component_app_pieces_workspace_books_1" class="easing_01 piece_workspace_books_1_0_0 width_100 height_100 float_left position_absolute bottom_0 left_0 display_none opacity_0">\
+                 </div>\
+                 <div id="component_app_pieces_workspace_books_2" class="easing_01 piece_workspace_books_2_0_0 width_100 height_100 float_left position_absolute bottom_0 left_0 display_none opacity_0">\
+                 </div>\
+                 \
+                 <div id="component_app_pieces_workspace_desk" class="easing_01 piece_workspace_desk_0_0 width_100 height_100 float_left position_absolute bottom_0 left_0 display_none opacity_0">\
+                 </div>\
+                 <div id="component_app_pieces_workspace_chair_1" class="easing_01 piece_workspace_chair_0_0 width_100 height_100 float_left position_absolute bottom_0 left_0 display_none opacity_0">\
+                 </div>\
+                 <div id="component_app_pieces_workspace_chair_2" class="easing_01 piece_workspace_chair_2_0_0 width_100 height_100 float_left position_absolute bottom_0 left_0 display_none opacity_0">\
+                 </div>\
+                 \
+                </div>\
+                \
+                ';
+
+  return component;
+};
+
+let pieces_office = () => {
+  let component = '\
+        <div id="component_app_pieces_office" class="width_100 height_100 display_none opacity_0 easing_01 position_absolute top_0 left_0 bottom_0 right_0 margin_auto">\
+          <div id="component_app_pieces_office_shoplights" class="width_100 height_100 display_none opacity_0 position_absolute margin_auto">\
+            <span id="component_app_pieces_office_shoplight_on" class="pieces_office_shoplight_on display opacity_1 width_100 height_100 margin_auto position_absolute bottom_0 left_0 right_0 float_left margin_auto">\
+            </span>\
+            <span id="component_app_pieces_office_shoplight_off" class="pieces_office_shoplight_off display opacity_1 width_100 height_100 margin_auto position_absolute bottom_0 left_0 right_0 float_left margin_auto">\
+            </span>\
+          </div>\
+        </div>\
+                ';
+
+  return component;
+};
+
+let element_images = () => {
+
+  let element = '\
+    \
+    <div id="image_1" class="background_dark_yellow_9 width_100 height_25vh position_relative float_left">\
+    </div>\
+    \
+    <div id="image_2" class="background_dark_yellow_9 width_100 height_25vh position_relative float_left">\
+    </div>\
+    \
+    <div id="image_3" class="background_dark_yellow_9 width_100 height_25vh position_relative float_left">\
+        <iframe src="https://player.vimeo.com/video/106981173?color=ffff00&title=0&byline=0&portrait=0" width="100" height="100" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>\
+    </div>\
+    \
+    <div id="image_4" class="background_dark_yellow_9 width_100 height_25vh position_relative float_left">\
+        <iframe width="100" height="100" src="https://www.youtube.com/embed/BWz_PCPCIdE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>\
+    </div>\
+    \
+    <div id="image_5" class="position_relative width_100 height_25vh float_left margin_auto ' + filtered_array_gnougn_library[i].character + ' ">\
+    </div>\
+    \
+    <div id="image_6" class="position_relative width_100 height_25vh float_left margin_auto photo_person1">\
+    \
+    </div>\
+    \
+    <div id="image_7" class="position_relative width_100 height_25vh float_left margin_auto photo_person1">\
+        <div class="gui_arrow_top_left width_25 height_25 float_left position_absolute top_0 bottom_0 left_0 margin_auto">\
+        </div>\
+        <div class="gui_arrow_top_right width_25 height_25 float_left position_absolute top_0 bottom_0 right_0 margin_auto">\
+        </div>\
+    </div>\
+    \
+    <div id="image_8" class="position_relative width_100 height_25vh float_left margin_auto photo_person1">\
+        <div class="width_25 height_25 float_left position_absolute right_0 bottom_0 left_0 margin_auto">\
+                \
+                <div class="gui_arrow_top_left width_25 height_100 float_left position_relative margin_auto">\
+                </div>\
+                \
+                <div class="gui_arrow_top_right width_25 height_100 float_left position_relative margin_auto">\
+                </div>\
+                \
+                <div class="gui_arrow_top_left width_25 height_100 float_left position_relative margin_auto">\
+                </div>\
+                \
+                <div class="gui_arrow_top_right width_25 height_100 float_left position_relative margin_auto">\
+                </div>\
+                \
+        </div>\
+    </div>\
+    \
+    <div id="image_9" class="position_relative width_100 height_25vh float_left margin_auto">\
+        \
+        <div class="position_relative width_50 height_50 float_left margin_auto photo_person1">\
+        </div>\
+        \
+        <div class="position_relative width_50 height_50 float_left margin_auto photo_person1">\
+        </div>\
+        \
+        <div class="position_relative width_50 height_50 float_left margin_auto photo_person1">\
+        </div>\
+        \
+        <div class="position_relative width_50 height_50 float_left margin_auto photo_person1">\
+        </div>\
+        \
+    </div>\
+    \
+    <div id="image_10" class="position_relative width_100 height_25vh float_left margin_auto">\
+        \
+        <div class="position_relative width_50 height_100 float_left margin_auto photo_person1">\
+        </div>\
+        \
+        <div class="position_relative width_50 height_100 float_left margin_auto photo_person2">\
+        </div>\
+        \
+    </div>\
+    \
+    ';
+
+  return element;
+};
+
+// stage (collection of svgs that are full scrren)
+let stage_office = () => {
+  let component = '\
+            <div id="component_app_stage_office" class="opacity_0 display_none easing_01 width_100 height_100 margin_auto position_absolute bottom_0 left_0 float_left margin_auto display opacity_1 transform_translate3d_top0 easing_01">\
+            \
+            <div id="component_app_stage_office_wall_color" class="width_100 height_100 margin_auto position_absolute bottom_0 left_0 float_left margin_auto stage_wall_90"></div>\
+            <div id="component_app_stage_office_floor" class="width_100 height_100 margin_auto position_absolute bottom_0 left_0 float_left margin_auto stage_floor_90"></div>\
+            <div id="component_app_stage_office_wall_lines" class="width_100 height_100 transform_translate3d_top0 easing_01 position_absolute top_0 left_0 bottom_0 right_0 margin_auto stage_wall_lines_90"></div>\
+            <div id="component_app_stage_office_wall_items" class="width_100 height_100 transform_translate3d_top0 easing_01 position_absolute top_0 left_0 bottom_0 right_0 margin_auto stage_office_wall"></div>\
+            \
+            </div>\
+        ';
+
+  return component;
+};
+
+let stage_sky = () => {
+  let component = '\
+    <div id="component_app_stage_sky" class="opacity_0 display_none easing_01 width_100 height_100 position_absolute bottom_0 left_0 margin_auto overflowhidden">\
+    <div class="width_100 height_100 position_absolute bottom_0 left_0 margin_auto overflow_hidden animated10 enterLeftLeaveRight infinite">\
+    <div class="width_1205 height_1205 margin_auto position_absolute top_0 left_0 right_0 float_left margin_auto interaction_workspace_man_standing_1">\
+    </div>\
+    </div>\
+    <div class="width_100 height_100 position_absolute bottom_0 left_0 margin_auto overflow_hidden animated10 enterLeftLeaveRight infinite delay5">\
+    <div class="width_1205 height_1205 margin_auto position_absolute top_0 left_0 right_0 float_left margin_auto interaction_workspace_man_standing_1">\
+    </div>\
+    </div>\
+    </div>\
+    ';
+  return component;
+};
+
+let stage_outside = () => {
+  let component = '\
+    <div id="component_app_stage_outside" class="opacity_0 display_none easing_01 width_100 height_100 position_absolute bottom_0 left_0 margin_auto overflowhidden">\
+    <div class="width_100 height_100 position_absolute bottom_0 left_0 margin_auto overflow_hidden animated10 enterLeftLeaveRight infinite">\
+    <div class="width_1205 height_100 margin_auto position_absolute bottom_0 left_25 float_left margin_auto interaction_workspace_man_standing_1">\
+    </div>\
+    </div>\
+    <div class="width_100 height_100 position_absolute bottom_0 left_0 margin_auto overflow_hidden animated10 enterLeftLeaveRight infinite delay5">\
+    <div class="width_1205 height_100 margin_auto position_absolute bottom_0 left_25 float_left margin_auto interaction_workspace_man_standing_1">\
+    </div>\
+    </div>\
+    </div>\
+    ';
+  return component;
+};
+
+let component_app_stage_enneagon = () => {
+
+  let component = '\
+    <span id="component_app_stage_enneagon" class="display_none opacity_0 transform_translate3d_top0 easing_01 position_absolute top_0 left_0 right_0 width_100vw height_100vh display_webkit_box webkit_box_pack_center webkit_box_align">\
+    <span id="column1" class="position_relative float_left width_100vw height_100vh easing_025">\
+    <span class="width_100 height_100 float_left position_relative overflow_hidden display_webkit_box webkit_box_pack_center webkit_box_align">\
+    <div class="width_100 height_100 position_absolute top_0 left_0 bottom_0 right_0 margin_auto overflow_hidden ">\
+            ' + stage_outside() + '\
+    </div>landing1 Left Top</span>\
+    <span class="width_100 height_100 float_left position_relative overflow_hidden display_webkit_box webkit_box_pack_center webkit_box_align">\
+    <div class="width_100 height_100 position_absolute top_0 left_0 bottom_0 right_0 margin_auto overflow_hidden ">\
+    \
+    </div>landing2 Left Center</span>\
+    <span class="width_100 height_100 float_left position_relative overflow_hidden display_webkit_box webkit_box_pack_center webkit_box_align">\
+    <div class="width_100 height_100 position_absolute top_0 left_0 bottom_0 right_0 margin_auto overflow_hidden ">\
+            ' + stage_sky() + '\
+    </div>landing2 Left Bottom</span>\
+    </span>\
+    <span id="column1" class="position_relative float_left width_100vw height_100vh">\
+    <span class="width_100 height_100 float_left position_relative overflow_hidden display_webkit_box webkit_box_pack_center webkit_box_align">\
+    <div class="width_100 height_100 position_absolute top_0 left_0 bottom_0 right_0 margin_auto overflow_hidden ">\
+    </div>landing1 Center Top</span>\
+    <span class="width_100 height_100 float_left position_relative overflow_hidden display_webkit_box webkit_box_pack_center webkit_box_align">\
+    <div class="width_100 height_100 position_absolute top_0 left_0 bottom_0 right_0 margin_auto overflow_hidden ">\
+            ' + stage_office() + '\
+            ' + pieces_workspace() + '\
+            ' + pieces_office() + '\
+    </div>landing2 Center Mid</span>\
+    <span class="width_100 height_100 float_left position_relative overflow_hidden display_webkit_box webkit_box_pack_center webkit_box_align">\
+    <div class="width_100 height_100 position_absolute top_0 left_0 bottom_0 right_0 margin_auto overflow_hidden ">\
+    </div>landing2 Center Bottom</span>\
+    </span>\
+    <span id="column1" class="position_relative float_left width_100vw height_100vh">\
+    <span class="width_100 height_100 float_left position_relative overflow_hidden display_webkit_box webkit_box_pack_center webkit_box_align">\
+    <div class="width_100 height_100 position_absolute top_0 left_0 bottom_0 right_0 margin_auto overflow_hidden ">\
+    </div>landing1 Right Top</span>\
+    <span class="width_100 height_100 float_left position_relative overflow_hidden display_webkit_box webkit_box_pack_center webkit_box_align">\
+    <div class="width_100 height_100 position_absolute top_0 left_0 bottom_0 right_0 margin_auto overflow_hidden ">\
+    </div>landing2 Right Mid</span>  <span class="width_100 height_100 float_left position_relative overflow_hidden display_webkit_box webkit_box_pack_center webkit_box_align">\
+    <div class="width_100 height_100 position_absolute top_0 left_0 bottom_0 right_0 margin_auto overflow_hidden ">\
+    </div>landing2 Right Bottom</span>\
+    </span>\
+    </span>\
+  ';
 
   return component;
 };
@@ -2368,14 +2597,238 @@ let element_guis = () => {
   return element;
 };
 
+let wp_home_posts = () => {
+  let component = "\
+      <ol id='wp_component_post-home_content' class='display_none opacity_0 easing_01 transform_translate3d_top0 width_100 position_relative margin_auto float_left'>\
+         <?php\
+            if (have_posts()) :\
+                while (have_posts()) : \
+                    the_post(); ?>\
+         <?php get_template_part( './wp_partials/posts/posts', 'home' ); ?>\
+         <?php endwhile;\
+            else:\
+                echo '<p>NoContent Found</p>';\
+            ?>\
+         <?php endif; ?>\
+      </ol>";
+
+  return component;
+};
+
+let stage_load_verticle = () => {
+  let component = '\
+    <div id="component_app_stage_load_verticle" class="display_none opacity_0 easing_01 transform_translate3d_top0 width_100 height_100vh position_absolute top_0 left_0 margin_auto overflowhidden">\
+      <div class="width_100 height_100 position_absolute bottom_0 left_0 margin_auto overflow_hidden animated1 enterBottomLeaveTop ">\
+        <div class="width_100 height_100 margin_auto position_absolute top_0 left_0 right_0 float_left margin_auto background_light_yellow_1">\
+        </div>\
+      </div>\
+      <div class="width_100 height_100 position_absolute bottom_0 left_0 margin_auto overflow_hidden animated1 enterBottomLeaveTop delay05">\
+        <div class="width_100 height_100 margin_auto position_absolute top_0 left_0 right_0 float_left margin_auto background_light_yellow_2">\
+        </div>\
+      </div>\
+      <div class="width_100 height_100 position_absolute bottom_0 left_0 margin_auto overflow_hidden animated1 enterBottomLeaveTop delay1">\
+        <div class="width_100 height_100 margin_auto position_absolute top_0 left_0 right_0 float_left margin_auto background_light_yellow_3">\
+        </div>\
+      </div>\
+      <div class="width_100 height_100 position_absolute bottom_0 left_0 margin_auto overflow_hidden animated1 enterBottomLeaveTop delay15">\
+        <div class="width_100 height_100 margin_auto position_absolute top_0 left_0 right_0 float_left margin_auto background_light_yellow_4">\
+        </div>\
+      </div>\
+      <div class="width_100 height_100 position_absolute bottom_0 left_0 margin_auto overflow_hidden animated1 enterBottomLeaveTop delay2">\
+        <div class="width_100 height_100 margin_auto position_absolute top_0 left_0 right_0 float_left margin_auto background_light_yellow_5">\
+        </div>\
+      </div>\
+      <div class="width_100 height_100 position_absolute bottom_0 left_0 margin_auto overflow_hidden animated05 enterBottom delay25">\
+        <div class="width_100 height_100 margin_auto position_absolute top_0 left_0 right_0 float_left margin_auto background_light_yellow_6">\
+        </div>\
+      </div>\
+    </div>\
+    ';
+  return component;
+};
+
+let stage_load_horizontal = () => {
+  let component = '\
+      <div id="component_app_stage_load_horizontal" class="display_none opacity_0 easing_01 transform_translate3d_top0 width_100 height_100vh position_fixed top_0 left_0 margin_auto overflowhidden">\
+        <div class="width_100 height_100 position_absolute bottom_0 left_0 margin_auto overflow_hidden animated1 enterRightLeaveLeft ">\
+          <div class="width_100 height_100 margin_auto position_absolute top_0 left_0 right_0 float_left margin_auto background_light_yellow_5">\
+          </div>\
+        </div>\
+        <div class="width_100 height_100 position_absolute bottom_0 left_0 margin_auto overflow_hidden animated1 enterRightLeaveLeft delay05">\
+          <div class="width_100 height_100 margin_auto position_absolute top_0 left_0 right_0 float_left margin_auto background_light_yellow_4">\
+          </div>\
+        </div>\
+        <div class="width_100 height_100 position_absolute bottom_0 left_0 margin_auto overflow_hidden animated1 enterRightLeaveLeft delay1">\
+          <div class="width_100 height_100 margin_auto position_absolute top_0 left_0 right_0 float_left margin_auto background_light_yellow_3">\
+          </div>\
+        </div>\
+        <div class="width_100 height_100 position_absolute bottom_0 left_0 margin_auto overflow_hidden animated1 enterRightLeaveLeft delay15">\
+          <div class="width_100 height_100 margin_auto position_absolute top_0 left_0 right_0 float_left margin_auto background_light_yellow_2">\
+          </div>\
+        </div>\
+        <div class="width_100 height_100 position_absolute bottom_0 left_0 margin_auto overflow_hidden animated1 enterRightLeaveLeft delay2">\
+          <div class="width_100 height_100 margin_auto position_absolute top_0 left_0 right_0 float_left margin_auto background_light_yellow_1">\
+          </div>\
+        </div>\
+        <div class="width_100 height_100 position_absolute bottom_0 left_0 margin_auto overflow_hidden animated05 enterRight delay25">\
+          <div class="width_100 height_100 margin_auto position_absolute top_0 left_0 right_0 float_left margin_auto background_light_yellow_0">\
+          </div>\
+        </div>\
+      </div>\
+    ';
+  return component;
+};
+
+let element_colors = () => {
+  let component = '\
+    \
+    <div id="component_color_load_light_yellow_0" class="display_none opacity_0 easing_01 transform_translate3d_top0 growverticle_from_onevh delay2 animated1 width_100vw height_100vh position_fixed top_0 left_0 margin_auto overflow_hidden">\
+       \
+       <div class="growhorizontal delay1 animated1 width_100 height_100 position_absolute top_0 left_0 margin_auto overflow_hidden background_light_yellow_0">\
+       </div>\
+    </div>\
+    \
+    <div id="component_color_load_dark_yellow_0" class="display_none opacity_0 easing_01 transform_translate3d_top0 growverticle_from_onevh delay2 animated1 width_100vw height_100vh position_fixed bottom_0 left_0 margin_auto overflow_hidden">\
+       \
+       <div class="growhorizontal delay1 animated1 width_100 height_100 position_absolute top_0 left_0 margin_auto overflow_hidden background_dark_yellow_0">\
+       </div>\
+       \
+    </div>\
+    \
+    <div id="component_color_load_dark_yellow_0_radius" class="display_none opacity_0 easing_01 transform_translate3d_top0 position_fixed top_0 left_0 right_0 width_100 height_100 margin_auto">\
+       \
+       <div class="position_absolute top_0 bottom_0 left_0 right_0 calc_10vh z_index_1 margin_auto">\
+          \
+          <div class="position_absolute top_0 left_0 right_0 bottom_0 calc_5vh border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9 border_01vh_dark_yellow_9 background_light_yellow_9 z_index_1 margin_auto">\
+          </div>\
+       </div>\
+       \
+    </div>\
+    \
+  ';
+
+  return component;
+};
+
+let element_particles = () => {
+  let component = '\
+    \
+        <div id="component_app_particle_game_players_1" class="display_none opacity_0 easing_01 transform_translate3d_top0 width_100 height_100vh position_fixed top_0 left_0 margin_auto">\
+          <div id="component_app_particle_feature_players_player_1_think" class=" easing_01 display_none opacity_0 bottom_0 width_100 height_100 margin_auto position_absolute float_left margin_auto">\
+            <div class="width_100 height_100 margin_auto position_absolute bottom_100 left_0 right_0 float_left margin_auto particle_think">\
+            </div>\
+          </div>\
+          <div id="component_app_particle_feature_players_player_1_health_bar" class="display_none opacity_0 easing_01 transform_translate3d_top0 bottom_0 width_100 height_100 margin_auto position_absolute float_left margin_auto">\
+            <div class="width_100 height_100 margin_auto position_absolute bottom_100 left_0 right_0 float_left margin_auto particle_health_bar">\
+            </div>\
+          </div>\
+          <div id="component_app_particle_feature_players_helper_think" class="display_none opacity_0 easing_01 transform_translate3d_top0 bottom_0 width_100 height_100 margin_auto position_absolute float_left margin_auto">\
+            <div class="width_100 height_100 margin_auto position_absolute bottom_100 left_0 right_0 float_left margin_auto particle_think">\
+            </div>\
+          </div>\
+          <div id="component_app_particle_feature_players_helper_health_bar" class="display_none opacity_0 easing_01 transform_translate3d_top0 bottom_0 width_100 height_100 margin_auto position_absolute float_left margin_auto">\
+            <div class="width_100 height_100 margin_auto position_absolute bottom_100 left_0 right_0 float_left margin_auto particle_health_bar">\
+            </div>\
+          </div>\
+        </div>\
+    \
+  ';
+
+  return component;
+};
+
+let element_interaction_player = () => {
+  let component = '\
+    <div id="element_interaction_player" class="display_none opacity_0 easing_01 transform_translate3d_top0 width_100 height_100vh position_absolute top_0 left_0 margin_auto">\
+      \
+      <div id="component_app_interaction_easel" class="width_100 height_100 easing_01 position_absolute top_0 left_0 bottom_0 right_0 margin_auto">\
+        \
+      </div>\
+      \
+      <div id="bounce" class="margin_auto position_absolute float_left margin_auto background_light_yellow_9 width_1205vw height_1205vh">\
+        \
+      </div>\
+      \
+      <div id="bullets" class="margin_auto position_absolute float_left margin_auto width_100 height_100vh">\
+          \
+          <div id="bullets_verticle" class="margin_auto position_absolute float_left margin_auto width_100 height_100vh"></div>\
+          \
+          <div id="track_x" class="margin_auto position_absolute float_left margin_auto background_light_yellow_9 width_1vw height_1vh"></div>\
+          \
+          <div id="track_y" class="margin_auto position_absolute float_left margin_auto background_light_yellow_9 width_1vw height_1vh"></div>\
+          \
+      </div>\
+      \
+      <div id="element_ball" class="width_5vh height_5vh background_light_yellow_9 float_left position_absolute easing_01">\
+        \
+      </div>\
+      \
+      <div id="component_app_interaction_game_players_1" class="width_100 height_100 easing_01 position_absolute top_0 left_0 bottom_0 right_0 margin_auto">\
+          \
+          <div id="component_app_interaction_game_players_1_body" class="interaction_workspace_man_standing_1 opacity_1 easing_01 easing_01 width_1205vh height_50 margin_auto position_absolute bottom_0 left_0 float_left margin_auto">\
+          </div>\
+          \
+      </div>\
+      \
+      <div id="component_app_interaction_hands" class="width_100 height_100 easing_01 position_absolute margin_auto">\
+          \
+          <div id="component_app_interaction_hand" class="interaction_hands width_100 height_100 margin_auto position_absolute bottom_0 left_-25 float_left margin_auto">\
+          </div>\
+          \
+      </div>\
+      \
+      <div id="component_app_interaction_enemy" class="easing_01 margin_auto position_absolute bottom_0 left_0 float_left margin_auto interaction_workspace_man_standing_1">\
+        \
+      </div>\
+      \
+      <div id="component_app_interaction_helper_body" class="easing_025 width_100 height_100 margin_auto position_absolute bottom_0 left_0 float_left margin_auto interaction_workspace_man_standing_1">\
+        \
+      </div>\
+      \
+    </div>\
+  ';
+
+  return component;
+};
+
+let element_accent_noise = () => {
+  let component = '\
+    <div id="component_app_accent_noise" class="display_none opacity_0 easing_01 transform_translate3d_top0 width_100 height_100vh position_fixed top_0 left_0 margin_auto">\
+       \
+       <div id="component_app_accent_opacity" class="width_100 height_100 opacity_01 position_absolute top_0 left_0 bottom_0 right_0 margin_auto accent_noise_1">\
+       </div>\
+       \
+    </div>\
+  ';
+
+  return component;
+};
+
+let element_effect_vignette = () => {
+  let component = '\
+      <div id="effect_vignette" class="display_none opacity_0 easing_01 transform_translate3d_top0 width_100 height_100 position_fixed top_0 left_0 margin_auto effect_vignette"></div>\
+  ';
+
+  return component;
+};
+
 exports.default = {
+  component_app_stage_enneagon,
   element_grid_cross,
   element_grid_depth_90,
   randomizer,
   element_title,
-  element_guis
+  element_guis,
+  wp_home_posts,
+  stage_load_verticle,
+  stage_load_horizontal,
+  element_colors,
+  element_particles,
+  element_interaction_player,
+  element_accent_noise,
+  element_effect_vignette
 };
-},{}],7:[function(require,module,exports) {
+},{}],8:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -2395,119 +2848,136 @@ let colors = [{
   id: '',
   classList: '',
   innerHTML: `
-    ${_elements2.default.element_guis()}
-    <div id="component" class="width_100 height_100vh float_left position_relative display opacity_1 overflow_hidden">
-
+    <div id="component" class="width_100 height_100vh float_left position_fixed top_0 left_0 display opacity_1 overflow_hidden">
+      ${_elements2.default.element_colors()}
       ${_elements2.default.element_grid_cross()}
       ${_elements2.default.element_grid_depth_90()}
+      ${_elements2.default.stage_load_verticle()}
+      ${_elements2.default.stage_load_horizontal()}
+      ${_elements2.default.component_app_stage_enneagon()}
+      ${_elements2.default.element_accent_noise()}
+      ${_elements2.default.element_effect_vignette()}
+      ${_elements2.default.element_particles()}
+      ${_elements2.default.element_interaction_player()}
+      ${_elements2.default.element_guis()}
+    </div>
 
-      <div id="component_app_gui_logo_combo_feature_container" class="position_absolute width_0 height_0 margin_auto float_left">
-        <div id="component_app_gui_logo_combo_feature" class="position_absolute left_-50 top_-50 width_100 height_100 overflow_hidden float_left gui_keyhole">
+    <div id="component" class="width_100 float_left position_relative">
+      <div id="component" class="width_100 height_100vh float_left position_relative display opacity_1 overflow_hidden">
+
+        <div id="component_app_gui_logo_combo_feature_container" class="position_absolute width_0 height_0 margin_auto float_left">
+          <div id="component_app_gui_logo_combo_feature" class="position_absolute left_-50 top_-50 width_100 height_100 overflow_hidden float_left gui_keyhole">
+          </div>
         </div>
-      </div>
 
-      <div id="logo_load_container" class="position_absolute margin_auto float_left width_0 height_0 ">
-        <div id="component_app_gui_logo_combo_feature" class="position_absolute left_-50 top_-50 width_100 height_100 overflow_hidden float_left gui_key">
+        <div id="logo_load_container" class="position_absolute margin_auto float_left width_0 height_0 ">
+          <div id="component_app_gui_logo_combo_feature" class="position_absolute left_-50 top_-50 width_100 height_100 overflow_hidden float_left gui_key">
+          </div>
         </div>
+
+        <div id="" class="position_absolute left_0 top_0 right_0 bottom_0 margin_auto width_33 height_33 overflow_hidden float_left gui_logo_combo_layers">
+        </div>
+
       </div>
 
-      <div id="" class="position_absolute left_0 top_0 right_0 bottom_0 margin_auto width_33 height_33 overflow_hidden float_left gui_logo_combo_layers">
+      ${_elements2.default.wp_home_posts()}
+      ${_elements2.default.element_title(_elements2.default.randomizer())}
+      ${_elements2.default.element_title('search')}
+
+      <input type="text" placeholder="search..." id="element_input_filter"/>
+
+      <div class="width_20 float_left">
+        ${_elements2.default.element_title('sort')}
+        <input type="text" placeholder="sort by metas: likesup, likesdown" id="element_input_sort"/>
       </div>
 
+      <div class="width_20 float_left">
+        ${_elements2.default.element_title('view')}
+        <input type="text" placeholder="card, grid or list" id="element_input_view"/>
+      </div>
+
+      <div class="width_20 float_left">
+        ${_elements2.default.element_title('type')}
+        <input type="text" placeholder="code, slider, photo, graphic, read, video, gallery or ux/ui" id="element_input_type"/>
+      </div>
+
+      <div class="width_20 float_left">
+        ${_elements2.default.element_title('category')}
+        <input type="text" placeholder="code, slider, photo, graphic, read, video, gallery or ux/ui" id="element_input_type"/>
+      </div>
+
+      <div class="width_20 float_left">
+        ${_elements2.default.element_title('tag')}
+        <input type="text" placeholder="code, slider, photo, graphic, read, video, gallery or ux/ui" id="element_input_type"/>
+      </div>
+
+      <div class="width_20 float_left">
+        ${_elements2.default.element_title('author')}
+        <input type="text" placeholder="code, slider, photo, graphic, read, video, gallery or ux/ui" id="element_input_type"/>
+      </div>
+
+      <div class="width_20 float_left">
+        ${_elements2.default.element_title('word count')}
+        <input type="text" placeholder="code, slider, photo, graphic, read, video, gallery or ux/ui" id="element_input_type"/>
+      </div>
+
+      <div class="width_20 float_left">
+        ${_elements2.default.element_title('video length')}
+        <input type="text" placeholder="code, slider, photo, graphic, read, video, gallery or ux/ui" id="element_input_type"/>
+      </div>
+
+      <div class="width_20 float_left">
+        ${_elements2.default.element_title('difficulty')}
+        <input type="text" placeholder="code, slider, photo, graphic, read, video, gallery or ux/ui" id="element_input_type"/>
+      </div>
+
+      <div class="width_20 float_left">
+        ${_elements2.default.element_title('distance')}
+        <input type="text" placeholder="state, city or zip code" id="element_input_type"/>
+      </div>
+
+      <div class="width_20 float_left">
+        ${_elements2.default.element_title('latest')}
+        <input type="text" placeholder="now, 1hr, today, 24 hours, yesterday, this week, month" id="element_input_type"/>
+      </div>
+
+      <div class="width_20 float_left">
+        ${_elements2.default.element_title('popularity')}
+        <input type="text" placeholder="code, slider, photo, graphic, read, video, gallery or ux/ui" id="element_input_type"/>
+      </div>
+
+      <div class="width_20 float_left">
+        ${_elements2.default.element_title('relavence')}
+        <input type="text" placeholder="suggested, subscribed, followers, "/>
+      </div>
+
+      <div class="width_20 float_left">
+        ${_elements2.default.element_title('price')}
+        <input type="text" placeholder="range"/>
+      </div>
+
+      <div class="width_20 float_left">
+        ${_elements2.default.element_title('files')}
+        <input type="text" placeholder="suggested, subscribed, followers, "/>
+      </div>
+
+      <ul id="element_ol_firebase_roster"></ul>
+      <ul id="element_ol_firebase_library"></ul>
+      <ul id="element_ol_firebase_skills"></ul>
+      <ul id="element_ol_firebase_abilities"></ul>
+      <ul id="element_ol_firebase_services"></ul>
+      <ul id="element_ol_firebase_partners"></ul>
+
     </div>
 
-    ${_elements2.default.element_title(_elements2.default.randomizer())}
-    ${_elements2.default.element_title('search')}
-    <input type="text" placeholder="search..." id="element_input_filter"/>
 
-    <div class="width_20 float_left">
-      ${_elements2.default.element_title('sort')}
-      <input type="text" placeholder="sort by metas: likesup, likesdown" id="element_input_sort"/>
-    </div>
-
-    <div class="width_20 float_left">
-      ${_elements2.default.element_title('view')}
-      <input type="text" placeholder="card, grid or list" id="element_input_view"/>
-    </div>
-
-    <div class="width_20 float_left">
-      ${_elements2.default.element_title('type')}
-      <input type="text" placeholder="code, slider, photo, graphic, read, video, gallery or ux/ui" id="element_input_type"/>
-    </div>
-
-    <div class="width_20 float_left">
-      ${_elements2.default.element_title('category')}
-      <input type="text" placeholder="code, slider, photo, graphic, read, video, gallery or ux/ui" id="element_input_type"/>
-    </div>
-
-    <div class="width_20 float_left">
-      ${_elements2.default.element_title('tag')}
-      <input type="text" placeholder="code, slider, photo, graphic, read, video, gallery or ux/ui" id="element_input_type"/>
-    </div>
-
-    <div class="width_20 float_left">
-      ${_elements2.default.element_title('author')}
-      <input type="text" placeholder="code, slider, photo, graphic, read, video, gallery or ux/ui" id="element_input_type"/>
-    </div>
-
-    <div class="width_20 float_left">
-      ${_elements2.default.element_title('word count')}
-      <input type="text" placeholder="code, slider, photo, graphic, read, video, gallery or ux/ui" id="element_input_type"/>
-    </div>
-
-    <div class="width_20 float_left">
-      ${_elements2.default.element_title('video length')}
-      <input type="text" placeholder="code, slider, photo, graphic, read, video, gallery or ux/ui" id="element_input_type"/>
-    </div>
-
-    <div class="width_20 float_left">
-      ${_elements2.default.element_title('difficulty')}
-      <input type="text" placeholder="code, slider, photo, graphic, read, video, gallery or ux/ui" id="element_input_type"/>
-    </div>
-
-    <div class="width_20 float_left">
-      ${_elements2.default.element_title('distance')}
-      <input type="text" placeholder="state, city or zip code" id="element_input_type"/>
-    </div>
-
-    <div class="width_20 float_left">
-      ${_elements2.default.element_title('latest')}
-      <input type="text" placeholder="now, 1hr, today, 24 hours, yesterday, this week, month" id="element_input_type"/>
-    </div>
-
-    <div class="width_20 float_left">
-      ${_elements2.default.element_title('popularity')}
-      <input type="text" placeholder="code, slider, photo, graphic, read, video, gallery or ux/ui" id="element_input_type"/>
-    </div>
-
-    <div class="width_20 float_left">
-      ${_elements2.default.element_title('relavence')}
-      <input type="text" placeholder="suggested, subscribed, followers, "/>
-    </div>
-
-    <div class="width_20 float_left">
-      ${_elements2.default.element_title('price')}
-      <input type="text" placeholder="range"/>
-    </div>
-
-    <div class="width_20 float_left">
-      ${_elements2.default.element_title('files')}
-      <input type="text" placeholder="suggested, subscribed, followers, "/>
-    </div>
-
-    <ul id="element_ol_firebase_roster"></ul>
-    <ul id="element_ol_firebase_library"></ul>
-    <ul id="element_ol_firebase_skills"></ul>
-    <ul id="element_ol_firebase_abilities"></ul>
-    <ul id="element_ol_firebase_services"></ul>
-    <ul id="element_ol_firebase_partners"></ul>
     `
 }];
 
 exports.default = {
   colors
 };
-},{"./elements":121}],8:[function(require,module,exports) {
+},{"./elements":122}],9:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -2528,17 +2998,181 @@ let get_components_handled = () => {
 
   // colors
   {
-    component: 'grid_depth_90',
+    component: 'component_app_pieces_workspace',
     component_state_transform: state.ui.colors.load_light_yellow_0.transform,
-    component_state_transform_true: 'transform_translate3d_top_100',
-    component_state_transform_false: 'transform_translate3d_top0',
+    //component_state_transform_true: 'transform_translate3d_top_100',
+    //component_state_transform_false: 'transform_translate3d_top0',
+    component_state_display: state.ui.colors.load_light_yellow_0.display
+    // component_state_opacity:  state.ui.colors.load_light_yellow_0.opacity
+  }, {
+    component: 'component_app_pieces_office',
+    component_state_transform: state.ui.colors.load_light_yellow_0.transform,
+    //component_state_transform_true: 'transform_translate3d_top_100',
+    //component_state_transform_false: 'transform_translate3d_top0',
+    component_state_display: state.ui.colors.load_light_yellow_0.display
+    // component_state_opacity:  state.ui.colors.load_light_yellow_0.opacity
+  }, {
+    component: 'component_app_stage_office',
+    component_state_transform: state.ui.colors.load_light_yellow_0.transform,
+    //component_state_transform_true: 'transform_translate3d_top_100',
+    //component_state_transform_false: 'transform_translate3d_top0',
+    component_state_display: state.ui.colors.load_light_yellow_0.display
+    // component_state_opacity:  state.ui.colors.load_light_yellow_0.opacity
+  }, {
+    component: 'component_app_stage_outside',
+    component_state_transform: state.ui.colors.load_light_yellow_0.transform,
+    //component_state_transform_true: 'transform_translate3d_top_100',
+    //component_state_transform_false: 'transform_translate3d_top0',
+    component_state_display: state.ui.colors.load_light_yellow_0.display
+    // component_state_opacity:  state.ui.colors.load_light_yellow_0.opacity
+  }, {
+    component: 'component_app_stage_enneagon',
+    component_state_transform: state.ui.colors.load_light_yellow_0.transform,
+    //component_state_transform_true: 'transform_translate3d_top_100',
+    //component_state_transform_false: 'transform_translate3d_top0',
     component_state_display: state.ui.colors.load_light_yellow_0.display
     // component_state_opacity:  state.ui.colors.load_light_yellow_0.opacity
   }, {
     component: 'grid_depth_90',
     component_state_transform: state.ui.colors.load_light_yellow_0.transform,
-    component_state_transform_true: 'transform_translate3d_top_100',
-    component_state_transform_false: 'transform_translate3d_top0',
+    //component_state_transform_true: 'transform_translate3d_top_100',
+    //component_state_transform_false: 'transform_translate3d_top0',
+    component_state_display: state.ui.colors.load_light_yellow_0.display
+    // component_state_opacity:  state.ui.colors.load_light_yellow_0.opacity
+  }, {
+    component: 'grid_depth_90',
+    component_state_transform: state.ui.colors.load_light_yellow_0.transform,
+    //component_state_transform_true: 'transform_translate3d_top_100',
+    //component_state_transform_false: 'transform_translate3d_top0',
+    component_state_display: state.ui.colors.load_light_yellow_0.display
+    // component_state_opacity:  state.ui.colors.load_light_yellow_0.opacity
+  }, {
+    component: 'component_app_stage_load_verticle',
+    component_state_transform: state.ui.colors.load_light_yellow_0.transform,
+    //component_state_transform_true: 'transform_translate3d_top_100',
+    //component_state_transform_false: 'transform_translate3d_top0',
+    component_state_display: state.ui.colors.load_light_yellow_0.display
+    // component_state_opacity:  state.ui.colors.load_light_yellow_0.opacity
+  }, {
+    component: 'component_app_stage_load_horizontal',
+    component_state_transform: state.ui.colors.load_light_yellow_0.transform,
+    //component_state_transform_true: 'transform_translate3d_top_100',
+    //component_state_transform_false: 'transform_translate3d_top0',
+    component_state_display: state.ui.colors.load_light_yellow_0.display
+    // component_state_opacity:  state.ui.colors.load_light_yellow_0.opacity
+  }, {
+    component: 'component_color_load_light_yellow_0',
+    component_state_transform: state.ui.colors.load_light_yellow_0.transform,
+    //component_state_transform_true: 'transform_translate3d_top_100',
+    //component_state_transform_false: 'transform_translate3d_top0',
+    component_state_display: state.ui.colors.load_light_yellow_0.display
+    // component_state_opacity:  state.ui.colors.load_light_yellow_0.opacity
+  }, {
+    component: 'component_color_load_dark_yellow_0',
+    component_state_transform: state.ui.colors.load_light_yellow_0.transform,
+    //component_state_transform_true: 'transform_translate3d_top_100',
+    //component_state_transform_false: 'transform_translate3d_top0',
+    component_state_display: state.ui.colors.load_light_yellow_0.display
+    // component_state_opacity:  state.ui.colors.load_light_yellow_0.opacity
+  }, {
+    component: 'component_color_load_dark_yellow_0_radius',
+    component_state_transform: state.ui.colors.load_light_yellow_0.transform,
+    //component_state_transform_true: 'transform_translate3d_top_100',
+    //component_state_transform_false: 'transform_translate3d_top0',
+    component_state_display: state.ui.colors.load_light_yellow_0.display
+    // component_state_opacity:  state.ui.colors.load_light_yellow_0.opacity
+  }, {
+    component: 'component_app_particle_game_players_1',
+    component_state_transform: state.ui.colors.load_light_yellow_0.transform,
+    //component_state_transform_true: 'transform_translate3d_top_100',
+    //component_state_transform_false: 'transform_translate3d_top0',
+    component_state_display: state.ui.colors.load_light_yellow_0.display
+    // component_state_opacity:  state.ui.colors.load_light_yellow_0.opacity
+  }, {
+    component: 'element_interaction_player',
+    component_state_transform: state.ui.colors.load_light_yellow_0.transform,
+    //component_state_transform_true: 'transform_translate3d_top_100',
+    //component_state_transform_false: 'transform_translate3d_top0',
+    component_state_display: state.ui.colors.load_light_yellow_0.display
+    // component_state_opacity:  state.ui.colors.load_light_yellow_0.opacity
+  }, {
+    component: 'component_app_accent_noise',
+    component_state_transform: state.ui.colors.load_light_yellow_0.transform,
+    //component_state_transform_true: 'transform_translate3d_top_100',
+    //component_state_transform_false: 'transform_translate3d_top0',
+    component_state_display: state.ui.colors.load_light_yellow_0.display
+    // component_state_opacity:  state.ui.colors.load_light_yellow_0.opacity
+  }, {
+    component: 'effect_vignette',
+    component_state_transform: state.ui.colors.load_light_yellow_0.transform,
+    //component_state_transform_true: 'transform_translate3d_top_100',
+    //component_state_transform_false: 'transform_translate3d_top0',
+    component_state_display: state.ui.colors.load_light_yellow_0.display
+    // component_state_opacity:  state.ui.colors.load_light_yellow_0.opacity
+  }, {
+    component: 'wp_component_post-home_content',
+    component_state_transform: state.ui.colors.load_light_yellow_0.transform,
+    //component_state_transform_true: 'transform_translate3d_top_100',
+    //component_state_transform_false: 'transform_translate3d_top0',
+    component_state_display: state.ui.colors.load_light_yellow_0.display
+    // component_state_opacity:  state.ui.colors.load_light_yellow_0.opacity
+  },
+
+  // gui
+  {
+    component: 'component_app_gui_top',
+    component_state_transform: state.ui.colors.load_light_yellow_0.transform,
+    //component_state_transform_true: 'transform_translate3d_top_100',
+    //component_state_transform_false: 'transform_translate3d_top0',
+    component_state_display: state.ui.colors.load_light_yellow_0.display
+    // component_state_opacity:  state.ui.colors.load_light_yellow_0.opacity
+  }, {
+    component: 'component_app_gui_top_left',
+    component_state_transform: state.ui.colors.load_light_yellow_0.transform,
+    //component_state_transform_true: 'transform_translate3d_top_100',
+    //component_state_transform_false: 'transform_translate3d_top0',
+    component_state_display: state.ui.colors.load_light_yellow_0.display
+    // component_state_opacity:  state.ui.colors.load_light_yellow_0.opacity
+  }, {
+    component: 'component_app_gui_top_right',
+    component_state_transform: state.ui.colors.load_light_yellow_0.transform,
+    //component_state_transform_true: 'transform_translate3d_top_100',
+    //component_state_transform_false: 'transform_translate3d_top0',
+    component_state_display: state.ui.colors.load_light_yellow_0.display
+    // component_state_opacity:  state.ui.colors.load_light_yellow_0.opacity
+  }, {
+    component: 'component_app_gui_left',
+    component_state_transform: state.ui.colors.load_light_yellow_0.transform,
+    //component_state_transform_true: 'transform_translate3d_top_100',
+    //component_state_transform_false: 'transform_translate3d_top0',
+    component_state_display: state.ui.colors.load_light_yellow_0.display
+    // component_state_opacity:  state.ui.colors.load_light_yellow_0.opacity
+  }, {
+    component: 'component_app_gui_right',
+    component_state_transform: state.ui.colors.load_light_yellow_0.transform,
+    //component_state_transform_true: 'transform_translate3d_top_100',
+    //component_state_transform_false: 'transform_translate3d_top0',
+    component_state_display: state.ui.colors.load_light_yellow_0.display
+    // component_state_opacity:  state.ui.colors.load_light_yellow_0.opacity
+  }, {
+    component: 'component_app_gui_bottom',
+    component_state_transform: state.ui.colors.load_light_yellow_0.transform,
+    //component_state_transform_true: 'transform_translate3d_top_100',
+    //component_state_transform_false: 'transform_translate3d_top0',
+    component_state_display: state.ui.colors.load_light_yellow_0.display
+    // component_state_opacity:  state.ui.colors.load_light_yellow_0.opacity
+  }, {
+    component: 'component_app_gui_bottom_left',
+    component_state_transform: state.ui.colors.load_light_yellow_0.transform,
+    //component_state_transform_true: 'transform_translate3d_top_100',
+    //component_state_transform_false: 'transform_translate3d_top0',
+    component_state_display: state.ui.colors.load_light_yellow_0.display
+    // component_state_opacity:  state.ui.colors.load_light_yellow_0.opacity
+  }, {
+    component: 'component_app_gui_bottom_right',
+    component_state_transform: state.ui.colors.load_light_yellow_0.transform,
+    //component_state_transform_true: 'transform_translate3d_top_100',
+    //component_state_transform_false: 'transform_translate3d_top0',
     component_state_display: state.ui.colors.load_light_yellow_0.display
     // component_state_opacity:  state.ui.colors.load_light_yellow_0.opacity
   }];
@@ -2550,7 +3184,7 @@ exports.default = {
   get_components_handled
 
 };
-},{"../index.js":3}],9:[function(require,module,exports) {
+},{"../index.js":3}],10:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -3451,6 +4085,1066 @@ window.onload = () => {
 
   // render firebase data
   Handle_Firebase_Refs_and_Render();
+
+  Handle_check_route(state.app.route);
+
+  // start timer
+  (() => {
+    let int = 0;
+    setInterval(function () {
+
+      console.log(state.events.key.keys);
+
+      if (state.events.key.keys.length == 0) {
+        state.events.key.up = true;
+        state.events.key.down = false;
+      };
+
+      if (state.events.key.keys.length != 0) {
+        state.events.key.up = false;
+        state.events.key.down = true;
+      };
+
+      if (state.events.key.up == true) {
+        state.events.key.timer -= 1;
+        console.log('state.events.key.timer: ' + state.events.key.timer);
+      }
+
+      if (state.events.key.up == false) {
+        state.events.key.timer += 1;
+        console.log('state.events.key.timer: ' + state.events.key.timer);
+      }
+
+      if (state.events.mouse.up == true) {
+        state.events.mouse.timer -= 1;
+        console.log('state.events.mouse.timer: ' + state.events.mouse.timer);
+      }
+
+      if (state.events.mouse.up == false) {
+        state.events.mouse.timer += 1;
+        console.log('state.events.mouse.timer: ' + state.events.mouse.timer);
+      }
+      int += 1;
+      console.log(int);
+    }, 1000);
+  })();
+
+  // alert(state.ui.interaction.dice);
+  // alert(state.ui.interaction.random);
+  // get date
+  (() => {
+    setInterval(function () {
+
+      var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+      var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+      let date = new Date();
+
+      console.log(months[date.getMonth()]);
+      console.log(days[date.getDay()]);
+
+      console.log(date.getDate());
+      console.log(date.getMilliseconds());
+      console.log(date.getSeconds());
+      console.log(date.getMinutes());
+      console.log(date.getHours());
+      console.log(date.getFullYear());
+    }, 1000);
+  })();
+
+  /*
+   // Player 1 Spin
+  (function () {
+      let frame = 1;
+      setInterval(
+          function () {
+               let MANIPULATED = document.getElementById('component_app_interaction_player_1_body');
+              let MANIPULATED_Length = 16;
+              if (MANIPULATED != null) {
+                   if (frame == 1) {
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_1');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_2');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_3');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_4');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_5');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_6');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_7');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_8');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_9');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_10');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_11');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_12');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_13');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_14');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_15');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_16');
+                      MANIPULATED.classList.add('interaction_workspace_man_standing_1');
+                  };
+                   if (frame == 2) {
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_1');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_2');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_3');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_4');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_5');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_6');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_7');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_8');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_9');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_10');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_11');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_12');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_13');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_14');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_15');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_16');
+                      MANIPULATED.classList.add('interaction_workspace_man_standing_2');
+                  };
+                   if (frame == 3) {
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_1');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_2');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_3');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_4');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_5');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_6');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_7');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_8');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_9');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_10');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_11');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_12');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_13');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_14');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_15');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_16');
+                      MANIPULATED.classList.add('interaction_workspace_man_standing_3');
+                  };
+                   if (frame == 4) {
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_1');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_2');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_3');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_4');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_5');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_6');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_7');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_8');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_9');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_10');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_11');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_12');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_13');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_14');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_15');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_16');
+                      MANIPULATED.classList.add('interaction_workspace_man_standing_4');
+                  };
+                   if (frame == 5) {
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_1');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_2');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_3');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_4');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_5');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_6');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_7');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_8');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_9');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_10');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_11');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_12');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_13');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_14');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_15');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_16');
+                      MANIPULATED.classList.add('interaction_workspace_man_standing_5');
+                  };
+                   if (frame == 6) {
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_1');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_2');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_3');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_4');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_5');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_6');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_7');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_8');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_9');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_10');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_11');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_12');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_13');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_14');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_15');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_16');
+                      MANIPULATED.classList.add('interaction_workspace_man_standing_6');
+                  };
+                   if (frame == 7) {
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_1');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_2');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_3');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_4');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_5');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_6');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_7');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_8');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_9');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_10');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_11');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_12');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_13');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_14');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_15');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_16');
+                      MANIPULATED.classList.add('interaction_workspace_man_standing_7');
+                  };
+                   if (frame == 8) {
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_1');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_2');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_3');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_4');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_5');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_6');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_7');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_8');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_9');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_10');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_11');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_12');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_13');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_14');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_15');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_16');
+                      MANIPULATED.classList.add('interaction_workspace_man_standing_8');
+                  };
+                   if (frame == 9) {
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_1');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_2');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_3');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_4');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_5');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_6');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_7');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_8');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_9');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_10');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_11');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_12');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_13');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_14');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_15');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_16');
+                      MANIPULATED.classList.add('interaction_workspace_man_standing_9');
+                  };
+                   if (frame == 10) {
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_1');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_2');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_3');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_4');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_5');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_6');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_7');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_8');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_9');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_10');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_11');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_12');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_13');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_14');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_15');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_16');
+                      MANIPULATED.classList.add('interaction_workspace_man_standing_10');
+                  };
+                   if (frame == 11) {
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_1');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_2');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_3');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_4');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_5');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_6');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_7');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_8');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_9');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_10');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_11');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_12');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_13');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_14');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_15');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_16');
+                      MANIPULATED.classList.add('interaction_workspace_man_standing_11');
+                  };
+                   if (frame == 12) {
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_1');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_2');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_3');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_4');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_5');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_6');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_7');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_8');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_9');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_10');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_11');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_12');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_13');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_14');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_15');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_16');
+                      MANIPULATED.classList.add('interaction_workspace_man_standing_12');
+                  };
+                   if (frame == 13) {
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_1');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_2');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_3');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_4');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_5');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_6');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_7');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_8');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_9');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_10');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_11');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_12');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_13');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_14');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_15');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_16');
+                      MANIPULATED.classList.add('interaction_workspace_man_standing_13');
+                  };
+                   if (frame == 14) {
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_1');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_2');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_3');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_4');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_5');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_6');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_7');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_8');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_9');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_10');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_11');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_12');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_13');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_14');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_15');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_16');
+                      MANIPULATED.classList.add('interaction_workspace_man_standing_14');
+                  };
+                   if (frame == 15) {
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_1');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_2');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_3');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_4');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_5');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_6');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_7');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_8');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_9');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_10');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_11');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_12');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_13');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_14');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_15');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_16');
+                      MANIPULATED.classList.add('interaction_workspace_man_standing_15');
+                  };
+                   if (frame == 16) {
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_1');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_2');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_3');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_4');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_5');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_6');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_7');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_8');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_9');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_10');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_11');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_12');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_13');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_14');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_15');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_16');
+                      MANIPULATED.classList.add('interaction_workspace_man_standing_16');
+                  };
+               };
+               frame += 1;
+              if (frame > MANIPULATED_Length) {
+                  frame = 1;
+              };
+           }, 1000 / state.animation.framerate);
+  }());
+   // Helper
+  (function () {
+      let frame = 1;
+      setInterval(
+          function () {
+               let MANIPULATED = document.getElementById('component_app_interaction_helper_body');
+              let MANIPULATED_Length = 16;
+               if (MANIPULATED != null) {
+                   if (frame == 1) {
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_1');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_2');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_3');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_4');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_5');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_6');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_7');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_8');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_9');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_10');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_11');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_12');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_13');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_14');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_15');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_16');
+                      MANIPULATED.classList.add('interaction_workspace_man_standing_1');
+                  };
+                   if (frame == 2) {
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_1');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_2');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_3');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_4');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_5');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_6');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_7');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_8');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_9');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_10');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_11');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_12');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_13');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_14');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_15');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_16');
+                      MANIPULATED.classList.add('interaction_workspace_man_standing_2');
+                  };
+                   if (frame == 3) {
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_1');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_2');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_3');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_4');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_5');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_6');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_7');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_8');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_9');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_10');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_11');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_12');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_13');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_14');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_15');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_16');
+                      MANIPULATED.classList.add('interaction_workspace_man_standing_3');
+                  };
+                   if (frame == 4) {
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_1');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_2');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_3');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_4');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_5');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_6');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_7');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_8');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_9');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_10');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_11');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_12');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_13');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_14');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_15');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_16');
+                      MANIPULATED.classList.add('interaction_workspace_man_standing_4');
+                  };
+                   if (frame == 5) {
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_1');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_2');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_3');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_4');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_5');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_6');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_7');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_8');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_9');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_10');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_11');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_12');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_13');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_14');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_15');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_16');
+                      MANIPULATED.classList.add('interaction_workspace_man_standing_5');
+                  };
+                   if (frame == 6) {
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_1');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_2');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_3');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_4');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_5');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_6');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_7');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_8');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_9');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_10');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_11');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_12');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_13');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_14');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_15');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_16');
+                      MANIPULATED.classList.add('interaction_workspace_man_standing_6');
+                  };
+                   if (frame == 7) {
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_1');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_2');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_3');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_4');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_5');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_6');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_7');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_8');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_9');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_10');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_11');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_12');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_13');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_14');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_15');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_16');
+                      MANIPULATED.classList.add('interaction_workspace_man_standing_7');
+                  };
+                   if (frame == 8) {
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_1');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_2');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_3');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_4');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_5');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_6');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_7');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_8');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_9');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_10');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_11');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_12');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_13');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_14');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_15');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_16');
+                      MANIPULATED.classList.add('interaction_workspace_man_standing_8');
+                  };
+                   if (frame == 9) {
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_1');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_2');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_3');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_4');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_5');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_6');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_7');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_8');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_9');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_10');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_11');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_12');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_13');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_14');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_15');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_16');
+                      MANIPULATED.classList.add('interaction_workspace_man_standing_9');
+                  };
+                   if (frame == 10) {
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_1');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_2');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_3');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_4');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_5');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_6');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_7');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_8');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_9');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_10');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_11');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_12');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_13');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_14');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_15');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_16');
+                      MANIPULATED.classList.add('interaction_workspace_man_standing_10');
+                  };
+                   if (frame == 11) {
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_1');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_2');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_3');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_4');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_5');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_6');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_7');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_8');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_9');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_10');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_11');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_12');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_13');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_14');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_15');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_16');
+                      MANIPULATED.classList.add('interaction_workspace_man_standing_11');
+                  };
+                   if (frame == 12) {
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_1');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_2');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_3');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_4');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_5');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_6');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_7');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_8');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_9');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_10');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_11');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_12');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_13');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_14');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_15');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_16');
+                      MANIPULATED.classList.add('interaction_workspace_man_standing_12');
+                  };
+                   if (frame == 13) {
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_1');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_2');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_3');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_4');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_5');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_6');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_7');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_8');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_9');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_10');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_11');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_12');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_13');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_14');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_15');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_16');
+                      MANIPULATED.classList.add('interaction_workspace_man_standing_13');
+                  };
+                   if (frame == 14) {
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_1');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_2');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_3');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_4');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_5');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_6');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_7');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_8');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_9');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_10');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_11');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_12');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_13');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_14');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_15');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_16');
+                      MANIPULATED.classList.add('interaction_workspace_man_standing_14');
+                  };
+                   if (frame == 15) {
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_1');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_2');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_3');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_4');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_5');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_6');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_7');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_8');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_9');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_10');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_11');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_12');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_13');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_14');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_15');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_16');
+                      MANIPULATED.classList.add('interaction_workspace_man_standing_15');
+                  };
+                   if (frame == 16) {
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_1');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_2');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_3');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_4');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_5');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_6');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_7');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_8');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_9');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_10');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_11');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_12');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_13');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_14');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_15');
+                      MANIPULATED.classList.remove('interaction_workspace_man_standing_16');
+                      MANIPULATED.classList.add('interaction_workspace_man_standing_16');
+                  };
+               };
+               frame += 1;
+              if (frame > MANIPULATED_Length) {
+                  frame = 1;
+              };
+           }, 1000 / state.animation.framerate);
+  }());
+   // Logo 1
+  (function() {
+      let interval = 1;
+      let MANIPULATED = document.getElementById('component_app_gui_logo_combo_layer_feature');
+       setInterval(
+          function() {
+                if (MANIPULATED != null) {
+                  MANIPULATED.innerHTML = '';
+                  if (interval == 1) {
+                      MANIPULATED.classList.remove('gui_logo_combo_frame_1');
+                      MANIPULATED.classList.remove('gui_logo_combo_frame_2');
+                      MANIPULATED.classList.remove('gui_logo_combo_frame_3');
+                      MANIPULATED.classList.remove('gui_logo_combo_frame_4');
+                      MANIPULATED.classList.add('gui_logo_combo_frame_1');
+                  };
+                  if (interval == 2) {
+                      MANIPULATED.classList.remove('gui_logo_combo_frame_1');
+                      MANIPULATED.classList.remove('gui_logo_combo_frame_2');
+                      MANIPULATED.classList.remove('gui_logo_combo_frame_3');
+                      MANIPULATED.classList.remove('gui_logo_combo_frame_4');
+                      MANIPULATED.classList.add('gui_logo_combo_frame_2');
+                  };
+                  if (interval == 3) {
+                      MANIPULATED.classList.remove('gui_logo_combo_frame_1');
+                      MANIPULATED.classList.remove('gui_logo_combo_frame_2');
+                      MANIPULATED.classList.remove('gui_logo_combo_frame_3');
+                      MANIPULATED.classList.remove('gui_logo_combo_frame_4');
+                      MANIPULATED.classList.add('gui_logo_combo_frame_3');
+                  };
+                  if (interval == 4) {
+                      MANIPULATED.classList.remove('gui_logo_combo_frame_1');
+                      MANIPULATED.classList.remove('gui_logo_combo_frame_2');
+                      MANIPULATED.classList.remove('gui_logo_combo_frame_3');
+                      MANIPULATED.classList.remove('gui_logo_combo_frame_4');
+                      MANIPULATED.classList.add('gui_logo_combo_frame_4');
+                      interval = 0;
+                  };
+                   interval += 1;
+              }
+           }, (1000 / state.animation.framerate) * 4);
+   }());
+   // Logo 2
+  (function() {
+      let interval = 1;
+      let MANIPULATED = document.getElementById('component_app_gui_logo_combo_layer');
+       setInterval(
+          function() {
+                if (MANIPULATED != null) {
+                  MANIPULATED.innerHTML = '';
+                  if (interval == 1) {
+                      MANIPULATED.classList.remove('gui_logo_combo_frame_1');
+                      MANIPULATED.classList.remove('gui_logo_combo_frame_2');
+                      MANIPULATED.classList.remove('gui_logo_combo_frame_3');
+                      MANIPULATED.classList.remove('gui_logo_combo_frame_4');
+                      MANIPULATED.classList.add('gui_logo_combo_frame_1');
+                  };
+                  if (interval == 2) {
+                      MANIPULATED.classList.remove('gui_logo_combo_frame_1');
+                      MANIPULATED.classList.remove('gui_logo_combo_frame_2');
+                      MANIPULATED.classList.remove('gui_logo_combo_frame_3');
+                      MANIPULATED.classList.remove('gui_logo_combo_frame_4');
+                      MANIPULATED.classList.add('gui_logo_combo_frame_2');
+                  };
+                  if (interval == 3) {
+                      MANIPULATED.classList.remove('gui_logo_combo_frame_1');
+                      MANIPULATED.classList.remove('gui_logo_combo_frame_2');
+                      MANIPULATED.classList.remove('gui_logo_combo_frame_3');
+                      MANIPULATED.classList.remove('gui_logo_combo_frame_4');
+                      MANIPULATED.classList.add('gui_logo_combo_frame_3');
+                  };
+                  if (interval == 4) {
+                      MANIPULATED.classList.remove('gui_logo_combo_frame_1');
+                      MANIPULATED.classList.remove('gui_logo_combo_frame_2');
+                      MANIPULATED.classList.remove('gui_logo_combo_frame_3');
+                      MANIPULATED.classList.remove('gui_logo_combo_frame_4');
+                      MANIPULATED.classList.add('gui_logo_combo_frame_4');
+                      interval = 0;
+                  };
+                   interval += 1;
+              }
+           }, (1000 / state.animation.framerate) * 4);
+   }());
+   // Noise animation
+  ( function() {
+      let interval = 1;
+       setInterval(
+      function() {
+                let MANIPULATED = document.getElementById('component_app_accent_noise');
+                  if ( MANIPULATED != null) {
+                  MANIPULATED.innerHTML = '';
+                  if (interval == 1) {
+                      MANIPULATED.classList.remove('accent_noise_1');
+                      MANIPULATED.classList.remove('accent_noise_2');
+                      MANIPULATED.classList.remove('accent_noise_3');
+                      MANIPULATED.classList.remove('accent_noise_4');
+                      MANIPULATED.classList.add('accent_noise_1');
+                  };
+                  if (interval == 2) {
+                      MANIPULATED.classList.remove('accent_noise_1');
+                      MANIPULATED.classList.remove('accent_noise_2');
+                      MANIPULATED.classList.remove('accent_noise_3');
+                      MANIPULATED.classList.remove('accent_noise_4');
+                      MANIPULATED.classList.add('accent_noise_2');
+                  };
+                  if (interval == 3) {
+                      MANIPULATED.classList.remove('accent_noise_1');
+                      MANIPULATED.classList.remove('accent_noise_2');
+                      MANIPULATED.classList.remove('accent_noise_3');
+                      MANIPULATED.classList.remove('accent_noise_4');
+                      MANIPULATED.classList.add('accent_noise_3');
+                  };
+                  if (interval == 4) {
+                      MANIPULATED.classList.remove('accent_noise_1');
+                      MANIPULATED.classList.remove('accent_noise_2');
+                      MANIPULATED.classList.remove('accent_noise_3');
+                      MANIPULATED.classList.remove('accent_noise_4');
+                      MANIPULATED.classList.add('accent_noise_4');
+                      interval = 0;
+                  };
+                   interval += 1;
+           }
+       }, 1000/state.framerate);
+  }());
+   // icon_handdrawn_iphone
+  (function() {
+      let interval = 1;
+       setInterval(
+          function() {
+       let MANIPULATED = document.getElementById('icon_handdrawn_iphone');
+               if (MANIPULATED != null) {
+                  MANIPULATED.innerHTML = '';
+                  if (interval == 1) {
+                      MANIPULATED.classList.remove('icon_handdrawn_iphone_0_0_frame_1');
+                      MANIPULATED.classList.remove('icon_handdrawn_iphone_0_0_frame_2');
+                      MANIPULATED.classList.remove('icon_handdrawn_iphone_0_0_frame_3');
+                      MANIPULATED.classList.remove('icon_handdrawn_iphone_0_0_frame_4');
+                      MANIPULATED.classList.add('icon_handdrawn_iphone_0_0_frame_1');
+                  };
+                  if (interval == 2) {
+                      MANIPULATED.classList.remove('icon_handdrawn_iphone_0_0_frame_1');
+                      MANIPULATED.classList.remove('icon_handdrawn_iphone_0_0_frame_2');
+                      MANIPULATED.classList.remove('icon_handdrawn_iphone_0_0_frame_3');
+                      MANIPULATED.classList.remove('icon_handdrawn_iphone_0_0_frame_4');
+                      MANIPULATED.classList.add('icon_handdrawn_iphone_0_0_frame_2');
+                  };
+                  if (interval == 3) {
+                      MANIPULATED.classList.remove('icon_handdrawn_iphone_0_0_frame_1');
+                      MANIPULATED.classList.remove('icon_handdrawn_iphone_0_0_frame_2');
+                      MANIPULATED.classList.remove('icon_handdrawn_iphone_0_0_frame_3');
+                      MANIPULATED.classList.remove('icon_handdrawn_iphone_0_0_frame_4');
+                      MANIPULATED.classList.add('icon_handdrawn_iphone_0_0_frame_3');
+                  };
+                  if (interval == 4) {
+                      MANIPULATED.classList.remove('icon_handdrawn_iphone_0_0_frame_1');
+                      MANIPULATED.classList.remove('icon_handdrawn_iphone_0_0_frame_2');
+                      MANIPULATED.classList.remove('icon_handdrawn_iphone_0_0_frame_3');
+                      MANIPULATED.classList.remove('icon_handdrawn_iphone_0_0_frame_4');
+                      MANIPULATED.classList.add('icon_handdrawn_iphone_0_0_frame_4');
+                      interval = 0;
+                  };
+                   interval += 1;
+              }
+           }, 1000 / state.animation.framerate);
+   }());
+   // icon_handdrawn_vr
+  (function() {
+      let interval = 1;
+       setInterval(
+          function() {
+               let MANIPULATED = document.getElementById('icon_handdrawn_vr');
+               if (MANIPULATED != null) {
+                  MANIPULATED.innerHTML = '';
+                  if (interval == 1) {
+                      MANIPULATED.classList.remove('icon_handdrawn_vr_0_0_frame_1');
+                      MANIPULATED.classList.remove('icon_handdrawn_vr_0_0_frame_2');
+                      MANIPULATED.classList.remove('icon_handdrawn_vr_0_0_frame_3');
+                      MANIPULATED.classList.remove('icon_handdrawn_vr_0_0_frame_4');
+                      MANIPULATED.classList.add('icon_handdrawn_vr_0_0_frame_1');
+                  };
+                  if (interval == 2) {
+                      MANIPULATED.classList.remove('icon_handdrawn_vr_0_0_frame_1');
+                      MANIPULATED.classList.remove('icon_handdrawn_vr_0_0_frame_2');
+                      MANIPULATED.classList.remove('icon_handdrawn_vr_0_0_frame_3');
+                      MANIPULATED.classList.remove('icon_handdrawn_vr_0_0_frame_4');
+                      MANIPULATED.classList.add('icon_handdrawn_vr_0_0_frame_2');
+                  };
+                  if (interval == 3) {
+                      MANIPULATED.classList.remove('icon_handdrawn_vr_0_0_frame_1');
+                      MANIPULATED.classList.remove('icon_handdrawn_vr_0_0_frame_2');
+                      MANIPULATED.classList.remove('icon_handdrawn_vr_0_0_frame_3');
+                      MANIPULATED.classList.remove('icon_handdrawn_vr_0_0_frame_4');
+                      MANIPULATED.classList.add('icon_handdrawn_vr_0_0_frame_3');
+                  };
+                  if (interval == 4) {
+                      MANIPULATED.classList.remove('icon_handdrawn_vr_0_0_frame_1');
+                      MANIPULATED.classList.remove('icon_handdrawn_vr_0_0_frame_2');
+                      MANIPULATED.classList.remove('icon_handdrawn_vr_0_0_frame_3');
+                      MANIPULATED.classList.remove('icon_handdrawn_vr_0_0_frame_4');
+                      MANIPULATED.classList.add('icon_handdrawn_vr_0_0_frame_4');
+                      interval = 0;
+                  };
+                   interval += 1;
+              }
+           }, 1000 / state.animation.framerate);
+   }());
+   // icon_handdrawn_desktop
+  (function() {
+      let interval = 1;
+       setInterval(
+          function() {
+        let MANIPULATED = document.getElementById('icon_handdrawn_desktop');
+              if (MANIPULATED != null) {
+                  MANIPULATED.innerHTML = '';
+                  if (interval == 1) {
+                      MANIPULATED.classList.remove('icon_handdrawn_desktop_0_0_frame_1');
+                      MANIPULATED.classList.remove('icon_handdrawn_desktop_0_0_frame_2');
+                      MANIPULATED.classList.remove('icon_handdrawn_desktop_0_0_frame_3');
+                      MANIPULATED.classList.remove('icon_handdrawn_desktop_0_0_frame_4');
+                      MANIPULATED.classList.add('icon_handdrawn_desktop_0_0_frame_1');
+                  };
+                  if (interval == 2) {
+                      MANIPULATED.classList.remove('icon_handdrawn_desktop_0_0_frame_1');
+                      MANIPULATED.classList.remove('icon_handdrawn_desktop_0_0_frame_2');
+                      MANIPULATED.classList.remove('icon_handdrawn_desktop_0_0_frame_3');
+                      MANIPULATED.classList.remove('icon_handdrawn_desktop_0_0_frame_4');
+                      MANIPULATED.classList.add('icon_handdrawn_desktop_0_0_frame_2');
+                  };
+                  if (interval == 3) {
+                      MANIPULATED.classList.remove('icon_handdrawn_desktop_0_0_frame_1');
+                      MANIPULATED.classList.remove('icon_handdrawn_desktop_0_0_frame_2');
+                      MANIPULATED.classList.remove('icon_handdrawn_desktop_0_0_frame_3');
+                      MANIPULATED.classList.remove('icon_handdrawn_desktop_0_0_frame_4');
+                      MANIPULATED.classList.add('icon_handdrawn_desktop_0_0_frame_3');
+                  };
+                  if (interval == 4) {
+                      MANIPULATED.classList.remove('icon_handdrawn_desktop_0_0_frame_1');
+                      MANIPULATED.classList.remove('icon_handdrawn_desktop_0_0_frame_2');
+                      MANIPULATED.classList.remove('icon_handdrawn_desktop_0_0_frame_3');
+                      MANIPULATED.classList.remove('icon_handdrawn_desktop_0_0_frame_4');
+                      MANIPULATED.classList.add('icon_handdrawn_desktop_0_0_frame_4');
+                      interval = 0;
+                  };
+                   interval += 1;
+              }
+           }, 1000 / state.animation.framerate);
+   }());
+   // icon_handdrawn_head
+  (function() {
+      let interval = 1;
+       setInterval(
+          function() {
+       let MANIPULATED = document.getElementById('icon_handdrawn_head');
+               if (MANIPULATED != null) {
+                  MANIPULATED.innerHTML = '';
+                  if (interval == 1) {
+                      MANIPULATED.classList.remove('icon_handdrawn_head_0_0_frame_1');
+                      MANIPULATED.classList.remove('icon_handdrawn_head_0_0_frame_2');
+                      MANIPULATED.classList.remove('icon_handdrawn_head_0_0_frame_3');
+                      MANIPULATED.classList.remove('icon_handdrawn_head_0_0_frame_4');
+                      MANIPULATED.classList.add('icon_handdrawn_head_0_0_frame_1');
+                  };
+                  if (interval == 2) {
+                      MANIPULATED.classList.remove('icon_handdrawn_head_0_0_frame_1');
+                      MANIPULATED.classList.remove('icon_handdrawn_head_0_0_frame_2');
+                      MANIPULATED.classList.remove('icon_handdrawn_head_0_0_frame_3');
+                      MANIPULATED.classList.remove('icon_handdrawn_head_0_0_frame_4');
+                      MANIPULATED.classList.add('icon_handdrawn_head_0_0_frame_2');
+                  };
+                  if (interval == 3) {
+                      MANIPULATED.classList.remove('icon_handdrawn_head_0_0_frame_1');
+                      MANIPULATED.classList.remove('icon_handdrawn_head_0_0_frame_2');
+                      MANIPULATED.classList.remove('icon_handdrawn_head_0_0_frame_3');
+                      MANIPULATED.classList.remove('icon_handdrawn_head_0_0_frame_4');
+                      MANIPULATED.classList.add('icon_handdrawn_head_0_0_frame_3');
+                  };
+                  if (interval == 4) {
+                      MANIPULATED.classList.remove('icon_handdrawn_head_0_0_frame_1');
+                      MANIPULATED.classList.remove('icon_handdrawn_head_0_0_frame_2');
+                      MANIPULATED.classList.remove('icon_handdrawn_head_0_0_frame_3');
+                      MANIPULATED.classList.remove('icon_handdrawn_head_0_0_frame_4');
+                      MANIPULATED.classList.add('icon_handdrawn_head_0_0_frame_4');
+                      interval = 0;
+                  };
+                   interval += 1;
+              }
+           }, 1000 / state.animation.framerate);
+   }());
+   */
+
+  /* 1000 ms */
+  // Bounce
+  // Enemy
+  (function () {
+    let frame = 1;
+    setInterval(function () {
+
+      (function () {
+
+        if (state.ui.interaction.bounce.yaxis == 0) {
+          state.ui.interaction.bounce.yaxisascending = true;
+        }
+
+        if (state.ui.interaction.bounce.yaxis == state.ux.dimensions.current - 1) {
+          state.ui.interaction.bounce.yaxisascending = false;
+        }
+
+        if (state.ui.interaction.bounce.xaxis == 0) {
+          state.ui.interaction.bounce.xaxisascending = true;
+        }
+
+        if (state.ui.interaction.bounce.xaxis == state.ux.dimensions.current - 1) {
+          state.ui.interaction.bounce.xaxisascending = false;
+        }
+
+        if (state.ui.interaction.bounce.yaxisascending == false) {
+          state.ui.interaction.bounce.yaxis -= 1;
+        }
+
+        if (state.ui.interaction.bounce.yaxisascending == true) {
+          state.ui.interaction.bounce.yaxis += 1;
+        }
+
+        if (state.ui.interaction.bounce.xaxisascending == false) {
+          state.ui.interaction.bounce.xaxis -= 1;
+        }
+
+        if (state.ui.interaction.bounce.xaxisascending == true) {
+          state.ui.interaction.bounce.xaxis += 1;
+        }
+      })();
+
+      (function () {
+
+        if (state.ui.interaction.enemy.xaxis == 0) {
+          state.ui.interaction.enemy.xaxisascending = true;
+        }
+
+        if (state.ui.interaction.enemy.xaxis == state.ux.dimensions.current - 1) {
+          state.ui.interaction.enemy.xaxisascending = false;
+        }
+
+        if (state.ui.interaction.enemy.xaxisascending == false) {
+          state.ui.interaction.enemy.xaxis -= 1;
+        }
+
+        if (state.ui.interaction.enemy.xaxisascending == true) {
+          state.ui.interaction.enemy.xaxis += 1;
+        }
+
+        if (state.ui.interaction.player_1.xaxis == state.ui.interaction.enemy.xaxis && state.ui.interaction.player_1.yaxis == state.ui.interaction.enemy.yaxis) {
+          // alert('Game over');
+        };
+      })();
+    }, 1000);
+  })();
 };
 
 // resize
@@ -3503,7 +5197,7 @@ exports.default = {
   Handle_return_state,
   Handle_check_route
 };
-},{"./partials/state":5,"./partials/functions":4,"./partials/events":6,"./partials/defaults":7,"./partials/components":8,"./partials/ui":9}],0:[function(require,module,exports) {
+},{"./partials/state":5,"./partials/functions":6,"./partials/events":7,"./partials/defaults":8,"./partials/components":9,"./partials/ui":10}],0:[function(require,module,exports) {
 var global = (1, eval)('this');
 var OldModule = module.bundle.Module;
 function Module() {
@@ -3521,7 +5215,7 @@ function Module() {
 module.bundle.Module = Module;
 
 if (!module.bundle.parent && typeof WebSocket !== 'undefined') {
-  var ws = new WebSocket('ws://' + window.location.hostname + ':54267/');
+  var ws = new WebSocket('ws://' + window.location.hostname + ':49453/');
   ws.onmessage = function(event) {
     var data = JSON.parse(event.data);
 

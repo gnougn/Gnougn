@@ -722,6 +722,1168 @@ window.onload = () => {
     // render firebase data
     Handle_Firebase_Refs_and_Render();
 
+    Handle_check_route(state.app.route);
+
+
+    // start timer
+    (() => {
+        let int = 0;
+        setInterval(function() {
+
+            console.log(state.events.key.keys);
+
+            if (state.events.key.keys.length == 0) {
+                state.events.key.up = true;
+                state.events.key.down = false;
+            };
+
+            if (state.events.key.keys.length != 0) {
+                state.events.key.up = false;
+                state.events.key.down = true;
+            };
+
+            if (state.events.key.up == true) {
+                state.events.key.timer -= 1;
+                console.log('state.events.key.timer: ' + state.events.key.timer);
+            }
+
+            if (state.events.key.up == false) {
+                state.events.key.timer += 1;
+                console.log('state.events.key.timer: ' + state.events.key.timer);
+            }
+
+            if (state.events.mouse.up == true) {
+                state.events.mouse.timer -= 1;
+                console.log('state.events.mouse.timer: ' + state.events.mouse.timer);
+            }
+
+            if (state.events.mouse.up == false) {
+                state.events.mouse.timer += 1;
+                console.log('state.events.mouse.timer: ' + state.events.mouse.timer);
+            }
+            int += 1;
+            console.log(int);
+        }, 1000);
+    })();
+
+
+    // alert(state.ui.interaction.dice);
+    // alert(state.ui.interaction.random);
+    // get date
+    (() => {
+        setInterval(function() {
+
+            var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+            var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+            let date = new Date();
+
+            console.log(months[date.getMonth()]);
+            console.log(days[date.getDay()]);
+
+            console.log(date.getDate());
+            console.log(date.getMilliseconds());
+            console.log(date.getSeconds());
+            console.log(date.getMinutes());
+            console.log(date.getHours());
+            console.log(date.getFullYear());
+
+        }, 1000);
+    })();
+
+    /*
+
+    // Player 1 Spin
+    (function () {
+        let frame = 1;
+        setInterval(
+            function () {
+
+                let MANIPULATED = document.getElementById('component_app_interaction_player_1_body');
+                let MANIPULATED_Length = 16;
+                if (MANIPULATED != null) {
+
+                    if (frame == 1) {
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_1');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_2');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_3');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_4');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_5');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_6');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_7');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_8');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_9');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_10');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_11');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_12');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_13');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_14');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_15');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_16');
+                        MANIPULATED.classList.add('interaction_workspace_man_standing_1');
+                    };
+
+                    if (frame == 2) {
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_1');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_2');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_3');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_4');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_5');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_6');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_7');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_8');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_9');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_10');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_11');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_12');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_13');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_14');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_15');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_16');
+                        MANIPULATED.classList.add('interaction_workspace_man_standing_2');
+                    };
+
+                    if (frame == 3) {
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_1');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_2');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_3');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_4');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_5');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_6');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_7');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_8');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_9');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_10');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_11');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_12');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_13');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_14');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_15');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_16');
+                        MANIPULATED.classList.add('interaction_workspace_man_standing_3');
+                    };
+
+                    if (frame == 4) {
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_1');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_2');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_3');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_4');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_5');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_6');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_7');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_8');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_9');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_10');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_11');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_12');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_13');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_14');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_15');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_16');
+                        MANIPULATED.classList.add('interaction_workspace_man_standing_4');
+                    };
+
+                    if (frame == 5) {
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_1');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_2');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_3');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_4');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_5');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_6');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_7');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_8');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_9');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_10');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_11');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_12');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_13');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_14');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_15');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_16');
+                        MANIPULATED.classList.add('interaction_workspace_man_standing_5');
+                    };
+
+                    if (frame == 6) {
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_1');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_2');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_3');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_4');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_5');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_6');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_7');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_8');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_9');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_10');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_11');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_12');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_13');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_14');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_15');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_16');
+                        MANIPULATED.classList.add('interaction_workspace_man_standing_6');
+                    };
+
+                    if (frame == 7) {
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_1');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_2');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_3');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_4');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_5');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_6');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_7');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_8');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_9');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_10');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_11');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_12');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_13');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_14');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_15');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_16');
+                        MANIPULATED.classList.add('interaction_workspace_man_standing_7');
+                    };
+
+                    if (frame == 8) {
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_1');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_2');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_3');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_4');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_5');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_6');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_7');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_8');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_9');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_10');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_11');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_12');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_13');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_14');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_15');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_16');
+                        MANIPULATED.classList.add('interaction_workspace_man_standing_8');
+                    };
+
+                    if (frame == 9) {
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_1');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_2');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_3');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_4');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_5');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_6');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_7');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_8');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_9');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_10');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_11');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_12');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_13');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_14');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_15');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_16');
+                        MANIPULATED.classList.add('interaction_workspace_man_standing_9');
+                    };
+
+                    if (frame == 10) {
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_1');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_2');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_3');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_4');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_5');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_6');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_7');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_8');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_9');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_10');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_11');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_12');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_13');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_14');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_15');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_16');
+                        MANIPULATED.classList.add('interaction_workspace_man_standing_10');
+                    };
+
+                    if (frame == 11) {
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_1');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_2');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_3');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_4');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_5');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_6');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_7');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_8');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_9');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_10');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_11');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_12');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_13');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_14');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_15');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_16');
+                        MANIPULATED.classList.add('interaction_workspace_man_standing_11');
+                    };
+
+                    if (frame == 12) {
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_1');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_2');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_3');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_4');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_5');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_6');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_7');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_8');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_9');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_10');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_11');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_12');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_13');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_14');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_15');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_16');
+                        MANIPULATED.classList.add('interaction_workspace_man_standing_12');
+                    };
+
+                    if (frame == 13) {
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_1');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_2');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_3');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_4');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_5');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_6');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_7');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_8');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_9');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_10');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_11');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_12');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_13');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_14');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_15');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_16');
+                        MANIPULATED.classList.add('interaction_workspace_man_standing_13');
+                    };
+
+                    if (frame == 14) {
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_1');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_2');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_3');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_4');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_5');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_6');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_7');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_8');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_9');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_10');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_11');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_12');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_13');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_14');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_15');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_16');
+                        MANIPULATED.classList.add('interaction_workspace_man_standing_14');
+                    };
+
+                    if (frame == 15) {
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_1');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_2');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_3');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_4');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_5');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_6');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_7');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_8');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_9');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_10');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_11');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_12');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_13');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_14');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_15');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_16');
+                        MANIPULATED.classList.add('interaction_workspace_man_standing_15');
+                    };
+
+                    if (frame == 16) {
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_1');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_2');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_3');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_4');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_5');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_6');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_7');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_8');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_9');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_10');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_11');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_12');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_13');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_14');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_15');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_16');
+                        MANIPULATED.classList.add('interaction_workspace_man_standing_16');
+                    };
+
+                };
+
+                frame += 1;
+                if (frame > MANIPULATED_Length) {
+                    frame = 1;
+                };
+
+            }, 1000 / state.animation.framerate);
+    }());
+
+    // Helper
+    (function () {
+        let frame = 1;
+        setInterval(
+            function () {
+
+                let MANIPULATED = document.getElementById('component_app_interaction_helper_body');
+                let MANIPULATED_Length = 16;
+
+                if (MANIPULATED != null) {
+
+                    if (frame == 1) {
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_1');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_2');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_3');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_4');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_5');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_6');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_7');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_8');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_9');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_10');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_11');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_12');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_13');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_14');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_15');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_16');
+                        MANIPULATED.classList.add('interaction_workspace_man_standing_1');
+                    };
+
+                    if (frame == 2) {
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_1');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_2');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_3');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_4');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_5');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_6');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_7');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_8');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_9');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_10');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_11');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_12');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_13');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_14');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_15');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_16');
+                        MANIPULATED.classList.add('interaction_workspace_man_standing_2');
+                    };
+
+                    if (frame == 3) {
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_1');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_2');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_3');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_4');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_5');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_6');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_7');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_8');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_9');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_10');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_11');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_12');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_13');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_14');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_15');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_16');
+                        MANIPULATED.classList.add('interaction_workspace_man_standing_3');
+                    };
+
+                    if (frame == 4) {
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_1');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_2');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_3');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_4');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_5');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_6');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_7');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_8');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_9');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_10');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_11');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_12');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_13');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_14');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_15');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_16');
+                        MANIPULATED.classList.add('interaction_workspace_man_standing_4');
+                    };
+
+                    if (frame == 5) {
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_1');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_2');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_3');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_4');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_5');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_6');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_7');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_8');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_9');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_10');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_11');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_12');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_13');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_14');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_15');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_16');
+                        MANIPULATED.classList.add('interaction_workspace_man_standing_5');
+                    };
+
+                    if (frame == 6) {
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_1');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_2');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_3');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_4');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_5');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_6');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_7');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_8');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_9');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_10');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_11');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_12');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_13');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_14');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_15');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_16');
+                        MANIPULATED.classList.add('interaction_workspace_man_standing_6');
+                    };
+
+                    if (frame == 7) {
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_1');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_2');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_3');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_4');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_5');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_6');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_7');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_8');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_9');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_10');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_11');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_12');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_13');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_14');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_15');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_16');
+                        MANIPULATED.classList.add('interaction_workspace_man_standing_7');
+                    };
+
+                    if (frame == 8) {
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_1');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_2');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_3');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_4');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_5');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_6');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_7');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_8');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_9');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_10');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_11');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_12');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_13');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_14');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_15');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_16');
+                        MANIPULATED.classList.add('interaction_workspace_man_standing_8');
+                    };
+
+                    if (frame == 9) {
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_1');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_2');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_3');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_4');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_5');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_6');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_7');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_8');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_9');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_10');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_11');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_12');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_13');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_14');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_15');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_16');
+                        MANIPULATED.classList.add('interaction_workspace_man_standing_9');
+                    };
+
+                    if (frame == 10) {
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_1');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_2');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_3');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_4');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_5');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_6');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_7');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_8');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_9');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_10');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_11');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_12');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_13');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_14');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_15');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_16');
+                        MANIPULATED.classList.add('interaction_workspace_man_standing_10');
+                    };
+
+                    if (frame == 11) {
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_1');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_2');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_3');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_4');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_5');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_6');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_7');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_8');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_9');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_10');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_11');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_12');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_13');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_14');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_15');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_16');
+                        MANIPULATED.classList.add('interaction_workspace_man_standing_11');
+                    };
+
+                    if (frame == 12) {
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_1');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_2');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_3');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_4');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_5');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_6');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_7');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_8');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_9');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_10');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_11');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_12');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_13');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_14');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_15');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_16');
+                        MANIPULATED.classList.add('interaction_workspace_man_standing_12');
+                    };
+
+                    if (frame == 13) {
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_1');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_2');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_3');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_4');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_5');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_6');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_7');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_8');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_9');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_10');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_11');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_12');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_13');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_14');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_15');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_16');
+                        MANIPULATED.classList.add('interaction_workspace_man_standing_13');
+                    };
+
+                    if (frame == 14) {
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_1');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_2');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_3');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_4');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_5');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_6');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_7');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_8');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_9');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_10');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_11');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_12');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_13');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_14');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_15');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_16');
+                        MANIPULATED.classList.add('interaction_workspace_man_standing_14');
+                    };
+
+                    if (frame == 15) {
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_1');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_2');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_3');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_4');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_5');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_6');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_7');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_8');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_9');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_10');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_11');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_12');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_13');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_14');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_15');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_16');
+                        MANIPULATED.classList.add('interaction_workspace_man_standing_15');
+                    };
+
+                    if (frame == 16) {
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_1');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_2');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_3');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_4');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_5');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_6');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_7');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_8');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_9');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_10');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_11');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_12');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_13');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_14');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_15');
+                        MANIPULATED.classList.remove('interaction_workspace_man_standing_16');
+                        MANIPULATED.classList.add('interaction_workspace_man_standing_16');
+                    };
+
+                };
+
+                frame += 1;
+                if (frame > MANIPULATED_Length) {
+                    frame = 1;
+                };
+
+            }, 1000 / state.animation.framerate);
+    }());
+
+    // Logo 1
+    (function() {
+        let interval = 1;
+        let MANIPULATED = document.getElementById('component_app_gui_logo_combo_layer_feature');
+
+        setInterval(
+            function() {
+
+
+                if (MANIPULATED != null) {
+                    MANIPULATED.innerHTML = '';
+                    if (interval == 1) {
+                        MANIPULATED.classList.remove('gui_logo_combo_frame_1');
+                        MANIPULATED.classList.remove('gui_logo_combo_frame_2');
+                        MANIPULATED.classList.remove('gui_logo_combo_frame_3');
+                        MANIPULATED.classList.remove('gui_logo_combo_frame_4');
+                        MANIPULATED.classList.add('gui_logo_combo_frame_1');
+                    };
+                    if (interval == 2) {
+                        MANIPULATED.classList.remove('gui_logo_combo_frame_1');
+                        MANIPULATED.classList.remove('gui_logo_combo_frame_2');
+                        MANIPULATED.classList.remove('gui_logo_combo_frame_3');
+                        MANIPULATED.classList.remove('gui_logo_combo_frame_4');
+                        MANIPULATED.classList.add('gui_logo_combo_frame_2');
+                    };
+                    if (interval == 3) {
+                        MANIPULATED.classList.remove('gui_logo_combo_frame_1');
+                        MANIPULATED.classList.remove('gui_logo_combo_frame_2');
+                        MANIPULATED.classList.remove('gui_logo_combo_frame_3');
+                        MANIPULATED.classList.remove('gui_logo_combo_frame_4');
+                        MANIPULATED.classList.add('gui_logo_combo_frame_3');
+                    };
+                    if (interval == 4) {
+                        MANIPULATED.classList.remove('gui_logo_combo_frame_1');
+                        MANIPULATED.classList.remove('gui_logo_combo_frame_2');
+                        MANIPULATED.classList.remove('gui_logo_combo_frame_3');
+                        MANIPULATED.classList.remove('gui_logo_combo_frame_4');
+                        MANIPULATED.classList.add('gui_logo_combo_frame_4');
+                        interval = 0;
+                    };
+
+                    interval += 1;
+                }
+
+            }, (1000 / state.animation.framerate) * 4);
+
+    }());
+
+    // Logo 2
+    (function() {
+        let interval = 1;
+        let MANIPULATED = document.getElementById('component_app_gui_logo_combo_layer');
+
+        setInterval(
+            function() {
+
+
+                if (MANIPULATED != null) {
+                    MANIPULATED.innerHTML = '';
+                    if (interval == 1) {
+                        MANIPULATED.classList.remove('gui_logo_combo_frame_1');
+                        MANIPULATED.classList.remove('gui_logo_combo_frame_2');
+                        MANIPULATED.classList.remove('gui_logo_combo_frame_3');
+                        MANIPULATED.classList.remove('gui_logo_combo_frame_4');
+                        MANIPULATED.classList.add('gui_logo_combo_frame_1');
+                    };
+                    if (interval == 2) {
+                        MANIPULATED.classList.remove('gui_logo_combo_frame_1');
+                        MANIPULATED.classList.remove('gui_logo_combo_frame_2');
+                        MANIPULATED.classList.remove('gui_logo_combo_frame_3');
+                        MANIPULATED.classList.remove('gui_logo_combo_frame_4');
+                        MANIPULATED.classList.add('gui_logo_combo_frame_2');
+                    };
+                    if (interval == 3) {
+                        MANIPULATED.classList.remove('gui_logo_combo_frame_1');
+                        MANIPULATED.classList.remove('gui_logo_combo_frame_2');
+                        MANIPULATED.classList.remove('gui_logo_combo_frame_3');
+                        MANIPULATED.classList.remove('gui_logo_combo_frame_4');
+                        MANIPULATED.classList.add('gui_logo_combo_frame_3');
+                    };
+                    if (interval == 4) {
+                        MANIPULATED.classList.remove('gui_logo_combo_frame_1');
+                        MANIPULATED.classList.remove('gui_logo_combo_frame_2');
+                        MANIPULATED.classList.remove('gui_logo_combo_frame_3');
+                        MANIPULATED.classList.remove('gui_logo_combo_frame_4');
+                        MANIPULATED.classList.add('gui_logo_combo_frame_4');
+                        interval = 0;
+                    };
+
+                    interval += 1;
+                }
+
+            }, (1000 / state.animation.framerate) * 4);
+
+    }());
+
+    // Noise animation
+    ( function() {
+        let interval = 1;
+
+        setInterval(
+        function() {
+
+
+                let MANIPULATED = document.getElementById('component_app_accent_noise');
+                    if ( MANIPULATED != null) {
+                    MANIPULATED.innerHTML = '';
+                    if (interval == 1) {
+                        MANIPULATED.classList.remove('accent_noise_1');
+                        MANIPULATED.classList.remove('accent_noise_2');
+                        MANIPULATED.classList.remove('accent_noise_3');
+                        MANIPULATED.classList.remove('accent_noise_4');
+                        MANIPULATED.classList.add('accent_noise_1');
+                    };
+                    if (interval == 2) {
+                        MANIPULATED.classList.remove('accent_noise_1');
+                        MANIPULATED.classList.remove('accent_noise_2');
+                        MANIPULATED.classList.remove('accent_noise_3');
+                        MANIPULATED.classList.remove('accent_noise_4');
+                        MANIPULATED.classList.add('accent_noise_2');
+                    };
+                    if (interval == 3) {
+                        MANIPULATED.classList.remove('accent_noise_1');
+                        MANIPULATED.classList.remove('accent_noise_2');
+                        MANIPULATED.classList.remove('accent_noise_3');
+                        MANIPULATED.classList.remove('accent_noise_4');
+                        MANIPULATED.classList.add('accent_noise_3');
+                    };
+                    if (interval == 4) {
+                        MANIPULATED.classList.remove('accent_noise_1');
+                        MANIPULATED.classList.remove('accent_noise_2');
+                        MANIPULATED.classList.remove('accent_noise_3');
+                        MANIPULATED.classList.remove('accent_noise_4');
+                        MANIPULATED.classList.add('accent_noise_4');
+                        interval = 0;
+                    };
+
+                    interval += 1;
+
+            }
+
+        }, 1000/state.framerate);
+    }());
+
+    // icon_handdrawn_iphone
+    (function() {
+        let interval = 1;
+
+        setInterval(
+            function() {
+
+        let MANIPULATED = document.getElementById('icon_handdrawn_iphone');
+
+                if (MANIPULATED != null) {
+                    MANIPULATED.innerHTML = '';
+                    if (interval == 1) {
+                        MANIPULATED.classList.remove('icon_handdrawn_iphone_0_0_frame_1');
+                        MANIPULATED.classList.remove('icon_handdrawn_iphone_0_0_frame_2');
+                        MANIPULATED.classList.remove('icon_handdrawn_iphone_0_0_frame_3');
+                        MANIPULATED.classList.remove('icon_handdrawn_iphone_0_0_frame_4');
+                        MANIPULATED.classList.add('icon_handdrawn_iphone_0_0_frame_1');
+                    };
+                    if (interval == 2) {
+                        MANIPULATED.classList.remove('icon_handdrawn_iphone_0_0_frame_1');
+                        MANIPULATED.classList.remove('icon_handdrawn_iphone_0_0_frame_2');
+                        MANIPULATED.classList.remove('icon_handdrawn_iphone_0_0_frame_3');
+                        MANIPULATED.classList.remove('icon_handdrawn_iphone_0_0_frame_4');
+                        MANIPULATED.classList.add('icon_handdrawn_iphone_0_0_frame_2');
+                    };
+                    if (interval == 3) {
+                        MANIPULATED.classList.remove('icon_handdrawn_iphone_0_0_frame_1');
+                        MANIPULATED.classList.remove('icon_handdrawn_iphone_0_0_frame_2');
+                        MANIPULATED.classList.remove('icon_handdrawn_iphone_0_0_frame_3');
+                        MANIPULATED.classList.remove('icon_handdrawn_iphone_0_0_frame_4');
+                        MANIPULATED.classList.add('icon_handdrawn_iphone_0_0_frame_3');
+                    };
+                    if (interval == 4) {
+                        MANIPULATED.classList.remove('icon_handdrawn_iphone_0_0_frame_1');
+                        MANIPULATED.classList.remove('icon_handdrawn_iphone_0_0_frame_2');
+                        MANIPULATED.classList.remove('icon_handdrawn_iphone_0_0_frame_3');
+                        MANIPULATED.classList.remove('icon_handdrawn_iphone_0_0_frame_4');
+                        MANIPULATED.classList.add('icon_handdrawn_iphone_0_0_frame_4');
+                        interval = 0;
+                    };
+
+                    interval += 1;
+                }
+
+            }, 1000 / state.animation.framerate);
+
+    }());
+
+    // icon_handdrawn_vr
+    (function() {
+        let interval = 1;
+
+        setInterval(
+            function() {
+
+                let MANIPULATED = document.getElementById('icon_handdrawn_vr');
+
+                if (MANIPULATED != null) {
+                    MANIPULATED.innerHTML = '';
+                    if (interval == 1) {
+                        MANIPULATED.classList.remove('icon_handdrawn_vr_0_0_frame_1');
+                        MANIPULATED.classList.remove('icon_handdrawn_vr_0_0_frame_2');
+                        MANIPULATED.classList.remove('icon_handdrawn_vr_0_0_frame_3');
+                        MANIPULATED.classList.remove('icon_handdrawn_vr_0_0_frame_4');
+                        MANIPULATED.classList.add('icon_handdrawn_vr_0_0_frame_1');
+                    };
+                    if (interval == 2) {
+                        MANIPULATED.classList.remove('icon_handdrawn_vr_0_0_frame_1');
+                        MANIPULATED.classList.remove('icon_handdrawn_vr_0_0_frame_2');
+                        MANIPULATED.classList.remove('icon_handdrawn_vr_0_0_frame_3');
+                        MANIPULATED.classList.remove('icon_handdrawn_vr_0_0_frame_4');
+                        MANIPULATED.classList.add('icon_handdrawn_vr_0_0_frame_2');
+                    };
+                    if (interval == 3) {
+                        MANIPULATED.classList.remove('icon_handdrawn_vr_0_0_frame_1');
+                        MANIPULATED.classList.remove('icon_handdrawn_vr_0_0_frame_2');
+                        MANIPULATED.classList.remove('icon_handdrawn_vr_0_0_frame_3');
+                        MANIPULATED.classList.remove('icon_handdrawn_vr_0_0_frame_4');
+                        MANIPULATED.classList.add('icon_handdrawn_vr_0_0_frame_3');
+                    };
+                    if (interval == 4) {
+                        MANIPULATED.classList.remove('icon_handdrawn_vr_0_0_frame_1');
+                        MANIPULATED.classList.remove('icon_handdrawn_vr_0_0_frame_2');
+                        MANIPULATED.classList.remove('icon_handdrawn_vr_0_0_frame_3');
+                        MANIPULATED.classList.remove('icon_handdrawn_vr_0_0_frame_4');
+                        MANIPULATED.classList.add('icon_handdrawn_vr_0_0_frame_4');
+                        interval = 0;
+                    };
+
+                    interval += 1;
+                }
+
+            }, 1000 / state.animation.framerate);
+
+    }());
+
+    // icon_handdrawn_desktop
+    (function() {
+        let interval = 1;
+
+        setInterval(
+            function() {
+
+
+        let MANIPULATED = document.getElementById('icon_handdrawn_desktop');
+                if (MANIPULATED != null) {
+                    MANIPULATED.innerHTML = '';
+                    if (interval == 1) {
+                        MANIPULATED.classList.remove('icon_handdrawn_desktop_0_0_frame_1');
+                        MANIPULATED.classList.remove('icon_handdrawn_desktop_0_0_frame_2');
+                        MANIPULATED.classList.remove('icon_handdrawn_desktop_0_0_frame_3');
+                        MANIPULATED.classList.remove('icon_handdrawn_desktop_0_0_frame_4');
+                        MANIPULATED.classList.add('icon_handdrawn_desktop_0_0_frame_1');
+                    };
+                    if (interval == 2) {
+                        MANIPULATED.classList.remove('icon_handdrawn_desktop_0_0_frame_1');
+                        MANIPULATED.classList.remove('icon_handdrawn_desktop_0_0_frame_2');
+                        MANIPULATED.classList.remove('icon_handdrawn_desktop_0_0_frame_3');
+                        MANIPULATED.classList.remove('icon_handdrawn_desktop_0_0_frame_4');
+                        MANIPULATED.classList.add('icon_handdrawn_desktop_0_0_frame_2');
+                    };
+                    if (interval == 3) {
+                        MANIPULATED.classList.remove('icon_handdrawn_desktop_0_0_frame_1');
+                        MANIPULATED.classList.remove('icon_handdrawn_desktop_0_0_frame_2');
+                        MANIPULATED.classList.remove('icon_handdrawn_desktop_0_0_frame_3');
+                        MANIPULATED.classList.remove('icon_handdrawn_desktop_0_0_frame_4');
+                        MANIPULATED.classList.add('icon_handdrawn_desktop_0_0_frame_3');
+                    };
+                    if (interval == 4) {
+                        MANIPULATED.classList.remove('icon_handdrawn_desktop_0_0_frame_1');
+                        MANIPULATED.classList.remove('icon_handdrawn_desktop_0_0_frame_2');
+                        MANIPULATED.classList.remove('icon_handdrawn_desktop_0_0_frame_3');
+                        MANIPULATED.classList.remove('icon_handdrawn_desktop_0_0_frame_4');
+                        MANIPULATED.classList.add('icon_handdrawn_desktop_0_0_frame_4');
+                        interval = 0;
+                    };
+
+                    interval += 1;
+                }
+
+            }, 1000 / state.animation.framerate);
+
+    }());
+
+    // icon_handdrawn_head
+    (function() {
+        let interval = 1;
+
+        setInterval(
+            function() {
+
+        let MANIPULATED = document.getElementById('icon_handdrawn_head');
+
+                if (MANIPULATED != null) {
+                    MANIPULATED.innerHTML = '';
+                    if (interval == 1) {
+                        MANIPULATED.classList.remove('icon_handdrawn_head_0_0_frame_1');
+                        MANIPULATED.classList.remove('icon_handdrawn_head_0_0_frame_2');
+                        MANIPULATED.classList.remove('icon_handdrawn_head_0_0_frame_3');
+                        MANIPULATED.classList.remove('icon_handdrawn_head_0_0_frame_4');
+                        MANIPULATED.classList.add('icon_handdrawn_head_0_0_frame_1');
+                    };
+                    if (interval == 2) {
+                        MANIPULATED.classList.remove('icon_handdrawn_head_0_0_frame_1');
+                        MANIPULATED.classList.remove('icon_handdrawn_head_0_0_frame_2');
+                        MANIPULATED.classList.remove('icon_handdrawn_head_0_0_frame_3');
+                        MANIPULATED.classList.remove('icon_handdrawn_head_0_0_frame_4');
+                        MANIPULATED.classList.add('icon_handdrawn_head_0_0_frame_2');
+                    };
+                    if (interval == 3) {
+                        MANIPULATED.classList.remove('icon_handdrawn_head_0_0_frame_1');
+                        MANIPULATED.classList.remove('icon_handdrawn_head_0_0_frame_2');
+                        MANIPULATED.classList.remove('icon_handdrawn_head_0_0_frame_3');
+                        MANIPULATED.classList.remove('icon_handdrawn_head_0_0_frame_4');
+                        MANIPULATED.classList.add('icon_handdrawn_head_0_0_frame_3');
+                    };
+                    if (interval == 4) {
+                        MANIPULATED.classList.remove('icon_handdrawn_head_0_0_frame_1');
+                        MANIPULATED.classList.remove('icon_handdrawn_head_0_0_frame_2');
+                        MANIPULATED.classList.remove('icon_handdrawn_head_0_0_frame_3');
+                        MANIPULATED.classList.remove('icon_handdrawn_head_0_0_frame_4');
+                        MANIPULATED.classList.add('icon_handdrawn_head_0_0_frame_4');
+                        interval = 0;
+                    };
+
+                    interval += 1;
+                }
+
+            }, 1000 / state.animation.framerate);
+
+    }());
+
+    */
+
+    /* 1000 ms */
+    // Bounce
+    // Enemy
+    (function () {
+        let frame = 1;
+        setInterval(
+
+            function () {
+
+                (function () {
+
+                    if (state.ui.interaction.bounce.yaxis == 0) {
+                        state.ui.interaction.bounce.yaxisascending = true;
+                    }
+
+                    if (state.ui.interaction.bounce.yaxis == (state.ux.dimensions.current - 1)) {
+                        state.ui.interaction.bounce.yaxisascending = false;
+                    }
+
+                    if (state.ui.interaction.bounce.xaxis == 0) {
+                        state.ui.interaction.bounce.xaxisascending = true;
+                    }
+
+                    if (state.ui.interaction.bounce.xaxis == (state.ux.dimensions.current - 1)) {
+                        state.ui.interaction.bounce.xaxisascending = false;
+                    }
+
+                    if (state.ui.interaction.bounce.yaxisascending == false) {
+                        state.ui.interaction.bounce.yaxis -= 1;
+                    }
+
+                    if (state.ui.interaction.bounce.yaxisascending == true) {
+                        state.ui.interaction.bounce.yaxis += 1;
+                    }
+
+                    if (state.ui.interaction.bounce.xaxisascending == false) {
+                        state.ui.interaction.bounce.xaxis -= 1;
+                    }
+
+                    if (state.ui.interaction.bounce.xaxisascending == true) {
+                        state.ui.interaction.bounce.xaxis += 1;
+                    }
+
+                }());
+
+                (function () {
+
+
+                    if (state.ui.interaction.enemy.xaxis == 0) {
+                        state.ui.interaction.enemy.xaxisascending = true;
+                    }
+
+                    if (state.ui.interaction.enemy.xaxis == (state.ux.dimensions.current - 1)) {
+                        state.ui.interaction.enemy.xaxisascending = false;
+                    }
+
+                    if (state.ui.interaction.enemy.xaxisascending == false) {
+                        state.ui.interaction.enemy.xaxis -= 1;
+                    }
+
+                    if (state.ui.interaction.enemy.xaxisascending == true) {
+                        state.ui.interaction.enemy.xaxis += 1;
+                    }
+
+                    if (state.ui.interaction.player_1.xaxis == state.ui.interaction.enemy.xaxis && state.ui.interaction.player_1.yaxis == state.ui.interaction.enemy.yaxis) {
+                        // alert('Game over');
+                    };
+
+                }());
+
+            }, 1000);
+    }());
+
 };
 
 // resize
