@@ -5,7 +5,7 @@ let state = '';
 
 // Desktop
 if (!(/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent))) {
-    
+
     document.getElementById('component_app').addEventListener('click', (event) => {
         state = from_index.Handle_return_state();
 
@@ -609,7 +609,7 @@ if (!(/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent))) {
         state = from_index.Handle_return_state();
 
         // console.log('state in events');
-        
+
         console.log('wheel');
 
         if (event.deltaY < 0) {
@@ -917,7 +917,7 @@ if (!(/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent))) {
         if (index > -1) {
             state.events.key.keys.splice(index, 1);
         };
-        
+
         from_index.Handle_get_state_from_events();
         from_index.values_update();
     });
