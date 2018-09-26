@@ -8,11 +8,6 @@ import from_index from '../index.js';
             document.getElementById('score_current_area').innerText = state.data.score.current.area;
             document.getElementById('score_current_met').innerText = state.data.score.current.met;
         };
-
-        if (document.getElementById('time') != null) {
-            document.getElementById('time').innerText = time;
-        };
-
         // page
         if (document.getElementById('component_app_status_display_page_top') != null) {
             document.getElementById('component_app_status_display_page_top').innerText = state.ui.modal.page.top.display;
@@ -547,7 +542,7 @@ import from_index from '../index.js';
         if (document.getElementById('component_app_status_state_ux_browser_height') != null) {
             document.getElementById('component_app_status_state_events_mouse_gamma').innerHTML = state.events.mouse.gamma;
         };
-        
+
     };
 
 let from_Import = () => {

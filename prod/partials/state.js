@@ -5,6 +5,7 @@ let default_state = {
     },
 
     data: {
+        time: '',
         firebase: {},
         wordpress: {},
         refs: false,
@@ -140,7 +141,7 @@ let default_state = {
     },
 
     ui: {
-        
+
         colors: {
             load_light_yellow_0: {
                 transform: false,
@@ -362,7 +363,7 @@ let default_state = {
                 },
         },
         interaction: {
-            
+
             player_1: {
 
                 transform: false,

@@ -68,6 +68,7 @@ import imported_defaults from './partials/defaults';
 import imported_components from './partials/components';
 // import imported_generators from './partials/generators';
 // import imported_elements from './partials/elements';
+import imported_values from './partials/values';
 import imported_ui from './partials/ui';
 
 
@@ -225,6 +226,7 @@ let Handle_Firebase_Refs_and_Render = () => {
 
                         }, 1000);
                         console.clear();
+                        Handle_EventListeners();
                     }, 0);
 
                 };
@@ -296,6 +298,8 @@ let Handle_check_route = (route, info) => {
 
             if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
 
+                window.scrollTo(20, 0);
+
                 state.ui.colors.load_light_yellow_0.transform = true;
                 state.ui.colors.load_light_yellow_0.display = true;
 
@@ -303,10 +307,267 @@ let Handle_check_route = (route, info) => {
 
             if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
 
-                state.ui.colors.load_light_yellow_0.transform = true;
-                state.ui.colors.load_light_yellow_0.display = true;
-                
+                    // reset
+
+                    // stages
+
+                    // particles
+
+                    // interaction
+
+                    // modals
+                    setTimeout(function() {
+                        // - nav
+                        state.ui.modal.nav.top.display = true;
+                        state.ui.modal.nav.top.transform = true;
+                        state.ui.modal.nav.bottom.display = true;
+                        state.ui.modal.nav.bottom.transform = true;
+                        state.ui.modal.nav.left.display = true;
+                        state.ui.modal.nav.left.transform = true;
+                        state.ui.modal.nav.right.display = true;
+                        state.ui.modal.nav.right.transform = true;
+                    }, 2000);
+
+                    // colors
+                    setTimeout(function() {
+                        state.ui.colors.load_light_yellow_0.display = true;
+                    }, 1000);
+
+                    // gui
+                    setTimeout(function() {
+
+                        state.ui.gui.top.display = true;
+                        state.ui.gui.top.opacity = true;
+                        state.ui.gui.top.transform = false;
+
+                        state.ui.gui.top_right.display = true;
+                        state.ui.gui.top_right.opacity = true;
+                        state.ui.gui.top_right.transform = false;
+
+                        state.ui.gui.top_left.display = true;
+                        state.ui.gui.top_left.opacity = true;
+                        state.ui.gui.top_left.transform = false;
+
+                        state.ui.gui.right.display = true;
+                        state.ui.gui.right.opacity = true;
+                        state.ui.gui.right.transform = false;
+
+                        state.ui.gui.left.display = true;
+                        state.ui.gui.left.opacity = true;
+                        state.ui.gui.left.transform = false;
+
+                        state.ui.gui.bottom.display = true;
+                        state.ui.gui.bottom.opacity = true;
+                        state.ui.gui.bottom.transform = false;
+
+                        state.ui.gui.bottom_right.display = true;
+                        state.ui.gui.bottom_right.opacity = true;
+                        state.ui.gui.bottom_right.transform = false;
+
+                        state.ui.gui.bottom_left.display = true;
+                        state.ui.gui.bottom_left.opacity = true;
+                        state.ui.gui.bottom_left.transform = false;
+
+                        state.ui.gui.scroll.y.display = false;
+                        state.ui.gui.scroll.y.opacity = false;
+                        state.ui.gui.scroll.y.transform = true;
+
+                        state.ui.stage.enneagon.display = true;
+                        state.ui.stage.enneagon.opacity = true;
+                        state.ui.stage.enneagon.transform = false;
+
+                    }, 1000);
+
             };
+
+        };
+
+        // ON TO Preview
+        if (route == 'library_preview') {
+
+            // function start (Preview)
+            let number = Math.floor((Math.random() * 1000000000000000) + 1);
+
+            document.getElementById('component_app_modal_element_pop_top_content').innerHTML = '';
+            document.getElementById('component_app_modal_element_pop_top_content').innerHTML += info;
+            document.getElementById('component_app_modal_element_pop_top_content').innerHTML += '<div id="close'+number+'" class="gui_close width_10vh height_10vh float_left position_relative"></div>';
+            document.getElementById('component_app_modal_element_pop_top_content').innerHTML += '<div id="enter'+number+'" class="gui_arrow_left width_10vh height_10vh float_left position_relative"></div>';
+
+            state.ui.modal.pop.top.display = true;
+
+            setTimeout(function() {
+                state.ui.modal.pop.top.transform = false;
+            }, 200);
+
+            // add event listeners
+            setTimeout(() => {
+
+                document.getElementById('close'+number+'').addEventListener('click', (event) => {
+                    // function start (Preview close)
+                    state.ui.modal.pop.top.display = true;
+                    state.ui.modal.pop.top.transform = true;
+                });
+
+                // ON TO DETAIL
+                document.getElementById('enter'+number+'').addEventListener('click', (event) => {
+
+                    // function start (Detail)
+                    document.getElementById('component_app_modal_element_page_top_content').innerHTML = '<div id="component_app_modal_element_page_top_content_close'+number+'" class="gui_close width_10vh height_10vh float_left position_relative"></div>';
+                    document.getElementById('component_app_modal_element_page_top_content').innerHTML += '<div id="component_app_modal_element_page_top_content_enter'+number+'" class="gui_arrow_left width_10vh height_10vh float_left position_relative"></div>';
+                    
+                    state.ui.modal.page.top.display = true;
+
+                    setTimeout(() => {
+                        state.ui.modal.page.top.transform = false;
+                    }, 200);
+
+                    // add event listeners
+                    setTimeout(() => {
+
+                        document.getElementById('component_app_modal_element_page_top_content_close'+number+'').addEventListener('click', (event) => {    
+                            // function start (Preview close)
+                            state.ui.modal.page.top.display = true;
+                            state.ui.modal.page.top.transform = true;
+                          });
+
+                        // ON TO TOUR
+                        document.getElementById('component_app_modal_element_page_top_content_enter'+number+'').addEventListener('click', (event) => {
+
+                            state.ui.modal.overlay.top.display = true;
+                            state.ui.modal.overlay.top.transform = true;
+
+                            // function start (Tour)
+                            document.getElementById('component_app_modal_element_overlay_top_content').innerHTML = '<div id="component_app_modal_element_overlay_top_content_close'+number+'" class="gui_close width_10vh height_10vh float_left position_relative"></div>';
+                            document.getElementById('component_app_modal_element_overlay_top_content').innerHTML += '<div id="component_app_modal_element_overlay_top_content_enter'+number+'" class="gui_arrow_left width_10vh height_10vh float_left position_relative"></div>';
+
+                            state.ui.modal.overlay.top.display = true;
+
+                            setTimeout(() => {
+                                state.ui.modal.overlay.top.transform = false;
+                            }, 200);
+
+                            // add event listeners
+                            setTimeout(() => {
+                                document.getElementById('component_app_modal_element_overlay_top_content_close'+number+'').addEventListener('click', (event) => {
+                                    
+                                    // function start (Preview close)
+                                    state.ui.modal.overlay.top.display = true;
+                                    state.ui.modal.overlay.top.transform = true;
+                                  });
+
+                                // ON TO DONE
+                                document.getElementById('component_app_modal_element_overlay_top_content_enter'+number+'').addEventListener('click', (event) => {
+
+                                    alert('DONE!');
+
+                                  });
+
+                            }, 1000);
+
+                          });
+
+                    }, 1000);
+
+                  });
+
+            }, 1000);
+
+        };
+
+        if (route == 'reset') {
+
+            // gui
+            state.ui.gui.top.display = false;
+            state.ui.gui.top.opacity = false;
+            state.ui.gui.top.transform = false;
+            state.ui.gui.top_left.display = false;
+            state.ui.gui.top_left.opacity = false;
+            state.ui.gui.top_left.transform = false;
+            state.ui.gui.top_right.display = false;
+            state.ui.gui.top_right.opacity = false;
+            state.ui.gui.top_right.transform = false;
+            state.ui.gui.left.display = false;
+            state.ui.gui.left.opacity = false;
+            state.ui.gui.left.transform = false;
+            state.ui.gui.right.display = false;
+            state.ui.gui.right.opacity = false;
+            state.ui.gui.right.transform = false;
+            state.ui.gui.bottom.display = false;
+            state.ui.gui.bottom.opacity = false;
+            state.ui.gui.bottom.transform = false;
+            state.ui.gui.bottom_left.display = false;
+            state.ui.gui.bottom_left.opacity = false;
+            state.ui.gui.bottom_left.transform = false;
+            state.ui.gui.bottom_right.display = false;
+            state.ui.gui.bottom_right.opacity = false;
+            state.ui.gui.bottom_right.transform = false;
+
+            // state.ui.gui.scroll.y.display = false;
+            // state.ui.gui.scroll.y.opacity = false;
+            // state.ui.gui.scroll.y.transform = false;
+
+            // - modal
+
+            // -- nav
+            state.ui.modal.nav.top.display = false;
+            state.ui.modal.nav.top.transform = false;
+            state.ui.modal.nav.bottom.display = false;
+            state.ui.modal.nav.bottom.transform = false;
+            state.ui.modal.nav.left.display = false;
+            state.ui.modal.nav.left.transform = false;
+            state.ui.modal.nav.right.display = false;
+            state.ui.modal.nav.right.transform = false;
+
+            // - - page
+            state.ui.modal.page.top.display = false;
+            state.ui.modal.page.top.transform = false;
+            state.ui.modal.page.bottom.display = false;
+            state.ui.modal.page.bottom.transform = false;
+            state.ui.modal.page.left.display = false;
+            state.ui.modal.page.left.transform = false;
+            state.ui.modal.page.right.display = false;
+            state.ui.modal.page.right.transform = false;
+
+            // - - pop
+            state.ui.modal.pop.top.display = false;
+            state.ui.modal.pop.top.transform = false;
+            state.ui.modal.pop.bottom.display = false;
+            state.ui.modal.pop.bottom.transform = false;
+            state.ui.modal.pop.left.display = false;
+            state.ui.modal.pop.left.transform = false;
+            state.ui.modal.pop.right.display = false;
+            state.ui.modal.pop.right.transform = false;
+        
+        };
+
+        if (route == 'home') {
+
+            state.ui.gui.top_right.display = false;
+            state.ui.gui.top.display = false;
+            // state.ui.gui.top_left.display = !state.ui.gui.top_left.display;
+
+            state.ui.gui.left.display = false;
+            state.ui.gui.right.display = false;
+
+            state.ui.gui.bottom_right.display = false;
+            state.ui.gui.bottom.display = false;
+            state.ui.gui.bottom_left.display = false;
+
+            state.ui.modal.nav.bottom.transform = true;
+            state.ui.modal.nav.left.transform = true;
+            state.ui.modal.nav.top.transform = true;
+            state.ui.modal.nav.right.transform = true;
+
+            state.ui.modal.pop.bottom.transform = true;
+            state.ui.modal.pop.left.transform = true;
+            state.ui.modal.pop.top.transform = true;
+            state.ui.modal.pop.right.transform = true;
+
+            state.ui.modal.page.bottom.transform = true;
+            state.ui.modal.page.left.transform = true;
+            state.ui.modal.page.top.transform = true;
+            state.ui.modal.page.right.transform = true;
+
         };
 
     })();
@@ -314,7 +575,7 @@ let Handle_check_route = (route, info) => {
 };
 
 let values_update = () => {
-
+  imported_values.values_update();
 }
 
 let Handle_render = () => {
@@ -365,11 +626,11 @@ let Handle_opacity = () => {
 };
 
 let Handle_init = () => {
-  console.log('Handle_init');
+  //console.log('Handle_init');
 };
 
 let Handle_check_states = () => {
-  console.log('Handle_check_states');
+  //console.log('Handle_check_states');
   components = imported_components.get_components_handled();
   imported_ui.Handle_ui();
   Handle_display_with_delay();
@@ -382,6 +643,538 @@ let Handle_get_state_from_events = () => {
     state = imported_events.Handle_return_state_from_events();
     console.log('state in index from events');
     // console.log(state);
+};
+
+let Handle_EventListeners = () => {
+
+    if (document.getElementById('component_app_gui_top_left') != null) {
+
+        document.getElementById('component_app_gui_logo_icon').addEventListener("click", function(event) {
+            state.ui.modal.page.bottom.display = true;
+            state.ui.modal.page.bottom.transform = !state.ui.modal.page.bottom.transform;
+            alert('yo');
+        });
+
+        document.getElementById('component_app_gui_menu_icon').addEventListener("click", function(event) {
+            state.ui.modal.nav.top.display = true;
+            state.ui.modal.nav.top.transform = !state.ui.modal.nav.top.transform;
+            alert('yo');
+        });
+
+        document.getElementById('component_app_gui_top_left').addEventListener("click", function(event) {
+
+        });
+
+        document.getElementById('component_app_gui_top_right').addEventListener("click", function(event) {
+
+        });
+
+        document.getElementById('component_app_gui_top_center').addEventListener("click", function(event) {
+
+        });
+
+        document.getElementById('component_app_gui_left').addEventListener("click", function(event) {
+            state.ui.modal.pop.left.display = true;
+            state.ui.modal.pop.left.transform = !state.ui.modal.pop.left.transform;
+        });
+
+        document.getElementById('component_app_gui_right').addEventListener("click", function(event) {
+            state.ui.modal.pop.right.display = true;
+            state.ui.modal.pop.right.transform = !state.ui.modal.pop.right.transform;
+        });
+
+        document.getElementById('component_app_gui_bottom_center').addEventListener("click", function(event) {
+            state.ui.modal.pop.bottom.display = true;
+            state.ui.modal.pop.bottom.transform = !state.ui.modal.pop.bottom.transform;
+        });
+
+        document.getElementById('component_app_gui_bottom_left').addEventListener("click", function(event) {
+            state.ui.modal.pop.top.display = true;
+            state.ui.modal.pop.top.transform = !state.ui.modal.pop.top.transform;
+        });
+
+        document.getElementById('component_app_gui_bottom_right').addEventListener("click", function(event) {
+            state.ui.modal.pop.top.display = true;
+            state.ui.modal.pop.top.transform = !state.ui.modal.pop.top.transform;
+        });
+
+        document.getElementById('component_app_status_display_nav_top').addEventListener("click", function(event) {
+            state.ui.modal.nav.top.display = !state.ui.modal.nav.top.display;
+        });
+
+        document.getElementById('component_app_status_opacity_nav_top').addEventListener("click", function(event) {
+            state.ui.modal.nav.top.opacity = !state.ui.modal.nav.top.opacity;
+        });
+
+        document.getElementById('component_app_status_transform_nav_top').addEventListener("click", function(event) {
+            state.ui.modal.nav.top.transform = !state.ui.modal.nav.top.transform;
+        });
+
+        // nav - left
+        document.getElementById('component_app_status_display_nav_left').addEventListener("click", function(event) {
+            state.ui.modal.nav.left.display = !state.ui.modal.nav.left.display;
+        });
+
+        document.getElementById('component_app_status_opacity_nav_left').addEventListener("click", function(event) {
+            state.ui.modal.nav.left.opacity = !state.ui.modal.nav.left.opacity;
+        });
+
+        document.getElementById('component_app_status_transform_nav_left').addEventListener("click", function(event) {
+            state.ui.modal.nav.left.transform = !state.ui.modal.nav.left.transform;
+        });
+
+        // nav - bottom
+        document.getElementById('component_app_status_display_nav_bottom').addEventListener("click", function(event) {
+            state.ui.modal.nav.bottom.display = !state.ui.modal.nav.bottom.display;
+        });
+
+        document.getElementById('component_app_status_opacity_nav_bottom').addEventListener("click", function(event) {
+            state.ui.modal.nav.bottom.opacity = !state.ui.modal.nav.bottom.opacity;
+        });
+
+        document.getElementById('component_app_status_transform_nav_bottom').addEventListener("click", function(event) {
+            state.ui.modal.nav.bottom.transform = !state.ui.modal.nav.bottom.transform;
+        });
+
+        // nav - right
+        document.getElementById('component_app_status_display_nav_right').addEventListener("click", function(event) {
+            state.ui.modal.nav.right.display = !state.ui.modal.nav.right.display;
+        });
+
+        document.getElementById('component_app_status_opacity_nav_right').addEventListener("click", function(event) {
+            state.ui.modal.nav.right.opacity = !state.ui.modal.nav.right.opacity;
+        });
+
+        document.getElementById('component_app_status_transform_nav_right').addEventListener("click", function(event) {
+            state.ui.modal.nav.right.transform = !state.ui.modal.nav.right.transform;
+        });
+
+
+        // pop - top
+        document.getElementById('component_app_status_display_pop_top').addEventListener("click", function(event) {
+            state.ui.modal.pop.top.display = !state.ui.modal.pop.top.display;
+        });
+
+        document.getElementById('component_app_status_opacity_pop_top').addEventListener("click", function(event) {
+            state.ui.modal.pop.top.opacity = !state.ui.modal.pop.top.opacity;
+        });
+
+        document.getElementById('component_app_status_transform_pop_top').addEventListener("click", function(event) {
+            state.ui.modal.pop.top.transform = !state.ui.modal.pop.top.transform;
+        });
+
+        // pop - left
+        document.getElementById('component_app_status_display_pop_left').addEventListener("click", function(event) {
+            state.ui.modal.pop.left.display = !state.ui.modal.pop.left.display;
+        });
+
+        document.getElementById('component_app_status_opacity_pop_left').addEventListener("click", function(event) {
+            state.ui.modal.pop.left.opacity = !state.ui.modal.pop.left.opacity;
+        });
+
+        document.getElementById('component_app_status_transform_pop_left').addEventListener("click", function(event) {
+            state.ui.modal.pop.left.transform = !state.ui.modal.pop.left.transform;
+        });
+
+        // pop - bottom
+        document.getElementById('component_app_status_display_pop_bottom').addEventListener("click", function(event) {
+            state.ui.modal.pop.bottom.display = !state.ui.modal.pop.bottom.display;
+        });
+
+        document.getElementById('component_app_status_opacity_pop_bottom').addEventListener("click", function(event) {
+            state.ui.modal.pop.bottom.opacity = !state.ui.modal.pop.bottom.opacity;
+        });
+
+        document.getElementById('component_app_status_transform_pop_bottom').addEventListener("click", function(event) {
+            state.ui.modal.pop.bottom.transform = !state.ui.modal.pop.bottom.transform;
+        });
+
+        // pop - right
+        document.getElementById('component_app_status_display_pop_right').addEventListener("click", function(event) {
+            state.ui.modal.pop.right.display = !state.ui.modal.pop.right.display;
+        });
+
+        document.getElementById('component_app_status_opacity_pop_right').addEventListener("click", function(event) {
+            state.ui.modal.pop.right.opacity = !state.ui.modal.pop.right.opacity;
+        });
+
+        document.getElementById('component_app_status_transform_pop_right').addEventListener("click", function(event) {
+            state.ui.modal.pop.right.transform = !state.ui.modal.pop.right.transform;
+        });
+
+
+        // page - top
+        document.getElementById('component_app_status_display_page_top').addEventListener("click", function(event) {
+            state.ui.modal.page.top.display = !state.ui.modal.page.top.display;
+        });
+
+        document.getElementById('component_app_status_opacity_page_top').addEventListener("click", function(event) {
+            state.ui.modal.page.top.opacity = !state.ui.modal.page.top.opacity;
+        });
+
+        document.getElementById('component_app_status_transform_page_top').addEventListener("click", function(event) {
+            state.ui.modal.page.top.transform = !state.ui.modal.page.top.transform;
+        });
+
+        // page - left
+        document.getElementById('component_app_status_display_page_left').addEventListener("click", function(event) {
+            state.ui.modal.page.left.display = !state.ui.modal.page.left.display;
+        });
+
+        document.getElementById('component_app_status_opacity_page_left').addEventListener("click", function(event) {
+            state.ui.modal.page.left.opacity = !state.ui.modal.page.left.opacity;
+        });
+
+        document.getElementById('component_app_status_transform_page_left').addEventListener("click", function(event) {
+            state.ui.modal.page.left.transform = !state.ui.modal.page.left.transform;
+        });
+
+        // page - bottom
+        document.getElementById('component_app_status_display_page_bottom').addEventListener("click", function(event) {
+            state.ui.modal.page.bottom.display = !state.ui.modal.page.bottom.display;
+        });
+
+        document.getElementById('component_app_status_opacity_page_bottom').addEventListener("click", function(event) {
+            state.ui.modal.page.bottom.opacity = !state.ui.modal.page.bottom.opacity;
+        });
+
+        document.getElementById('component_app_status_transform_page_bottom').addEventListener("click", function(event) {
+            state.ui.modal.page.bottom.transform = !state.ui.modal.page.bottom.transform;
+        });
+
+        // page - right
+        document.getElementById('component_app_status_display_page_right').addEventListener("click", function(event) {
+            state.ui.modal.page.right.display = !state.ui.modal.page.right.display;
+        });
+
+        document.getElementById('component_app_status_opacity_page_right').addEventListener("click", function(event) {
+            state.ui.modal.page.right.opacity = !state.ui.modal.page.right.opacity;
+        });
+
+        document.getElementById('component_app_status_transform_page_right').addEventListener("click", function(event) {
+            state.ui.modal.page.right.transform = !state.ui.modal.page.right.transform;
+        });
+
+
+        // morph - top
+        document.getElementById('component_app_status_display_morph_top').addEventListener("click", function(event) {
+            state.ui.modal.morph.top.display = !state.ui.modal.morph.top.display;
+        });
+
+        document.getElementById('component_app_status_opacity_morph_top').addEventListener("click", function(event) {
+            state.ui.modal.morph.top.opacity = !state.ui.modal.morph.top.opacity;
+        });
+
+        document.getElementById('component_app_status_transform_morph_top').addEventListener("click", function(event) {
+            state.ui.modal.morph.top.transform = !state.ui.modal.morph.top.transform;
+        });
+
+        // morph - left
+        document.getElementById('component_app_status_display_morph_left').addEventListener("click", function(event) {
+            state.ui.modal.morph.left.display = !state.ui.modal.morph.left.display;
+        });
+
+        document.getElementById('component_app_status_opacity_morph_left').addEventListener("click", function(event) {
+            state.ui.modal.morph.left.opacity = !state.ui.modal.morph.left.opacity;
+        });
+
+        document.getElementById('component_app_status_transform_morph_left').addEventListener("click", function(event) {
+            state.ui.modal.morph.left.transform = !state.ui.modal.morph.left.transform;
+        });
+
+        // morph - bottom
+        document.getElementById('component_app_status_display_morph_bottom').addEventListener("click", function(event) {
+            state.ui.modal.morph.bottom.display = !state.ui.modal.morph.bottom.display;
+        });
+
+        document.getElementById('component_app_status_opacity_morph_bottom').addEventListener("click", function(event) {
+            state.ui.modal.morph.bottom.opacity = !state.ui.modal.morph.bottom.opacity;
+        });
+
+        document.getElementById('component_app_status_transform_morph_bottom').addEventListener("click", function(event) {
+            state.ui.modal.morph.bottom.transform = !state.ui.modal.morph.bottom.transform;
+        });
+
+        // morph - right
+        document.getElementById('component_app_status_display_morph_right').addEventListener("click", function(event) {
+            state.ui.modal.morph.right.display = !state.ui.modal.morph.right.display;
+        });
+
+        document.getElementById('component_app_status_opacity_morph_right').addEventListener("click", function(event) {
+            state.ui.modal.morph.right.opacity = !state.ui.modal.morph.right.opacity;
+        });
+
+        document.getElementById('component_app_status_transform_morph_right').addEventListener("click", function(event) {
+            state.ui.modal.morph.right.transform = !state.ui.modal.morph.right.transform;
+        });
+
+
+        // corner - top
+        document.getElementById('component_app_status_display_corner_top').addEventListener("click", function(event) {
+            state.ui.modal.corner.top.display = !state.ui.modal.corner.top.display;
+        });
+
+        document.getElementById('component_app_status_opacity_corner_top').addEventListener("click", function(event) {
+            state.ui.modal.corner.top.opacity = !state.ui.modal.corner.top.opacity;
+        });
+
+        document.getElementById('component_app_status_transform_corner_top').addEventListener("click", function(event) {
+            state.ui.modal.corner.top.transform = !state.ui.modal.corner.top.transform;
+        });
+
+        // corner - left
+        document.getElementById('component_app_status_display_corner_left').addEventListener("click", function(event) {
+            state.ui.modal.corner.left.display = !state.ui.modal.corner.left.display;
+        });
+
+        document.getElementById('component_app_status_opacity_corner_left').addEventListener("click", function(event) {
+            state.ui.modal.corner.left.opacity = !state.ui.modal.corner.left.opacity;
+        });
+
+        document.getElementById('component_app_status_transform_corner_left').addEventListener("click", function(event) {
+            state.ui.modal.corner.left.transform = !state.ui.modal.corner.left.transform;
+        });
+
+        // corner - bottom
+        document.getElementById('component_app_status_display_corner_bottom').addEventListener("click", function(event) {
+            state.ui.modal.corner.bottom.display = !state.ui.modal.corner.bottom.display;
+        });
+
+        document.getElementById('component_app_status_opacity_corner_bottom').addEventListener("click", function(event) {
+            state.ui.modal.corner.bottom.opacity = !state.ui.modal.corner.bottom.opacity;
+        });
+
+        document.getElementById('component_app_status_transform_corner_bottom').addEventListener("click", function(event) {
+            state.ui.modal.corner.bottom.transform = !state.ui.modal.corner.bottom.transform;
+        });
+
+        // corner - right
+        document.getElementById('component_app_status_display_corner_right').addEventListener("click", function(event) {
+            state.ui.modal.corner.right.display = !state.ui.modal.corner.right.display;
+        });
+
+        document.getElementById('component_app_status_opacity_corner_right').addEventListener("click", function(event) {
+            state.ui.modal.corner.right.opacity = !state.ui.modal.corner.right.opacity;
+        });
+
+        document.getElementById('component_app_status_transform_corner_right').addEventListener("click", function(event) {
+            state.ui.modal.corner.right.transform = !state.ui.modal.corner.right.transform;
+        });
+
+
+        // fade - top
+        document.getElementById('component_app_status_display_fade_top').addEventListener("click", function(event) {
+            state.ui.modal.fade.top.display = !state.ui.modal.fade.top.display;
+        });
+
+        document.getElementById('component_app_status_opacity_fade_top').addEventListener("click", function(event) {
+            state.ui.modal.fade.top.opacity = !state.ui.modal.fade.top.opacity;
+        });
+
+        document.getElementById('component_app_status_transform_fade_top').addEventListener("click", function(event) {
+            state.ui.modal.fade.top.transform = !state.ui.modal.fade.top.transform;
+        });
+
+        // fade - left
+        document.getElementById('component_app_status_display_fade_left').addEventListener("click", function(event) {
+            state.ui.modal.fade.left.display = !state.ui.modal.fade.left.display;
+        });
+
+        document.getElementById('component_app_status_opacity_fade_left').addEventListener("click", function(event) {
+            state.ui.modal.fade.left.opacity = !state.ui.modal.fade.left.opacity;
+        });
+
+        document.getElementById('component_app_status_transform_fade_left').addEventListener("click", function(event) {
+            state.ui.modal.fade.left.transform = !state.ui.modal.fade.left.transform;
+        });
+
+        // fade - bottom
+        document.getElementById('component_app_status_display_fade_bottom').addEventListener("click", function(event) {
+            state.ui.modal.fade.bottom.display = !state.ui.modal.fade.bottom.display;
+        });
+
+        document.getElementById('component_app_status_opacity_fade_bottom').addEventListener("click", function(event) {
+            state.ui.modal.fade.bottom.opacity = !state.ui.modal.fade.bottom.opacity;
+        });
+
+        document.getElementById('component_app_status_transform_fade_bottom').addEventListener("click", function(event) {
+            state.ui.modal.fade.bottom.transform = !state.ui.modal.fade.bottom.transform;
+        });
+
+        // fade - right
+        document.getElementById('component_app_status_display_fade_right').addEventListener("click", function(event) {
+            state.ui.modal.fade.right.display = !state.ui.modal.fade.right.display;
+        });
+
+        document.getElementById('component_app_status_opacity_fade_right').addEventListener("click", function(event) {
+            state.ui.modal.fade.right.opacity = !state.ui.modal.fade.right.opacity;
+        });
+
+        document.getElementById('component_app_status_transform_fade_right').addEventListener("click", function(event) {
+            state.ui.modal.fade.right.transform = !state.ui.modal.fade.right.transform;
+        });
+
+
+        // gradient - top
+        document.getElementById('component_app_status_display_gradient_top').addEventListener("click", function(event) {
+            state.ui.modal.gradient.top.display = !state.ui.modal.gradient.top.display;
+        });
+
+        document.getElementById('component_app_status_opacity_gradient_top').addEventListener("click", function(event) {
+            state.ui.modal.gradient.top.opacity = !state.ui.modal.gradient.top.opacity;
+        });
+
+        document.getElementById('component_app_status_transform_gradient_top').addEventListener("click", function(event) {
+            state.ui.modal.gradient.top.transform = !state.ui.modal.gradient.top.transform;
+        });
+
+        // gradient - left
+        document.getElementById('component_app_status_display_gradient_left').addEventListener("click", function(event) {
+            state.ui.modal.gradient.left.display = !state.ui.modal.gradient.left.display;
+        });
+
+        document.getElementById('component_app_status_opacity_gradient_left').addEventListener("click", function(event) {
+            state.ui.modal.gradient.left.opacity = !state.ui.modal.gradient.left.opacity;
+        });
+
+        document.getElementById('component_app_status_transform_gradient_left').addEventListener("click", function(event) {
+            state.ui.modal.gradient.left.transform = !state.ui.modal.gradient.left.transform;
+        });
+
+        // gradient - bottom
+        document.getElementById('component_app_status_display_gradient_bottom').addEventListener("click", function(event) {
+            state.ui.modal.gradient.bottom.display = !state.ui.modal.gradient.bottom.display;
+        });
+
+        document.getElementById('component_app_status_opacity_gradient_bottom').addEventListener("click", function(event) {
+            state.ui.modal.gradient.bottom.opacity = !state.ui.modal.gradient.bottom.opacity;
+        });
+
+        document.getElementById('component_app_status_transform_gradient_bottom').addEventListener("click", function(event) {
+            state.ui.modal.gradient.bottom.transform = !state.ui.modal.gradient.bottom.transform;
+        });
+
+        // gradient - right
+        document.getElementById('component_app_status_display_gradient_right').addEventListener("click", function(event) {
+            state.ui.modal.gradient.right.display = !state.ui.modal.gradient.right.display;
+        });
+
+        document.getElementById('component_app_status_opacity_gradient_right').addEventListener("click", function(event) {
+            state.ui.modal.gradient.right.opacity = !state.ui.modal.gradient.right.opacity;
+        });
+
+        document.getElementById('component_app_status_transform_gradient_right').addEventListener("click", function(event) {
+            state.ui.modal.gradient.right.transform = !state.ui.modal.gradient.right.transform;
+        });
+
+
+        // menu - top
+        document.getElementById('component_app_status_display_menu_top').addEventListener("click", function(event) {
+            state.ui.modal.menu.top.display = !state.ui.modal.menu.top.display;
+        });
+
+        document.getElementById('component_app_status_opacity_menu_top').addEventListener("click", function(event) {
+            state.ui.modal.menu.top.opacity = !state.ui.modal.menu.top.opacity;
+        });
+
+        document.getElementById('component_app_status_transform_menu_top').addEventListener("click", function(event) {
+            state.ui.modal.menu.top.transform = !state.ui.modal.menu.top.transform;
+        });
+
+        // menu - left
+        document.getElementById('component_app_status_display_menu_left').addEventListener("click", function(event) {
+            state.ui.modal.menu.left.display = !state.ui.modal.menu.left.display;
+        });
+
+        document.getElementById('component_app_status_opacity_menu_left').addEventListener("click", function(event) {
+            state.ui.modal.menu.left.opacity = !state.ui.modal.menu.left.opacity;
+        });
+
+        document.getElementById('component_app_status_transform_menu_left').addEventListener("click", function(event) {
+            state.ui.modal.menu.left.transform = !state.ui.modal.menu.left.transform;
+        });
+
+        // menu - bottom
+        document.getElementById('component_app_status_display_menu_bottom').addEventListener("click", function(event) {
+            state.ui.modal.menu.bottom.display = !state.ui.modal.menu.bottom.display;
+        });
+
+        document.getElementById('component_app_status_opacity_menu_bottom').addEventListener("click", function(event) {
+            state.ui.modal.menu.bottom.opacity = !state.ui.modal.menu.bottom.opacity;
+        });
+
+        document.getElementById('component_app_status_transform_menu_bottom').addEventListener("click", function(event) {
+            state.ui.modal.menu.bottom.transform = !state.ui.modal.menu.bottom.transform;
+        });
+
+        // menu - right
+        document.getElementById('component_app_status_display_menu_right').addEventListener("click", function(event) {
+            state.ui.modal.menu.right.display = !state.ui.modal.menu.right.display;
+        });
+
+        document.getElementById('component_app_status_opacity_menu_right').addEventListener("click", function(event) {
+            state.ui.modal.menu.right.opacity = !state.ui.modal.menu.right.opacity;
+        });
+
+        document.getElementById('component_app_status_transform_menu_right').addEventListener("click", function(event) {
+            state.ui.modal.menu.right.transform = !state.ui.modal.menu.right.transform;
+        });
+
+
+        // overlay - top
+        document.getElementById('component_app_status_display_overlay_top').addEventListener("click", function(event) {
+            state.ui.modal.overlay.top.display = !state.ui.modal.overlay.top.display;
+        });
+
+        document.getElementById('component_app_status_opacity_overlay_top').addEventListener("click", function(event) {
+            state.ui.modal.overlay.top.opacity = !state.ui.modal.overlay.top.opacity;
+        });
+
+        document.getElementById('component_app_status_transform_overlay_top').addEventListener("click", function(event) {
+            state.ui.modal.overlay.top.transform = !state.ui.modal.overlay.top.transform;
+        });
+
+        // overlay - left
+        document.getElementById('component_app_status_display_overlay_left').addEventListener("click", function(event) {
+            state.ui.modal.overlay.left.display = !state.ui.modal.overlay.left.display;
+        });
+
+        document.getElementById('component_app_status_opacity_overlay_left').addEventListener("click", function(event) {
+            state.ui.modal.overlay.left.opacity = !state.ui.modal.overlay.left.opacity;
+        });
+
+        document.getElementById('component_app_status_transform_overlay_left').addEventListener("click", function(event) {
+            state.ui.modal.overlay.left.transform = !state.ui.modal.overlay.left.transform;
+        });
+
+        // overlay - bottom
+        document.getElementById('component_app_status_display_overlay_bottom').addEventListener("click", function(event) {
+            state.ui.modal.overlay.bottom.display = !state.ui.modal.overlay.bottom.display;
+        });
+
+        document.getElementById('component_app_status_opacity_overlay_bottom').addEventListener("click", function(event) {
+            state.ui.modal.overlay.bottom.opacity = !state.ui.modal.overlay.bottom.opacity;
+        });
+
+        document.getElementById('component_app_status_transform_overlay_bottom').addEventListener("click", function(event) {
+            state.ui.modal.overlay.bottom.transform = !state.ui.modal.overlay.bottom.transform;
+        });
+
+        // overlay - right
+        document.getElementById('component_app_status_display_overlay_right').addEventListener("click", function(event) {
+            state.ui.modal.overlay.right.display = !state.ui.modal.overlay.right.display;
+        });
+
+        document.getElementById('component_app_status_opacity_overlay_right').addEventListener("click", function(event) {
+            state.ui.modal.overlay.right.opacity = !state.ui.modal.overlay.right.opacity;
+        });
+
+        document.getElementById('component_app_status_transform_overlay_right').addEventListener("click", function(event) {
+            state.ui.modal.overlay.right.transform = !state.ui.modal.overlay.right.transform;
+        });
+
+    };
+
 };
 
 // Create
@@ -794,23 +1587,16 @@ window.onload = () => {
     // alert(state.ui.interaction.dice);
     // alert(state.ui.interaction.random);
     // get date
+    // get date
     (() => {
         setInterval(function() {
-
-            var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-            var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+            let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+            let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
             let date = new Date();
-
-            console.log(months[date.getMonth()]);
-            console.log(days[date.getDay()]);
-
-            console.log(date.getDate());
-            console.log(date.getMilliseconds());
-            console.log(date.getSeconds());
-            console.log(date.getMinutes());
-            console.log(date.getHours());
-            console.log(date.getFullYear());
-
+            let time = 'Today is ' + (days[date.getDay()]) + ', ' + (months[date.getMonth()]) + ', ' + (date.getDay()) + ', ' + date.getFullYear() + '. Current time: ' + date.getHours() + ':' + date.getMinutes() + '.' + date.getSeconds() + '.' + date.getMilliseconds();
+            console.log(time);
+            document.getElementById('time').innerText = time;
+            state.data.time = time;
         }, 1000);
     })();
 

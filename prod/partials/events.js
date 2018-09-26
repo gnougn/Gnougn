@@ -931,7 +931,7 @@ if (!(/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent))) {
 // Mobile
 if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
     component_app.addEventListener("click", function(event) {
-        alert('on phone');
+        // alert('on phone');
     });
 };
 
