@@ -504,15 +504,6 @@ import from_index from '../index.js';
             },
 
             {
-                component: 'element_gui_scroll_y',
-                component_state_transform: state.ui.gui.scroll.y.transform,
-                component_state_transform_true: 'transform_translate3d_top100',
-                component_state_transform_false: 'transform_translate3d_top0',
-                component_state_display: state.ui.gui.scroll.y.display,
-                // component_state_opacity:  state.ui.gui.scroll.y.opacity
-            },
-
-            {
                 component: 'wp_component_post-home_content',
                 component_state_transform: state.ui.colors.load_light_yellow_0.transform,
                 //component_state_transform_true: 'transform_translate3d_top_100',

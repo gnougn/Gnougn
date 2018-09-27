@@ -1237,6 +1237,11 @@ template {
 .display_none {
   display: none; }
 
+.display_flex_flow {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center; }
+
 /* Floats */
 .float_left {
   float: left; }

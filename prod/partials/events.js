@@ -5,7 +5,7 @@ let state = '';
 
 // Desktop
 if (!(/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent))) {
-
+    
     document.getElementById('component_app').addEventListener('click', (event) => {
         state = from_index.Handle_return_state();
 
@@ -609,7 +609,7 @@ if (!(/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent))) {
         state = from_index.Handle_return_state();
 
         // console.log('state in events');
-
+        
         console.log('wheel');
 
         if (event.deltaY < 0) {
@@ -761,11 +761,7 @@ if (!(/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent))) {
 
         // zero
         if (keyCode == 48) {
-            console.log('0');
-
-            state.ui.colors.load_light_yellow_0.transform = !state.ui.colors.load_light_yellow_0.transform;
-            state.ui.colors.load_light_yellow_0.display = !state.ui.colors.load_light_yellow_0.display;
-
+            console.log('0')
         };
         // one
         if (keyCode == 49) {
@@ -819,7 +815,7 @@ if (!(/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent))) {
         // tab
         if (event.keyCode == 9) {
             console.log('tab');
-            from_index.Handle_reset_ui();
+            from_index.Handle_check_route('reset');
         };
 
         // enter
@@ -837,8 +833,7 @@ if (!(/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent))) {
         // esc
         if (event.keyCode == 27) {
             console.log('esc');
-
-            from_index.Handle_reset_ui_to_home();
+            state.ui.gui.top_left.display = !state.ui.gui.top_left.display;
         };
 
         // arrow left
@@ -891,6 +886,11 @@ if (!(/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent))) {
 
         };
 
+        // q
+        if (event.keyCode == 81) {
+            from_index.Handle_check_route('home');
+        };
+
         // w
         if (event.keyCode == 83) {
             state.ui.interaction.player_1.yaxis -= 1;
@@ -921,7 +921,7 @@ if (!(/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent))) {
         if (index > -1) {
             state.events.key.keys.splice(index, 1);
         };
-
+        
         from_index.Handle_get_state_from_events();
 
     });
@@ -931,7 +931,7 @@ if (!(/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent))) {
 // Mobile
 if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
     component_app.addEventListener("click", function(event) {
-        // alert('on phone');
+        alert('on phone');
     });
 };
 

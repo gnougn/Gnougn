@@ -13,6 +13,428 @@ let element_container = (info, style) => {
   return element
 };
 
+let element_container_styled = (style, info) => {
+    let element = '<div id="element_container_styled" class="position_relative margin_auto ' + style + ' float_left">' + info + '</div>'
+
+    return element
+};
+
+let element_container_center = (info) => {
+
+    let element = '<div id="element_container_center" class="width_100 height_100 position_relative float_left display_flex_flow "><div class="position_relative float_left">' + info + '</div></div>'
+
+    return element
+};
+
+let element_content_card = () => {
+  let component = '\
+  \
+            <div class="display_flex_flow width_100 height_100vh float_left position_relative background_light_yellow_9 color_dark_yellow_9">\
+              \
+              <div class="display_flex_flow width_100 height_100 float_left position_absolute left_0 right_0 bottom_100">\
+                \
+                <div class="display_flex_flow calc_25vh box_shadow_bottom_left_1vh_dark float_left position_absolute left_0 right_0 bottom_0 margin_auto background_light_yellow_9">\
+                   \
+                   <div class="display_flex_flow width_100 float_left position_relative">\
+                      \
+                      <div class="float_left position_relative">\
+                         \
+                         <div class="display_flex_flow width_100 float_left position_relative">\
+                            loading\
+                         </div>\
+                         \
+                         <div class="display_flex_flow width_100 float_left position_relative">\
+                            \
+                            <div class="display_flex_flow float_left position_relative padding_05vh">\
+                               [yes]\
+                            </div>\
+                            \
+                            <div class="display_flex_flow float_left position_relative padding_05vh">\
+                               no\
+                            </div>\
+                            \
+                         </div>\
+                         \
+                      </div>\
+                      \
+                   </div>\
+                   \
+                </div>\
+                \
+              </div>\
+              \
+              <div class="display_flex_flow width_100 height_100 box_shadow_bottom_left_1vh_dark float_left position_absolute bottom_0 left_0 right_0 margin_auto background_light_yellow_9">\
+                 \
+                 <div class="display_flex_flow width_100 float_left position_relative">\
+                    \
+                    <div class="float_left position_relative">\
+                       \
+                       <div class="display_flex_flow width_100 float_left position_relative">\
+                          loading\
+                       </div>\
+                       \
+                       <div class="display_flex_flow width_100 float_left position_relative">\
+                          \
+                          <div class="display_flex_flow float_left position_relative padding_05vh">\
+                             [yes]\
+                          </div>\
+                          \
+                          <div class="display_flex_flow float_left position_relative padding_05vh">\
+                             no\
+                          </div>\
+                          \
+                       </div>\
+                       \
+                    </div>\
+                    \
+                 </div>\
+                 \
+              </div>\
+              \
+            </div>\
+            \
+            ';
+
+  return component
+};
+
+let element_spaced_color = () => {
+  let component = '\
+  \
+            <div class="display_flex_flow width_100 height_100vh float_left position_relative background_light_yellow_9 color_light_yellow_9">\
+              \
+              <div class="display_flex_flow calc_10vh box_shadow_bottom_left_1vh_dark border_01vh_dark_yellow_9 float_left position_relative background_light_yellow_0 color_light_yellow_9">\
+                 \
+                 <div class="display_flex_flow width_100 float_left position_relative">\
+                    \
+                    <div class="float_left position_relative">\
+                       \
+                       <div class="display_flex_flow width_100 float_left position_relative color_light_yellow_9">\
+                          loading\
+                       </div>\
+                       \
+                       <div class="display_flex_flow width_100 float_left position_relative">\
+                          \
+                          <div class="display_flex_flow float_left position_relative color_light_yellow_9 padding_05vh">\
+                             [yes]\
+                          </div>\
+                          \
+                          <div class="display_flex_flow float_left position_relative color_light_yellow_9 padding_05vh">\
+                             no\
+                          </div>\
+                          \
+                       </div>\
+                       \
+                    </div>\
+                    \
+                 </div>\
+                 \
+              </div>\
+              \
+            </div>\
+            \
+            ';
+
+  return component
+};
+
+let element_content_loading = () => {
+  let component = '\
+  \
+            <div class="display_flex_flow width_100 height_100vh float_left position_relative background_black color_light_yellow_9">\
+              \
+              <div class="display_flex_flow calc_10vh box_shadow_bottom_left_1vh_light_yellow_1 border_01vh_light_yellow_0 float_left position_relative background_black color_light_yellow_9">\
+                 \
+                 <div class="display_flex_flow width_100 float_left position_relative">\
+                    \
+                    <div class="float_left position_relative">\
+                       \
+                       <div class="display_flex_flow width_100 float_left position_relative color_light_yellow_9">\
+                          loading\
+                       </div>\
+                       \
+                       <div class="display_flex_flow width_100 float_left position_relative">\
+                          \
+                          <div class="display_flex_flow float_left position_relative color_light_yellow_9 padding_05vh">\
+                             [yes]\
+                          </div>\
+                          \
+                          <div class="display_flex_flow float_left position_relative color_light_yellow_9 padding_05vh">\
+                             no\
+                          </div>\
+                          \
+                       </div>\
+                       \
+                    </div>\
+                    \
+                 </div>\
+                 \
+              </div>\
+              \
+            </div>\
+            \
+            ';
+
+  return component
+};
+
+let element_content_loading_scrolling = () => {
+  let component = '\
+  \
+            <div class="display_flex_flow width_100 height_100vh float_left position_relative background_black color_light_yellow_9">\
+              \
+              <div class="display_flex_flow calc_10vh box_shadow_bottom_left_1vh_light_yellow_1 border_01vh_light_yellow_0 float_left position_relative background_black color_light_yellow_9">\
+            <div class="position_relative height_100 width_100 float_left overflow_hidden">\
+               \
+               \
+               <ul class="position_relative height_100 width_100 float_left border_top_01vh_dark_yellow_9">\
+                  \
+                  ' + element_scroll_y_scrollbar(element_list_items([{
+                  link: 'death_ride'
+                  }, {
+                  link: 'death_ride'
+                  }, {
+                  link: 'death_ride'
+                  }, {
+                  link: 'death_ride'
+                  }, {
+                  link: 'death_ride'
+                  }, {
+                  link: 'death_ride'
+                  }, {
+                  link: 'death_ride'
+                  }, {
+                  link: 'death_ride'
+                  }, {
+                  link: 'death_ride'
+                  }, {
+                  link: 'death_ride'
+                  }, {
+                  link: 'death_ride'
+                  }, {
+                  link: 'death_ride'
+                  }, {
+                  link: 'death_ride'
+                  }, {
+                  link: 'death_ride'
+                  }, {
+                  link: 'death_ride'
+                  }, {
+                  link: 'death_ride'
+                  }, {
+                  link: 'death_ride'
+                  }, {
+                  link: 'death_ride'
+                  }, {
+                  link: 'death_ride'
+                  }, {
+                  link: 'death_ride'
+                  }, {
+                  link: 'death_ride'
+                  }, {
+                  link: 'death_ride'
+                  }, ])) + '\
+                  \
+               </ul>\
+               \
+            </div>\
+            \
+            <div class="position_relative height_100vh width_100 float_left">\
+               \
+               \
+               <div class="position_relative calc_02vh_height width_100 float_left border_top_01vh_dark_yellow_9 border_bottom_01vh_dark_yellow_9">\
+                  \
+               </div>\
+               \
+               \
+            </div>\
+            \
+              </div>\
+              \
+            </div>\
+            \
+            ';
+
+  return component
+};
+
+let element_content_scrolling = () => {
+  let component = '\
+  \
+  \
+            <div class="position_relative height_100 width_100 float_left overflow_hidden">\
+               \
+               \
+               <ul class="position_relative height_100 width_100 float_left border_top_01vh_dark_yellow_9">\
+                  \
+                  ' + element_scroll_y_scrollbar(element_list_items([{
+                  link: 'death_ride'
+                  }, {
+                  link: 'death_ride'
+                  }, {
+                  link: 'death_ride'
+                  }, {
+                  link: 'death_ride'
+                  }, {
+                  link: 'death_ride'
+                  }, {
+                  link: 'death_ride'
+                  }, {
+                  link: 'death_ride'
+                  }, {
+                  link: 'death_ride'
+                  }, {
+                  link: 'death_ride'
+                  }, {
+                  link: 'death_ride'
+                  }, {
+                  link: 'death_ride'
+                  }, {
+                  link: 'death_ride'
+                  }, {
+                  link: 'death_ride'
+                  }, {
+                  link: 'death_ride'
+                  }, {
+                  link: 'death_ride'
+                  }, {
+                  link: 'death_ride'
+                  }, {
+                  link: 'death_ride'
+                  }, {
+                  link: 'death_ride'
+                  }, {
+                  link: 'death_ride'
+                  }, {
+                  link: 'death_ride'
+                  }, {
+                  link: 'death_ride'
+                  }, {
+                  link: 'death_ride'
+                  }, ])) + '\
+                  \
+               </ul>\
+               \
+            </div>\
+            \
+            ';
+
+  return component
+};
+
+let element_center_content = (x) => {
+  let component = '\
+  \
+  <div class="display_flex_flow width_100 height_100vh float_left position_relative">\
+  '+x+'\
+  </div>\
+  \
+  ';
+
+  return component
+};
+
+let element_list_items = (array) => {
+
+    let items = ''
+    for (var i = 0; i < array.length; i++) {
+
+        items += '\
+        ' + element_list_item(array[i].link) + '\
+      ';
+    };
+
+    return items
+};
+
+let element_list_item = (info) => {
+
+    let random_int = randomizer();
+
+    let element = '\
+      <li class="position_relative height_10vh width_100 float_left margin_auto background_light_yellow_0 border_bottom_01vh_dark_yellow_9">\
+      \
+        <div class="position_relative height_10vh width_10vh float_left overflow_hidden margin_auto">\
+          <div class="position_absolute top_0 left_0 right_0 bottom_0 calc_1vh overflow_hidden border_radius_circle border_01vh_dark_yellow_9 background_light_yellow_9 z_index_1 margin_auto">\
+          \
+          </div>\
+        </div>\
+        \
+        <a id="element_list_item'+random_int+'" class="hover_show position_relative float_left overflow_hidden margin_auto line_height_10vh font_size_10vh text_shadow_01vh_dark_yellow_1 color-dark-yellow-9">\
+          ' + info + '\
+        </a>\
+        \
+        <a id="element_list_item'+random_int+'" class="hover_show position_relative float_left overflow_hidden margin_auto line_height_10vh font_size_5vh text_shadow_01vh_dark_yellow_1 color-dark-yellow-9">\
+          ' + info + '\
+        </a>\
+        \
+        <a id="element_list_item'+random_int+'" class="hover_show position_relative float_left overflow_hidden margin_auto line_height_10vh font_size_205vh text_shadow_01vh_dark_yellow_1 color-dark-yellow-9">\
+          ' + info + '\
+        </a>\
+        \
+        <a id="element_list_item'+random_int+'" class="hover_show position_relative float_left overflow_hidden margin_auto line_height_10vh font_size_2vh text_shadow_01vh_dark_yellow_1 color-dark-yellow-9">\
+          ' + info + '\
+        </a>\
+        \
+      </li>\
+    '
+
+    // add event listeners
+    setTimeout(() => {
+
+      document.getElementById('element_list_item'+random_int).addEventListener("click", function(event) {
+          alert('yes');
+        })
+
+    }, 1000);
+
+    return element
+
+};
+
+let component_keystroke_annotate_new = (x, y) => {
+    let component = '\
+      <span class="margin_auto position_relative margin_05vh_left margin_05vh_right margin_1vh_bottom float_left top_0 z_index_1 font_pixel">\
+      <span class="margin_auto position_relative float_left top_0">\
+      <span class="margin_auto position_relative float_left top_1vh">\
+      <span class="position_relative hover_top_0 top_-1vh easing_01 background_light_yellow_9 width_100 text_align_center float_right display_flex_flow  pseudo_button_bottom_dark_yellow_8 pseudo_button_bottom_dark_yellow_8_shadow_border_02 pseudo_hover">\
+      \
+      <span class=" position_absolute top_0 left_0 right_0 float_left calc_05vh margin_auto display_flex_flow border_025vh_dark_yellow_9 background_dark_yellow_0">\
+      \
+      </span>\
+      \
+      <span class="position_relative text_align_center font_size_2vh line_height_3vh padding_1vh float_right">\
+      ' + x + '\
+      </span>\
+      \
+      <span id="wp_component_meta" class="position_absolute width_25vh right_0 left_0 bottom_100 float_left line_height_5vh font_size_205vh text_shadow_01vh_dark_yellow_1 margin_205vh_bottom hover_show">\
+        <span class="position_relative top_0vh left_0vh easing_01 margin_2vh calc_4vh_width border_025vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9 box_shadow_hover_none background_light_yellow_0 text_align_center float_right pseudo_arrow_bottom_left_outside_light_yellow_0">\
+          <div class="overflow_hidden width_100 height_100 position_relative top_0 left_0 display_flex_flow">\
+            <div class="calc_2vh_width margin_1vh position_relative float_left">\
+              <p class="font_size_2vh line_height_205vh">\
+              ' + y + '\
+              </p>\
+            </div>\
+          </div>\
+        </span>\
+      </span>\
+      \
+      </span>\
+      </span>\
+      </span>\
+      </span>\
+    ';
+
+    return component
+};
+
+let element_time = () => {
+  let component = '\
+    <h1 id="time" class="font_size_205vh line_height_5vh">Request</h1>\
+  ';
+
+  return component
+};
 
 let element_gradient = (info) => {
   let element = '\
@@ -23,7 +445,3323 @@ let element_gradient = (info) => {
   return element
 };
 
+let element_gui_scroll_y = () => {
 
+    let anchor = 0;
+    let random_int = randomizer();
+
+    let check_element = () => {
+      
+      document.getElementById('anchor').innerHTML = anchor;
+
+      if (anchor == 0) {
+        document.getElementById('component_app_gui_scroll_y_fold_content').innerHTML = anchors;
+        document.getElementById('component_app_gui_scroll_y_content').innerHTML = default_content;
+
+        from_index.Handle_Firebase_Refs_and_Render();
+      };
+
+      if (anchor == 1) {
+        document.getElementById('component_app_gui_scroll_y_fold_content').innerHTML = '1';
+        document.getElementById('component_app_gui_scroll_y_content').innerHTML = default_content_1;
+        
+      };
+
+      if (anchor == 2) {
+        document.getElementById('component_app_gui_scroll_y_fold_content').innerHTML = '2';
+        document.getElementById('component_app_gui_scroll_y_content').innerHTML = default_content_2;
+        
+      };
+      
+      if (anchor == 3) {
+        document.getElementById('component_app_gui_scroll_y_fold_content').innerHTML = '\
+          \
+          \
+        ';
+        document.getElementById('component_app_gui_scroll_y_content').innerHTML = '';
+      };
+    };
+
+    let default_content = '\
+      \
+      '+element_gradient('gradient_light_yellow_0_bottom')+'\
+      \
+      '+element_container('\
+        \
+        '+element_container('\
+            \
+            ' + element_title('feature: element_slider_1') + '\
+            \
+            '+element_container('\
+            \
+            '+element_slider_1()+'\
+          \
+          ', 'calc_4vh padding_1vh margin_1vh float_left position_relative border_01vh_dark_yellow_9 background_light_yellow_9')+'\
+          \
+        ', 'width_33 float_left position_relative background_light_yellow_0')+'\
+        \
+        '+element_container('\
+              \
+              ' + element_title('feature: element_slider_2') + '\
+          \
+            '+element_container('\
+              \
+              '+element_slider_2()+'\
+              \
+              ', 'calc_4vh padding_1vh margin_1vh float_left position_relative border_01vh_dark_yellow_9 background_light_yellow_9')+'\
+            \
+          ', 'width_33 float_left position_relative background_light_yellow_0')+'\
+        \
+        '+element_container('\
+              \
+              ' + element_title('feature: element_slider_3') + '\
+          \
+            '+element_container('\
+              \
+              '+element_slider_3()+'\
+              \
+              ', 'calc_4vh padding_1vh margin_1vh float_left position_relative border_01vh_dark_yellow_9 background_light_yellow_9')+'\
+            \
+          ', 'width_33 float_left position_relative background_light_yellow_0')+'\
+        \
+        '+element_container('\
+              \
+              ' + element_title('feature: element_slider_4') + '\
+          \
+            '+element_container('\
+              \
+              '+element_slider_4()+'\
+              \
+              ', 'calc_4vh padding_1vh margin_1vh float_left position_relative border_01vh_dark_yellow_9 background_light_yellow_9')+'\
+            \
+          ', 'width_33 float_left position_relative background_light_yellow_0')+'\
+        \
+        '+element_container('\
+          \
+          ' + element_title('feature: element_slider_5') + '\
+          \
+            '+element_container('\
+              \
+              '+element_slider_5()+'\
+              \
+              ', 'calc_4vh padding_1vh margin_1vh float_left position_relative border_01vh_dark_yellow_9 background_light_yellow_9')+'\
+            \
+          ', 'width_33 float_left position_relative background_light_yellow_0')+'\
+        \
+        '+element_container('\
+          \
+          ' + element_title('feature: element_slider_6') + '\
+          \
+            '+element_container('\
+              \
+              '+element_slider_6()+'\
+              \
+              ', 'calc_4vh padding_1vh margin_1vh float_left position_relative border_01vh_dark_yellow_9 background_light_yellow_9')+'\
+            \
+          ', 'width_33 float_left position_relative background_light_yellow_0')+'\
+        \
+        '+element_container('\
+          \
+          ' + element_title('feature: element_slider_7') + '\
+          \
+            '+element_container('\
+              \
+              '+element_slider_7()+'\
+              \
+              ', 'calc_4vh padding_1vh margin_1vh float_left position_relative border_01vh_dark_yellow_9 background_light_yellow_9')+'\
+            \
+          ', 'width_33 float_left position_relative background_light_yellow_0')+'\
+        \
+        '+element_container('\
+              \
+              ' + element_title('feature: element_time') + '\
+          \
+            '+element_container('\
+              \
+              '+element_time()+'\
+              \
+              ', 'calc_4vh padding_1vh margin_1vh float_left position_relative border_01vh_dark_yellow_9 background_light_yellow_9')+'\
+            \
+          ', 'width_33 float_left position_relative background_light_yellow_0')+'\
+        \
+        ' + element_title('feature: transforms', 'width_100 text_align_center font_size_10vh line_height_10vh background-white border_top_01vh_dark_yellow_9 border_bottom_01vh_dark_yellow_9', 'feature: transforms') + '\
+        \
+        <div id="component_transform_1" class="overflow_hidden width_100 height_50vh position_relative float_left background-light-yellow-9 display_flex_flow">\
+            \
+            \
+            <div id="route_firebase" class="overflow_hidden width_25 height_100 position_relative float_left background-light-yellow-9 display_flex_flow">\
+                \
+                <div class="top0 left0 easing_1 width_100 height_100 position_absolute float_left background-light-yellow-9 display_flex_flow">\
+                    \
+                    <div class="calc_10vh margin_5vh position_relative float_left display_flex_flow">\
+                        \
+                        <div class="width_100 height_100 position_relative float_left display_flex_flow">\
+                            <div class="calc_10vh position_relative float_left photo_person1 border_01vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9">\
+                                \
+                                <div class="position_absolute bottom_0 left_0 float_left display_flex_flow">\
+                                    <div class="position_relative float_left background-light-yellow-0 border_01vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9">\
+                                        <p class="font_size_205vh padding_205vh position_relative float_left">top100</p>\
+                                    </div>\
+                                </div>\
+                                \
+                            </div>\
+                            \
+                        </div>\
+                        \
+                    </div>\
+                    \
+                </div>\
+                 \
+                <div class="transform_translate3d_top_0_hover transform_translate3d_top100 easing_1 width_100 height_100 position_absolute float_left background-light-yellow-9 display_flex_flow">\
+                    \
+                    <div class="calc_10vh margin_5vh position_relative float_left display_flex_flow">\
+                        \
+                        <div class="width_100 height_100 position_relative float_left display_flex_flow">\
+                            <div class="calc_10vh position_relative float_left photo_person1 border_01vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9">\
+                                \
+                                <div class="position_absolute bottom_0 left_0 float_left display_flex_flow">\
+                                    <div class="position_relative float_left background-light-yellow-0 border_01vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9">\
+                                        <p class="font_size_205vh padding_205vh position_relative float_left">top100</p>\
+                                    </div>\
+                                </div>\
+                                \
+                            </div>\
+                            \
+                        </div>\
+                        \
+                    </div>\
+                    \
+                </div>\
+                \
+            </div>\
+            \
+            \
+            <div id="route_firebase" class="overflow_hidden width_25 height_100 position_relative float_left background-light-yellow-9 display_flex_flow">\
+                \
+                <div class="top0 left0 easing_1 width_100 height_100 position_absolute float_left background-light-yellow-9 display_flex_flow">\
+                    \
+                    <div class="calc_10vh margin_5vh position_relative float_left display_flex_flow">\
+                        \
+                        <div class="width_100 height_100 position_relative float_left display_flex_flow">\
+                            <div class="calc_10vh position_relative float_left photo_person1 border_01vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9">\
+                                \
+                                <div class="position_absolute bottom_0 left_0 float_left display_flex_flow">\
+                                    <div class="position_relative float_left background-light-yellow-0 border_01vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9">\
+                                        <p class="font_size_205vh padding_205vh position_relative float_left">top100</p>\
+                                    </div>\
+                                </div>\
+                                \
+                            </div>\
+                            \
+                        </div>\
+                        \
+                    </div>\
+                    \
+                </div>\
+                 \
+                <div class="transform_translate3d_top_0_hover transform_translate3d_top100 easing_1 width_100 height_100 position_absolute float_left background-light-yellow-9 display_flex_flow">\
+                    \
+                    <div class="calc_10vh margin_5vh position_relative float_left display_flex_flow">\
+                        \
+                        <div class="width_100 height_100 position_relative float_left display_flex_flow">\
+                            <div class="calc_10vh position_relative float_left photo_person1 border_01vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9">\
+                                \
+                                <div class="position_absolute bottom_0 left_0 float_left display_flex_flow">\
+                                    <div class="position_relative float_left background-light-yellow-0 border_01vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9">\
+                                        <p class="font_size_205vh padding_205vh position_relative float_left">top100</p>\
+                                    </div>\
+                                </div>\
+                                \
+                            </div>\
+                            \
+                        </div>\
+                        \
+                    </div>\
+                    \
+                </div>\
+                \
+            </div>\
+            \
+            \
+            <div id="route_firebase" class="overflow_hidden width_25 height_100 position_relative float_left background-light-yellow-9 display_flex_flow">\
+                \
+                <div class="top0 left0 easing_1 width_100 height_100 position_absolute float_left background-light-yellow-9 display_flex_flow">\
+                    \
+                    <div class="calc_10vh margin_5vh position_relative float_left display_flex_flow">\
+                        \
+                        <div class="width_100 height_100 position_relative float_left display_flex_flow">\
+                            <div class="calc_10vh position_relative float_left photo_person1 border_01vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9">\
+                                \
+                                <div class="position_absolute bottom_0 left_0 float_left display_flex_flow">\
+                                    <div class="position_relative float_left background-light-yellow-0 border_01vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9">\
+                                        <p class="font_size_205vh padding_205vh position_relative float_left">top100</p>\
+                                    </div>\
+                                </div>\
+                                \
+                            </div>\
+                            \
+                        </div>\
+                        \
+                    </div>\
+                    \
+                </div>\
+                 \
+                <div class="transform_translate3d_top_0_hover transform_translate3d_top100 easing_1 width_100 height_100 position_absolute float_left background-light-yellow-9 display_flex_flow">\
+                    \
+                    <div class="calc_10vh margin_5vh position_relative float_left display_flex_flow">\
+                        \
+                        <div class="width_100 height_100 position_relative float_left display_flex_flow">\
+                            <div class="calc_10vh position_relative float_left photo_person1 border_01vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9">\
+                                \
+                                <div class="position_absolute bottom_0 left_0 float_left display_flex_flow">\
+                                    <div class="position_relative float_left background-light-yellow-0 border_01vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9">\
+                                        <p class="font_size_205vh padding_205vh position_relative float_left">top100</p>\
+                                    </div>\
+                                </div>\
+                                \
+                            </div>\
+                            \
+                        </div>\
+                        \
+                    </div>\
+                    \
+                </div>\
+                \
+            </div>\
+            \
+            \
+            <div id="route_firebase" class="overflow_hidden width_25 height_100 position_relative float_left background-light-yellow-9 display_flex_flow">\
+                \
+                <div class="top0 left0 easing_1 width_100 height_100 position_absolute float_left background-light-yellow-9 display_flex_flow">\
+                    \
+                    <div class="calc_10vh margin_5vh position_relative float_left display_flex_flow">\
+                        \
+                        <div class="width_100 height_100 position_relative float_left display_flex_flow">\
+                            <div class="calc_10vh position_relative float_left photo_person1 border_01vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9">\
+                                \
+                                <div class="position_absolute bottom_0 left_0 float_left display_flex_flow">\
+                                    <div class="position_relative float_left background-light-yellow-0 border_01vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9">\
+                                        <p class="font_size_205vh padding_205vh position_relative float_left">top100</p>\
+                                    </div>\
+                                </div>\
+                                \
+                            </div>\
+                            \
+                        </div>\
+                        \
+                    </div>\
+                    \
+                </div>\
+                 \
+                <div class="transform_translate3d_top_0_hover transform_translate3d_top100 easing_1 width_100 height_100 position_absolute float_left background-light-yellow-9 display_flex_flow">\
+                    \
+                    <div class="calc_10vh margin_5vh position_relative float_left display_flex_flow">\
+                        \
+                        <div class="width_100 height_100 position_relative float_left display_flex_flow">\
+                            <div class="calc_10vh position_relative float_left photo_person1 border_01vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9">\
+                                \
+                                <div class="position_absolute bottom_0 left_0 float_left display_flex_flow">\
+                                    <div class="position_relative float_left background-light-yellow-0 border_01vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9">\
+                                        <p class="font_size_205vh padding_205vh position_relative float_left">top100</p>\
+                                    </div>\
+                                </div>\
+                                \
+                            </div>\
+                            \
+                        </div>\
+                        \
+                    </div>\
+                    \
+                </div>\
+                \
+            </div>\
+            \
+            \
+        </div>\
+        \
+        <div id="component_transform_2" class="overflow_hidden width_100 height_100vh position_relative float_left background-light-yellow-9">\
+            \
+            \
+            <div id="route_firebase" class="overflow_hidden width_100 height_25 position_relative float_left background-light-yellow-9 display_flex_flow">\
+                \
+                <div class="top0 left0 easing_1 width_100 height_100 position_absolute float_left background-light-yellow-9 display_flex_flow">\
+                    \
+                    <div class="calc_10vh margin_5vh position_relative float_left display_flex_flow">\
+                        \
+                        <div class="width_100 height_100 position_relative float_left display_flex_flow">\
+                            <div class="calc_10vh position_relative float_left photo_person1 border_01vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9">\
+                                \
+                                <div class="position_absolute bottom_0 left_0 float_left display_flex_flow">\
+                                    <div class="position_relative float_left background-light-yellow-0 border_01vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9">\
+                                        <p class="font_size_205vh padding_205vh position_relative float_left">top100</p>\
+                                    </div>\
+                                </div>\
+                                \
+                            </div>\
+                            \
+                        </div>\
+                        \
+                    </div>\
+                    \
+                </div>\
+                 \
+                <div class="transform_translate3d_left0_hover transform_translate3d_left100 easing_1 width_100 height_100 position_absolute float_left background-light-yellow-9 display_flex_flow">\
+                    \
+                    <div class="calc_10vh margin_5vh position_relative float_left display_flex_flow">\
+                        \
+                        <div class="width_100 height_100 position_relative float_left display_flex_flow">\
+                            <div class="calc_10vh position_relative float_left photo_person1 border_01vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9">\
+                                \
+                                <div class="position_absolute bottom_0 left_0 float_left display_flex_flow">\
+                                    <div class="position_relative float_left background-light-yellow-0 border_01vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9">\
+                                        <p class="font_size_205vh padding_205vh position_relative float_left">top100</p>\
+                                    </div>\
+                                </div>\
+                                \
+                            </div>\
+                            \
+                        </div>\
+                        \
+                    </div>\
+                    \
+                </div>\
+                \
+            </div>\
+            \
+            \
+            <div id="route_firebase" class="overflow_hidden width_100 height_25 position_relative float_left background-light-yellow-9 display_flex_flow">\
+                \
+                <div class="top0 left0 easing_1 width_100 height_100 position_absolute float_left background-light-yellow-9 display_flex_flow">\
+                    \
+                    <div class="calc_10vh margin_5vh position_relative float_left display_flex_flow">\
+                        \
+                        <div class="width_100 height_100 position_relative float_left display_flex_flow">\
+                            <div class="calc_10vh position_relative float_left photo_person1 border_01vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9">\
+                                \
+                                <div class="position_absolute bottom_0 left_0 float_left display_flex_flow">\
+                                    <div class="position_relative float_left background-light-yellow-0 border_01vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9">\
+                                        <p class="font_size_205vh padding_205vh position_relative float_left">top100</p>\
+                                    </div>\
+                                </div>\
+                                \
+                            </div>\
+                            \
+                        </div>\
+                        \
+                    </div>\
+                    \
+                </div>\
+                 \
+                <div class="transform_translate3d_left0_hover transform_translate3d_left100 easing_1 width_100 height_100 position_absolute float_left background-light-yellow-9 display_flex_flow">\
+                    \
+                    <div class="calc_10vh margin_5vh position_relative float_left display_flex_flow">\
+                        \
+                        <div class="width_100 height_100 position_relative float_left display_flex_flow">\
+                            <div class="calc_10vh position_relative float_left photo_person1 border_01vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9">\
+                                \
+                                <div class="position_absolute bottom_0 left_0 float_left display_flex_flow">\
+                                    <div class="position_relative float_left background-light-yellow-0 border_01vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9">\
+                                        <p class="font_size_205vh padding_205vh position_relative float_left">top100</p>\
+                                    </div>\
+                                </div>\
+                                \
+                            </div>\
+                            \
+                        </div>\
+                        \
+                    </div>\
+                    \
+                </div>\
+                \
+            </div>\
+            \
+            \
+            <div id="route_firebase" class="overflow_hidden width_100 height_25 position_relative float_left background-light-yellow-9 display_flex_flow">\
+                \
+                <div class="top0 left0 easing_1 width_100 height_100 position_absolute float_left background-light-yellow-9 display_flex_flow">\
+                    \
+                    <div class="calc_10vh margin_5vh position_relative float_left display_flex_flow">\
+                        \
+                        <div class="width_100 height_100 position_relative float_left display_flex_flow">\
+                            <div class="calc_10vh position_relative float_left photo_person1 border_01vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9">\
+                                \
+                                <div class="position_absolute bottom_0 left_0 float_left display_flex_flow">\
+                                    <div class="position_relative float_left background-light-yellow-0 border_01vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9">\
+                                        <p class="font_size_205vh padding_205vh position_relative float_left">top100</p>\
+                                    </div>\
+                                </div>\
+                                \
+                            </div>\
+                            \
+                        </div>\
+                        \
+                    </div>\
+                    \
+                </div>\
+                 \
+                <div class="transform_translate3d_left0_hover transform_translate3d_left100 easing_1 width_100 height_100 position_absolute float_left background-light-yellow-9 display_flex_flow">\
+                    \
+                    <div class="calc_10vh margin_5vh position_relative float_left display_flex_flow">\
+                        \
+                        <div class="width_100 height_100 position_relative float_left display_flex_flow">\
+                            <div class="calc_10vh position_relative float_left photo_person1 border_01vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9">\
+                                \
+                                <div class="position_absolute bottom_0 left_0 float_left display_flex_flow">\
+                                    <div class="position_relative float_left background-light-yellow-0 border_01vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9">\
+                                        <p class="font_size_205vh padding_205vh position_relative float_left">top100</p>\
+                                    </div>\
+                                </div>\
+                                \
+                            </div>\
+                            \
+                        </div>\
+                        \
+                    </div>\
+                    \
+                </div>\
+                \
+            </div>\
+            \
+            \
+            <div id="route_firebase" class="overflow_hidden width_100 height_25 position_relative float_left background-light-yellow-9 display_flex_flow">\
+                \
+                <div class="top0 left0 easing_1 width_100 height_100 position_absolute float_left background-light-yellow-9 display_flex_flow">\
+                    \
+                    <div class="calc_10vh margin_5vh position_relative float_left display_flex_flow">\
+                        \
+                        <div class="width_100 height_100 position_relative float_left display_flex_flow">\
+                            <div class="calc_10vh position_relative float_left photo_person1 border_01vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9">\
+                                \
+                                <div class="position_absolute bottom_0 left_0 float_left display_flex_flow">\
+                                    <div class="position_relative float_left background-light-yellow-0 border_01vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9">\
+                                        <p class="font_size_205vh padding_205vh position_relative float_left">top100</p>\
+                                    </div>\
+                                </div>\
+                                \
+                            </div>\
+                            \
+                        </div>\
+                        \
+                    </div>\
+                    \
+                </div>\
+                 \
+                <div class="transform_translate3d_left0_hover transform_translate3d_left100 easing_1 width_100 height_100 position_absolute float_left background-light-yellow-9 display_flex_flow">\
+                    \
+                    <div class="calc_10vh margin_5vh position_relative float_left display_flex_flow">\
+                        \
+                        <div class="width_100 height_100 position_relative float_left display_flex_flow">\
+                            <div class="calc_10vh position_relative float_left photo_person1 border_01vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9">\
+                                \
+                                <div class="position_absolute bottom_0 left_0 float_left display_flex_flow">\
+                                    <div class="position_relative float_left background-light-yellow-0 border_01vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9">\
+                                        <p class="font_size_205vh padding_205vh position_relative float_left">top100</p>\
+                                    </div>\
+                                </div>\
+                                \
+                            </div>\
+                            \
+                        </div>\
+                        \
+                    </div>\
+                    \
+                </div>\
+                \
+            </div>\
+            \
+            \
+        </div>\
+        \
+        <div id="component_transform_3" class="overflow_hidden width_50 height_50vh position_relative float_left background-light-yellow-9 display_flex_flow">\
+            \
+            <div class="top0 left0 easing_1 width_100 height_100 position_absolute float_left background-light-yellow-9 display_flex_flow">\
+                \
+                <div class="calc_10vh margin_5vh position_relative float_left display_flex_flow">\
+                    \
+                    <div class="width_100 height_100 position_relative float_left display_flex_flow">\
+                        <div class="calc_10vh position_relative float_left photo_person1 border_01vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9">\
+                            \
+                            <div class="position_absolute bottom_0 left_0 float_left display_flex_flow">\
+                                <div class="position_relative float_left background-light-yellow-0 border_01vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9">\
+                                    <p class="font_size_205vh padding_205vh position_relative float_left">top100</p>\
+                                </div>\
+                            </div>\
+                            \
+                        </div>\
+                        \
+                    </div>\
+                    \
+                </div>\
+                \
+            </div>\
+             \
+            <div class="transform_translate3d_top_0_hover transform_translate3d_top100 easing_1 width_100 height_100 position_absolute float_left background-light-yellow-9 display_flex_flow">\
+                \
+                <div class="calc_10vh margin_5vh position_relative float_left display_flex_flow">\
+                    \
+                    <div class="width_100 height_100 position_relative float_left display_flex_flow">\
+                        <div class="calc_10vh position_relative float_left photo_person1 border_01vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9">\
+                            \
+                            <div class="position_absolute bottom_0 left_0 float_left display_flex_flow">\
+                                <div class="position_relative float_left background-light-yellow-0 border_01vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9">\
+                                    <p class="font_size_205vh padding_205vh position_relative float_left">top100</p>\
+                                </div>\
+                            </div>\
+                            \
+                        </div>\
+                        \
+                    </div>\
+                    \
+                </div>\
+                \
+            </div>\
+            \
+        </div>\
+        \
+        <div id="component_transform_4" class="overflow_hidden width_50 height_50vh position_relative float_left background-light-yellow-9 display_flex_flow">\
+            \
+            <div class="top0 left0 easing_1 width_100 height_100 position_absolute float_left background-light-yellow-9 display_flex_flow">\
+                \
+                <div class="calc_10vh margin_5vh position_relative float_left display_flex_flow">\
+                    \
+                    <div class="width_100 height_100 position_relative float_left display_flex_flow">\
+                        <div class="calc_10vh position_relative float_left photo_person1 border_01vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9">\
+                            \
+                            <div class="position_absolute bottom_0 left_0 float_left display_flex_flow">\
+                                <div class="position_relative float_left background-light-yellow-0 border_01vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9">\
+                                    <p class="font_size_205vh padding_205vh position_relative float_left">top-100</p>\
+                                </div>\
+                            </div>\
+                            \
+                        </div>\
+                        \
+                    </div>\
+                    \
+                </div>\
+                \
+            </div>\
+             \
+            <div class="transform_translate3d_top_0_hover transform_translate3d_top_100 easing_1 width_100 height_100 position_absolute float_left background-light-yellow-9 display_flex_flow">\
+                \
+                <div class="calc_10vh margin_5vh position_relative float_left display_flex_flow">\
+                    \
+                    <div class="width_100 height_100 position_relative float_left display_flex_flow">\
+                        <div class="calc_10vh position_relative float_left photo_person1 border_01vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9">\
+                            \
+                            <div class="position_absolute bottom_0 left_0 float_left display_flex_flow">\
+                                <div class="position_relative float_left background-light-yellow-0 border_01vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9">\
+                                    <p class="font_size_205vh padding_205vh position_relative float_left">top-100</p>\
+                                </div>\
+                            </div>\
+                            \
+                        </div>\
+                        \
+                    </div>\
+                    \
+                </div>\
+                \
+            </div>\
+            \
+        </div>\
+        \
+        <div id="component_transform_5" class="overflow_hidden width_50 height_50vh position_relative float_left background-light-yellow-9 display_flex_flow">\
+            \
+            <div class="top0 left0 easing_1 width_100 height_100 position_absolute float_left background-light-yellow-9 display_flex_flow">\
+                \
+                <div class="calc_10vh margin_5vh position_relative float_left display_flex_flow">\
+                    \
+                    <div class="width_100 height_100 position_relative float_left display_flex_flow">\
+                        <div class="calc_10vh position_relative float_left photo_person1 border_01vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9">\
+                            \
+                            <div class="position_absolute bottom_0 left_0 float_left display_flex_flow">\
+                                <div class="position_relative float_left background-light-yellow-0 border_01vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9">\
+                                    <p class="font_size_205vh padding_205vh position_relative float_left">left100</p>\
+                                </div>\
+                            </div>\
+                            \
+                        </div>\
+                        \
+                    </div>\
+                    \
+                </div>\
+                \
+            </div>\
+             \
+            <div class="transform_translate3d_left0_hover transform_translate3d_left100 easing_1 width_100 height_100 position_absolute float_left background-light-yellow-9 display_flex_flow">\
+                \
+                <div class="calc_10vh margin_5vh position_relative float_left display_flex_flow">\
+                    \
+                    <div class="width_100 height_100 position_relative float_left display_flex_flow">\
+                        <div class="calc_10vh position_relative float_left photo_person1 border_01vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9">\
+                            \
+                            <div class="position_absolute bottom_0 left_0 float_left display_flex_flow">\
+                                <div class="position_relative float_left background-light-yellow-0 border_01vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9">\
+                                    <p class="font_size_205vh padding_205vh position_relative float_left">left100</p>\
+                                </div>\
+                            </div>\
+                            \
+                        </div>\
+                        \
+                    </div>\
+                    \
+                </div>\
+                \
+            </div>\
+            \
+        </div>\
+        \
+        <div id="component_transform_6" class="overflow_hidden width_50 height_50vh position_relative float_left background-light-yellow-9 display_flex_flow">\
+            \
+            <div class="top0 left0 easing_1 width_100 height_100 position_absolute float_left background-light-yellow-9 display_flex_flow">\
+                \
+                <div class="calc_10vh margin_5vh position_relative float_left display_flex_flow">\
+                    \
+                    <div class="width_100 height_100 position_relative float_left display_flex_flow">\
+                        <div class="calc_10vh position_relative float_left photo_person1 border_01vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9">\
+                            \
+                            <div class="position_absolute bottom_0 left_0 float_left display_flex_flow">\
+                                <div class="position_relative float_left background-light-yellow-0 border_01vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9">\
+                                    <p class="font_size_205vh padding_205vh position_relative float_left">left-100</p>\
+                                </div>\
+                            </div>\
+                            \
+                        </div>\
+                        \
+                    </div>\
+                    \
+                </div>\
+                \
+            </div>\
+             \
+            <div class="transform_translate3d_left0_hover transform_translate3d_left_100 easing_1 width_100 height_100 position_absolute float_left background-light-yellow-9 display_flex_flow">\
+                \
+                <div class="calc_10vh margin_5vh position_relative float_left display_flex_flow">\
+                    \
+                    <div class="width_100 height_100 position_relative float_left display_flex_flow">\
+                        <div class="calc_10vh position_relative float_left photo_person1 border_01vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9">\
+                            \
+                            <div class="position_absolute bottom_0 left_0 float_left display_flex_flow">\
+                                <div class="position_relative float_left background-light-yellow-0 border_01vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9">\
+                                    <p class="font_size_205vh padding_205vh position_relative float_left">left-100</p>\
+                                </div>\
+                            </div>\
+                            \
+                        </div>\
+                        \
+                    </div>\
+                    \
+                </div>\
+                \
+            </div>\
+            \
+        </div>\
+        \
+        ' + element_title('feature: hides', 'width_100 text_align_center font_size_10vh line_height_10vh background-white border_top_01vh_dark_yellow_9 border_bottom_01vh_dark_yellow_9', 'feature: hides') + '\
+        \
+        <div id="component_transform_1" class="width_50 height_50vh position_relative float_left background-light-yellow-9 display_flex_flow overflow_hidden">\
+            \
+            <div class="hover_hide calc_10vh margin_5vh position_relative float_left display_flex_flow">\
+                \
+                <div class="width_100 height_100 position_relative float_left display_flex_flow">\
+                    <div class="opacity_02 calc_10vh position_relative float_left photo_person1 border_01vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9">\
+                    </div>\
+                </div>\
+                \
+                <div class="position_absolute bottom_10vh left_0 float_left display_flex_flow">\
+                    <div class="position_relative float_left background-light-yellow-0 border_01vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9">\
+                        <p class="font_size_205vh padding_205vh position_relative float_left">hover_hide</p>\
+                    </div>\
+                </div>\
+                \
+            </div>\
+            \
+            <div class="show_hide calc_10vh margin_5vh position_relative float_left display_flex_flow">\
+                \
+                <div class="width_100 height_100 position_relative float_left display_flex_flow">\
+                    <div class="calc_10vh position_relative float_left photo_person1 border_01vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9">\
+                    </div>\
+                </div>\
+                \
+                <div class="position_absolute bottom_10vh left_0 float_left display_flex_flow">\
+                    <div class="position_relative float_left background-light-yellow-0 border_01vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9">\
+                        <p class="font_size_205vh padding_205vh position_relative float_left">show_hide</p>\
+                    </div>\
+                </div>\
+                \
+            </div>\
+            \
+        </div>\
+        \
+        <div id="component_transform_2" class="width_50 height_50vh position_relative float_left background-light-yellow-9 display_flex_flow overflow_hidden">\
+            \
+            <div class="calc_10vh margin_5vh position_relative float_left display_flex_flow">\
+                \
+                <div class="width_100 height_100 position_relative float_left display_flex_flow">\
+                    <div class="calc_10vh position_relative float_left photo_person1 border_01vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9">\
+                    </div>\
+                    \
+                    <div class="show_hide position_absolute bottom_0 left_0 float_left display_flex_flow">\
+                        <div class="position_relative float_left background-light-yellow-0 border_01vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9">\
+                            <p class="font_size_205vh padding_205vh position_relative float_left">show_hide</p>\
+                        </div>\
+                    </div>\
+                    \
+                    <div class="hover_hide position_absolute bottom_0 left_0 float_left display_flex_flow">\
+                        <div class="position_relative float_left background-light-yellow-0 border_01vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9">\
+                            <p class="font_size_205vh padding_205vh position_relative float_left">hover_hide</p>\
+                        </div>\
+                    </div>\
+                    \
+                </div>\
+                \
+            </div>\
+            \
+        </div>\
+        \
+                          ' + element_title('feature: grid', 'width_100 text_align_center font_size_10vh line_height_10vh background-white border_top_01vh_dark_yellow_9 border_bottom_01vh_dark_yellow_9', 'feature: grid') + '\
+                          \
+                          ' + element_container_styled('position_relative float_left width_100', '1/1') + '\
+                          \
+                          ' + element_container_styled('position_relative float_left width_50', '1/2') + '\
+                          \
+                          ' + element_container_styled('position_relative float_left width_50', '2/2') + '\
+                          \
+                          ' + element_container_styled('position_relative float_left width_33', '1/3') + '\
+                          \
+                          ' + element_container_styled('position_relative float_left width_33', '2/3') + '\
+                          \
+                          ' + element_container_styled('position_relative float_left width_33', '3/3') + '\
+                          \
+                          ' + element_container_styled('position_relative float_left width_25', '1/4') + '\
+                          \
+                          ' + element_container_styled('position_relative float_left width_25', '2/4') + '\
+                          \
+                          ' + element_container_styled('position_relative float_left width_25', '3/4') + '\
+                          \
+                          ' + element_container_styled('position_relative float_left width_25', '4/4') + '\
+                          \
+                          ' + element_container_styled('position_relative float_left width_20', '1/5') + '\
+                          \
+                          ' + element_container_styled('position_relative float_left width_20', '2/5') + '\
+                          \
+                          ' + element_container_styled('position_relative float_left width_20', '3/5') + '\
+                          \
+                          ' + element_container_styled('position_relative float_left width_20', '4/5') + '\
+                          \
+                          ' + element_container_styled('position_relative float_left width_20', '5/5') + '\
+                          \
+                          ' + element_container_styled('position_relative float_left width_16flex', '1/6') + '\
+                          \
+                          ' + element_container_styled('position_relative float_left width_16flex', '2/6') + '\
+                          \
+                          ' + element_container_styled('position_relative float_left width_16flex', '3/6') + '\
+                          \
+                          ' + element_container_styled('position_relative float_left width_16flex', '4/6') + '\
+                          \
+                          ' + element_container_styled('position_relative float_left width_16flex', '5/6') + '\
+                          \
+                          ' + element_container_styled('position_relative float_left width_16flex', '6/6') + '\
+                          \
+                          ' + element_container_styled('position_relative float_left width_14flex', '1/7') + '\
+                          \
+                          ' + element_container_styled('position_relative float_left width_14flex', '2/7') + '\
+                          \
+                          ' + element_container_styled('position_relative float_left width_14flex', '3/7') + '\
+                          \
+                          ' + element_container_styled('position_relative float_left width_14flex', '4/7') + '\
+                          \
+                          ' + element_container_styled('position_relative float_left width_14flex', '5/7') + '\
+                          \
+                          ' + element_container_styled('position_relative float_left width_14flex', '6/7') + '\
+                          \
+                          ' + element_container_styled('position_relative float_left width_14flex', '7/7') + '\
+                          \
+                          ' + element_container_styled('position_relative float_left width_1205', '1/8') + '\
+                          \
+                          ' + element_container_styled('position_relative float_left width_1205', '2/8') + '\
+                          \
+                          ' + element_container_styled('position_relative float_left width_1205', '3/8') + '\
+                          \
+                          ' + element_container_styled('position_relative float_left width_1205', '4/8') + '\
+                          \
+                          ' + element_container_styled('position_relative float_left width_1205', '5/8') + '\
+                          \
+                          ' + element_container_styled('position_relative float_left width_1205', '6/8') + '\
+                          \
+                          ' + element_container_styled('position_relative float_left width_1205', '7/8') + '\
+                          \
+                          ' + element_container_styled('position_relative float_left width_1205', '8/8') + '\
+                          \
+                          ' + element_container_styled('position_relative float_left width_11flex', '1/9') + '\
+                          \
+                          ' + element_container_styled('position_relative float_left width_11flex', '2/9') + '\
+                          \
+                          ' + element_container_styled('position_relative float_left width_11flex', '3/9') + '\
+                          \
+                          ' + element_container_styled('position_relative float_left width_11flex', '4/9') + '\
+                          \
+                          ' + element_container_styled('position_relative float_left width_11flex', '5/9') + '\
+                          \
+                          ' + element_container_styled('position_relative float_left width_11flex', '6/9') + '\
+                          \
+                          ' + element_container_styled('position_relative float_left width_11flex', '7/9') + '\
+                          \
+                          ' + element_container_styled('position_relative float_left width_11flex', '8/9') + '\
+                          \
+                          ' + element_container_styled('position_relative float_left width_11flex', '9/9') + '\
+                          \
+                          ' + element_container_styled('position_relative float_left width_10', '1/10') + '\
+                          \
+                          ' + element_container_styled('position_relative float_left width_10', '2/10') + '\
+                          \
+                          ' + element_container_styled('position_relative float_left width_10', '3/10') + '\
+                          \
+                          ' + element_container_styled('position_relative float_left width_10', '4/10') + '\
+                          \
+                          ' + element_container_styled('position_relative float_left width_10', '5/10') + '\
+                          \
+                          ' + element_container_styled('position_relative float_left width_10', '6/10') + '\
+                          \
+                          ' + element_container_styled('position_relative float_left width_10', '7/10') + '\
+                          \
+                          ' + element_container_styled('position_relative float_left width_10', '8/10') + '\
+                          \
+                          ' + element_container_styled('position_relative float_left width_10', '9/10') + '\
+                          \
+                          ' + element_container_styled('position_relative float_left width_10', '10/10') + '\
+                          \
+                          ' + element_container_styled('position_relative float_left width_33', 'yo 123') + '\
+                          \
+                          ' + element_container_styled('position_relative float_left width_33', 'yo 123') + '\
+                          \
+                          ' + element_container_styled('position_relative float_left width_33', 'yo 123') + '\
+        \
+        \
+                      ' + element_container_styled('position_relative float_left background-light-yellow-9 width_100 height_50vh', '\
+                          ' + element_container_center('\
+                              <div class="position_relative width_100 text_align_center float_left font_size_10vh line_height_10vh">\
+                                  Roster - What:\
+                              </div>\
+                              \
+                              <div class="position_relative width_100 text_align_center float_left font_size_4vh line_height_5vh">\
+                                  Summary - About:\
+                              </div>\
+                              \
+                              <span class="width_100 position_relative float_left display_flex_flow ">\
+                              ' + component_keystroke_annotate_new('roster') + '\
+                              </span>\
+                              \
+                          ') + '\
+                      ') + '\
+                      \
+                      ' + element_container_styled('position_relative float_left background-light-yellow-6 width_100 height_50vh', '\
+                          ' + element_container_center('\
+                              \
+                              <span class="width_100 position_relative float_left display_flex_flow ">\
+                              ' + component_keystroke_annotate_new('Widths') + '\
+                              </span>\
+                              \
+                          ') + '\
+                      ') + '\
+                      ' + element_container_styled('position_relative float_left background-light-yellow-8 width_10 height_50vh', '\
+                          ' + element_container_center('\
+                              \
+                              <span class="width_100 position_relative float_left display_flex_flow ">\
+                              ' + component_keystroke_annotate_new('GO: SRP') + '\
+                              </span>\
+                              \
+                          ') + '\
+                      ') + '\
+                      ' + element_container_styled('position_relative float_left background-light-yellow-7 width_90 height_50vh', '\
+                          ' + element_container_center('\
+                              \
+                              <span class="width_100 position_relative float_left display_flex_flow ">\
+                              ' + component_keystroke_annotate_new('GO: SRP') + '\
+                              </span>\
+                              \
+                          ') + '\
+                      ') + '\
+                      ' + element_container_styled('position_relative float_left background-light-yellow-6 width_20 height_50vh', '\
+                          ' + element_container_center('\
+                              \
+                              <span class="width_100 position_relative float_left display_flex_flow ">\
+                              ' + component_keystroke_annotate_new('GO: SRP') + '\
+                              </span>\
+                              \
+                          ') + '\
+                      ') + '\
+                      ' + element_container_styled('position_relative float_left background-light-yellow-5 width_80 height_50vh', '\
+                          ' + element_container_center('\
+                              \
+                              <span class="width_100 position_relative float_left display_flex_flow ">\
+                              ' + component_keystroke_annotate_new('GO: SRP') + '\
+                              </span>\
+                              \
+                          ') + '\
+                      ') + '\
+                      ' + element_container_styled('position_relative float_left background-light-yellow-8 width_30 height_50vh', '\
+                          ' + element_container_center('\
+                              \
+                              <span class="width_100 position_relative float_left display_flex_flow ">\
+                              ' + component_keystroke_annotate_new('GO: SRP') + '\
+                              </span>\
+                              \
+                          ') + '\
+                      ') + '\
+                      ' + element_container_styled('position_relative float_left background-light-yellow-7 width_70 height_50vh', '\
+                          ' + element_container_center('\
+                              \
+                              <span class="width_100 position_relative float_left display_flex_flow ">\
+                              ' + component_keystroke_annotate_new('GO: SRP') + '\
+                              </span>\
+                              \
+                          ') + '\
+                      ') + '\
+                      ' + element_container_styled('position_relative float_left background-light-yellow-6 width_40 height_50vh', '\
+                          ' + element_container_center('\
+                              \
+                              <span class="width_100 position_relative float_left display_flex_flow ">\
+                              ' + component_keystroke_annotate_new('GO: SRP') + '\
+                              </span>\
+                              \
+                          ') + '\
+                      ') + '\
+                      ' + element_container_styled('position_relative float_left background-light-yellow-5 width_60 height_50vh', '\
+                          ' + element_container_center('\
+                              \
+                              <span class="width_100 position_relative float_left display_flex_flow ">\
+                              ' + component_keystroke_annotate_new('GO: SRP') + '\
+                              </span>\
+                              \
+                          ') + '\
+                      ') + '\
+                      ' + element_container_styled('position_relative float_left background-light-yellow-8 width_50 height_50vh', '\
+                          ' + element_container_center('\
+                              \
+                              <span class="width_100 position_relative float_left display_flex_flow ">\
+                              ' + component_keystroke_annotate_new('GO: SRP') + '\
+                              </span>\
+                              \
+                          ') + '\
+                      ') + '\
+                      ' + element_container_styled('position_relative float_left background-light-yellow-7 width_50 height_50vh', '\
+                          ' + element_container_center('\
+                              \
+                              <span class="width_100 position_relative float_left display_flex_flow ">\
+                              ' + component_keystroke_annotate_new('GO: SRP') + '\
+                              </span>\
+                              \
+                          ') + '\
+                      ') + '\
+                      ' + element_container_styled('position_relative float_left background-light-yellow-6 width_100 height_50vh', '\
+                          ' + element_container_center('\
+                              \
+                              <span class="width_100 position_relative float_left display_flex_flow ">\
+                              ' + component_keystroke_annotate_new('Heights') + '\
+                              </span>\
+                              \
+                          ') + '\
+                      ') + '\
+                      ' + element_container_styled('position_relative float_left background-light-yellow-8 width_100 height_10vh', '\
+                          ' + element_container_center('\
+                              \
+                              <span class="width_100 position_relative float_left display_flex_flow ">\
+                              ' + component_keystroke_annotate_new('GO: SRP') + '\
+                              </span>\
+                              \
+                          ') + '\
+                      ') + '\
+                      ' + element_container_styled('position_relative float_left background-light-yellow-7 width_100 height_20vh', '\
+                          ' + element_container_center('\
+                              \
+                              <span class="width_100 position_relative float_left display_flex_flow ">\
+                              ' + component_keystroke_annotate_new('GO: SRP') + '\
+                              </span>\
+                              \
+                          ') + '\
+                      ') + '\
+                      ' + element_container_styled('position_relative float_left background-light-yellow-6 width_100 height_30vh', '\
+                          ' + element_container_center('\
+                              \
+                              <span class="width_100 position_relative float_left display_flex_flow ">\
+                              ' + component_keystroke_annotate_new('GO: SRP') + '\
+                              </span>\
+                              \
+                          ') + '\
+                      ') + '\
+                      ' + element_container_styled('position_relative float_left background-light-yellow-5 width_100 height_40vh', '\
+                          ' + element_container_center('\
+                              \
+                              <span class="width_100 position_relative float_left display_flex_flow ">\
+                              ' + component_keystroke_annotate_new('GO: SRP') + '\
+                              </span>\
+                              \
+                          ') + '\
+                      ') + '\
+                      ' + element_container_styled('position_relative float_left background-light-yellow-8 width_100 height_50vh', '\
+                          ' + element_container_center('\
+                              \
+                              <span class="width_100 position_relative float_left display_flex_flow ">\
+                              ' + component_keystroke_annotate_new('GO: SRP') + '\
+                              </span>\
+                              \
+                          ') + '\
+                      ') + '\
+                      ' + element_container_styled('position_relative float_left background-light-yellow-7 width_100 height_60vh', '\
+                          ' + element_container_center('\
+                              \
+                              <span class="width_100 position_relative float_left display_flex_flow ">\
+                              ' + component_keystroke_annotate_new('GO: SRP') + '\
+                              </span>\
+                              \
+                          ') + '\
+                      ') + '\
+                      ' + element_container_styled('position_relative float_left background-light-yellow-6 width_100 height_70vh', '\
+                          ' + element_container_center('\
+                              \
+                              <span class="width_100 position_relative float_left display_flex_flow ">\
+                              ' + component_keystroke_annotate_new('GO: SRP') + '\
+                              </span>\
+                              \
+                          ') + '\
+                      ') + '\
+                      ' + element_container_styled('position_relative float_left background-light-yellow-5 width_100 height_80vh', '\
+                          ' + element_container_center('\
+                              \
+                              <span class="width_100 position_relative float_left display_flex_flow ">\
+                              ' + component_keystroke_annotate_new('GO: SRP') + '\
+                              </span>\
+                              \
+                          ') + '\
+                      ') + '\
+                      ' + element_container_styled('position_relative float_left background-light-yellow-8 width_100 height_90vh', '\
+                          ' + element_container_center('\
+                              \
+                              <span class="width_100 position_relative float_left display_flex_flow ">\
+                              ' + component_keystroke_annotate_new('GO: SRP') + '\
+                              </span>\
+                              \
+                          ') + '\
+                      ') + '\
+                      ' + element_container_styled('position_relative float_left background-light-yellow-7 width_100 height_100vh', '\
+                          ' + element_container_center('\
+                              \
+                              <span class="width_100 position_relative float_left display_flex_flow ">\
+                              ' + component_keystroke_annotate_new('GO: SRP') + '\
+                              </span>\
+                              \
+                          ') + '\
+                      ') + '\
+                      \
+                      \
+                      ' + element_title('grid: 100 x 100', 'width_100 text_align_center font_size_10vh line_height_10vh background-white border_top_01vh_dark_yellow_9 border_bottom_01vh_dark_yellow_9', 'grid: 100 x 100') + '\
+                      \
+                                    ' + element_container_styled('position_relative float_left width_100 height_50vh', '\
+                                    ' + element_container_center('\
+                                          <div class="position_relative width_100 text_align_center float_left font_size_4vh line_height_5vh">\
+                                              App:\
+                                          </div>\
+                                           <div class="position_relative width_100 text_align_center float_left font_size_2vh line_height_3vh">\
+                                              A collection of "parcels!"\
+                                          </div>\
+                                          \
+                                            <span class="width_100 position_relative float_left display_flex_flow ">\
+                                            ' + component_keystroke_annotate_new('tour') + '\
+                                            </span>\
+                                            \
+                                        ') + '\
+                                        ') + '\
+                      \
+                                    ' + element_container_styled('position_relative float_left width_50 height_50vh', '\
+                                    ' + element_container_center('\
+                                          <div class="position_relative width_100 text_align_center float_left font_size_4vh line_height_5vh">\
+                                              App:\
+                                          </div>\
+                                           <div class="position_relative width_100 text_align_center float_left font_size_2vh line_height_3vh">\
+                                              A collection of "parcels!"\
+                                          </div>\
+                                          \
+                                            <span class="width_100 position_relative float_left display_flex_flow ">\
+                                            ' + component_keystroke_annotate_new('tour') + '\
+                                            </span>\
+                                            \
+                                        ') + '\
+                                        ') + '\
+                                    \
+                                    ' + element_container_styled('position_relative float_left width_50 height_50vh', '\
+                                    ' + element_container_center('\
+                                          <div class="position_relative width_100 text_align_center float_left font_size_4vh line_height_5vh">\
+                                              App:\
+                                          </div>\
+                                           <div class="position_relative width_100 text_align_center float_left font_size_2vh line_height_3vh">\
+                                              A collection of "parcels!"\
+                                          </div>\
+                                          \
+                                            <span class="width_100 position_relative float_left display_flex_flow ">\
+                                            ' + component_keystroke_annotate_new('tour') + '\
+                                            </span>\
+                                            \
+                                        ') + '\
+                                        ') + '\
+                                    \
+                                    ' + element_container_styled('position_relative float_left width_33flex height_50vh', '\
+                                    ' + element_container_center('\
+                                          <div class="position_relative width_100 text_align_center float_left font_size_4vh line_height_5vh">\
+                                              App:\
+                                          </div>\
+                                           <div class="position_relative width_100 text_align_center float_left font_size_2vh line_height_3vh">\
+                                              A collection of "parcels!"\
+                                          </div>\
+                                          \
+                                            <span class="width_100 position_relative float_left display_flex_flow ">\
+                                            ' + component_keystroke_annotate_new('tour') + '\
+                                            </span>\
+                                            \
+                                        ') + '\
+                                        ') + '\
+                                    \
+                                    ' + element_container_styled('position_relative float_left width_33flex height_50vh', '\
+                                    ' + element_container_center('\
+                                          <div class="position_relative width_100 text_align_center float_left font_size_4vh line_height_5vh">\
+                                              App:\
+                                          </div>\
+                                           <div class="position_relative width_100 text_align_center float_left font_size_2vh line_height_3vh">\
+                                              A collection of "parcels!"\
+                                          </div>\
+                                          \
+                                            <span class="width_100 position_relative float_left display_flex_flow ">\
+                                            ' + component_keystroke_annotate_new('tour') + '\
+                                            </span>\
+                                            \
+                                        ') + '\
+                                        ') + '\
+                                    \
+                                    ' + element_container_styled('position_relative float_left width_33flex height_50vh', '\
+                                    ' + element_container_center('\
+                                          <div class="position_relative width_100 text_align_center float_left font_size_4vh line_height_5vh">\
+                                              App:\
+                                          </div>\
+                                           <div class="position_relative width_100 text_align_center float_left font_size_2vh line_height_3vh">\
+                                              A collection of "parcels!"\
+                                          </div>\
+                                          \
+                                            <span class="width_100 position_relative float_left display_flex_flow ">\
+                                            ' + component_keystroke_annotate_new('tour') + '\
+                                            </span>\
+                                            \
+                                        ') + '\
+                                        ') + '\
+                                    ' + element_container_styled('position_relative float_left width_25 height_50vh', '\
+                                    ' + element_container_center('\
+                                          <div class="position_relative width_100 text_align_center float_left font_size_4vh line_height_5vh">\
+                                              App:\
+                                          </div>\
+                                           <div class="position_relative width_100 text_align_center float_left font_size_2vh line_height_3vh">\
+                                              A collection of "parcels!"\
+                                          </div>\
+                                          \
+                                            <span class="width_100 position_relative float_left display_flex_flow ">\
+                                            ' + component_keystroke_annotate_new('tour') + '\
+                                            </span>\
+                                            \
+                                        ') + '\
+                                        ') + '\
+                                    \
+                                    ' + element_container_styled('position_relative float_left width_25 height_50vh', '\
+                                    ' + element_container_center('\
+                                          <div class="position_relative width_100 text_align_center float_left font_size_4vh line_height_5vh">\
+                                              App:\
+                                          </div>\
+                                           <div class="position_relative width_100 text_align_center float_left font_size_2vh line_height_3vh">\
+                                              A collection of "parcels!"\
+                                          </div>\
+                                          \
+                                            <span class="width_100 position_relative float_left display_flex_flow ">\
+                                            ' + component_keystroke_annotate_new('tour') + '\
+                                            </span>\
+                                            \
+                                        ') + '\
+                                        ') + '\
+                                    \
+                                    ' + element_container_styled('position_relative float_left width_25 height_50vh', '\
+                                    ' + element_container_center('\
+                                          <div class="position_relative width_100 text_align_center float_left font_size_4vh line_height_5vh">\
+                                              App:\
+                                          </div>\
+                                           <div class="position_relative width_100 text_align_center float_left font_size_2vh line_height_3vh">\
+                                              A collection of "parcels!"\
+                                          </div>\
+                                          \
+                                            <span class="width_100 position_relative float_left display_flex_flow ">\
+                                            ' + component_keystroke_annotate_new('tour') + '\
+                                            </span>\
+                                            \
+                                        ') + '\
+                                        ') + '\
+                                    \
+                                    ' + element_container_styled('position_relative float_left width_25 height_50vh', '\
+                                    ' + element_container_center('\
+                                          <div class="position_relative width_100 text_align_center float_left font_size_4vh line_height_5vh">\
+                                              App:\
+                                          </div>\
+                                           <div class="position_relative width_100 text_align_center float_left font_size_2vh line_height_3vh">\
+                                              A collection of "parcels!"\
+                                          </div>\
+                                          \
+                                            <span class="width_100 position_relative float_left display_flex_flow ">\
+                                            ' + component_keystroke_annotate_new('tour') + '\
+                                            </span>\
+                                            \
+                                        ') + '\
+                                        ') + '\
+                                    \
+                                    ' + element_container_styled('position_relative float_left width_20 height_50vh', '\
+                                    ' + element_container_center('\
+                                          <div class="position_relative width_100 text_align_center float_left font_size_4vh line_height_5vh">\
+                                              App:\
+                                          </div>\
+                                           <div class="position_relative width_100 text_align_center float_left font_size_2vh line_height_3vh">\
+                                              A collection of "parcels!"\
+                                          </div>\
+                                          \
+                                            <span class="width_100 position_relative float_left display_flex_flow ">\
+                                            ' + component_keystroke_annotate_new('tour') + '\
+                                            </span>\
+                                            \
+                                        ') + '\
+                                        ') + '\
+                                    \
+                                    ' + element_container_styled('position_relative float_left width_20 height_50vh', '\
+                                    ' + element_container_center('\
+                                          <div class="position_relative width_100 text_align_center float_left font_size_4vh line_height_5vh">\
+                                              App:\
+                                          </div>\
+                                           <div class="position_relative width_100 text_align_center float_left font_size_2vh line_height_3vh">\
+                                              A collection of "parcels!"\
+                                          </div>\
+                                          \
+                                            <span class="width_100 position_relative float_left display_flex_flow ">\
+                                            ' + component_keystroke_annotate_new('tour') + '\
+                                            </span>\
+                                            \
+                                        ') + '\
+                                        ') + '\
+                                    \
+                                    ' + element_container_styled('position_relative float_left width_20 height_50vh', '\
+                                    ' + element_container_center('\
+                                          <div class="position_relative width_100 text_align_center float_left font_size_4vh line_height_5vh">\
+                                              App:\
+                                          </div>\
+                                           <div class="position_relative width_100 text_align_center float_left font_size_2vh line_height_3vh">\
+                                              A collection of "parcels!"\
+                                          </div>\
+                                          \
+                                            <span class="width_100 position_relative float_left display_flex_flow ">\
+                                            ' + component_keystroke_annotate_new('tour') + '\
+                                            </span>\
+                                            \
+                                        ') + '\
+                                        ') + '\
+                                    \
+                                    ' + element_container_styled('position_relative float_left width_20 height_50vh', '\
+                                    ' + element_container_center('\
+                                          <div class="position_relative width_100 text_align_center float_left font_size_4vh line_height_5vh">\
+                                              App:\
+                                          </div>\
+                                           <div class="position_relative width_100 text_align_center float_left font_size_2vh line_height_3vh">\
+                                              A collection of "parcels!"\
+                                          </div>\
+                                          \
+                                            <span class="width_100 position_relative float_left display_flex_flow ">\
+                                            ' + component_keystroke_annotate_new('tour') + '\
+                                            </span>\
+                                            \
+                                        ') + '\
+                                        ') + '\
+                                    \
+                                    ' + element_container_styled('position_relative float_left width_20 height_50vh', '\
+                                    ' + element_container_center('\
+                                          <div class="position_relative width_100 text_align_center float_left font_size_4vh line_height_5vh">\
+                                              App:\
+                                          </div>\
+                                           <div class="position_relative width_100 text_align_center float_left font_size_2vh line_height_3vh">\
+                                              A collection of "parcels!"\
+                                          </div>\
+                                          \
+                                            <span class="width_100 position_relative float_left display_flex_flow ">\
+                                            ' + component_keystroke_annotate_new('tour') + '\
+                                            </span>\
+                                            \
+                                        ') + '\
+                                        ') + '\
+                                    \
+                                    ' + element_container_styled('position_relative float_left width_16flex height_50vh', '\
+                                    ' + element_container_center('\
+                                          <div class="position_relative width_100 text_align_center float_left font_size_4vh line_height_5vh">\
+                                              App:\
+                                          </div>\
+                                           <div class="position_relative width_100 text_align_center float_left font_size_2vh line_height_3vh">\
+                                              A collection of "parcels!"\
+                                          </div>\
+                                          \
+                                            <span class="width_100 position_relative float_left display_flex_flow ">\
+                                            ' + component_keystroke_annotate_new('tour') + '\
+                                            </span>\
+                                            \
+                                        ') + '\
+                                        ') + '\
+                                    \
+                                    ' + element_container_styled('position_relative float_left width_16flex height_50vh', '\
+                                    ' + element_container_center('\
+                                          <div class="position_relative width_100 text_align_center float_left font_size_4vh line_height_5vh">\
+                                              App:\
+                                          </div>\
+                                           <div class="position_relative width_100 text_align_center float_left font_size_2vh line_height_3vh">\
+                                              A collection of "parcels!"\
+                                          </div>\
+                                          \
+                                            <span class="width_100 position_relative float_left display_flex_flow ">\
+                                            ' + component_keystroke_annotate_new('tour') + '\
+                                            </span>\
+                                            \
+                                        ') + '\
+                                        ') + '\
+                                    \
+                                    ' + element_container_styled('position_relative float_left width_16flex height_50vh', '\
+                                    ' + element_container_center('\
+                                          <div class="position_relative width_100 text_align_center float_left font_size_4vh line_height_5vh">\
+                                              App:\
+                                          </div>\
+                                           <div class="position_relative width_100 text_align_center float_left font_size_2vh line_height_3vh">\
+                                              A collection of "parcels!"\
+                                          </div>\
+                                          \
+                                            <span class="width_100 position_relative float_left display_flex_flow ">\
+                                            ' + component_keystroke_annotate_new('tour') + '\
+                                            </span>\
+                                            \
+                                        ') + '\
+                                        ') + '\
+                                    \
+                                    ' + element_container_styled('position_relative float_left width_16flex height_50vh', '\
+                                    ' + element_container_center('\
+                                          <div class="position_relative width_100 text_align_center float_left font_size_4vh line_height_5vh">\
+                                              App:\
+                                          </div>\
+                                           <div class="position_relative width_100 text_align_center float_left font_size_2vh line_height_3vh">\
+                                              A collection of "parcels!"\
+                                          </div>\
+                                          \
+                                            <span class="width_100 position_relative float_left display_flex_flow ">\
+                                            ' + component_keystroke_annotate_new('tour') + '\
+                                            </span>\
+                                            \
+                                        ') + '\
+                                        ') + '\
+                                    \
+                                    ' + element_container_styled('position_relative float_left width_16flex height_50vh', '\
+                                    ' + element_container_center('\
+                                          <div class="position_relative width_100 text_align_center float_left font_size_4vh line_height_5vh">\
+                                              App:\
+                                          </div>\
+                                           <div class="position_relative width_100 text_align_center float_left font_size_2vh line_height_3vh">\
+                                              A collection of "parcels!"\
+                                          </div>\
+                                          \
+                                            <span class="width_100 position_relative float_left display_flex_flow ">\
+                                            ' + component_keystroke_annotate_new('tour') + '\
+                                            </span>\
+                                            \
+                                        ') + '\
+                                        ') + '\
+                                    \
+                                    ' + element_container_styled('position_relative float_left width_16flex height_50vh', '\
+                                    ' + element_container_center('\
+                                          <div class="position_relative width_100 text_align_center float_left font_size_4vh line_height_5vh">\
+                                              App:\
+                                          </div>\
+                                           <div class="position_relative width_100 text_align_center float_left font_size_2vh line_height_3vh">\
+                                              A collection of "parcels!"\
+                                          </div>\
+                                          \
+                                            <span class="width_100 position_relative float_left display_flex_flow ">\
+                                            ' + component_keystroke_annotate_new('tour') + '\
+                                            </span>\
+                                            \
+                                        ') + '\
+                                        ') + '\
+                                    \
+                                    ' + element_container_styled('position_relative float_left width_14flex height_50vh', '\
+                                    ' + element_container_center('\
+                                          <div class="position_relative width_100 text_align_center float_left font_size_4vh line_height_5vh">\
+                                              App:\
+                                          </div>\
+                                           <div class="position_relative width_100 text_align_center float_left font_size_2vh line_height_3vh">\
+                                              A collection of "parcels!"\
+                                          </div>\
+                                          \
+                                            <span class="width_100 position_relative float_left display_flex_flow ">\
+                                            ' + component_keystroke_annotate_new('tour') + '\
+                                            </span>\
+                                            \
+                                        ') + '\
+                                        ') + '\
+                                    \
+                                    ' + element_container_styled('position_relative float_left width_14flex height_50vh', '\
+                                    ' + element_container_center('\
+                                          <div class="position_relative width_100 text_align_center float_left font_size_4vh line_height_5vh">\
+                                              App:\
+                                          </div>\
+                                           <div class="position_relative width_100 text_align_center float_left font_size_2vh line_height_3vh">\
+                                              A collection of "parcels!"\
+                                          </div>\
+                                          \
+                                            <span class="width_100 position_relative float_left display_flex_flow ">\
+                                            ' + component_keystroke_annotate_new('tour') + '\
+                                            </span>\
+                                            \
+                                        ') + '\
+                                        ') + '\
+                                    \
+                                    ' + element_container_styled('position_relative float_left width_14flex height_50vh', '\
+                                    ' + element_container_center('\
+                                          <div class="position_relative width_100 text_align_center float_left font_size_4vh line_height_5vh">\
+                                              App:\
+                                          </div>\
+                                           <div class="position_relative width_100 text_align_center float_left font_size_2vh line_height_3vh">\
+                                              A collection of "parcels!"\
+                                          </div>\
+                                          \
+                                            <span class="width_100 position_relative float_left display_flex_flow ">\
+                                            ' + component_keystroke_annotate_new('tour') + '\
+                                            </span>\
+                                            \
+                                        ') + '\
+                                        ') + '\
+                                    \
+                                    ' + element_container_styled('position_relative float_left width_14flex height_50vh', '\
+                                    ' + element_container_center('\
+                                          <div class="position_relative width_100 text_align_center float_left font_size_4vh line_height_5vh">\
+                                              App:\
+                                          </div>\
+                                           <div class="position_relative width_100 text_align_center float_left font_size_2vh line_height_3vh">\
+                                              A collection of "parcels!"\
+                                          </div>\
+                                          \
+                                            <span class="width_100 position_relative float_left display_flex_flow ">\
+                                            ' + component_keystroke_annotate_new('tour') + '\
+                                            </span>\
+                                            \
+                                        ') + '\
+                                        ') + '\
+                                    \
+                                    ' + element_container_styled('position_relative float_left width_14flex height_50vh', '\
+                                    ' + element_container_center('\
+                                          <div class="position_relative width_100 text_align_center float_left font_size_4vh line_height_5vh">\
+                                              App:\
+                                          </div>\
+                                           <div class="position_relative width_100 text_align_center float_left font_size_2vh line_height_3vh">\
+                                              A collection of "parcels!"\
+                                          </div>\
+                                          \
+                                            <span class="width_100 position_relative float_left display_flex_flow ">\
+                                            ' + component_keystroke_annotate_new('tour') + '\
+                                            </span>\
+                                            \
+                                        ') + '\
+                                        ') + '\
+                                    \
+                                    ' + element_container_styled('position_relative float_left width_14flex height_50vh', '\
+                                    ' + element_container_center('\
+                                          <div class="position_relative width_100 text_align_center float_left font_size_4vh line_height_5vh">\
+                                              App:\
+                                          </div>\
+                                           <div class="position_relative width_100 text_align_center float_left font_size_2vh line_height_3vh">\
+                                              A collection of "parcels!"\
+                                          </div>\
+                                          \
+                                            <span class="width_100 position_relative float_left display_flex_flow ">\
+                                            ' + component_keystroke_annotate_new('tour') + '\
+                                            </span>\
+                                            \
+                                        ') + '\
+                                        ') + '\
+                                    \
+                                    ' + element_container_styled('position_relative float_left width_14flex height_50vh', '\
+                                    ' + element_container_center('\
+                                          <div class="position_relative width_100 text_align_center float_left font_size_4vh line_height_5vh">\
+                                              App:\
+                                          </div>\
+                                           <div class="position_relative width_100 text_align_center float_left font_size_2vh line_height_3vh">\
+                                              A collection of "parcels!"\
+                                          </div>\
+                                          \
+                                            <span class="width_100 position_relative float_left display_flex_flow ">\
+                                            ' + component_keystroke_annotate_new('tour') + '\
+                                            </span>\
+                                            \
+                                        ') + '\
+                                        ') + '\
+                                    \
+                                    ' + element_container_styled('position_relative float_left width_1205 height_50vh', '\
+                                    ' + element_container_center('\
+                                          <div class="position_relative width_100 text_align_center float_left font_size_4vh line_height_5vh">\
+                                              App:\
+                                          </div>\
+                                           <div class="position_relative width_100 text_align_center float_left font_size_2vh line_height_3vh">\
+                                              A collection of "parcels!"\
+                                          </div>\
+                                          \
+                                            <span class="width_100 position_relative float_left display_flex_flow ">\
+                                            ' + component_keystroke_annotate_new('tour') + '\
+                                            </span>\
+                                            \
+                                        ') + '\
+                                        ') + '\
+                                    \
+                                    ' + element_container_styled('position_relative float_left width_1205 height_50vh', '\
+                                    ' + element_container_center('\
+                                          <div class="position_relative width_100 text_align_center float_left font_size_4vh line_height_5vh">\
+                                              App:\
+                                          </div>\
+                                           <div class="position_relative width_100 text_align_center float_left font_size_2vh line_height_3vh">\
+                                              A collection of "parcels!"\
+                                          </div>\
+                                          \
+                                            <span class="width_100 position_relative float_left display_flex_flow ">\
+                                            ' + component_keystroke_annotate_new('tour') + '\
+                                            </span>\
+                                            \
+                                        ') + '\
+                                        ') + '\
+                                    \
+                                    ' + element_container_styled('position_relative float_left width_1205 height_50vh', '\
+                                    ' + element_container_center('\
+                                          <div class="position_relative width_100 text_align_center float_left font_size_4vh line_height_5vh">\
+                                              App:\
+                                          </div>\
+                                           <div class="position_relative width_100 text_align_center float_left font_size_2vh line_height_3vh">\
+                                              A collection of "parcels!"\
+                                          </div>\
+                                          \
+                                            <span class="width_100 position_relative float_left display_flex_flow ">\
+                                            ' + component_keystroke_annotate_new('tour') + '\
+                                            </span>\
+                                            \
+                                        ') + '\
+                                        ') + '\
+                                    \
+                                    ' + element_container_styled('position_relative float_left width_1205 height_50vh', '\
+                                    ' + element_container_center('\
+                                          <div class="position_relative width_100 text_align_center float_left font_size_4vh line_height_5vh">\
+                                              App:\
+                                          </div>\
+                                           <div class="position_relative width_100 text_align_center float_left font_size_2vh line_height_3vh">\
+                                              A collection of "parcels!"\
+                                          </div>\
+                                          \
+                                            <span class="width_100 position_relative float_left display_flex_flow ">\
+                                            ' + component_keystroke_annotate_new('tour') + '\
+                                            </span>\
+                                            \
+                                        ') + '\
+                                        ') + '\
+                                    \
+                                    ' + element_container_styled('position_relative float_left width_1205 height_50vh', '\
+                                    ' + element_container_center('\
+                                          <div class="position_relative width_100 text_align_center float_left font_size_4vh line_height_5vh">\
+                                              App:\
+                                          </div>\
+                                           <div class="position_relative width_100 text_align_center float_left font_size_2vh line_height_3vh">\
+                                              A collection of "parcels!"\
+                                          </div>\
+                                          \
+                                            <span class="width_100 position_relative float_left display_flex_flow ">\
+                                            ' + component_keystroke_annotate_new('tour') + '\
+                                            </span>\
+                                            \
+                                        ') + '\
+                                        ') + '\
+                                    \
+                                    ' + element_container_styled('position_relative float_left width_1205 height_50vh', '\
+                                    ' + element_container_center('\
+                                          <div class="position_relative width_100 text_align_center float_left font_size_4vh line_height_5vh">\
+                                              App:\
+                                          </div>\
+                                           <div class="position_relative width_100 text_align_center float_left font_size_2vh line_height_3vh">\
+                                              A collection of "parcels!"\
+                                          </div>\
+                                          \
+                                            <span class="width_100 position_relative float_left display_flex_flow ">\
+                                            ' + component_keystroke_annotate_new('tour') + '\
+                                            </span>\
+                                            \
+                                        ') + '\
+                                        ') + '\
+                                    \
+                                    ' + element_container_styled('position_relative float_left width_1205 height_50vh', '\
+                                    ' + element_container_center('\
+                                          <div class="position_relative width_100 text_align_center float_left font_size_4vh line_height_5vh">\
+                                              App:\
+                                          </div>\
+                                           <div class="position_relative width_100 text_align_center float_left font_size_2vh line_height_3vh">\
+                                              A collection of "parcels!"\
+                                          </div>\
+                                          \
+                                            <span class="width_100 position_relative float_left display_flex_flow ">\
+                                            ' + component_keystroke_annotate_new('tour') + '\
+                                            </span>\
+                                            \
+                                        ') + '\
+                                        ') + '\
+                                    \
+                                    ' + element_container_styled('position_relative float_left width_1205 height_50vh', '\
+                                    ' + element_container_center('\
+                                          <div class="position_relative width_100 text_align_center float_left font_size_4vh line_height_5vh">\
+                                              App:\
+                                          </div>\
+                                           <div class="position_relative width_100 text_align_center float_left font_size_2vh line_height_3vh">\
+                                              A collection of "parcels!"\
+                                          </div>\
+                                          \
+                                            <span class="width_100 position_relative float_left display_flex_flow ">\
+                                            ' + component_keystroke_annotate_new('tour') + '\
+                                            </span>\
+                                            \
+                                        ') + '\
+                                        ') + '\
+                                    \
+                                    ' + element_container_styled('position_relative float_left width_11flex height_50vh', '\
+                                    ' + element_container_center('\
+                                          <div class="position_relative width_100 text_align_center float_left font_size_4vh line_height_5vh">\
+                                              App:\
+                                          </div>\
+                                           <div class="position_relative width_100 text_align_center float_left font_size_2vh line_height_3vh">\
+                                              A collection of "parcels!"\
+                                          </div>\
+                                          \
+                                            <span class="width_100 position_relative float_left display_flex_flow ">\
+                                            ' + component_keystroke_annotate_new('tour') + '\
+                                            </span>\
+                                            \
+                                        ') + '\
+                                        ') + '\
+                                    \
+                                    ' + element_container_styled('position_relative float_left width_11flex height_50vh', '\
+                                    ' + element_container_center('\
+                                          <div class="position_relative width_100 text_align_center float_left font_size_4vh line_height_5vh">\
+                                              App:\
+                                          </div>\
+                                           <div class="position_relative width_100 text_align_center float_left font_size_2vh line_height_3vh">\
+                                              A collection of "parcels!"\
+                                          </div>\
+                                          \
+                                            <span class="width_100 position_relative float_left display_flex_flow ">\
+                                            ' + component_keystroke_annotate_new('tour') + '\
+                                            </span>\
+                                            \
+                                        ') + '\
+                                        ') + '\
+                                    \
+                                    ' + element_container_styled('position_relative float_left width_11flex height_50vh', '\
+                                    ' + element_container_center('\
+                                          <div class="position_relative width_100 text_align_center float_left font_size_4vh line_height_5vh">\
+                                              App:\
+                                          </div>\
+                                           <div class="position_relative width_100 text_align_center float_left font_size_2vh line_height_3vh">\
+                                              A collection of "parcels!"\
+                                          </div>\
+                                          \
+                                            <span class="width_100 position_relative float_left display_flex_flow ">\
+                                            ' + component_keystroke_annotate_new('tour') + '\
+                                            </span>\
+                                            \
+                                        ') + '\
+                                        ') + '\
+                                    \
+                                    ' + element_container_styled('position_relative float_left width_11flex height_50vh', '\
+                                    ' + element_container_center('\
+                                          <div class="position_relative width_100 text_align_center float_left font_size_4vh line_height_5vh">\
+                                              App:\
+                                          </div>\
+                                           <div class="position_relative width_100 text_align_center float_left font_size_2vh line_height_3vh">\
+                                              A collection of "parcels!"\
+                                          </div>\
+                                          \
+                                            <span class="width_100 position_relative float_left display_flex_flow ">\
+                                            ' + component_keystroke_annotate_new('tour') + '\
+                                            </span>\
+                                            \
+                                        ') + '\
+                                        ') + '\
+                                    \
+                                    ' + element_container_styled('position_relative float_left width_11flex height_50vh', '\
+                                    ' + element_container_center('\
+                                          <div class="position_relative width_100 text_align_center float_left font_size_4vh line_height_5vh">\
+                                              App:\
+                                          </div>\
+                                           <div class="position_relative width_100 text_align_center float_left font_size_2vh line_height_3vh">\
+                                              A collection of "parcels!"\
+                                          </div>\
+                                          \
+                                            <span class="width_100 position_relative float_left display_flex_flow ">\
+                                            ' + component_keystroke_annotate_new('tour') + '\
+                                            </span>\
+                                            \
+                                        ') + '\
+                                        ') + '\
+                                    \
+                                    ' + element_container_styled('position_relative float_left width_11flex height_50vh', '\
+                                    ' + element_container_center('\
+                                          <div class="position_relative width_100 text_align_center float_left font_size_4vh line_height_5vh">\
+                                              App:\
+                                          </div>\
+                                           <div class="position_relative width_100 text_align_center float_left font_size_2vh line_height_3vh">\
+                                              A collection of "parcels!"\
+                                          </div>\
+                                          \
+                                            <span class="width_100 position_relative float_left display_flex_flow ">\
+                                            ' + component_keystroke_annotate_new('tour') + '\
+                                            </span>\
+                                            \
+                                        ') + '\
+                                        ') + '\
+                                    \
+                                    ' + element_container_styled('position_relative float_left width_11flex height_50vh', '\
+                                    ' + element_container_center('\
+                                          <div class="position_relative width_100 text_align_center float_left font_size_4vh line_height_5vh">\
+                                              App:\
+                                          </div>\
+                                           <div class="position_relative width_100 text_align_center float_left font_size_2vh line_height_3vh">\
+                                              A collection of "parcels!"\
+                                          </div>\
+                                          \
+                                            <span class="width_100 position_relative float_left display_flex_flow ">\
+                                            ' + component_keystroke_annotate_new('tour') + '\
+                                            </span>\
+                                            \
+                                        ') + '\
+                                        ') + '\
+                                    \
+                                    ' + element_container_styled('position_relative float_left width_11flex height_50vh', '\
+                                    ' + element_container_center('\
+                                          <div class="position_relative width_100 text_align_center float_left font_size_4vh line_height_5vh">\
+                                              App:\
+                                          </div>\
+                                           <div class="position_relative width_100 text_align_center float_left font_size_2vh line_height_3vh">\
+                                              A collection of "parcels!"\
+                                          </div>\
+                                          \
+                                            <span class="width_100 position_relative float_left display_flex_flow ">\
+                                            ' + component_keystroke_annotate_new('tour') + '\
+                                            </span>\
+                                            \
+                                        ') + '\
+                                        ') + '\
+                                    \
+                                    ' + element_container_styled('position_relative float_left width_11flex height_50vh', '\
+                                    ' + element_container_center('\
+                                          <div class="position_relative width_100 text_align_center float_left font_size_4vh line_height_5vh">\
+                                              App:\
+                                          </div>\
+                                           <div class="position_relative width_100 text_align_center float_left font_size_2vh line_height_3vh">\
+                                              A collection of "parcels!"\
+                                          </div>\
+                                          \
+                                            <span class="width_100 position_relative float_left display_flex_flow ">\
+                                            ' + component_keystroke_annotate_new('tour') + '\
+                                            </span>\
+                                            \
+                                        ') + '\
+                                        ') + '\
+                                    \
+                                    ' + element_container_styled('position_relative float_left width_10 height_50vh', '\
+                                    ' + element_container_center('\
+                                          <div class="position_relative width_100 text_align_center float_left font_size_4vh line_height_5vh">\
+                                              App:\
+                                          </div>\
+                                           <div class="position_relative width_100 text_align_center float_left font_size_2vh line_height_3vh">\
+                                              A collection of "parcels!"\
+                                          </div>\
+                                          \
+                                            <span class="width_100 position_relative float_left display_flex_flow ">\
+                                            ' + component_keystroke_annotate_new('tour') + '\
+                                            </span>\
+                                            \
+                                        ') + '\
+                                        ') + '\
+                                    \
+                                    ' + element_container_styled('position_relative float_left width_10 height_50vh', '\
+                                    ' + element_container_center('\
+                                          <div class="position_relative width_100 text_align_center float_left font_size_4vh line_height_5vh">\
+                                              App:\
+                                          </div>\
+                                           <div class="position_relative width_100 text_align_center float_left font_size_2vh line_height_3vh">\
+                                              A collection of "parcels!"\
+                                          </div>\
+                                          \
+                                            <span class="width_100 position_relative float_left display_flex_flow ">\
+                                            ' + component_keystroke_annotate_new('tour') + '\
+                                            </span>\
+                                            \
+                                        ') + '\
+                                        ') + '\
+                                    \
+                                    ' + element_container_styled('position_relative float_left width_10 height_50vh', '\
+                                    ' + element_container_center('\
+                                          <div class="position_relative width_100 text_align_center float_left font_size_4vh line_height_5vh">\
+                                              App:\
+                                          </div>\
+                                           <div class="position_relative width_100 text_align_center float_left font_size_2vh line_height_3vh">\
+                                              A collection of "parcels!"\
+                                          </div>\
+                                          \
+                                            <span class="width_100 position_relative float_left display_flex_flow ">\
+                                            ' + component_keystroke_annotate_new('tour') + '\
+                                            </span>\
+                                            \
+                                        ') + '\
+                                        ') + '\
+                                    \
+                                    ' + element_container_styled('position_relative float_left width_10 height_50vh', '\
+                                    ' + element_container_center('\
+                                          <div class="position_relative width_100 text_align_center float_left font_size_4vh line_height_5vh">\
+                                              App:\
+                                          </div>\
+                                           <div class="position_relative width_100 text_align_center float_left font_size_2vh line_height_3vh">\
+                                              A collection of "parcels!"\
+                                          </div>\
+                                          \
+                                            <span class="width_100 position_relative float_left display_flex_flow ">\
+                                            ' + component_keystroke_annotate_new('tour') + '\
+                                            </span>\
+                                            \
+                                        ') + '\
+                                        ') + '\
+                                    \
+                                    ' + element_container_styled('position_relative float_left width_10 height_50vh', '\
+                                    ' + element_container_center('\
+                                          <div class="position_relative width_100 text_align_center float_left font_size_4vh line_height_5vh">\
+                                              App:\
+                                          </div>\
+                                           <div class="position_relative width_100 text_align_center float_left font_size_2vh line_height_3vh">\
+                                              A collection of "parcels!"\
+                                          </div>\
+                                          \
+                                            <span class="width_100 position_relative float_left display_flex_flow ">\
+                                            ' + component_keystroke_annotate_new('tour') + '\
+                                            </span>\
+                                            \
+                                        ') + '\
+                                        ') + '\
+                                    \
+                                    ' + element_container_styled('position_relative float_left width_10 height_50vh', '\
+                                    ' + element_container_center('\
+                                          <div class="position_relative width_100 text_align_center float_left font_size_4vh line_height_5vh">\
+                                              App:\
+                                          </div>\
+                                           <div class="position_relative width_100 text_align_center float_left font_size_2vh line_height_3vh">\
+                                              A collection of "parcels!"\
+                                          </div>\
+                                          \
+                                            <span class="width_100 position_relative float_left display_flex_flow ">\
+                                            ' + component_keystroke_annotate_new('tour') + '\
+                                            </span>\
+                                            \
+                                        ') + '\
+                                        ') + '\
+                                    \
+                                    ' + element_container_styled('position_relative float_left width_10 height_50vh', '\
+                                    ' + element_container_center('\
+                                          <div class="position_relative width_100 text_align_center float_left font_size_4vh line_height_5vh">\
+                                              App:\
+                                          </div>\
+                                           <div class="position_relative width_100 text_align_center float_left font_size_2vh line_height_3vh">\
+                                              A collection of "parcels!"\
+                                          </div>\
+                                          \
+                                            <span class="width_100 position_relative float_left display_flex_flow ">\
+                                            ' + component_keystroke_annotate_new('tour') + '\
+                                            </span>\
+                                            \
+                                        ') + '\
+                                        ') + '\
+                                    \
+                                    ' + element_container_styled('position_relative float_left width_10 height_50vh', '\
+                                    ' + element_container_center('\
+                                          <div class="position_relative width_100 text_align_center float_left font_size_4vh line_height_5vh">\
+                                              App:\
+                                          </div>\
+                                           <div class="position_relative width_100 text_align_center float_left font_size_2vh line_height_3vh">\
+                                              A collection of "parcels!"\
+                                          </div>\
+                                          \
+                                            <span class="width_100 position_relative float_left display_flex_flow ">\
+                                            ' + component_keystroke_annotate_new('tour') + '\
+                                            </span>\
+                                            \
+                                        ') + '\
+                                        ') + '\
+                                    \
+                                    ' + element_container_styled('position_relative float_left width_10 height_50vh', '\
+                                    ' + element_container_center('\
+                                          <div class="position_relative width_100 text_align_center float_left font_size_4vh line_height_5vh">\
+                                              App:\
+                                          </div>\
+                                           <div class="position_relative width_100 text_align_center float_left font_size_2vh line_height_3vh">\
+                                              A collection of "parcels!"\
+                                          </div>\
+                                          \
+                                            <span class="width_100 position_relative float_left display_flex_flow ">\
+                                            ' + component_keystroke_annotate_new('tour') + '\
+                                            </span>\
+                                            \
+                                        ') + '\
+                                        ') + '\
+                                    \
+                                    ' + element_container_styled('position_relative float_left width_10 height_50vh', '\
+                                    ' + element_container_center('\
+                                          <div class="position_relative width_100 text_align_center float_left font_size_4vh line_height_5vh">\
+                                              App:\
+                                          </div>\
+                                           <div class="position_relative width_100 text_align_center float_left font_size_2vh line_height_3vh">\
+                                              A collection of "parcels!"\
+                                          </div>\
+                                          \
+                                            <span class="width_100 position_relative float_left display_flex_flow ">\
+                                            ' + component_keystroke_annotate_new('tour') + '\
+                                            </span>\
+                                            \
+                                        ') + '\
+                                        ') + '\
+                                    \
+        ' + element_title('feature: grows', 'width_100 text_align_center font_size_10vh line_height_10vh background-white border_top_01vh_dark_yellow_9 border_bottom_01vh_dark_yellow_9', 'feature: grows') + '\
+        \
+        <div id="route_firebase" class=" width_50 height_50vh position_relative float_left background-light-yellow-9 display_flex_flow">\
+            <div class="hover_width_100 hover_height_100 calc_205vh position_relative float_left photo_person1 border_01vh_dark_yellow_9 box_shadow_bottom_left_1vh_dark_yellow_9">\
+            </div>\
+        </div>\
+        \
+        <div id="route_firebase" class=" width_50 height_50vh position_relative float_left background-light-yellow-9 display_flex_flow">\
+            <div class="hover_width_100 hover_height_100 calc_5vh position_relative float_left photo_person1 border_01vh_dark_yellow_9 box_shadow_bottom_left_1vh_dark_yellow_9">\
+            </div>\
+        </div>\
+        \
+        <div id="route_firebase" class=" width_50 height_50vh position_relative float_left background-light-yellow-9 display_flex_flow">\
+            <div class="hover_width_100 hover_height_100 calc_10vh position_relative float_left photo_person1 border_01vh_dark_yellow_9 box_shadow_bottom_left_1vh_dark_yellow_9">\
+            </div>\
+        </div>\
+        \
+        <div id="route_firebase" class=" width_50 height_50vh position_relative float_left background-light-yellow-9 display_flex_flow">\
+            <div class="hover_width_100 hover_height_100 calc_15vh position_relative float_left photo_person1 border_01vh_dark_yellow_9 box_shadow_bottom_left_1vh_dark_yellow_9">\
+            </div>\
+        </div>\
+        \
+        <div id="route_firebase" class=" width_50 height_50vh position_relative float_left background-light-yellow-9 display_flex_flow">\
+            <div class="hover_width_100 hover_height_100 calc_20vh position_relative float_left photo_person1 border_01vh_dark_yellow_9 box_shadow_bottom_left_1vh_dark_yellow_9">\
+            </div>\
+        </div>\
+        \
+        <div id="route_firebase" class=" width_50 height_50vh position_relative float_left background-light-yellow-9 display_flex_flow">\
+            <div class="hover_width_100 hover_height_100 calc_25vh position_relative float_left photo_person1 border_01vh_dark_yellow_9 box_shadow_bottom_left_1vh_dark_yellow_9">\
+            </div>\
+        </div>\
+        \
+        ' + element_title('feature: calc', 'width_100 text_align_center font_size_10vh line_height_10vh background-white border_top_01vh_dark_yellow_9 border_bottom_01vh_dark_yellow_9', 'feature: grows') + '\
+        \
+        <div id="route_firebase" class=" width_50 height_50vh position_relative float_left background-light-yellow-9 display_flex_flow">\
+            <div class="calc_205vh position_relative float_left photo_person1 border_01vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9">\
+            </div>\
+        </div>\
+        \
+        <div id="route_firebase" class=" width_50 height_50vh position_relative float_left background-light-yellow-9 display_flex_flow">\
+            <div class="calc_5vh position_relative float_left photo_person1 border_01vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9">\
+            </div>\
+        </div>\
+        \
+        <div id="route_firebase" class=" width_50 height_50vh position_relative float_left background-light-yellow-9 display_flex_flow">\
+            <div class="calc_10vh position_relative float_left photo_person1 border_01vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9">\
+            </div>\
+        </div>\
+        \
+        <div id="route_firebase" class=" width_50 height_50vh position_relative float_left background-light-yellow-9 display_flex_flow">\
+            <div class="calc_15vh position_relative float_left photo_person1 border_01vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9">\
+            </div>\
+        </div>\
+        \
+        <div id="route_firebase" class=" width_50 height_50vh position_relative float_left background-light-yellow-9 display_flex_flow">\
+            <div class="calc_20vh position_relative float_left photo_person1 border_01vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9">\
+            </div>\
+        </div>\
+        \
+        <div id="route_firebase" class=" width_50 height_50vh position_relative float_left background-light-yellow-9 display_flex_flow">\
+            <div class="calc_25vh position_relative float_left photo_person1 border_01vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9">\
+            </div>\
+        </div>\
+        \
+        ' + element_title('feature: photos', 'width_100 text_align_center font_size_10vh line_height_10vh background-white border_top_01vh_dark_yellow_9 border_bottom_01vh_dark_yellow_9', 'feature: photos') + '\
+        \
+        <div id="route_firebase" class=" width_50 height_50vh position_relative float_left photo_person1"></div>\
+        <div id="route_firebase" class=" width_50 height_50vh position_relative float_left photo_person2"></div>\
+        <div id="route_firebase" class=" width_50 height_50vh position_relative float_left photo_person3"></div>\
+        <div id="route_firebase" class=" width_50 height_50vh position_relative float_left photo_person4"></div>\
+        <div id="route_firebase" class=" width_50 height_50vh position_relative float_left photo_person5"></div>\
+        <div id="route_firebase" class=" width_50 height_50vh position_relative float_left photo_person6"></div>\
+        <div id="route_firebase" class=" width_50 height_50vh position_relative float_left photo_person7"></div>\
+        <div id="route_firebase" class=" width_50 height_50vh position_relative float_left photo_person8"></div>\
+        <div id="route_firebase" class=" width_50 height_50vh position_relative float_left photo_person9"></div>\
+        <div id="route_firebase" class=" width_50 height_50vh position_relative float_left photo_person10"></div>\
+        <div id="route_firebase" class=" width_50 height_50vh position_relative float_left photo_person11"></div>\
+        <div id="route_firebase" class=" width_50 height_50vh position_relative float_left photo_person12"></div>\
+        <div id="route_firebase" class=" width_50 height_50vh position_relative float_left photo_person13"></div>\
+        <div id="route_firebase" class=" width_50 height_50vh position_relative float_left photo_person14"></div>\
+        <div id="route_firebase" class=" width_50 height_50vh position_relative float_left photo_person15"></div>\
+        <div id="route_firebase" class=" width_50 height_50vh position_relative float_left photo_person16"></div>\
+        <div id="route_firebase" class=" width_50 height_50vh position_relative float_left photo_person17"></div>\
+        <div id="route_firebase" class=" width_50 height_50vh position_relative float_left photo_person18"></div>\
+        <div id="route_firebase" class=" width_50 height_50vh position_relative float_left photo_person19"></div>\
+        <div id="route_firebase" class=" width_50 height_50vh position_relative float_left photo_person20"></div>\
+        <div id="route_firebase" class=" width_50 height_50vh position_relative float_left photo_person21"></div>\
+        <div id="route_firebase" class=" width_50 height_50vh position_relative float_left photo_person22"></div>\
+        <div id="route_firebase" class=" width_50 height_50vh position_relative float_left photo_person23"></div>\
+        <div id="route_firebase" class=" width_50 height_50vh position_relative float_left photo_person24"></div>\
+        <div id="route_firebase" class=" width_50 height_50vh position_relative float_left photo_person25"></div>\
+        <div id="route_firebase" class=" width_50 height_50vh position_relative float_left photo_person26"></div>\
+        <div id="route_firebase" class=" width_50 height_50vh position_relative float_left photo_person27"></div>\
+        <div id="route_firebase" class=" width_50 height_50vh position_relative float_left photo_person28"></div>\
+        <div id="route_firebase" class=" width_50 height_50vh position_relative float_left photo_person29"></div>\
+        <div id="route_firebase" class=" width_50 height_50vh position_relative float_left photo_person30"></div>\
+        <div id="route_firebase" class=" width_50 height_50vh position_relative float_left photo_person31"></div>\
+        <div id="route_firebase" class=" width_50 height_50vh position_relative float_left photo_person32"></div>\
+        <div id="route_firebase" class=" width_50 height_50vh position_relative float_left photo_person33"></div>\
+        <div id="route_firebase" class=" width_50 height_50vh position_relative float_left photo_person34"></div>\
+        <div id="route_firebase" class=" width_50 height_50vh position_relative float_left photo_person35"></div>\
+        <div id="route_firebase" class=" width_50 height_50vh position_relative float_left photo_person36"></div>\
+        <div id="route_firebase" class=" width_50 height_50vh position_relative float_left photo_person37"></div>\
+        <div id="route_firebase" class=" width_50 height_50vh position_relative float_left photo_person38"></div>\
+        <div id="route_firebase" class=" width_50 height_50vh position_relative float_left photo_person39"></div>\
+        <div id="route_firebase" class=" width_50 height_50vh position_relative float_left photo_person40"></div>\
+        <div id="route_firebase" class=" width_50 height_50vh position_relative float_left photo_person41"></div>\
+        <div id="route_firebase" class=" width_50 height_50vh position_relative float_left photo_person42"></div>\
+        <div id="route_firebase" class=" width_50 height_50vh position_relative float_left photo_person43"></div>\
+        <div id="route_firebase" class=" width_50 height_50vh position_relative float_left photo_person44"></div>\
+        <div id="route_firebase" class=" width_50 height_50vh position_relative float_left photo_person45"></div>\
+        <div id="route_firebase" class=" width_50 height_50vh position_relative float_left photo_person46"></div>\
+        <div id="route_firebase" class=" width_50 height_50vh position_relative float_left photo_person47"></div>\
+        <div id="route_firebase" class=" width_50 height_50vh position_relative float_left photo_person48"></div>\
+        <div id="route_firebase" class=" width_50 height_50vh position_relative float_left photo_person49"></div>\
+        <div id="route_firebase" class=" width_50 height_50vh position_relative float_left photo_person50"></div>\
+        <div id="route_firebase" class=" width_50 height_50vh position_relative float_left photo_person51"></div>\
+        <div id="route_firebase" class=" width_50 height_50vh position_relative float_left photo_person52"></div>\
+        <div id="route_firebase" class=" width_50 height_50vh position_relative float_left photo_person53"></div>\
+        <div id="route_firebase" class=" width_50 height_50vh position_relative float_left photo_person54"></div>\
+        <div id="route_firebase" class=" width_50 height_50vh position_relative float_left photo_person55"></div>\
+        <div id="route_firebase" class=" width_50 height_50vh position_relative float_left photo_person56"></div>\
+        <div id="route_firebase" class=" width_50 height_50vh position_relative float_left photo_person57"></div>\
+        <div id="route_firebase" class=" width_50 height_50vh position_relative float_left photo_person58"></div>\
+        <div id="route_firebase" class=" width_50 height_50vh position_relative float_left photo_person59"></div>\
+        <div id="route_firebase" class=" width_50 height_50vh position_relative float_left photo_person60"></div>\
+        <div id="route_firebase" class=" width_50 height_50vh position_relative float_left photo_person61"></div>\
+        <div id="route_firebase" class=" width_50 height_50vh position_relative float_left photo_person62"></div>\
+        <div id="route_firebase" class=" width_50 height_50vh position_relative float_left photo_person63"></div>\
+        <div id="route_firebase" class=" width_50 height_50vh position_relative float_left photo_person64"></div>\
+        <div id="route_firebase" class=" width_50 height_50vh position_relative float_left photo_person65"></div>\
+        <div id="route_firebase" class=" width_50 height_50vh position_relative float_left photo_person66"></div>\
+        <div id="route_firebase" class=" width_50 height_50vh position_relative float_left photo_person67"></div>\
+        <div id="route_firebase" class=" width_50 height_50vh position_relative float_left photo_person68"></div>\
+        <div id="route_firebase" class=" width_50 height_50vh position_relative float_left photo_person69"></div>\
+        \
+        ' + element_title('feature: containers', 'width_100 text_align_center font_size_10vh line_height_10vh background-white border_top_01vh_dark_yellow_9 border_bottom_01vh_dark_yellow_9', 'feature: containers') + '\
+        \
+        <div class="position_relative overflow_hidden width_100 height_100vh float_left background-light-yellow-8 z_index_1 margin_auto">\
+            \
+            <div class="position_absolute top_0 left_0 right_0 bottom_0 calc_25vh overflow_hidden border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9 border_01vh_dark_yellow_9 background-light-yellow-9 z_index_1 margin_auto">\
+                \
+                <div class="position_absolute top_0 left_0 right_0 bottom_0 calc_5vh overflow_hidden z_index_1 margin_auto">\
+                    \
+                </div>\
+                \
+              </div>\
+            \
+        </div>\
+        \
+        <div class="position_relative overflow_hidden width_100 height_100vh float_left background-light-yellow-7 z_index_1 margin_auto">\
+            \
+            <div class="position_absolute top_0 left_0 right_0 bottom_0 calc_25vh overflow_hidden border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9 border_01vh_dark_yellow_9 background-light-yellow-9 z_index_1 margin_auto">\
+                \
+                <div class="position_absolute top_0 left_0 right_0 bottom_0 calc_5vh overflow_hidden z_index_1 margin_auto">\
+                    \
+                </div>\
+                \
+              </div>\
+            \
+        </div>\
+        \
+        <div class="position_relative overflow_hidden width_100 height_100vh float_left background-light-yellow-6 z_index_1 margin_auto">\
+            \
+            <div class="position_absolute top_0 left_0 right_0 bottom_0 calc_25vh overflow_hidden border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9 border_01vh_dark_yellow_9 background-light-yellow-9 z_index_1 margin_auto">\
+                \
+                <div class="position_absolute top_0 left_0 right_0 bottom_0 calc_5vh overflow_hidden z_index_1 margin_auto">\
+                    \
+                </div>\
+                \
+              </div>\
+            \
+        </div>\
+        \
+        <div class="position_relative overflow_hidden width_100 height_100vh float_left background-light-yellow-5 z_index_1 margin_auto">\
+            \
+            <div class="position_absolute top_0 left_0 right_0 bottom_0 calc_25vh overflow_hidden border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9 border_01vh_dark_yellow_9 background-light-yellow-9 z_index_1 margin_auto">\
+                \
+                <div class="position_absolute top_0 left_0 right_0 bottom_0 calc_5vh overflow_hidden z_index_1 margin_auto">\
+                    \
+                </div>\
+                \
+              </div>\
+            \
+        </div>\
+        \
+        <div class="position_relative overflow_hidden width_100 height_100vh float_left background-light-yellow-4 z_index_1 margin_auto">\
+            \
+            <div class="position_absolute top_0 left_0 right_0 bottom_0 calc_25vh overflow_hidden border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9 border_01vh_dark_yellow_9 background-light-yellow-9 z_index_1 margin_auto">\
+                \
+                <div class="position_absolute top_0 left_0 right_0 bottom_0 calc_5vh overflow_hidden z_index_1 margin_auto">\
+                    \
+                </div>\
+                \
+              </div>\
+            \
+        </div>\
+        \
+        <div class="position_relative overflow_hidden width_100 height_100vh float_left background-light-yellow-3 z_index_1 margin_auto">\
+            \
+            <div class="position_absolute top_0 left_0 right_0 bottom_0 calc_25vh overflow_hidden border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9 border_01vh_dark_yellow_9 background-light-yellow-9 z_index_1 margin_auto">\
+                \
+                <div class="position_absolute top_0 left_0 right_0 bottom_0 calc_5vh overflow_hidden z_index_1 margin_auto">\
+                    \
+                </div>\
+                \
+              </div>\
+            \
+        </div>\
+        \
+        <div class="position_relative overflow_hidden width_100 height_100vh float_left background-light-yellow-2 z_index_1 margin_auto">\
+            \
+            <div class="position_absolute top_0 left_0 right_0 bottom_0 calc_25vh overflow_hidden border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9 border_01vh_dark_yellow_9 background-light-yellow-9 z_index_1 margin_auto">\
+                \
+                <div class="position_absolute top_0 left_0 right_0 bottom_0 calc_5vh overflow_hidden z_index_1 margin_auto">\
+                    \
+                </div>\
+                \
+              </div>\
+            \
+        </div>\
+        \
+        <div class="position_relative overflow_hidden width_100 height_100vh float_left background-light-yellow-1 z_index_1 margin_auto">\
+            \
+            <div class="position_absolute top_0 left_0 right_0 bottom_0 calc_25vh overflow_hidden border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9 border_01vh_dark_yellow_9 background-light-yellow-9 z_index_1 margin_auto">\
+                \
+                <div class="position_absolute top_0 left_0 right_0 bottom_0 calc_5vh overflow_hidden z_index_1 margin_auto">\
+                    \
+                </div>\
+                \
+              </div>\
+            \
+        </div>\
+        \
+        <div class="position_relative overflow_hidden width_100 height_100vh float_left background-light-yellow-0 z_index_1 margin_auto">\
+            \
+            <div class="position_absolute top_0 left_0 right_0 bottom_0 calc_25vh overflow_hidden border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9 border_01vh_dark_yellow_9 background-light-yellow-9 z_index_1 margin_auto">\
+                \
+                <div class="position_absolute top_0 left_0 right_0 bottom_0 calc_5vh overflow_hidden z_index_1 margin_auto">\
+                    \
+                </div>\
+                \
+              </div>\
+            \
+        </div>\
+        \
+      ', 'width_100 float_left position_relative background_light_yellow_0')+'\
+      \
+    ';
+
+    let default_content_1 = '\
+        ' + element_content_card() + '\
+        \
+        ' + element_title('feature: element_spaced_color') + '\
+        \
+          <div class="width_100 height_100vh float_left position_relative overflow_hidden">\
+              \
+              <div class="width_100 height_100 float_left position_relative scrollbaryhidden overflow_y">\
+              \
+              </div>\
+              \
+              <div id="top_right_anchors" class="float_left position_absolute top_10vh right_10vh margin_auto overflow_hidden display_flex_flow z_index_7">\
+                \
+                <span class="position_relative margin_auto z_index_1 height_100 width_100 display_flex_flow">\
+                  \
+                  <span class="position_relative margin_1vh z_index_1 display_flex_flow">\
+                    \
+                    <span class="margin_auto position_relative float_left top_0">\
+                    \
+                    <span class="margin_auto position_relative float_left top_1vh">\
+                    \
+                    <span class="position_relative hover_top_0 top_-1vh easing_01 background_light_yellow_9 width_100 text_align_center float_right display_flex_flow  pseudo_button_bottom_dark_yellow_8 pseudo_button_bottom_dark_yellow_8_shadow_border_02 pseudo_hover">\
+                    \
+                    <span class=" position_absolute top_0 left_0 right_0 float_left calc_05vh margin_auto display_flex_flow border_025vh_dark_yellow_9 background_dark_yellow_0">\
+                    \
+                    </span>\
+                    \
+                    <span class="position_relative text_align_center font_size_2vh line_height_3vh padding_1vh float_right">\
+                    \
+                    </span>\
+                    \
+                    <span id="wp_component_meta" class="position_absolute width_25vh right_0 left_0 bottom_100 float_left line_height_5vh font_size_205vh text_shadow_01vh_dark_yellow_1 margin_205vh_bottom hover_show">\
+                      <span class="position_relative top_0vh left_0vh easing_01 margin_2vh calc_4vh_width border_025vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9 box_shadow_hover_none background_light_yellow_0 text_align_center float_right pseudo_arrow_bottom_left_outside_light_yellow_0">\
+                        <div class="overflow_hidden width_100 height_100 position_relative top_0 left_0 display_flex_flow">\
+                          <div class="calc_2vh_width margin_1vh position_relative float_left">\
+                            <p class="font_size_2vh line_height_205vh">\
+                            simple\
+                            </p>\
+                          </div>\
+                        </div>\
+                      </span>\
+                    </span>\
+                    \
+                    </span>\
+                    \
+                    </span>\
+                    \
+                    </span>\
+                    \
+                  </span>\
+                  \
+                  <span class="position_relative margin_1vh z_index_1 display_flex_flow">\
+                    \
+                    <span class="margin_auto position_relative float_left top_0">\
+                    \
+                    <span class="margin_auto position_relative float_left top_1vh">\
+                    \
+                    <span class="position_relative hover_top_0 top_-1vh easing_01 background_light_yellow_9 width_100 text_align_center float_right display_flex_flow  pseudo_button_bottom_dark_yellow_8 pseudo_button_bottom_dark_yellow_8_shadow_border_02 pseudo_hover">\
+                    \
+                    <span class=" position_absolute top_0 left_0 right_0 float_left calc_05vh margin_auto display_flex_flow border_025vh_dark_yellow_9 background_dark_yellow_0">\
+                    \
+                    </span>\
+                    \
+                    <span class="position_relative text_align_center font_size_2vh line_height_3vh padding_1vh float_right">\
+                    \
+                    </span>\
+                    \
+                    <span id="wp_component_meta" class="position_absolute width_25vh right_0 left_0 bottom_100 float_left line_height_5vh font_size_205vh text_shadow_01vh_dark_yellow_1 margin_205vh_bottom hover_show">\
+                      <span class="position_relative top_0vh left_0vh easing_01 margin_2vh calc_4vh_width border_025vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9 box_shadow_hover_none background_light_yellow_0 text_align_center float_right pseudo_arrow_bottom_left_outside_light_yellow_0">\
+                        <div class="overflow_hidden width_100 height_100 position_relative top_0 left_0 display_flex_flow">\
+                          <div class="calc_2vh_width margin_1vh position_relative float_left">\
+                            <p class="font_size_2vh line_height_205vh">\
+                            simple\
+                            </p>\
+                          </div>\
+                        </div>\
+                      </span>\
+                    </span>\
+                    \
+                    </span>\
+                    \
+                    </span>\
+                    \
+                    </span>\
+                    \
+                  </span>\
+                  \
+                  <span class="position_relative margin_1vh z_index_1 display_flex_flow">\
+                    \
+                    <span class="margin_auto position_relative float_left top_0">\
+                    \
+                    <span class="margin_auto position_relative float_left top_1vh">\
+                    \
+                    <span class="position_relative hover_top_0 top_-1vh easing_01 background_light_yellow_9 width_100 text_align_center float_right display_flex_flow  pseudo_button_bottom_dark_yellow_8 pseudo_button_bottom_dark_yellow_8_shadow_border_02 pseudo_hover">\
+                    \
+                    <span class=" position_absolute top_0 left_0 right_0 float_left calc_05vh margin_auto display_flex_flow border_025vh_dark_yellow_9 background_dark_yellow_0">\
+                    \
+                    </span>\
+                    \
+                    <span class="position_relative text_align_center font_size_2vh line_height_3vh padding_1vh float_right">\
+                    \
+                    </span>\
+                    \
+                    <span id="wp_component_meta" class="position_absolute width_25vh right_0 left_0 bottom_100 float_left line_height_5vh font_size_205vh text_shadow_01vh_dark_yellow_1 margin_205vh_bottom hover_show">\
+                      <span class="position_relative top_0vh left_0vh easing_01 margin_2vh calc_4vh_width border_025vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9 box_shadow_hover_none background_light_yellow_0 text_align_center float_right pseudo_arrow_bottom_left_outside_light_yellow_0">\
+                        <div class="overflow_hidden width_100 height_100 position_relative top_0 left_0 display_flex_flow">\
+                          <div class="calc_2vh_width margin_1vh position_relative float_left">\
+                            <p class="font_size_2vh line_height_205vh">\
+                            simple\
+                            </p>\
+                          </div>\
+                        </div>\
+                      </span>\
+                    </span>\
+                    \
+                    </span>\
+                    \
+                    </span>\
+                    \
+                    </span>\
+                    \
+                  </span>\
+                  \
+                </span>\
+                \
+              </div>\
+              \
+              <div id="top_left_anchors" class="float_left position_absolute top_10vh left_10vh margin_auto overflow_hidden display_flex_flow z_index_7">\
+                \
+                <span class="position_relative margin_auto z_index_1 height_100 width_100 display_flex_flow">\
+                  \
+                  <span class="position_relative margin_1vh z_index_1 display_flex_flow">\
+                    \
+                    <span class="margin_auto position_relative float_left top_0">\
+                    \
+                    <span class="margin_auto position_relative float_left top_1vh">\
+                    \
+                    <span class="position_relative hover_top_0 top_-1vh easing_01 background_light_yellow_9 width_100 text_align_center float_right display_flex_flow  pseudo_button_bottom_dark_yellow_8 pseudo_button_bottom_dark_yellow_8_shadow_border_02 pseudo_hover">\
+                    \
+                    <span class=" position_absolute top_0 left_0 right_0 float_left calc_05vh margin_auto display_flex_flow border_025vh_dark_yellow_9 background_dark_yellow_0">\
+                    \
+                    </span>\
+                    \
+                    <span class="position_relative text_align_center font_size_2vh line_height_3vh padding_1vh float_right">\
+                    \
+                    </span>\
+                    \
+                    <span id="wp_component_meta" class="position_absolute width_25vh right_0 left_0 bottom_100 float_left line_height_5vh font_size_205vh text_shadow_01vh_dark_yellow_1 margin_205vh_bottom hover_show">\
+                      <span class="position_relative top_0vh left_0vh easing_01 margin_2vh calc_4vh_width border_025vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9 box_shadow_hover_none background_light_yellow_0 text_align_center float_right pseudo_arrow_bottom_left_outside_light_yellow_0">\
+                        <div class="overflow_hidden width_100 height_100 position_relative top_0 left_0 display_flex_flow">\
+                          <div class="calc_2vh_width margin_1vh position_relative float_left">\
+                            <p class="font_size_2vh line_height_205vh">\
+                            simple\
+                            </p>\
+                          </div>\
+                        </div>\
+                      </span>\
+                    </span>\
+                    \
+                    </span>\
+                    \
+                    </span>\
+                    \
+                    </span>\
+                    \
+                  </span>\
+                  \
+                  <span class="position_relative margin_1vh z_index_1 display_flex_flow">\
+                    \
+                    <span class="margin_auto position_relative float_left top_0">\
+                    \
+                    <span class="margin_auto position_relative float_left top_1vh">\
+                    \
+                    <span class="position_relative hover_top_0 top_-1vh easing_01 background_light_yellow_9 width_100 text_align_center float_right display_flex_flow  pseudo_button_bottom_dark_yellow_8 pseudo_button_bottom_dark_yellow_8_shadow_border_02 pseudo_hover">\
+                    \
+                    <span class=" position_absolute top_0 left_0 right_0 float_left calc_05vh margin_auto display_flex_flow border_025vh_dark_yellow_9 background_dark_yellow_0">\
+                    \
+                    </span>\
+                    \
+                    <span class="position_relative text_align_center font_size_2vh line_height_3vh padding_1vh float_right">\
+                    \
+                    </span>\
+                    \
+                    <span id="wp_component_meta" class="position_absolute width_25vh right_0 left_0 bottom_100 float_left line_height_5vh font_size_205vh text_shadow_01vh_dark_yellow_1 margin_205vh_bottom hover_show">\
+                      <span class="position_relative top_0vh left_0vh easing_01 margin_2vh calc_4vh_width border_025vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9 box_shadow_hover_none background_light_yellow_0 text_align_center float_right pseudo_arrow_bottom_left_outside_light_yellow_0">\
+                        <div class="overflow_hidden width_100 height_100 position_relative top_0 left_0 display_flex_flow">\
+                          <div class="calc_2vh_width margin_1vh position_relative float_left">\
+                            <p class="font_size_2vh line_height_205vh">\
+                            simple\
+                            </p>\
+                          </div>\
+                        </div>\
+                      </span>\
+                    </span>\
+                    \
+                    </span>\
+                    \
+                    </span>\
+                    \
+                    </span>\
+                    \
+                  </span>\
+                  \
+                </span>\
+                \
+              </div>\
+                          \
+              <div id="bottom_right_anchors" class="float_left position_absolute bottom_10vh right_10vh margin_auto overflow_hidden display_flex_flow z_index_7">\
+                \
+                <span class="position_relative margin_auto z_index_1 height_100 width_100 display_flex_flow">\
+                  \
+                  <span class="position_relative margin_1vh z_index_1 display_flex_flow">\
+                    \
+                    <span class="margin_auto position_relative float_left top_0">\
+                    \
+                    <span class="margin_auto position_relative float_left top_1vh">\
+                    \
+                    <span class="position_relative hover_top_0 top_-1vh easing_01 background_light_yellow_9 width_100 text_align_center float_right display_flex_flow  pseudo_button_bottom_dark_yellow_8 pseudo_button_bottom_dark_yellow_8_shadow_border_02 pseudo_hover">\
+                    \
+                    <span class=" position_absolute top_0 left_0 right_0 float_left calc_05vh margin_auto display_flex_flow border_025vh_dark_yellow_9 background_dark_yellow_0">\
+                    \
+                    </span>\
+                    \
+                    <span class="position_relative text_align_center font_size_2vh line_height_3vh padding_1vh float_right">\
+                    \
+                    </span>\
+                    \
+                    <span id="wp_component_meta" class="position_absolute width_25vh right_0 left_0 bottom_100 float_left line_height_5vh font_size_205vh text_shadow_01vh_dark_yellow_1 margin_205vh_bottom hover_show">\
+                      <span class="position_relative top_0vh left_0vh easing_01 margin_2vh calc_4vh_width border_025vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9 box_shadow_hover_none background_light_yellow_0 text_align_center float_right pseudo_arrow_bottom_left_outside_light_yellow_0">\
+                        <div class="overflow_hidden width_100 height_100 position_relative top_0 left_0 display_flex_flow">\
+                          <div class="calc_2vh_width margin_1vh position_relative float_left">\
+                            <p class="font_size_2vh line_height_205vh">\
+                            simple\
+                            </p>\
+                          </div>\
+                        </div>\
+                      </span>\
+                    </span>\
+                    \
+                    </span>\
+                    \
+                    </span>\
+                    \
+                    </span>\
+                    \
+                  </span>\
+                  \
+                  <span class="position_relative margin_1vh z_index_1 display_flex_flow">\
+                    \
+                    <span class="margin_auto position_relative float_left top_0">\
+                    \
+                    <span class="margin_auto position_relative float_left top_1vh">\
+                    \
+                    <span class="position_relative hover_top_0 top_-1vh easing_01 background_light_yellow_9 width_100 text_align_center float_right display_flex_flow  pseudo_button_bottom_dark_yellow_8 pseudo_button_bottom_dark_yellow_8_shadow_border_02 pseudo_hover">\
+                    \
+                    <span class=" position_absolute top_0 left_0 right_0 float_left calc_05vh margin_auto display_flex_flow border_025vh_dark_yellow_9 background_dark_yellow_0">\
+                    \
+                    </span>\
+                    \
+                    <span class="position_relative text_align_center font_size_2vh line_height_3vh padding_1vh float_right">\
+                    \
+                    </span>\
+                    \
+                    <span id="wp_component_meta" class="position_absolute width_25vh right_0 left_0 bottom_100 float_left line_height_5vh font_size_205vh text_shadow_01vh_dark_yellow_1 margin_205vh_bottom hover_show">\
+                      <span class="position_relative top_0vh left_0vh easing_01 margin_2vh calc_4vh_width border_025vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9 box_shadow_hover_none background_light_yellow_0 text_align_center float_right pseudo_arrow_bottom_left_outside_light_yellow_0">\
+                        <div class="overflow_hidden width_100 height_100 position_relative top_0 left_0 display_flex_flow">\
+                          <div class="calc_2vh_width margin_1vh position_relative float_left">\
+                            <p class="font_size_2vh line_height_205vh">\
+                            simple\
+                            </p>\
+                          </div>\
+                        </div>\
+                      </span>\
+                    </span>\
+                    \
+                    </span>\
+                    \
+                    </span>\
+                    \
+                    </span>\
+                    \
+                  </span>\
+                  \
+                </span>\
+                \
+              </div>\
+              \
+              <div id="bottom_left_anchors" class="float_left position_absolute bottom_10vh left_10vh margin_auto overflow_hidden display_flex_flow z_index_7">\
+                \
+                <span class="position_relative margin_auto z_index_1 height_100 width_100 display_flex_flow">\
+                  \
+                  <span class="position_relative margin_1vh z_index_1 display_flex_flow">\
+                    \
+                    <span class="margin_auto position_relative float_left top_0">\
+                    \
+                    <span class="margin_auto position_relative float_left top_1vh">\
+                    \
+                    <span class="position_relative hover_top_0 top_-1vh easing_01 background_light_yellow_9 width_100 text_align_center float_right display_flex_flow  pseudo_button_bottom_dark_yellow_8 pseudo_button_bottom_dark_yellow_8_shadow_border_02 pseudo_hover">\
+                    \
+                    <span class=" position_absolute top_0 left_0 right_0 float_left calc_05vh margin_auto display_flex_flow border_025vh_dark_yellow_9 background_dark_yellow_0">\
+                    \
+                    </span>\
+                    \
+                    <span class="position_relative text_align_center font_size_2vh line_height_3vh padding_1vh float_right">\
+                    \
+                    </span>\
+                    \
+                    <span id="wp_component_meta" class="position_absolute width_25vh right_0 left_0 bottom_100 float_left line_height_5vh font_size_205vh text_shadow_01vh_dark_yellow_1 margin_205vh_bottom hover_show">\
+                      <span class="position_relative top_0vh left_0vh easing_01 margin_2vh calc_4vh_width border_025vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9 box_shadow_hover_none background_light_yellow_0 text_align_center float_right pseudo_arrow_bottom_left_outside_light_yellow_0">\
+                        <div class="overflow_hidden width_100 height_100 position_relative top_0 left_0 display_flex_flow">\
+                          <div class="calc_2vh_width margin_1vh position_relative float_left">\
+                            <p class="font_size_2vh line_height_205vh">\
+                            simple\
+                            </p>\
+                          </div>\
+                        </div>\
+                      </span>\
+                    </span>\
+                    \
+                    </span>\
+                    \
+                    </span>\
+                    \
+                    </span>\
+                    \
+                  </span>\
+                  \
+                  <span class="position_relative margin_1vh z_index_1 display_flex_flow">\
+                    \
+                    <span class="margin_auto position_relative float_left top_0">\
+                    \
+                    <span class="margin_auto position_relative float_left top_1vh">\
+                    \
+                    <span class="position_relative hover_top_0 top_-1vh easing_01 background_light_yellow_9 width_100 text_align_center float_right display_flex_flow  pseudo_button_bottom_dark_yellow_8 pseudo_button_bottom_dark_yellow_8_shadow_border_02 pseudo_hover">\
+                    \
+                    <span class=" position_absolute top_0 left_0 right_0 float_left calc_05vh margin_auto display_flex_flow border_025vh_dark_yellow_9 background_dark_yellow_0">\
+                    \
+                    </span>\
+                    \
+                    <span class="position_relative text_align_center font_size_2vh line_height_3vh padding_1vh float_right">\
+                    \
+                    </span>\
+                    \
+                    <span id="wp_component_meta" class="position_absolute width_25vh right_0 left_0 bottom_100 float_left line_height_5vh font_size_205vh text_shadow_01vh_dark_yellow_1 margin_205vh_bottom hover_show">\
+                      <span class="position_relative top_0vh left_0vh easing_01 margin_2vh calc_4vh_width border_025vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9 box_shadow_hover_none background_light_yellow_0 text_align_center float_right pseudo_arrow_bottom_left_outside_light_yellow_0">\
+                        <div class="overflow_hidden width_100 height_100 position_relative top_0 left_0 display_flex_flow">\
+                          <div class="calc_2vh_width margin_1vh position_relative float_left">\
+                            <p class="font_size_2vh line_height_205vh">\
+                            simple\
+                            </p>\
+                          </div>\
+                        </div>\
+                      </span>\
+                    </span>\
+                    \
+                    </span>\
+                    \
+                    </span>\
+                    \
+                    </span>\
+                    \
+                  </span>\
+                  \
+                </span>\
+                \
+              </div>\
+              \
+              <div id="left_anchors" class="width_10vh calc_20vh_height float_left position_absolute top_0 bottom_0 left_0 margin_auto display_flex_flow z_index_7">\
+                \
+                <div class="position_relative margin_auto width_10vh float_right">\
+                  \
+                  <span class="margin_auto position_relative margin_2vh_bottom z_index_1 display_flex_flow">\
+                    \
+                    <span class="margin_auto position_relative float_left top_0">\
+                    \
+                    <span class="margin_auto position_relative float_left top_1vh">\
+                    \
+                    <span class="position_relative hover_top_0 top_-1vh easing_01 background_light_yellow_9 width_100 text_align_center float_right display_flex_flow  pseudo_button_bottom_dark_yellow_8 pseudo_button_bottom_dark_yellow_8_shadow_border_02 pseudo_hover">\
+                    \
+                    <span class=" position_absolute top_0 left_0 right_0 float_left calc_05vh margin_auto display_flex_flow border_025vh_dark_yellow_9 background_dark_yellow_0">\
+                    \
+                    </span>\
+                    \
+                    <span class="position_relative text_align_center font_size_2vh line_height_3vh padding_1vh float_right">\
+                    \
+                    </span>\
+                    \
+                    <span id="wp_component_meta" class="position_absolute width_25vh right_0 left_0 bottom_100 float_left line_height_5vh font_size_205vh text_shadow_01vh_dark_yellow_1 margin_205vh_bottom hover_show">\
+                      <span class="position_relative top_0vh left_0vh easing_01 margin_2vh calc_4vh_width border_025vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9 box_shadow_hover_none background_light_yellow_0 text_align_center float_right pseudo_arrow_bottom_left_outside_light_yellow_0">\
+                        <div class="overflow_hidden width_100 height_100 position_relative top_0 left_0 display_flex_flow">\
+                          <div class="calc_2vh_width margin_1vh position_relative float_left">\
+                            <p class="font_size_2vh line_height_205vh">\
+                            simple\
+                            </p>\
+                          </div>\
+                        </div>\
+                      </span>\
+                    </span>\
+                    \
+                    </span>\
+                    \
+                    </span>\
+                    \
+                    </span>\
+                    \
+                  </span>\
+                  \
+                  <span class="margin_auto position_relative margin_2vh_bottom z_index_1 display_flex_flow">\
+                    \
+                    <span class="margin_auto position_relative float_left top_0">\
+                    \
+                    <span class="margin_auto position_relative float_left top_1vh">\
+                    \
+                    <span class="position_relative hover_top_0 top_-1vh easing_01 background_light_yellow_9 width_100 text_align_center float_right display_flex_flow  pseudo_button_bottom_dark_yellow_8 pseudo_button_bottom_dark_yellow_8_shadow_border_02 pseudo_hover">\
+                    \
+                    <span class=" position_absolute top_0 left_0 right_0 float_left calc_05vh margin_auto display_flex_flow border_025vh_dark_yellow_9 background_dark_yellow_0">\
+                    \
+                    </span>\
+                    \
+                    <span class="position_relative text_align_center font_size_2vh line_height_3vh padding_1vh float_right">\
+                    \
+                    </span>\
+                    \
+                    <span id="wp_component_meta" class="position_absolute width_25vh right_0 left_0 bottom_100 float_left line_height_5vh font_size_205vh text_shadow_01vh_dark_yellow_1 margin_205vh_bottom hover_show">\
+                      <span class="position_relative top_0vh left_0vh easing_01 margin_2vh calc_4vh_width border_025vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9 box_shadow_hover_none background_light_yellow_0 text_align_center float_right pseudo_arrow_bottom_left_outside_light_yellow_0">\
+                        <div class="overflow_hidden width_100 height_100 position_relative top_0 left_0 display_flex_flow">\
+                          <div class="calc_2vh_width margin_1vh position_relative float_left">\
+                            <p class="font_size_2vh line_height_205vh">\
+                            simple\
+                            </p>\
+                          </div>\
+                        </div>\
+                      </span>\
+                    </span>\
+                    \
+                    </span>\
+                    \
+                    </span>\
+                    \
+                    </span>\
+                    \
+                  </span>\
+                  \
+                  <span class="margin_auto position_relative margin_2vh_bottom z_index_1 display_flex_flow">\
+                    \
+                    <span class="margin_auto position_relative float_left top_0">\
+                    \
+                    <span class="margin_auto position_relative float_left top_1vh">\
+                    \
+                    <span class="position_relative hover_top_0 top_-1vh easing_01 background_light_yellow_9 width_100 text_align_center float_right display_flex_flow  pseudo_button_bottom_dark_yellow_8 pseudo_button_bottom_dark_yellow_8_shadow_border_02 pseudo_hover">\
+                    \
+                    <span class=" position_absolute top_0 left_0 right_0 float_left calc_05vh margin_auto display_flex_flow border_025vh_dark_yellow_9 background_dark_yellow_0">\
+                    \
+                    </span>\
+                    \
+                    <span class="position_relative text_align_center font_size_2vh line_height_3vh padding_1vh float_right">\
+                    \
+                    </span>\
+                    \
+                    <span id="wp_component_meta" class="position_absolute width_25vh right_0 left_0 bottom_100 float_left line_height_5vh font_size_205vh text_shadow_01vh_dark_yellow_1 margin_205vh_bottom hover_show">\
+                      <span class="position_relative top_0vh left_0vh easing_01 margin_2vh calc_4vh_width border_025vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9 box_shadow_hover_none background_light_yellow_0 text_align_center float_right pseudo_arrow_bottom_left_outside_light_yellow_0">\
+                        <div class="overflow_hidden width_100 height_100 position_relative top_0 left_0 display_flex_flow">\
+                          <div class="calc_2vh_width margin_1vh position_relative float_left">\
+                            <p class="font_size_2vh line_height_205vh">\
+                            simple\
+                            </p>\
+                          </div>\
+                        </div>\
+                      </span>\
+                    </span>\
+                    \
+                    </span>\
+                    \
+                    </span>\
+                    \
+                    </span>\
+                    \
+                  </span>\
+                  \
+                  <span class="margin_auto position_relative margin_2vh_bottom z_index_1 display_flex_flow">\
+                    \
+                    <span class="margin_auto position_relative float_left top_0">\
+                    \
+                    <span class="margin_auto position_relative float_left top_1vh">\
+                    \
+                    <span class="position_relative hover_top_0 top_-1vh easing_01 background_light_yellow_9 width_100 text_align_center float_right display_flex_flow  pseudo_button_bottom_dark_yellow_8 pseudo_button_bottom_dark_yellow_8_shadow_border_02 pseudo_hover">\
+                    \
+                    <span class=" position_absolute top_0 left_0 right_0 float_left calc_05vh margin_auto display_flex_flow border_025vh_dark_yellow_9 background_dark_yellow_0">\
+                    \
+                    </span>\
+                    \
+                    <span class="position_relative text_align_center font_size_2vh line_height_3vh padding_1vh float_right">\
+                    \
+                    </span>\
+                    \
+                    <span id="wp_component_meta" class="position_absolute width_25vh right_0 left_0 bottom_100 float_left line_height_5vh font_size_205vh text_shadow_01vh_dark_yellow_1 margin_205vh_bottom hover_show">\
+                      <span class="position_relative top_0vh left_0vh easing_01 margin_2vh calc_4vh_width border_025vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9 box_shadow_hover_none background_light_yellow_0 text_align_center float_right pseudo_arrow_bottom_left_outside_light_yellow_0">\
+                        <div class="overflow_hidden width_100 height_100 position_relative top_0 left_0 display_flex_flow">\
+                          <div class="calc_2vh_width margin_1vh position_relative float_left">\
+                            <p class="font_size_2vh line_height_205vh">\
+                            simple\
+                            </p>\
+                          </div>\
+                        </div>\
+                      </span>\
+                    </span>\
+                    \
+                    </span>\
+                    \
+                    </span>\
+                    \
+                    </span>\
+                    \
+                  </span>\
+                  \
+                </div>\
+                \
+              </div>\
+              \
+              <div id="right_anchors" class="width_10vh calc_20vh_height float_left position_absolute top_0 bottom_0 right_0 margin_auto display_flex_flow z_index_7">\
+                \
+                <div class="position_relative margin_auto width_10vh float_right">\
+                  \
+                  <span class="margin_auto position_relative margin_2vh_bottom z_index_1 display_flex_flow">\
+                    \
+                    <span class="margin_auto position_relative float_left top_0">\
+                    \
+                    <span class="margin_auto position_relative float_left top_1vh">\
+                    \
+                    <span class="position_relative hover_top_0 top_-1vh easing_01 background_light_yellow_9 width_100 text_align_center float_right display_flex_flow  pseudo_button_bottom_dark_yellow_8 pseudo_button_bottom_dark_yellow_8_shadow_border_02 pseudo_hover">\
+                    \
+                    <span class=" position_absolute top_0 left_0 right_0 float_left calc_05vh margin_auto display_flex_flow border_025vh_dark_yellow_9 background_dark_yellow_0">\
+                    \
+                    </span>\
+                    \
+                    <span class="position_relative text_align_center font_size_2vh line_height_3vh padding_1vh float_right">\
+                    \
+                    </span>\
+                    \
+                    <span id="wp_component_meta" class="position_absolute width_25vh right_0 left_0 bottom_100 float_left line_height_5vh font_size_205vh text_shadow_01vh_dark_yellow_1 margin_205vh_bottom hover_show">\
+                      <span class="position_relative top_0vh left_0vh easing_01 margin_2vh calc_4vh_width border_025vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9 box_shadow_hover_none background_light_yellow_0 text_align_center float_right pseudo_arrow_bottom_left_outside_light_yellow_0">\
+                        <div class="overflow_hidden width_100 height_100 position_relative top_0 left_0 display_flex_flow">\
+                          <div class="calc_2vh_width margin_1vh position_relative float_left">\
+                            <p class="font_size_2vh line_height_205vh">\
+                            simple\
+                            </p>\
+                          </div>\
+                        </div>\
+                      </span>\
+                    </span>\
+                    \
+                    </span>\
+                    \
+                    </span>\
+                    \
+                    </span>\
+                    \
+                  </span>\
+                  \
+                  <span class="margin_auto position_relative margin_2vh_bottom z_index_1 display_flex_flow">\
+                    \
+                    <span class="margin_auto position_relative float_left top_0">\
+                    \
+                    <span class="margin_auto position_relative float_left top_1vh">\
+                    \
+                    <span class="position_relative hover_top_0 top_-1vh easing_01 background_light_yellow_9 width_100 text_align_center float_right display_flex_flow  pseudo_button_bottom_dark_yellow_8 pseudo_button_bottom_dark_yellow_8_shadow_border_02 pseudo_hover">\
+                    \
+                    <span class=" position_absolute top_0 left_0 right_0 float_left calc_05vh margin_auto display_flex_flow border_025vh_dark_yellow_9 background_dark_yellow_0">\
+                    \
+                    </span>\
+                    \
+                    <span class="position_relative text_align_center font_size_2vh line_height_3vh padding_1vh float_right">\
+                    \
+                    </span>\
+                    \
+                    <span id="wp_component_meta" class="position_absolute width_25vh right_0 left_0 bottom_100 float_left line_height_5vh font_size_205vh text_shadow_01vh_dark_yellow_1 margin_205vh_bottom hover_show">\
+                      <span class="position_relative top_0vh left_0vh easing_01 margin_2vh calc_4vh_width border_025vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9 box_shadow_hover_none background_light_yellow_0 text_align_center float_right pseudo_arrow_bottom_left_outside_light_yellow_0">\
+                        <div class="overflow_hidden width_100 height_100 position_relative top_0 left_0 display_flex_flow">\
+                          <div class="calc_2vh_width margin_1vh position_relative float_left">\
+                            <p class="font_size_2vh line_height_205vh">\
+                            simple\
+                            </p>\
+                          </div>\
+                        </div>\
+                      </span>\
+                    </span>\
+                    \
+                    </span>\
+                    \
+                    </span>\
+                    \
+                    </span>\
+                    \
+                  </span>\
+                  \
+                  <span class="margin_auto position_relative margin_2vh_bottom z_index_1 display_flex_flow">\
+                    \
+                    <span class="margin_auto position_relative float_left top_0">\
+                    \
+                    <span class="margin_auto position_relative float_left top_1vh">\
+                    \
+                    <span class="position_relative hover_top_0 top_-1vh easing_01 background_light_yellow_9 width_100 text_align_center float_right display_flex_flow  pseudo_button_bottom_dark_yellow_8 pseudo_button_bottom_dark_yellow_8_shadow_border_02 pseudo_hover">\
+                    \
+                    <span class=" position_absolute top_0 left_0 right_0 float_left calc_05vh margin_auto display_flex_flow border_025vh_dark_yellow_9 background_dark_yellow_0">\
+                    \
+                    </span>\
+                    \
+                    <span class="position_relative text_align_center font_size_2vh line_height_3vh padding_1vh float_right">\
+                    \
+                    </span>\
+                    \
+                    <span id="wp_component_meta" class="position_absolute width_25vh right_0 left_0 bottom_100 float_left line_height_5vh font_size_205vh text_shadow_01vh_dark_yellow_1 margin_205vh_bottom hover_show">\
+                      <span class="position_relative top_0vh left_0vh easing_01 margin_2vh calc_4vh_width border_025vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9 box_shadow_hover_none background_light_yellow_0 text_align_center float_right pseudo_arrow_bottom_left_outside_light_yellow_0">\
+                        <div class="overflow_hidden width_100 height_100 position_relative top_0 left_0 display_flex_flow">\
+                          <div class="calc_2vh_width margin_1vh position_relative float_left">\
+                            <p class="font_size_2vh line_height_205vh">\
+                            simple\
+                            </p>\
+                          </div>\
+                        </div>\
+                      </span>\
+                    </span>\
+                    \
+                    </span>\
+                    \
+                    </span>\
+                    \
+                    </span>\
+                    \
+                  </span>\
+                  \
+                  <span class="margin_auto position_relative margin_2vh_bottom z_index_1 display_flex_flow">\
+                    \
+                    <span class="margin_auto position_relative float_left top_0">\
+                    \
+                    <span class="margin_auto position_relative float_left top_1vh">\
+                    \
+                    <span class="position_relative hover_top_0 top_-1vh easing_01 background_light_yellow_9 width_100 text_align_center float_right display_flex_flow  pseudo_button_bottom_dark_yellow_8 pseudo_button_bottom_dark_yellow_8_shadow_border_02 pseudo_hover">\
+                    \
+                    <span class=" position_absolute top_0 left_0 right_0 float_left calc_05vh margin_auto display_flex_flow border_025vh_dark_yellow_9 background_dark_yellow_0">\
+                    \
+                    </span>\
+                    \
+                    <span class="position_relative text_align_center font_size_2vh line_height_3vh padding_1vh float_right">\
+                    \
+                    </span>\
+                    \
+                    <span id="wp_component_meta" class="position_absolute width_25vh right_0 left_0 bottom_100 float_left line_height_5vh font_size_205vh text_shadow_01vh_dark_yellow_1 margin_205vh_bottom hover_show">\
+                      <span class="position_relative top_0vh left_0vh easing_01 margin_2vh calc_4vh_width border_025vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9 box_shadow_hover_none background_light_yellow_0 text_align_center float_right pseudo_arrow_bottom_left_outside_light_yellow_0">\
+                        <div class="overflow_hidden width_100 height_100 position_relative top_0 left_0 display_flex_flow">\
+                          <div class="calc_2vh_width margin_1vh position_relative float_left">\
+                            <p class="font_size_2vh line_height_205vh">\
+                            simple\
+                            </p>\
+                          </div>\
+                        </div>\
+                      </span>\
+                    </span>\
+                    \
+                    </span>\
+                    \
+                    </span>\
+                    \
+                    </span>\
+                    \
+                  </span>\
+                  \
+                </div>\
+              \
+              </div>\
+            \
+          </div>\
+        \
+        ' + element_spaced_color() + '\
+        \
+        ' + element_title('feature: element_content_loading') + '\
+        \
+        ' + element_content_loading() + '\
+        \
+        ' + element_title('feature: element_content_loading_scrolling') + '\
+        \
+        ' + element_content_loading_scrolling() + '\
+        \
+        ' + element_title('feature: element_content_scrolling') + '\
+        \
+        ' + element_content_scrolling() + '\
+        \
+        ' + element_title('feature: element_center_content') + '\
+        \
+        ' + element_center_content('\
+          \
+          ' + component_keystroke_annotate_new('yes', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.') + '\
+          \
+          ' + component_keystroke_annotate_new('yes', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.') + '\
+          \
+          ' + component_keystroke_annotate_new('yes', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.') + '\
+          \
+        ') + '\
+    ';
+
+    let default_content_2 = '\
+      \
+      <div id="component_app_gui_scroll_y_fold" class="width_100 height_100vh float_left position_relative overflow_hidden">\
+          \
+          <div class="width_50 float_left position_absolute top_0 right_0 margin_auto overflow_hidden display_flex_flow ">\
+              \
+              ' + element_scroll_x_scrollbar_styled([{
+              link: 'death_ride'
+              }, {
+              link: 'death_ride'
+              }, {
+              link: 'death_ride'
+              }, {
+              link: 'death_ride'
+              }, {
+              link: 'death_ride'
+              }, {
+              link: 'death_ride'
+              }, {
+              link: 'death_ride'
+              }, {
+              link: 'death_ride'
+              }, {
+              link: 'death_ride'
+              }, {
+              link: 'death_ride'
+              }, {
+              link: 'death_ride'
+              }, {
+              link: 'death_ride'
+              }, {
+              link: 'death_ride'
+              }, {
+              link: 'death_ride'
+              }, {
+              link: 'death_ride'
+              }, {
+              link: 'death_ride'
+              }, {
+              link: 'death_ride'
+              }, {
+              link: 'death_ride'
+              }, {
+              link: 'death_ride'
+              }, {
+              link: 'death_ride'
+              }, {
+              link: 'death_ride'
+              }, {
+              link: 'death_ride'
+              }, ]) + '\
+              \
+            \
+          </div>\
+          \
+          <div class="width_50 calc_10vh_height float_left position_absolute top_0 left_0 margin_auto overflow_hidden display_flex_flow ">\
+          \
+            ' + element_content_scrolling() + '\
+          \
+          </div>\
+          \
+          <div class="width_100 float_left position_absolute bottom_0 left_0 right_0 margin_auto overflow_hidden display_flex_flow ">\
+              \
+              ' + element_scroll_x_scrollbar_styled([{
+              link: 'death_ride'
+              }, {
+              link: 'death_ride'
+              }, {
+              link: 'death_ride'
+              }, {
+              link: 'death_ride'
+              }, {
+              link: 'death_ride'
+              }, {
+              link: 'death_ride'
+              }, {
+              link: 'death_ride'
+              }, {
+              link: 'death_ride'
+              }, {
+              link: 'death_ride'
+              }, {
+              link: 'death_ride'
+              }, {
+              link: 'death_ride'
+              }, {
+              link: 'death_ride'
+              }, {
+              link: 'death_ride'
+              }, {
+              link: 'death_ride'
+              }, {
+              link: 'death_ride'
+              }, {
+              link: 'death_ride'
+              }, {
+              link: 'death_ride'
+              }, {
+              link: 'death_ride'
+              }, {
+              link: 'death_ride'
+              }, {
+              link: 'death_ride'
+              }, {
+              link: 'death_ride'
+              }, {
+              link: 'death_ride'
+              }, ]) + '\
+              \
+            \
+          </div>\
+          \
+          <div class="width_50 calc_20vh_height float_left position_absolute top_10vh right_0 margin_auto overflow_hidden display_flex_flow ">\
+          \
+            ' + element_content_scrolling() + '\
+          \
+          </div>\
+          \
+      </div>\
+      \
+    ';
+
+    let anchors = '\
+            \
+            <div id="top_right_anchors" class="float_left position_absolute top_10vh right_10vh margin_auto overflow_hidden display_flex_flow z_index_1">\
+            </div>\
+            \
+            <div id="top_left_anchors" class="float_left position_absolute top_10vh left_10vh margin_auto overflow_hidden display_flex_flow z_index_1">\
+            </div>\
+            \
+            <div id="bottom_right_anchors" class="float_left position_absolute bottom_10vh right_10vh margin_auto overflow_hidden display_flex_flow z_index_1">\
+            </div>\
+            \
+            <div id="bottom_left_anchors" class="float_left position_absolute bottom_10vh left_10vh margin_auto overflow_hidden display_flex_flow z_index_1">\
+            </div>\
+            \
+            <div id="bottom_anchors" class="width_100 float_left position_absolute bottom_0 right_0 margin_auto overflow_hidden display_flex_flow z_index_1">\
+            </div>\
+            \
+            <div id="left_anchors" class="width_10vh calc_20vh_height float_left position_absolute top_0 bottom_0 left_0 margin_auto display_flex_flow z_index_1">\
+            </div>\
+            \
+            <div id="right_anchors" class="width_10vh calc_20vh_height float_left position_absolute top_0 bottom_0 right_0 margin_auto display_flex_flow z_index_1">\
+            </div>\
+    ';
+
+    let component = '\
+      \
+      <div id="element_gui_scroll_y" class="width_100 float_left position_relative overflow_hidden easing_01 transform_translate3d_top0">\
+        \
+        <div id="component_modal_scroll_fixed_feature_1" class="width_100 height_100vh background_dark_yellow_3 float_left position_absolute bottom_0 left_0 display_none opacity_0 overflow_hidden">\
+        </div>\
+        \
+        <div id="component_modal_scroll_fixed_feature_2" class="width_100 height_100vh background_dark_yellow_2 float_left position_absolute bottom_0 left_0 display_none opacity_0 overflow_hidden">\
+        </div>\
+        \
+        <div id="component_modal_scroll_fixed_feature_3" class="width_100 height_100vh float_left position_relative display opacity_1 overflow_hidden">\
+          '+anchors+'\
+        </div>\
+        \
+        <div id="component_app_gui_scroll_y" tabindex="1" class="calc_02vh border_01vh_dark_yellow_9 float_left position_absolute bottom_0 left_0 text_align_center overflow_y scrollbaryhidden easing_01">\
+          \
+          <div id="component_app_gui_scroll_y_fold" class="width_100 height_100vh float_left position_relative overflow_hidden">\
+              \
+              <div id="component_app_gui_scroll_y_fold_content" class="width_100 height_100 float_left position_relative scrollbaryhidden overflow_y">\
+              \
+              </div>\
+              \
+          </div>\
+          \
+          <div id="component_app_gui_scroll_y_content" class="width_100 float_left position_relative">\
+            '+default_content+'\
+          </div>\
+          \
+        </div>\
+        \
+      </div>\
+    ';
+
+    // add event listeners
+    setTimeout(() => {
+
+      (() => {
+
+        document.getElementById('component_app_gui_scroll_y').addEventListener('click', (event) => {
+          console.log('click from component_app_gui_scroll_y');
+        });
+        
+        document.getElementById('component_app_gui_scroll_y').addEventListener('wheel', (event) => {
+          console.log('wheel from component_app_gui_scroll_y');
+        });
+
+        document.getElementById('component_app_gui_scroll_y_fold_content').addEventListener('scroll', (event) => {
+          console.log('scroll from component_app_gui_scroll_y_fold_content');
+            if (document.getElementById('component_app_gui_scroll_y_fold_content') != null) {
+                
+                // scrolling
+                let component_app_gui_scroll_y_fold_content_position = 0;
+                
+                console.log('event.srcElement.clientWidth: ' + event.srcElement.clientWidth);
+                console.log('event.srcElement.clientHeight: ' + event.srcElement.clientHeight);
+                console.log('event.srcElement.scrollLeft: ' + event.srcElement.scrollLeft);
+                console.log('event.srcElement.scrollTop: ' + event.srcElement.scrollTop);
+                console.log('event.srcElement.scrollWidth: ' + event.srcElement.scrollWidth);
+                console.log('event.srcElement.scrollHeight: ' + event.srcElement.scrollHeight);
+
+                if (event.srcElement.scrollTop > component_app_gui_scroll_y_fold_content_position) {
+                    console.log('component_app_gui_scroll_y_fold_content_position increasing');
+                }
+
+                if (event.srcElement.scrollTop < component_app_gui_scroll_y_fold_content_position) {
+                    console.log('component_app_gui_scroll_y_fold_content_position decreasing');
+                }
+
+                if (event.srcElement.scrollTop == 0) {
+                    console.log('top met');
+                }
+
+                if (event.srcElement.scrollTop > 1) {
+                    console.log('scrolling started');
+                }
+
+                if (event.srcElement.scrollTop < event.srcElement.clientHeight) {
+                    console.log('inside lead');
+                }
+
+                if (event.srcElement.scrollTop > event.srcElement.clientHeight) {
+                    console.log('past lead')
+                }
+
+                if (((event.srcElement.scrollHeight) - event.srcElement.clientHeight) < (event.srcElement.scrollTop + event.srcElement.offsetHeight)) {
+                    console.log('100vh before bottom met')
+                }
+
+                if ((event.srcElement.scrollHeight) == (event.srcElement.scrollTop + event.srcElement.offsetHeight)) {
+                    console.log('bottom met')
+                }
+
+                console.log('scroll');
+                from_index.Handle_get_state_from_events();
+                from_index.values_update();
+
+            };
+        });
+        
+        document.getElementById('component_app_gui_scroll_y').addEventListener('scroll', (event) => {
+          console.log('scroll from component_app_gui_scroll_y');
+            if (document.getElementById('component_app_gui_scroll_y') != null) {
+                
+                // scrolling
+                let component_app_gui_scroll_y_position = 0;
+                
+                
+                console.log('event.srcElement.clientWidth: ' + event.srcElement.clientWidth);
+                console.log('event.srcElement.clientHeight: ' + event.srcElement.clientHeight);
+                console.log('event.srcElement.scrollLeft: ' + event.srcElement.scrollLeft);
+                console.log('event.srcElement.scrollTop: ' + event.srcElement.scrollTop);
+                console.log('event.srcElement.scrollWidth: ' + event.srcElement.scrollWidth);
+                console.log('event.srcElement.scrollHeight: ' + event.srcElement.scrollHeight);
+
+                if (event.srcElement.scrollTop > component_app_gui_scroll_y_position) {
+                    console.log('component_app_gui_scroll_y_position increasing');
+                    component_app_gui_scroll_y_position = event.srcElement.scrollTop;
+                }
+
+                if (event.srcElement.scrollTop < component_app_gui_scroll_y_position) {
+                    console.log('component_app_gui_scroll_y_position decreasing');
+                    component_app_gui_scroll_y_position = event.srcElement.scrollTop;
+                }
+
+                if (event.srcElement.scrollTop == 0) {
+                    console.log('top met');
+                    document.getElementById('component_app_modal_element_nav_top').classList.remove('background_dark_yellow_0');
+                }
+
+                if (event.srcElement.scrollTop > 1) {
+                    console.log('scrolling started');
+                    document.getElementById('component_app_modal_element_nav_top').classList.add('background_dark_yellow_0');
+                }
+
+                if (event.srcElement.scrollTop < event.srcElement.clientHeight) {
+                    console.log('inside lead');
+                    document.getElementById('component_modal_scroll_fixed_feature_1').classList.remove('display');
+                    document.getElementById('component_modal_scroll_fixed_feature_1').classList.add('display_none');
+                    document.getElementById('component_modal_scroll_fixed_feature_2').classList.remove('display_none');
+                    document.getElementById('component_modal_scroll_fixed_feature_2').classList.add('display');
+                }
+
+                if (event.srcElement.scrollTop > event.srcElement.clientHeight) {
+                    console.log('past lead')
+                    document.getElementById('component_modal_scroll_fixed_feature_1').classList.remove('display_none');
+                    document.getElementById('component_modal_scroll_fixed_feature_1').classList.add('display');
+                    document.getElementById('component_modal_scroll_fixed_feature_2').classList.remove('display');
+                    document.getElementById('component_modal_scroll_fixed_feature_2').classList.add('display_none');
+                }
+
+                if (((event.srcElement.scrollHeight) - event.srcElement.clientHeight) < (event.srcElement.scrollTop + event.srcElement.offsetHeight)) {
+                    console.log('100vh before bottom met')
+                }
+
+                if ((event.srcElement.scrollHeight) < (event.srcElement.scrollTop + event.srcElement.offsetHeight)) {
+                    document.getElementById('component_app_modal_element_nav_top').classList.remove('background_dark_yellow_0');
+                    console.log('bottom met')
+                }
+
+                console.log('scroll');
+                from_index.Handle_get_state_from_events();
+                from_index.values_update();
+
+            };
+        });
+        
+        document.getElementById('component_app_gui_scroll_y').addEventListener('mousemove', (event) => {
+          console.log('mousemove from component_app_gui_scroll_y');
+        });
+        
+        document.getElementById('component_app_gui_scroll_y').addEventListener('mouseup', (event) => {
+          console.log('mouseup from component_app_gui_scroll_y');
+        });
+        
+        document.getElementById('component_app_gui_scroll_y').addEventListener('mousedown', (event) => {
+          console.log('mousedown from component_app_gui_scroll_y');
+        });
+        
+        document.getElementById('component_app_gui_scroll_y').addEventListener('mouseenter', (event) => {
+          console.log('mouseenter from component_app_gui_scroll_y');
+        });
+        
+        document.getElementById('component_app_gui_scroll_y').addEventListener('mouseleave', (event) => {
+          console.log('mouseleave from component_app_gui_scroll_y');
+        });
+
+        document.getElementById('component_app_gui_scroll_y').addEventListener('keyup', (event) => {
+          console.log('keyup from component_app_gui_scroll_y');
+        });
+
+        document.getElementById('component_app_gui_scroll_y').addEventListener("keydown", function(event) {
+
+          console.log('keydown from component_app_gui_scroll_y');
+
+          if(event.keyCode == 37) {
+            anchor -= 1;
+            check_element();
+          };
+
+          if(event.keyCode == 39) {
+            anchor += 1;
+            check_element();
+          };
+
+        });
+
+        document.getElementById('folds'+random_int+'').addEventListener('click', (event) => {
+          anchor = 3;
+          check_element();
+        });
+
+        document.getElementById('anchorUp'+random_int+'').addEventListener('click', (event) => {
+          anchor += 1;
+          check_element();
+        });
+
+        document.getElementById('anchorDown'+random_int+'').addEventListener('click', (event) => {
+          if (anchor > 0) {
+            anchor -= 1;
+            check_element();
+          };
+        });
+
+      check_element();
+
+      })();
+
+    }, 1000);
+
+    return component
+};
 
 // scrolls
 let element_scroll_y = (info) => {
@@ -56,6 +3794,31 @@ let element_scroll_y_scrollbar_styled = (style, info) => {
       ' + info + '\
       </div>\
     </div>\
+    '
+
+    return component
+};
+
+let element_scroll_x_scrollbar_styled = (array) => {
+
+    let array_items = '';
+
+    for (let i = 0; i < array.length; i++) {
+        array_items += component_keystroke_annotate_new(array[i].title, array[i].title);
+    }
+
+    let component = '\
+      <div class="margin_auto position_relative float_left width_100">\
+        <div class="position_relative easing_01 background_light_yellow_9 width_100 text_align_center float_right display_flex_flow pseudo_button_bottom_dark_yellow_8 pseudo_button_bottom_dark_yellow_8_border_01">\
+          <div class="background_light_yellow_9 position_relative float_left width_100 height_100 display_flex_flow border_top_01vh_dark_yellow_9 border_bottom_01vh_dark_yellow_9 border_right_01vh_dark_yellow_9">\
+            <div class="width_100 height_100 position_relative float_left top_0 left_0 overflow_x scrollbarx scrollbarx-scrollbar-track-light-yellow-9 scrollbarx-scrollbar-light-yellow-9 scrollbarx-light-yellow-border-dark-yellow inline_flex">\
+              <div class="height_100 float_left position_relative display_flex_flow">\
+                ' + array_items + '\
+              </div>\
+            </div>\
+          </div>\
+        </div>\
+      </div>\
     '
 
     return component
@@ -115,9 +3878,11 @@ let element_slider_1 = () => {
   };
 
   let component = '\
-    <div id="element_slider_1_content'+random_int+'" class="width_100 float_left position_relative">'+element_slider_1_default_content()+'</div>\
-    <div id="element_slider_1_content_anchorDown" class="z_index_1 gui_arrow_left width_5vh height_5vh float_left position_relative"></div>\
-    <div id="element_slider_1_content_anchorUp" class="z_index_1 gui_arrow_right width_5vh height_5vh float_right position_relative"></div>\
+    <div id="element_slider_1_'+random_int+'" class="width_100 float_left position_relative margin_auto text_align_center">\
+      <div id="element_slider_1_content'+random_int+'" class="width_100 float_left position_relative text_align_center">'+element_slider_1_default_content()+'</div>\
+      <div id="element_slider_1_content_anchorDown" class="z_index_1 gui_arrow_left width_5vh height_5vh float_left position_relative"></div>\
+      <div id="element_slider_1_content_anchorUp" class="z_index_1 gui_arrow_right width_5vh height_5vh float_right position_relative"></div>\
+    </div>\
   ';
 
     // add event listeners
@@ -171,9 +3936,11 @@ let element_slider_2 = () => {
   };
 
   let component = '\
-    <div id="element_slider_2_content_anchorDown'+random_int+'" class="display_webkit_box webkit_box_pack_center webkit_box_align width_100 height_5vh float_left position_relative"><div id="element_slider_2_content_anchorDown'+random_int+'" class="z_index_1 gui_arrow_top width_5vh height_5vh float_left position_relative"></div>\</div>\
-    <div id="element_slider_2_content'+random_int+'" class="width_100 float_left position_relative">'+element_slider_2_default_content()+'</div>\
-    <div id="element_slider_2_content_anchorUp'+random_int+'" class="display_webkit_box webkit_box_pack_center webkit_box_align width_100 height_5vh float_right position_relative"><div id="element_slider_2_content_anchorUp'+random_int+'" class="z_index_1 gui_arrow_down width_5vh height_5vh float_right position_relative"></div></div>\
+    <div id="element_slider_2_'+random_int+'" class="width_100 float_left position_relative margin_auto text_align_center">\
+    <div id="element_slider_2_content_anchorDown'+random_int+'" class="display_flex_flow width_100 height_5vh float_left position_relative"><div id="element_slider_2_content_anchorDown'+random_int+'" class="z_index_1 gui_arrow_top width_5vh height_5vh float_left position_relative"></div>\</div>\
+    <div id="element_slider_2_content'+random_int+'" class="width_100 float_left position_relative text_align_center">'+element_slider_2_default_content()+'</div>\
+    <div id="element_slider_2_content_anchorUp'+random_int+'" class="display_flex_flow width_100 height_5vh float_right position_relative"><div id="element_slider_2_content_anchorUp'+random_int+'" class="z_index_1 gui_arrow_down width_5vh height_5vh float_right position_relative"></div></div>\
+    </div>\
   ';
 
     // add event listeners
@@ -230,9 +3997,9 @@ let element_slider_3 = () => {
                 \
                 <span class="margin_auto position_relative float_left top_0">\
                 <span class="margin_auto position_relative float_left top_1vh">\
-                <span class="position_relative hover_top_0 top_-1vh easing_01 background_light_yellow_9 width_100 text_align_center float_right display_webkit_box webkit_box_pack_center webkit_box_align  pseudo_button_bottom_dark_yellow_8 pseudo_button_bottom_dark_yellow_8_shadow_border_02 pseudo_hover">\
+                <span class="position_relative hover_top_0 top_-1vh easing_01 background_light_yellow_9 width_100 text_align_center float_right display_flex_flow  pseudo_button_bottom_dark_yellow_8 pseudo_button_bottom_dark_yellow_8_shadow_border_02 pseudo_hover">\
                 \
-                <span class=" position_absolute top_0 left_0 right_0 float_left calc_05vh margin_auto display_webkit_box webkit_box_pack_center webkit_box_align border_025vh_dark_yellow_9 background_dark_yellow_0">\
+                <span class=" position_absolute top_0 left_0 right_0 float_left calc_05vh margin_auto display_flex_flow border_025vh_dark_yellow_9 background_dark_yellow_0">\
                 \
                 </span>\
                 \
@@ -242,7 +4009,7 @@ let element_slider_3 = () => {
                 \
                 <span id="wp_component_meta" class="position_absolute width_25vh right_0 left_0 bottom_100 float_left line_height_5vh font_size_205vh text_shadow_01vh_dark_yellow_1 margin_205vh_bottom hover_show">\
                   <span class="position_relative top_0vh left_0vh easing_01 margin_2vh calc_4vh_width border_025vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9 box_shadow_hover_none background_light_yellow_0 text_align_center float_right pseudo_arrow_bottom_left_outside_light_yellow_0">\
-                    <div class="overflow_hidden width_100 height_100 position_relative top_0 left_0 display_webkit_box webkit_box_pack_center webkit_box_align">\
+                    <div class="overflow_hidden width_100 height_100 position_relative top_0 left_0 display_flex_flow">\
                       <div class="calc_2vh_width margin_1vh position_relative float_left">\
                         <p class="font_size_2vh line_height_205vh">\
                         ' + i + '\
@@ -279,9 +4046,9 @@ let element_slider_3 = () => {
                 \
                 <span class="margin_auto position_relative float_left top_0">\
                 <span class="margin_auto position_relative float_left top_1vh">\
-                <span class="position_relative hover_top_0 top_-1vh easing_01 background_light_yellow_9 width_100 text_align_center float_right display_webkit_box webkit_box_pack_center webkit_box_align  pseudo_button_bottom_dark_yellow_8 pseudo_button_bottom_dark_yellow_8_shadow_border_02 pseudo_hover">\
+                <span class="position_relative hover_top_0 top_-1vh easing_01 background_light_yellow_9 width_100 text_align_center float_right display_flex_flow  pseudo_button_bottom_dark_yellow_8 pseudo_button_bottom_dark_yellow_8_shadow_border_02 pseudo_hover">\
                 \
-                <span class=" position_absolute top_0 left_0 right_0 float_left calc_05vh margin_auto display_webkit_box webkit_box_pack_center webkit_box_align border_025vh_dark_yellow_9 background_dark_yellow_9">\
+                <span class=" position_absolute top_0 left_0 right_0 float_left calc_05vh margin_auto display_flex_flow border_025vh_dark_yellow_9 background_dark_yellow_9">\
                 \
                 </span>\
                 \
@@ -291,7 +4058,7 @@ let element_slider_3 = () => {
                 \
                 <span id="wp_component_meta" class="position_absolute width_25vh right_0 left_0 bottom_100 float_left line_height_5vh font_size_205vh text_shadow_01vh_dark_yellow_1 margin_205vh_bottom hover_show">\
                   <span class="position_relative top_0vh left_0vh easing_01 margin_2vh calc_4vh_width border_025vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9 box_shadow_hover_none background_light_yellow_0 text_align_center float_right pseudo_arrow_bottom_left_outside_light_yellow_0">\
-                    <div class="overflow_hidden width_100 height_100 position_relative top_0 left_0 display_webkit_box webkit_box_pack_center webkit_box_align">\
+                    <div class="overflow_hidden width_100 height_100 position_relative top_0 left_0 display_flex_flow">\
                       <div class="calc_2vh_width margin_1vh position_relative float_left">\
                         <p class="font_size_2vh line_height_205vh">\
                         ' + i + '\
@@ -338,8 +4105,10 @@ let element_slider_3 = () => {
   };
 
   let component = '\
-    <div id="element_slider_3_pagination'+random_int+'" class="display_webkit_box webkit_box_pack_center webkit_box_align width_100 float_left position_relative">'+element_slider_3_pagination()+'</div>\
-    <div id="element_slider_3_content'+random_int+'" class="width_100 float_left position_relative">'+element_slider_3_default_content()+'</div>\
+    <div id="element_slider_3_'+random_int+'" class="width_100 float_left position_relative margin_auto text_align_center">\
+    <div id="element_slider_3_pagination'+random_int+'" class="display_flex_flow width_100 float_left position_relative">'+element_slider_3_pagination()+'</div>\
+    <div id="element_slider_3_content'+random_int+'" class="width_100 float_left position_relative text_align_center">'+element_slider_3_default_content()+'</div>\
+    </div>\
   ';
 
     // add event listeners
@@ -381,9 +4150,9 @@ let element_slider_4 = () => {
                 \
               <span class="margin_auto position_relative float_left top_0">\
               <span class="margin_auto position_relative float_left top_1vh">\
-              <span class="position_relative hover_top_0 top_-1vh easing_01 background_light_yellow_9 width_100 text_align_center float_right display_webkit_box webkit_box_pack_center webkit_box_align  pseudo_button_bottom_dark_yellow_8 pseudo_button_bottom_dark_yellow_8_shadow_border_02 pseudo_hover">\
+              <span class="position_relative hover_top_0 top_-1vh easing_01 background_light_yellow_9 width_100 text_align_center float_right display_flex_flow  pseudo_button_bottom_dark_yellow_8 pseudo_button_bottom_dark_yellow_8_shadow_border_02 pseudo_hover">\
               \
-              <span class=" position_absolute top_0 left_0 right_0 float_left calc_05vh margin_auto display_webkit_box webkit_box_pack_center webkit_box_align border_025vh_dark_yellow_9 background_dark_yellow_0">\
+              <span class=" position_absolute top_0 left_0 right_0 float_left calc_05vh margin_auto display_flex_flow border_025vh_dark_yellow_9 background_dark_yellow_0">\
               \
               </span>\
               \
@@ -393,7 +4162,7 @@ let element_slider_4 = () => {
               \
               <span id="wp_component_meta" class="position_absolute width_25vh right_0 left_0 bottom_100 float_left line_height_5vh font_size_205vh text_shadow_01vh_dark_yellow_1 margin_205vh_bottom hover_show">\
                 <span class="position_relative top_0vh left_0vh easing_01 margin_2vh calc_4vh_width border_025vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9 box_shadow_hover_none background_light_yellow_0 text_align_center float_right pseudo_arrow_bottom_left_outside_light_yellow_0">\
-                  <div class="overflow_hidden width_100 height_100 position_relative top_0 left_0 display_webkit_box webkit_box_pack_center webkit_box_align">\
+                  <div class="overflow_hidden width_100 height_100 position_relative top_0 left_0 display_flex_flow">\
                     <div class="calc_2vh_width margin_1vh position_relative float_left">\
                       <p class="font_size_2vh line_height_205vh">\
                       ' + i + '\
@@ -428,9 +4197,9 @@ let element_slider_4 = () => {
                 \
               <span class="margin_auto position_relative float_left top_0">\
               <span class="margin_auto position_relative float_left top_1vh">\
-              <span class="position_relative hover_top_0 top_-1vh easing_01 background_light_yellow_9 width_100 text_align_center float_right display_webkit_box webkit_box_pack_center webkit_box_align  pseudo_button_bottom_dark_yellow_8 pseudo_button_bottom_dark_yellow_8_shadow_border_02 pseudo_hover">\
+              <span class="position_relative hover_top_0 top_-1vh easing_01 background_light_yellow_9 width_100 text_align_center float_right display_flex_flow  pseudo_button_bottom_dark_yellow_8 pseudo_button_bottom_dark_yellow_8_shadow_border_02 pseudo_hover">\
               \
-              <span class=" position_absolute top_0 left_0 right_0 float_left calc_05vh margin_auto display_webkit_box webkit_box_pack_center webkit_box_align border_025vh_dark_yellow_9 background_dark_yellow_9">\
+              <span class=" position_absolute top_0 left_0 right_0 float_left calc_05vh margin_auto display_flex_flow border_025vh_dark_yellow_9 background_dark_yellow_9">\
               \
               </span>\
               \
@@ -440,7 +4209,7 @@ let element_slider_4 = () => {
               \
               <span id="wp_component_meta" class="position_absolute width_25vh right_0 left_0 bottom_100 float_left line_height_5vh font_size_205vh text_shadow_01vh_dark_yellow_1 margin_205vh_bottom hover_show">\
                 <span class="position_relative top_0vh left_0vh easing_01 margin_2vh calc_4vh_width border_025vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9 box_shadow_hover_none background_light_yellow_0 text_align_center float_right pseudo_arrow_bottom_left_outside_light_yellow_0">\
-                  <div class="overflow_hidden width_100 height_100 position_relative top_0 left_0 display_webkit_box webkit_box_pack_center webkit_box_align">\
+                  <div class="overflow_hidden width_100 height_100 position_relative top_0 left_0 display_flex_flow">\
                     <div class="calc_2vh_width margin_1vh position_relative float_left">\
                       <p class="font_size_2vh line_height_205vh">\
                       ' + i + '\
@@ -487,10 +4256,12 @@ let element_slider_4 = () => {
   };
 
   let component = '\
-    <div id="element_slider_4_pagination'+random_int+'" class="display_webkit_box webkit_box_pack_center webkit_box_align width_100 float_left position_relative">'+element_slider_4_pagination()+'</div>\
-    <div id="element_slider_4_content'+random_int+'" class="width_100 float_left position_relative">'+element_slider_4_default_content()+'</div>\
+  <div id="element_slider_4_'+random_int+'" class="width_100 float_left position_relative margin_auto text_align_center">\
+    <div id="element_slider_4_pagination'+random_int+'" class="display_flex_flow width_100 float_left position_relative">'+element_slider_4_pagination()+'</div>\
+    <div id="element_slider_4_content'+random_int+'" class="width_100 float_left position_relative text_align_center">'+element_slider_4_default_content()+'</div>\
     <div id="element_slider_4_content_anchorDown" class="z_index_1 gui_arrow_left width_5vh height_5vh float_left position_relative"></div>\
     <div id="element_slider_4_content_anchorUp" class="z_index_1 gui_arrow_right width_5vh height_5vh float_right position_relative"></div>\
+  </div>\
   ';
 
     // add event listeners
@@ -546,9 +4317,9 @@ let element_slider_5 = () => {
                 \
               <span class="margin_auto position_relative float_left top_0">\
               <span class="margin_auto position_relative float_left top_1vh">\
-              <span class="position_relative hover_top_0 top_-1vh easing_01 background_light_yellow_9 width_100 text_align_center float_right display_webkit_box webkit_box_pack_center webkit_box_align  pseudo_button_bottom_dark_yellow_8 pseudo_button_bottom_dark_yellow_8_shadow_border_02 pseudo_hover">\
+              <span class="position_relative hover_top_0 top_-1vh easing_01 background_light_yellow_9 width_100 text_align_center float_right display_flex_flow  pseudo_button_bottom_dark_yellow_8 pseudo_button_bottom_dark_yellow_8_shadow_border_02 pseudo_hover">\
               \
-              <span class=" position_absolute top_0 left_0 right_0 float_left calc_05vh margin_auto display_webkit_box webkit_box_pack_center webkit_box_align border_025vh_dark_yellow_9 background_dark_yellow_0">\
+              <span class=" position_absolute top_0 left_0 right_0 float_left calc_05vh margin_auto display_flex_flow border_025vh_dark_yellow_9 background_dark_yellow_0">\
               \
               </span>\
               \
@@ -558,7 +4329,7 @@ let element_slider_5 = () => {
               \
               <span id="wp_component_meta" class="position_absolute width_25vh right_0 left_0 bottom_100 float_left line_height_5vh font_size_205vh text_shadow_01vh_dark_yellow_1 margin_205vh_bottom hover_show">\
                 <span class="position_relative top_0vh left_0vh easing_01 margin_2vh calc_4vh_width border_025vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9 box_shadow_hover_none background_light_yellow_0 text_align_center float_right pseudo_arrow_bottom_left_outside_light_yellow_0">\
-                  <div class="overflow_hidden width_100 height_100 position_relative top_0 left_0 display_webkit_box webkit_box_pack_center webkit_box_align">\
+                  <div class="overflow_hidden width_100 height_100 position_relative top_0 left_0 display_flex_flow">\
                     <div class="calc_2vh_width margin_1vh position_relative float_left">\
                       <p class="font_size_2vh line_height_205vh">\
                       ' + i + '\
@@ -593,9 +4364,9 @@ let element_slider_5 = () => {
                 \
               <span class="margin_auto position_relative float_left top_0">\
               <span class="margin_auto position_relative float_left top_1vh">\
-              <span class="position_relative hover_top_0 top_-1vh easing_01 background_light_yellow_9 width_100 text_align_center float_right display_webkit_box webkit_box_pack_center webkit_box_align  pseudo_button_bottom_dark_yellow_8 pseudo_button_bottom_dark_yellow_8_shadow_border_02 pseudo_hover">\
+              <span class="position_relative hover_top_0 top_-1vh easing_01 background_light_yellow_9 width_100 text_align_center float_right display_flex_flow  pseudo_button_bottom_dark_yellow_8 pseudo_button_bottom_dark_yellow_8_shadow_border_02 pseudo_hover">\
               \
-              <span class=" position_absolute top_0 left_0 right_0 float_left calc_05vh margin_auto display_webkit_box webkit_box_pack_center webkit_box_align border_025vh_dark_yellow_9 background_dark_yellow_9">\
+              <span class=" position_absolute top_0 left_0 right_0 float_left calc_05vh margin_auto display_flex_flow border_025vh_dark_yellow_9 background_dark_yellow_9">\
               \
               </span>\
               \
@@ -605,7 +4376,7 @@ let element_slider_5 = () => {
               \
               <span id="wp_component_meta" class="position_absolute width_25vh right_0 left_0 bottom_100 float_left line_height_5vh font_size_205vh text_shadow_01vh_dark_yellow_1 margin_205vh_bottom hover_show">\
                 <span class="position_relative top_0vh left_0vh easing_01 margin_2vh calc_4vh_width border_025vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9 box_shadow_hover_none background_light_yellow_0 text_align_center float_right pseudo_arrow_bottom_left_outside_light_yellow_0">\
-                  <div class="overflow_hidden width_100 height_100 position_relative top_0 left_0 display_webkit_box webkit_box_pack_center webkit_box_align">\
+                  <div class="overflow_hidden width_100 height_100 position_relative top_0 left_0 display_flex_flow">\
                     <div class="calc_2vh_width margin_1vh position_relative float_left">\
                       <p class="font_size_2vh line_height_205vh">\
                       ' + i + '\
@@ -652,10 +4423,12 @@ let element_slider_5 = () => {
   };
 
   let component = '\
-    <div id="element_slider_5_pagination'+random_int+'" class="display_webkit_box webkit_box_pack_center webkit_box_align width_100 float_left position_relative">'+element_slider_5_pagination()+'</div>\
-    <div id="element_slider_5_content_anchorDown'+random_int+'" class="display_webkit_box webkit_box_pack_center webkit_box_align width_100 height_5vh float_left position_relative"><div id="element_slider_5_content_anchorDown'+random_int+'" class="z_index_1 gui_arrow_top width_5vh height_5vh float_left position_relative"></div>\</div>\
-    <div id="element_slider_5_content'+random_int+'" class="width_100 float_left position_relative">'+element_slider_5_default_content()+'</div>\
-    <div id="element_slider_5_content_anchorUp'+random_int+'" class="display_webkit_box webkit_box_pack_center webkit_box_align width_100 height_5vh float_right position_relative"><div id="element_slider_5_content_anchorUp'+random_int+'" class="z_index_1 gui_arrow_down width_5vh height_5vh float_right position_relative"></div></div>\
+    <div id="element_slider_5_'+random_int+'" class="width_100 float_left position_relative margin_auto text_align_center">\
+    <div id="element_slider_5_pagination'+random_int+'" class="display_flex_flow width_100 float_left position_relative">'+element_slider_5_pagination()+'</div>\
+    <div id="element_slider_5_content_anchorDown'+random_int+'" class="display_flex_flow width_100 height_5vh float_left position_relative"><div id="element_slider_5_content_anchorDown'+random_int+'" class="z_index_1 gui_arrow_top width_5vh height_5vh float_left position_relative"></div>\</div>\
+    <div id="element_slider_5_content'+random_int+'" class="width_100 float_left position_relative text_align_center">'+element_slider_5_default_content()+'</div>\
+    <div id="element_slider_5_content_anchorUp'+random_int+'" class="display_flex_flow width_100 height_5vh float_right position_relative"><div id="element_slider_5_content_anchorUp'+random_int+'" class="z_index_1 gui_arrow_down width_5vh height_5vh float_right position_relative"></div></div>\
+    </div>\
   ';
 
     // add event listeners
@@ -711,9 +4484,9 @@ let element_slider_6 = () => {
                 \
               <span class="margin_auto position_relative float_left top_0">\
               <span class="margin_auto position_relative float_left top_1vh">\
-              <span class="position_relative hover_top_0 top_-1vh easing_01 background_light_yellow_9 width_100 text_align_center float_right display_webkit_box webkit_box_pack_center webkit_box_align  pseudo_button_bottom_dark_yellow_8 pseudo_button_bottom_dark_yellow_8_shadow_border_02 pseudo_hover">\
+              <span class="position_relative hover_top_0 top_-1vh easing_01 background_light_yellow_9 width_100 text_align_center float_right display_flex_flow  pseudo_button_bottom_dark_yellow_8 pseudo_button_bottom_dark_yellow_8_shadow_border_02 pseudo_hover">\
               \
-              <span class=" position_absolute top_0 left_0 right_0 float_left calc_05vh margin_auto display_webkit_box webkit_box_pack_center webkit_box_align border_025vh_dark_yellow_9 background_dark_yellow_0">\
+              <span class=" position_absolute top_0 left_0 right_0 float_left calc_05vh margin_auto display_flex_flow border_025vh_dark_yellow_9 background_dark_yellow_0">\
               \
               </span>\
               \
@@ -723,7 +4496,7 @@ let element_slider_6 = () => {
               \
               <span id="wp_component_meta" class="position_absolute width_25vh right_0 left_0 bottom_100 float_left line_height_5vh font_size_205vh text_shadow_01vh_dark_yellow_1 margin_205vh_bottom hover_show">\
                 <span class="position_relative top_0vh left_0vh easing_01 margin_2vh calc_4vh_width border_025vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9 box_shadow_hover_none background_light_yellow_0 text_align_center float_right pseudo_arrow_bottom_left_outside_light_yellow_0">\
-                  <div class="overflow_hidden width_100 height_100 position_relative top_0 left_0 display_webkit_box webkit_box_pack_center webkit_box_align">\
+                  <div class="overflow_hidden width_100 height_100 position_relative top_0 left_0 display_flex_flow">\
                     <div class="calc_2vh_width margin_1vh position_relative float_left">\
                       <p class="font_size_2vh line_height_205vh">\
                       \
@@ -758,9 +4531,9 @@ let element_slider_6 = () => {
                 \
               <span class="margin_auto position_relative float_left top_0">\
               <span class="margin_auto position_relative float_left top_1vh">\
-              <span class="position_relative hover_top_0 top_-1vh easing_01 background_light_yellow_9 width_100 text_align_center float_right display_webkit_box webkit_box_pack_center webkit_box_align  pseudo_button_bottom_dark_yellow_8 pseudo_button_bottom_dark_yellow_8_shadow_border_02 pseudo_hover">\
+              <span class="position_relative hover_top_0 top_-1vh easing_01 background_light_yellow_9 width_100 text_align_center float_right display_flex_flow  pseudo_button_bottom_dark_yellow_8 pseudo_button_bottom_dark_yellow_8_shadow_border_02 pseudo_hover">\
               \
-              <span class=" position_absolute top_0 left_0 right_0 float_left calc_05vh margin_auto display_webkit_box webkit_box_pack_center webkit_box_align border_025vh_dark_yellow_9 background_dark_yellow_9">\
+              <span class=" position_absolute top_0 left_0 right_0 float_left calc_05vh margin_auto display_flex_flow border_025vh_dark_yellow_9 background_dark_yellow_9">\
               \
               </span>\
               \
@@ -770,7 +4543,7 @@ let element_slider_6 = () => {
               \
               <span id="wp_component_meta" class="position_absolute width_25vh right_0 left_0 bottom_100 float_left line_height_5vh font_size_205vh text_shadow_01vh_dark_yellow_1 margin_205vh_bottom hover_show">\
                 <span class="position_relative top_0vh left_0vh easing_01 margin_2vh calc_4vh_width border_025vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9 box_shadow_hover_none background_light_yellow_0 text_align_center float_right pseudo_arrow_bottom_left_outside_light_yellow_0">\
-                  <div class="overflow_hidden width_100 height_100 position_relative top_0 left_0 display_webkit_box webkit_box_pack_center webkit_box_align">\
+                  <div class="overflow_hidden width_100 height_100 position_relative top_0 left_0 display_flex_flow">\
                     <div class="calc_2vh_width margin_1vh position_relative float_left">\
                       <p class="font_size_2vh line_height_205vh">\
                       \
@@ -817,10 +4590,12 @@ let element_slider_6 = () => {
   };
 
   let component = '\
-    <div id="element_slider_6_pagination'+random_int+'" class="display_webkit_box webkit_box_pack_center webkit_box_align width_100 float_left position_relative">'+element_slider_6_pagination()+'</div>\
-    <div id="element_slider_6_content_anchorDown'+random_int+'" class="display_webkit_box webkit_box_pack_center webkit_box_align width_100 height_5vh float_left position_relative"><div id="element_slider_6_content_anchorDown'+random_int+'" class="z_index_1 gui_arrow_top width_5vh height_5vh float_left position_relative"></div>\</div>\
-    <div id="element_slider_6_content'+random_int+'" class="width_100 float_left position_relative">'+element_slider_6_default_content()+'</div>\
-    <div id="element_slider_6_content_anchorUp'+random_int+'" class="display_webkit_box webkit_box_pack_center webkit_box_align width_100 height_5vh float_right position_relative"><div id="element_slider_6_content_anchorUp'+random_int+'" class="z_index_1 gui_arrow_down width_5vh height_5vh float_right position_relative"></div></div>\
+    <div id="element_slider_6_'+random_int+'" class="width_100 float_left position_relative margin_auto text_align_center">\
+    <div id="element_slider_6_pagination'+random_int+'" class="display_flex_flow width_100 float_left position_relative">'+element_slider_6_pagination()+'</div>\
+    <div id="element_slider_6_content_anchorDown'+random_int+'" class="display_flex_flow width_100 height_5vh float_left position_relative"><div id="element_slider_6_content_anchorDown'+random_int+'" class="z_index_1 gui_arrow_top width_5vh height_5vh float_left position_relative"></div>\</div>\
+    <div id="element_slider_6_content'+random_int+'" class="width_100 float_left position_relative text_align_center">'+element_slider_6_default_content()+'</div>\
+    <div id="element_slider_6_content_anchorUp'+random_int+'" class="display_flex_flow width_100 height_5vh float_right position_relative"><div id="element_slider_6_content_anchorUp'+random_int+'" class="z_index_1 gui_arrow_down width_5vh height_5vh float_right position_relative"></div></div>\
+    </div>\
   ';
 
     // add event listeners
@@ -876,9 +4651,9 @@ let element_slider_7 = () => {
                 \
               <span class="margin_auto position_relative float_left top_0">\
               <span class="margin_auto position_relative float_left top_1vh">\
-              <span class="position_relative hover_top_0 top_-1vh easing_01 background_light_yellow_9 width_100 text_align_center float_right display_webkit_box webkit_box_pack_center webkit_box_align  pseudo_button_bottom_dark_yellow_8 pseudo_button_bottom_dark_yellow_8_shadow_border_02 pseudo_hover">\
+              <span class="position_relative hover_top_0 top_-1vh easing_01 background_light_yellow_9 width_100 text_align_center float_right display_flex_flow  pseudo_button_bottom_dark_yellow_8 pseudo_button_bottom_dark_yellow_8_shadow_border_02 pseudo_hover">\
               \
-              <span class=" position_absolute top_0 left_0 right_0 float_left calc_05vh margin_auto display_webkit_box webkit_box_pack_center webkit_box_align border_025vh_dark_yellow_9 background_dark_yellow_0">\
+              <span class=" position_absolute top_0 left_0 right_0 float_left calc_05vh margin_auto display_flex_flow border_025vh_dark_yellow_9 background_dark_yellow_0">\
               \
               </span>\
               \
@@ -888,7 +4663,7 @@ let element_slider_7 = () => {
               \
               <span id="wp_component_meta" class="position_absolute width_25vh right_0 left_0 bottom_100 float_left line_height_5vh font_size_205vh text_shadow_01vh_dark_yellow_1 margin_205vh_bottom hover_show">\
                 <span class="position_relative top_0vh left_0vh easing_01 margin_2vh calc_4vh_width border_025vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9 box_shadow_hover_none background_light_yellow_0 text_align_center float_right pseudo_arrow_bottom_left_outside_light_yellow_0">\
-                  <div class="overflow_hidden width_100 height_100 position_relative top_0 left_0 display_webkit_box webkit_box_pack_center webkit_box_align">\
+                  <div class="overflow_hidden width_100 height_100 position_relative top_0 left_0 display_flex_flow">\
                     <div class="calc_2vh_width margin_1vh position_relative float_left">\
                       <p class="font_size_2vh line_height_205vh">\
                       \
@@ -923,9 +4698,9 @@ let element_slider_7 = () => {
                 \
               <span class="margin_auto position_relative float_left top_0">\
               <span class="margin_auto position_relative float_left top_1vh">\
-              <span class="position_relative hover_top_0 top_-1vh easing_01 background_light_yellow_9 width_100 text_align_center float_right display_webkit_box webkit_box_pack_center webkit_box_align  pseudo_button_bottom_dark_yellow_8 pseudo_button_bottom_dark_yellow_8_shadow_border_02 pseudo_hover">\
+              <span class="position_relative hover_top_0 top_-1vh easing_01 background_light_yellow_9 width_100 text_align_center float_right display_flex_flow  pseudo_button_bottom_dark_yellow_8 pseudo_button_bottom_dark_yellow_8_shadow_border_02 pseudo_hover">\
               \
-              <span class=" position_absolute top_0 left_0 right_0 float_left calc_05vh margin_auto display_webkit_box webkit_box_pack_center webkit_box_align border_025vh_dark_yellow_9 background_dark_yellow_9">\
+              <span class=" position_absolute top_0 left_0 right_0 float_left calc_05vh margin_auto display_flex_flow border_025vh_dark_yellow_9 background_dark_yellow_9">\
               \
               </span>\
               \
@@ -935,7 +4710,7 @@ let element_slider_7 = () => {
               \
               <span id="wp_component_meta" class="position_absolute width_25vh right_0 left_0 bottom_100 float_left line_height_5vh font_size_205vh text_shadow_01vh_dark_yellow_1 margin_205vh_bottom hover_show">\
                 <span class="position_relative top_0vh left_0vh easing_01 margin_2vh calc_4vh_width border_025vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9 box_shadow_hover_none background_light_yellow_0 text_align_center float_right pseudo_arrow_bottom_left_outside_light_yellow_0">\
-                  <div class="overflow_hidden width_100 height_100 position_relative top_0 left_0 display_webkit_box webkit_box_pack_center webkit_box_align">\
+                  <div class="overflow_hidden width_100 height_100 position_relative top_0 left_0 display_flex_flow">\
                     <div class="calc_2vh_width margin_1vh position_relative float_left">\
                       <p class="font_size_2vh line_height_205vh">\
                       \
@@ -982,14 +4757,16 @@ let element_slider_7 = () => {
   };
 
   let component = '\
-    <div class="display_webkit_box webkit_box_pack_center webkit_box_align width_25 float_left position_relative">\
-      <div id="element_slider_7_pagination'+random_int+'" class="width_100 float_left position_relative">'+element_slider_7_pagination()+'</div>\
+    <div id="element_slider_7_'+random_int+'" class="width_100 float_left position_relative margin_auto text_align_center">\
+    <div class="display_flex_flow width_25 float_left position_relative">\
+      <div id="element_slider_7_pagination'+random_int+'" class="width_100 float_left position_relative text_align_center">'+element_slider_7_pagination()+'</div>\
     </div>\
     \
     <div class="width_75 float_left position_relative">\
-      <div id="element_slider_7_content_anchorDown'+random_int+'" class="display_webkit_box webkit_box_pack_center webkit_box_align width_100 height_5vh float_left position_relative"><div id="element_slider_7_content_anchorDown'+random_int+'" class="z_index_1 gui_arrow_top width_5vh height_5vh float_left position_relative"></div>\</div>\
-      <div id="element_slider_7_content'+random_int+'" class="width_100 float_left position_relative">'+element_slider_7_default_content()+'</div>\
-      <div id="element_slider_7_content_anchorUp'+random_int+'" class="display_webkit_box webkit_box_pack_center webkit_box_align width_100 height_5vh float_right position_relative"><div id="element_slider_7_content_anchorUp'+random_int+'" class="z_index_1 gui_arrow_down width_5vh height_5vh float_right position_relative"></div></div>\
+      <div id="element_slider_7_content_anchorDown'+random_int+'" class="display_flex_flow width_100 height_5vh float_left position_relative"><div id="element_slider_7_content_anchorDown'+random_int+'" class="z_index_1 gui_arrow_top width_5vh height_5vh float_left position_relative"></div>\</div>\
+      <div id="element_slider_7_content'+random_int+'" class="width_100 float_left position_relative text_align_center">'+element_slider_7_default_content()+'</div>\
+      <div id="element_slider_7_content_anchorUp'+random_int+'" class="display_flex_flow width_100 height_5vh float_right position_relative"><div id="element_slider_7_content_anchorUp'+random_int+'" class="z_index_1 gui_arrow_down width_5vh height_5vh float_right position_relative"></div></div>\
+    </div>\
     </div>\
     \
   ';
@@ -1203,42 +4980,42 @@ let stage_outside = () => {
 let component_app_stage_enneagon = () => {
 
   let component = '\
-    <span id="component_app_stage_enneagon" class="display_none opacity_0 transform_translate3d_top0 easing_01 position_absolute top_0 left_0 right_0 width_100vw height_100vh display_webkit_box webkit_box_pack_center webkit_box_align">\
-    <span id="column1" class="position_relative float_left width_100vw height_100vh easing_025">\
-    <span class="width_100 height_100 float_left position_relative overflow_hidden display_webkit_box webkit_box_pack_center webkit_box_align">\
+    <span id="component_app_stage_enneagon" class="display_none opacity_0 transform_translate3d_top0 easing_01 position_absolute top_0 left_0 right_0 width_100vw height_100vh display_flex_flow">\
+    <span id="column1" class="position_relative float_left width_100vw height_100vh easing_01">\
+    <span class="width_100 height_100 float_left position_relative overflow_hidden display_flex_flow">\
     <div class="width_100 height_100 position_absolute top_0 left_0 bottom_0 right_0 margin_auto overflow_hidden ">\
             ' + stage_outside() + '\
     </div>landing1 Left Top</span>\
-    <span class="width_100 height_100 float_left position_relative overflow_hidden display_webkit_box webkit_box_pack_center webkit_box_align">\
+    <span class="width_100 height_100 float_left position_relative overflow_hidden display_flex_flow">\
     <div class="width_100 height_100 position_absolute top_0 left_0 bottom_0 right_0 margin_auto overflow_hidden ">\
     \
     </div>landing2 Left Center</span>\
-    <span class="width_100 height_100 float_left position_relative overflow_hidden display_webkit_box webkit_box_pack_center webkit_box_align">\
+    <span class="width_100 height_100 float_left position_relative overflow_hidden display_flex_flow">\
     <div class="width_100 height_100 position_absolute top_0 left_0 bottom_0 right_0 margin_auto overflow_hidden ">\
             ' + stage_sky() + '\
     </div>landing2 Left Bottom</span>\
     </span>\
     <span id="column1" class="position_relative float_left width_100vw height_100vh">\
-    <span class="width_100 height_100 float_left position_relative overflow_hidden display_webkit_box webkit_box_pack_center webkit_box_align">\
+    <span class="width_100 height_100 float_left position_relative overflow_hidden display_flex_flow">\
     <div class="width_100 height_100 position_absolute top_0 left_0 bottom_0 right_0 margin_auto overflow_hidden ">\
     </div>landing1 Center Top</span>\
-    <span class="width_100 height_100 float_left position_relative overflow_hidden display_webkit_box webkit_box_pack_center webkit_box_align">\
+    <span class="width_100 height_100 float_left position_relative overflow_hidden display_flex_flow">\
     <div class="width_100 height_100 position_absolute top_0 left_0 bottom_0 right_0 margin_auto overflow_hidden ">\
             ' + stage_office() + '\
             ' + pieces_workspace() + '\
             ' + pieces_office() + '\
     </div>landing2 Center Mid</span>\
-    <span class="width_100 height_100 float_left position_relative overflow_hidden display_webkit_box webkit_box_pack_center webkit_box_align">\
+    <span class="width_100 height_100 float_left position_relative overflow_hidden display_flex_flow">\
     <div class="width_100 height_100 position_absolute top_0 left_0 bottom_0 right_0 margin_auto overflow_hidden ">\
     </div>landing2 Center Bottom</span>\
     </span>\
     <span id="column1" class="position_relative float_left width_100vw height_100vh">\
-    <span class="width_100 height_100 float_left position_relative overflow_hidden display_webkit_box webkit_box_pack_center webkit_box_align">\
+    <span class="width_100 height_100 float_left position_relative overflow_hidden display_flex_flow">\
     <div class="width_100 height_100 position_absolute top_0 left_0 bottom_0 right_0 margin_auto overflow_hidden ">\
     </div>landing1 Right Top</span>\
-    <span class="width_100 height_100 float_left position_relative overflow_hidden display_webkit_box webkit_box_pack_center webkit_box_align">\
+    <span class="width_100 height_100 float_left position_relative overflow_hidden display_flex_flow">\
     <div class="width_100 height_100 position_absolute top_0 left_0 bottom_0 right_0 margin_auto overflow_hidden ">\
-    </div>landing2 Right Mid</span>  <span class="width_100 height_100 float_left position_relative overflow_hidden display_webkit_box webkit_box_pack_center webkit_box_align">\
+    </div>landing2 Right Mid</span>  <span class="width_100 height_100 float_left position_relative overflow_hidden display_flex_flow">\
     <div class="width_100 height_100 position_absolute top_0 left_0 bottom_0 right_0 margin_auto overflow_hidden ">\
     </div>landing2 Right Bottom</span>\
     </span>\
@@ -1253,7 +5030,7 @@ let component_app_stage_enneagon = () => {
 let element_guis = () => {
     let element = `
 
-        <div id="component_app_gui_top_left" class="display_none opacity_0 easing_025 transform_translate3d_top0 width_10vh height_10vh float_left position_fixed top_0 left_0 margin_auto z_index_7">
+        <div id="component_app_gui_top_left" class="display_none opacity_0 easing_01 transform_translate3d_top0 width_10vh height_10vh float_left position_fixed top_0 left_0 margin_auto z_index_7">
 
           <div id="component_app_gui_logo_icon" class="gui_logo width_50 height_100 float_left position_relative float_left margin_auto z_index_7">
           </div>
@@ -1263,17 +5040,17 @@ let element_guis = () => {
 
         </div>
 
-        <div id="component_app_gui_top_center" class="display_none opacity_0 easing_025 transform_translate3d_top0 float_left display_webkit_box webkit_box_pack_center webkit_box_align position_fixed calc_20vh_width top_0 left_0 right_0 margin_auto z_index_7">
+        <div id="component_app_gui_top_center" class="display_none opacity_0 easing_01 transform_translate3d_top0 float_left display_flex_flow position_fixed calc_20vh_width top_0 left_0 right_0 margin_auto z_index_7">
 
-          <span class="margin_auto position_relative margin_auto z_index_1 display_webkit_box webkit_box_pack_center webkit_box_align height_10vh width_10vh">
+          <span class="margin_auto position_relative margin_auto z_index_1 display_flex_flow height_10vh width_10vh">
 
             <span class="margin_auto position_relative float_left top_0">
 
             <span class="margin_auto position_relative float_left top_1vh">
 
-            <span class="position_relative hover_top_0 top_-1vh easing_01 background_light_yellow_9 width_100 text_align_center float_right display_webkit_box webkit_box_pack_center webkit_box_align  pseudo_button_bottom_dark_yellow_8 pseudo_button_bottom_dark_yellow_8_shadow_border_02 pseudo_hover">
+            <span class="position_relative hover_top_0 top_-1vh easing_01 background_light_yellow_9 width_100 text_align_center float_right display_flex_flow  pseudo_button_bottom_dark_yellow_8 pseudo_button_bottom_dark_yellow_8_shadow_border_02 pseudo_hover">
 
-            <span class=" position_absolute top_0 left_0 right_0 float_left calc_05vh margin_auto display_webkit_box webkit_box_pack_center webkit_box_align border_025vh_dark_yellow_9 background_dark_yellow_0">
+            <span class=" position_absolute top_0 left_0 right_0 float_left calc_05vh margin_auto display_flex_flow border_025vh_dark_yellow_9 background_dark_yellow_0">
 
             </span>
 
@@ -1283,7 +5060,7 @@ let element_guis = () => {
 
             <span id="wp_component_meta" class="position_absolute width_25vh right_0 left_0 bottom_100 float_left line_height_5vh font_size_205vh text_shadow_01vh_dark_yellow_1 margin_205vh_bottom hover_show">
               <span class="position_relative top_0vh left_0vh easing_01 margin_2vh calc_4vh_width border_025vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9 box_shadow_hover_none background_light_yellow_0 text_align_center float_right pseudo_arrow_bottom_left_outside_light_yellow_0">
-                <div class="overflow_hidden width_100 height_100 position_relative top_0 left_0 display_webkit_box webkit_box_pack_center webkit_box_align">
+                <div class="overflow_hidden width_100 height_100 position_relative top_0 left_0 display_flex_flow">
                   <div class="calc_2vh_width margin_1vh position_relative float_left">
                     <p class="font_size_2vh line_height_205vh">
                     simple
@@ -1303,17 +5080,17 @@ let element_guis = () => {
 
         </div>
 
-        <div id="component_app_gui_top_right" class="display_none opacity_0 easing_025 transform_translate3d_top0 width_10vh height_10vh float_left position_fixed top_0 right_0 margin_auto z_index_7 display_webkit_box webkit_box_pack_center webkit_box_align">
+        <div id="component_app_gui_top_right" class="display_none opacity_0 easing_01 transform_translate3d_top0 width_10vh height_10vh float_left position_fixed top_0 right_0 margin_auto z_index_7 display_flex_flow">
 
-          <span class="margin_auto position_relative margin_auto z_index_1 display_webkit_box webkit_box_pack_center webkit_box_align">
+          <span class="margin_auto position_relative margin_auto z_index_1 display_flex_flow">
 
             <span class="margin_auto position_relative float_left top_0">
 
             <span class="margin_auto position_relative float_left top_1vh">
 
-            <span class="position_relative hover_top_0 top_-1vh easing_01 background_light_yellow_9 width_100 text_align_center float_right display_webkit_box webkit_box_pack_center webkit_box_align  pseudo_button_bottom_dark_yellow_8 pseudo_button_bottom_dark_yellow_8_shadow_border_02 pseudo_hover">
+            <span class="position_relative hover_top_0 top_-1vh easing_01 background_light_yellow_9 width_100 text_align_center float_right display_flex_flow  pseudo_button_bottom_dark_yellow_8 pseudo_button_bottom_dark_yellow_8_shadow_border_02 pseudo_hover">
 
-            <span class=" position_absolute top_0 left_0 right_0 float_left calc_05vh margin_auto display_webkit_box webkit_box_pack_center webkit_box_align border_025vh_dark_yellow_9 background_dark_yellow_0">
+            <span class=" position_absolute top_0 left_0 right_0 float_left calc_05vh margin_auto display_flex_flow border_025vh_dark_yellow_9 background_dark_yellow_0">
 
             </span>
 
@@ -1323,7 +5100,7 @@ let element_guis = () => {
 
             <span id="wp_component_meta" class="position_absolute width_25vh right_0 left_0 bottom_100 float_left line_height_5vh font_size_205vh text_shadow_01vh_dark_yellow_1 margin_205vh_bottom hover_show">
               <span class="position_relative top_0vh left_0vh easing_01 margin_2vh calc_4vh_width border_025vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9 box_shadow_hover_none background_light_yellow_0 text_align_center float_right pseudo_arrow_bottom_left_outside_light_yellow_0">
-                <div class="overflow_hidden width_100 height_100 position_relative top_0 left_0 display_webkit_box webkit_box_pack_center webkit_box_align">
+                <div class="overflow_hidden width_100 height_100 position_relative top_0 left_0 display_flex_flow">
                   <div class="calc_2vh_width margin_1vh position_relative float_left">
                     <p class="font_size_2vh line_height_205vh">
                     simple
@@ -1343,7 +5120,7 @@ let element_guis = () => {
 
         </div>
 
-        <div id="component_app_gui_right" class="display_none opacity_0 easing_025 transform_translate3d_left0 width_10vh calc_20vh_height float_left position_fixed top_0 bottom_0 right_0 margin_auto z_index_7">
+        <div id="component_app_gui_right" class="display_none opacity_0 easing_01 transform_translate3d_left0 width_10vh calc_20vh_height float_left position_fixed top_0 bottom_0 right_0 margin_auto z_index_7">
 
           <div class="position_absolute top_0 left_0 bottom_0 margin_auto width_10vh height_10vh float_right">
 
@@ -1361,260 +5138,260 @@ let element_guis = () => {
 
           </div>
 
-          <div class="position_absolute bottom_0 left_0 width_10vh height_10vh float_right display_webkit_box webkit_box_pack_center webkit_box_align">
+          <div class="position_absolute bottom_0 left_0 width_10vh height_10vh float_right display_flex_flow">
 
-          <div id="" class=" width_100 height_100 float_left position_relative float_left margin_auto">
+            <div id="" class=" width_100 height_100 float_left position_relative float_left margin_auto">
 
-          <div id="" class="gui_circle width_25 height_50 float_left position_relative float_left margin_auto">
+            <div id="" class="gui_circle width_25 height_50 float_left position_relative float_left margin_auto">
+            </div>
+            <div id="" class="gui_circle width_25 height_50 float_left position_relative float_left margin_auto">
+            </div>
+            <div id="" class="gui_circle width_25 height_50 float_left position_relative float_left margin_auto">
+            </div>
+            <div id="" class="gui_circle width_25 height_50 float_left position_relative float_left margin_auto">
+            </div>
+            <div id="" class="gui_circle width_25 height_50 float_left position_relative float_left margin_auto">
+            </div>
+            <div id="" class="gui_circle width_25 height_50 float_left position_relative float_left margin_auto">
+            </div>
+            <div id="" class="gui_circle width_25 height_50 float_left position_relative float_left margin_auto">
+            </div>
+            <div id="" class="gui_circle width_25 height_50 float_left position_relative float_left margin_auto">
+            </div>
+
+            </div>
+
           </div>
-          <div id="" class="gui_circle width_25 height_50 float_left position_relative float_left margin_auto">
-          </div>
-          <div id="" class="gui_circle width_25 height_50 float_left position_relative float_left margin_auto">
-          </div>
-          <div id="" class="gui_circle width_25 height_50 float_left position_relative float_left margin_auto">
-          </div>
-          <div id="" class="gui_circle width_25 height_50 float_left position_relative float_left margin_auto">
-          </div>
-          <div id="" class="gui_circle width_25 height_50 float_left position_relative float_left margin_auto">
-          </div>
-          <div id="" class="gui_circle width_25 height_50 float_left position_relative float_left margin_auto">
-          </div>
-          <div id="" class="gui_circle width_25 height_50 float_left position_relative float_left margin_auto">
-          </div>
 
-          </div>
+          <span class="margin_auto position_absolute top_0 left_0 right_0 margin_auto margin_auto z_index_1 display_flex_flow">
 
-        </div>
+            <span class="margin_auto position_relative float_left top_0">
 
-        <span class="margin_auto position_absolute top_0 left_0 right_0 margin_auto margin_auto z_index_1 display_webkit_box webkit_box_pack_center webkit_box_align">
+            <span class="margin_auto position_relative float_left top_1vh">
 
-          <span class="margin_auto position_relative float_left top_0">
+            <span class="position_relative hover_top_0 top_-1vh easing_01 background_light_green_9 width_100 text_align_center float_right display_flex_flow  pseudo_button_bottom_dark_yellow_8 pseudo_button_bottom_dark_yellow_8_shadow_border_02 pseudo_hover">
 
-          <span class="margin_auto position_relative float_left top_1vh">
+            <span class=" position_absolute top_0 left_0 right_0 float_left calc_05vh margin_auto display_flex_flow border_025vh_dark_yellow_9 background_dark_yellow_0">
 
-          <span class="position_relative hover_top_0 top_-1vh easing_01 background_light_yellow_9 width_100 text_align_center float_right display_webkit_box webkit_box_pack_center webkit_box_align  pseudo_button_bottom_dark_yellow_8 pseudo_button_bottom_dark_yellow_8_shadow_border_02 pseudo_hover">
-
-          <span class=" position_absolute top_0 left_0 right_0 float_left calc_05vh margin_auto display_webkit_box webkit_box_pack_center webkit_box_align border_025vh_dark_yellow_9 background_dark_yellow_0">
-
-          </span>
-
-          <span class="position_relative text_align_center font_size_2vh line_height_3vh padding_1vh float_right">
-
-          </span>
-
-          <span id="wp_component_meta" class="position_absolute width_25vh right_0 left_0 bottom_100 float_left line_height_5vh font_size_205vh text_shadow_01vh_dark_yellow_1 margin_205vh_bottom hover_show">
-            <span class="position_relative top_0vh left_0vh easing_01 margin_2vh calc_4vh_width border_025vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9 box_shadow_hover_none background_light_yellow_0 text_align_center float_right pseudo_arrow_bottom_left_outside_light_yellow_0">
-              <div class="overflow_hidden width_100 height_100 position_relative top_0 left_0 display_webkit_box webkit_box_pack_center webkit_box_align">
-                <div class="calc_2vh_width margin_1vh position_relative float_left">
-                  <p class="font_size_2vh line_height_205vh">
-                  simple
-                  </p>
-                </div>
-              </div>
             </span>
-          </span>
 
-          </span>
+            <span class="position_relative text_align_center font_size_2vh line_height_3vh padding_1vh float_right">
 
-          </span>
-
-          </span>
-
-        </span>
-
-        </div>
-
-        <div id="component_app_gui_left" class="display_none opacity_0 easing_025 transform_translate3d_left0 width_10vh calc_20vh_height float_left position_fixed top_0 bottom_0 left_0 margin_auto z_index_7">
-
-        <div class="position_absolute top_0 left_0 bottom_0 margin_auto width_10vh height_5vh float_right display_webkit_box webkit_box_pack_center webkit_box_align">
-
-        <div id="" class="gui_circle width_50 height_100 float_left position_relative float_left margin_auto">
-        </div>
-
-        <div id="" class="gui_circle width_50 height_100 float_left position_relative float_left margin_auto">
-        </div>
-
-        <div id="" class="gui_circle width_50 height_100 float_left position_relative float_left margin_auto">
-        </div>
-
-        <div id="" class="gui_circle width_50 height_100 float_left position_relative float_left margin_auto">
-        </div>
-
-        </div>
-
-        <div class="position_absolute bottom_0 left_0 width_10vh height_10vh float_right">
-
-        <div id="" class="gui_i width_100 height_50 float_left position_relative float_left margin_auto">
-        </div>
-
-        <div id="" class="gui_circle width_100 height_50 float_left position_relative float_left margin_auto">
-        </div>
-
-        <div id="time" class="position_relative float_left margin_auto">
-        </div>
-
-        </div>
-
-
-        <span class="margin_auto position_relative margin_auto z_index_1 display_webkit_box webkit_box_pack_center webkit_box_align">
-
-          <span class="margin_auto position_relative float_left top_0">
-
-          <span class="margin_auto position_relative float_left top_1vh">
-
-          <span class="position_relative hover_top_0 top_-1vh easing_01 background_light_yellow_9 width_100 text_align_center float_right display_webkit_box webkit_box_pack_center webkit_box_align  pseudo_button_bottom_dark_yellow_8 pseudo_button_bottom_dark_yellow_8_shadow_border_02 pseudo_hover">
-
-          <span class=" position_absolute top_0 left_0 right_0 float_left calc_05vh margin_auto display_webkit_box webkit_box_pack_center webkit_box_align border_025vh_dark_yellow_9 background_dark_yellow_0">
-
-          </span>
-
-          <span class="position_relative text_align_center font_size_2vh line_height_3vh padding_1vh float_right">
-
-          </span>
-
-          <span id="wp_component_meta" class="position_absolute width_25vh right_0 left_0 bottom_100 float_left line_height_5vh font_size_205vh text_shadow_01vh_dark_yellow_1 margin_205vh_bottom hover_show">
-            <span class="position_relative top_0vh left_0vh easing_01 margin_2vh calc_4vh_width border_025vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9 box_shadow_hover_none background_light_yellow_0 text_align_center float_right pseudo_arrow_bottom_left_outside_light_yellow_0">
-              <div class="overflow_hidden width_100 height_100 position_relative top_0 left_0 display_webkit_box webkit_box_pack_center webkit_box_align">
-                <div class="calc_2vh_width margin_1vh position_relative float_left">
-                  <p class="font_size_2vh line_height_205vh">
-                  simple
-                  </p>
-                </div>
-              </div>
             </span>
-          </span>
 
-          </span>
-
-          </span>
-
-          </span>
-
-        </span>
-
-        </div>
-
-        <div id="component_app_gui_bottom_left" class="display_none opacity_0 easing_025 transform_translate3d_top0 width_10vh height_10vh float_left position_fixed bottom_0 left_0 margin_auto z_index_7">
-        <div id="" class="gui_i width_25 height_100 float_left position_relative float_left margin_auto">
-        </div>
-        <div id="" class="gui_i width_25 height_100 float_left position_relative float_left margin_auto">
-        </div>
-        <div id="" class="gui_i width_25 height_100 float_left position_relative float_left margin_auto">
-        </div>
-        <div id="" class="gui_i width_25 height_100 float_left position_relative float_left margin_auto">
-        </div>
-
-        <span class="margin_auto position_relative margin_auto z_index_1 height_10vh display_webkit_box webkit_box_pack_center webkit_box_align">
-
-          <span class="margin_auto position_relative float_left top_0">
-
-          <span class="margin_auto position_relative float_left top_1vh">
-
-          <span class="position_relative hover_top_0 top_-1vh easing_01 background_light_yellow_9 width_100 text_align_center float_right display_webkit_box webkit_box_pack_center webkit_box_align  pseudo_button_bottom_dark_yellow_8 pseudo_button_bottom_dark_yellow_8_shadow_border_02 pseudo_hover">
-
-          <span class=" position_absolute top_0 left_0 right_0 float_left calc_05vh margin_auto display_webkit_box webkit_box_pack_center webkit_box_align border_025vh_dark_yellow_9 background_dark_yellow_0">
-
-          </span>
-
-          <span id="wp_component_meta" class="position_absolute width_25vh right_0 left_0 bottom_100 float_left line_height_5vh font_size_205vh text_shadow_01vh_dark_yellow_1 margin_205vh_bottom hover_show">
-            <span class="position_relative top_0vh left_0vh easing_01 margin_2vh calc_4vh_width border_025vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9 box_shadow_hover_none background_light_yellow_0 text_align_center float_right pseudo_arrow_bottom_left_outside_light_yellow_0">
-              <div class="overflow_hidden width_100 height_100 position_relative top_0 left_0 display_webkit_box webkit_box_pack_center webkit_box_align">
-                <div class="calc_2vh_width margin_1vh position_relative float_left">
-                  <p class="font_size_2vh line_height_205vh">
-                  simple
-                  </p>
+            <span id="wp_component_meta" class="position_absolute width_25vh right_0 left_0 bottom_100 float_left line_height_5vh font_size_205vh text_shadow_01vh_dark_yellow_1 margin_205vh_bottom hover_show">
+              <span class="position_relative top_0vh left_0vh easing_01 margin_2vh calc_4vh_width border_025vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9 box_shadow_hover_none background_light_yellow_0 text_align_center float_right pseudo_arrow_bottom_left_outside_light_yellow_0">
+                <div class="overflow_hidden width_100 height_100 position_relative top_0 left_0 display_flex_flow">
+                  <div class="calc_2vh_width margin_1vh position_relative float_left">
+                    <p class="font_size_2vh line_height_205vh">
+                    Whats this
+                    </p>
+                  </div>
                 </div>
-              </div>
+              </span>
             </span>
-          </span>
+
+            </span>
+
+            </span>
+
+            </span>
 
           </span>
-
-          </span>
-
-          </span>
-
-        </span>
 
         </div>
 
-        <div id="component_app_gui_bottom_center" class="display_none opacity_0 easing_025 transform_translate3d_top0 float_left display_webkit_box webkit_box_pack_center webkit_box_align position_fixed calc_20vh_width bottom_0 left_0 right_0 margin_auto z_index_7">
+        <div id="component_app_gui_left" class="display_none opacity_0 easing_01 transform_translate3d_left0 width_10vh calc_20vh_height float_left position_fixed top_0 bottom_0 left_0 margin_auto z_index_7">
 
-        <span class="height_10vh margin_auto position_relative margin_auto z_index_1 display_webkit_box webkit_box_pack_center webkit_box_align">
+          <div class="position_absolute top_0 left_0 bottom_0 margin_auto width_10vh height_5vh float_right display_flex_flow">
 
-          <span class="margin_auto position_relative float_left top_0">
+            <div id="" class="gui_circle width_50 height_100 float_left position_relative float_left margin_auto">
+            </div>
 
-          <span class="margin_auto position_relative float_left top_1vh">
+            <div id="" class="gui_circle width_50 height_100 float_left position_relative float_left margin_auto">
+            </div>
 
-          <span class="position_relative hover_top_0 top_-1vh easing_01 background_light_yellow_9 width_100 text_align_center float_right display_webkit_box webkit_box_pack_center webkit_box_align  pseudo_button_bottom_dark_yellow_8 pseudo_button_bottom_dark_yellow_8_shadow_border_02 pseudo_hover">
+            <div id="" class="gui_circle width_50 height_100 float_left position_relative float_left margin_auto">
+            </div>
 
-          <span class=" position_absolute top_0 left_0 right_0 float_left calc_05vh margin_auto display_webkit_box webkit_box_pack_center webkit_box_align border_025vh_dark_yellow_9 background_dark_yellow_0">
+            <div id="" class="gui_circle width_50 height_100 float_left position_relative float_left margin_auto">
+            </div>
 
-          </span>
+          </div>
 
-          <span class="position_relative text_align_center font_size_2vh line_height_3vh padding_1vh float_right">
+          <div class="position_absolute bottom_0 left_0 width_10vh height_10vh float_right">
 
-          </span>
+            <div id="" class="gui_i width_100 height_50 float_left position_relative float_left margin_auto">
+            </div>
 
-          <span id="wp_component_meta" class="position_absolute width_25vh right_0 left_0 bottom_100 float_left line_height_5vh font_size_205vh text_shadow_01vh_dark_yellow_1 margin_205vh_bottom hover_show">
-            <span class="position_relative top_0vh left_0vh easing_01 margin_2vh calc_4vh_width border_025vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9 box_shadow_hover_none background_light_yellow_0 text_align_center float_right pseudo_arrow_bottom_left_outside_light_yellow_0">
-              <div class="overflow_hidden width_100 height_100 position_relative top_0 left_0 display_webkit_box webkit_box_pack_center webkit_box_align">
-                <div class="calc_2vh_width margin_1vh position_relative float_left">
-                  <p class="font_size_2vh line_height_205vh">
-                  simple
-                  </p>
-                </div>
-              </div>
+            <div id="" class="gui_circle width_100 height_50 float_left position_relative float_left margin_auto">
+            </div>
+
+            <div id="time" class="position_relative float_left margin_auto">
+            </div>
+
+          </div>
+
+          <span class="margin_auto position_relative margin_auto z_index_1 display_flex_flow">
+
+            <span class="margin_auto position_relative float_left top_0">
+
+            <span class="margin_auto position_relative float_left top_1vh">
+
+            <span class="position_relative hover_top_0 top_-1vh easing_01 background_light_yellow_9 width_100 text_align_center float_right display_flex_flow  pseudo_button_bottom_dark_yellow_8 pseudo_button_bottom_dark_yellow_8_shadow_border_02 pseudo_hover">
+
+            <span class=" position_absolute top_0 left_0 right_0 float_left calc_05vh margin_auto display_flex_flow border_025vh_dark_yellow_9 background_dark_yellow_0">
+
             </span>
-          </span>
+
+            <span class="position_relative text_align_center font_size_2vh line_height_3vh padding_1vh float_right">
+
+            </span>
+
+            <span id="wp_component_meta" class="position_absolute width_25vh right_0 left_0 bottom_100 float_left line_height_5vh font_size_205vh text_shadow_01vh_dark_yellow_1 margin_205vh_bottom hover_show">
+              <span class="position_relative top_0vh left_0vh easing_01 margin_2vh calc_4vh_width border_025vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9 box_shadow_hover_none background_light_yellow_0 text_align_center float_right pseudo_arrow_bottom_left_outside_light_yellow_0">
+                <div class="overflow_hidden width_100 height_100 position_relative top_0 left_0 display_flex_flow">
+                  <div class="calc_2vh_width margin_1vh position_relative float_left">
+                    <p class="font_size_2vh line_height_205vh">
+                    simple
+                    </p>
+                  </div>
+                </div>
+              </span>
+            </span>
+
+            </span>
+
+            </span>
+
+            </span>
 
           </span>
-
-          </span>
-
-          </span>
-
-        </span>
 
         </div>
 
-        <div id="component_app_gui_bottom_right" class="display_none opacity_0 easing_025 transform_translate3d_top0 width_10vh height_10vh float_left position_fixed bottom_0 right_0 margin_auto z_index_7 display_webkit_box webkit_box_pack_center webkit_box_align">
+        <div id="component_app_gui_bottom_left" class="display_none opacity_0 easing_01 transform_translate3d_top0 width_10vh height_10vh float_left position_fixed bottom_0 left_0 margin_auto z_index_7">
+          
+          <div id="" class="gui_i width_25 height_100 float_left position_relative float_left margin_auto">
+          </div>
+          <div id="" class="gui_i width_25 height_100 float_left position_relative float_left margin_auto">
+          </div>
+          <div id="" class="gui_i width_25 height_100 float_left position_relative float_left margin_auto">
+          </div>
+          <div id="" class="gui_i width_25 height_100 float_left position_relative float_left margin_auto">
+          </div>
 
-        <span class="margin_auto position_relative margin_auto z_index_1 display_webkit_box webkit_box_pack_center webkit_box_align">
+          <span class="margin_auto position_relative margin_auto z_index_1 height_10vh display_flex_flow">
 
-          <span class="margin_auto position_relative float_left top_0">
+            <span class="margin_auto position_relative float_left top_0">
 
-          <span class="margin_auto position_relative float_left top_1vh">
+            <span class="margin_auto position_relative float_left top_1vh">
 
-          <span class="position_relative hover_top_0 top_-1vh easing_01 background_light_yellow_9 width_100 text_align_center float_right display_webkit_box webkit_box_pack_center webkit_box_align  pseudo_button_bottom_dark_yellow_8 pseudo_button_bottom_dark_yellow_8_shadow_border_02 pseudo_hover">
+            <span class="position_relative hover_top_0 top_-1vh easing_01 background_light_yellow_9 width_100 text_align_center float_right display_flex_flow  pseudo_button_bottom_dark_yellow_8 pseudo_button_bottom_dark_yellow_8_shadow_border_02 pseudo_hover">
 
-          <span class=" position_absolute top_0 left_0 right_0 float_left calc_05vh margin_auto display_webkit_box webkit_box_pack_center webkit_box_align border_025vh_dark_yellow_9 background_dark_yellow_0">
+            <span class=" position_absolute top_0 left_0 right_0 float_left calc_05vh margin_auto display_flex_flow border_025vh_dark_yellow_9 background_dark_yellow_0">
 
-          </span>
-
-          <span class="position_relative text_align_center font_size_2vh line_height_3vh padding_1vh float_right">
-
-          </span>
-
-          <span id="wp_component_meta" class="position_absolute width_25vh right_0 left_0 bottom_100 float_left line_height_5vh font_size_205vh text_shadow_01vh_dark_yellow_1 margin_205vh_bottom hover_show">
-            <span class="position_relative top_0vh left_0vh easing_01 margin_2vh calc_4vh_width border_025vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9 box_shadow_hover_none background_light_yellow_0 text_align_center float_right pseudo_arrow_bottom_left_outside_light_yellow_0">
-              <div class="overflow_hidden width_100 height_100 position_relative top_0 left_0 display_webkit_box webkit_box_pack_center webkit_box_align">
-                <div class="calc_2vh_width margin_1vh position_relative float_left">
-                  <p class="font_size_2vh line_height_205vh">
-                  simple
-                  </p>
-                </div>
-              </div>
             </span>
-          </span>
+
+            <span id="wp_component_meta" class="position_absolute width_25vh right_0 left_0 bottom_100 float_left line_height_5vh font_size_205vh text_shadow_01vh_dark_yellow_1 margin_205vh_bottom hover_show">
+              <span class="position_relative top_0vh left_0vh easing_01 margin_2vh calc_4vh_width border_025vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9 box_shadow_hover_none background_light_yellow_0 text_align_center float_right pseudo_arrow_bottom_left_outside_light_yellow_0">
+                <div class="overflow_hidden width_100 height_100 position_relative top_0 left_0 display_flex_flow">
+                  <div class="calc_2vh_width margin_1vh position_relative float_left">
+                    <p class="font_size_2vh line_height_205vh">
+                    simple
+                    </p>
+                  </div>
+                </div>
+              </span>
+            </span>
+
+            </span>
+
+            </span>
+
+            </span>
 
           </span>
 
-          </span>
+        </div>
+
+        <div id="component_app_gui_bottom_center" class="display_none opacity_0 easing_01 transform_translate3d_top0 float_left display_flex_flow position_fixed calc_20vh_width bottom_0 left_0 right_0 margin_auto z_index_7">
+
+          <span class="height_10vh margin_auto position_relative margin_auto z_index_1 display_flex_flow">
+
+            <span class="margin_auto position_relative float_left top_0">
+
+            <span class="margin_auto position_relative float_left top_1vh">
+
+            <span class="position_relative hover_top_0 top_-1vh easing_01 background_light_yellow_9 width_100 text_align_center float_right display_flex_flow  pseudo_button_bottom_dark_yellow_8 pseudo_button_bottom_dark_yellow_8_shadow_border_02 pseudo_hover">
+
+            <span class=" position_absolute top_0 left_0 right_0 float_left calc_05vh margin_auto display_flex_flow border_025vh_dark_yellow_9 background_dark_yellow_0">
+
+            </span>
+
+            <span class="position_relative text_align_center font_size_2vh line_height_3vh padding_1vh float_right">
+
+            </span>
+
+            <span id="wp_component_meta" class="position_absolute width_25vh right_0 left_0 bottom_100 float_left line_height_5vh font_size_205vh text_shadow_01vh_dark_yellow_1 margin_205vh_bottom hover_show">
+              <span class="position_relative top_0vh left_0vh easing_01 margin_2vh calc_4vh_width border_025vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9 box_shadow_hover_none background_light_yellow_0 text_align_center float_right pseudo_arrow_bottom_left_outside_light_yellow_0">
+                <div class="overflow_hidden width_100 height_100 position_relative top_0 left_0 display_flex_flow">
+                  <div class="calc_2vh_width margin_1vh position_relative float_left">
+                    <p class="font_size_2vh line_height_205vh">
+                    simple
+                    </p>
+                  </div>
+                </div>
+              </span>
+            </span>
+
+            </span>
+
+            </span>
+
+            </span>
 
           </span>
 
-        </span>
+        </div>
+
+        <div id="component_app_gui_bottom_right" class="display_none opacity_0 easing_01 transform_translate3d_top0 width_10vh height_10vh float_left position_fixed bottom_0 right_0 margin_auto z_index_7 display_flex_flow">
+
+          <span class="margin_auto position_relative margin_auto z_index_1 display_flex_flow">
+
+            <span class="margin_auto position_relative float_left top_0">
+
+            <span class="margin_auto position_relative float_left top_1vh">
+
+            <span class="position_relative hover_top_0 top_-1vh easing_01 background_light_yellow_9 width_100 text_align_center float_right display_flex_flow  pseudo_button_bottom_dark_yellow_8 pseudo_button_bottom_dark_yellow_8_shadow_border_02 pseudo_hover">
+
+            <span class=" position_absolute top_0 left_0 right_0 float_left calc_05vh margin_auto display_flex_flow border_025vh_dark_yellow_9 background_dark_yellow_0">
+
+            </span>
+
+            <span class="position_relative text_align_center font_size_2vh line_height_3vh padding_1vh float_right">
+
+            </span>
+
+            <span id="wp_component_meta" class="position_absolute width_25vh right_0 left_0 bottom_100 float_left line_height_5vh font_size_205vh text_shadow_01vh_dark_yellow_1 margin_205vh_bottom hover_show">
+              <span class="position_relative top_0vh left_0vh easing_01 margin_2vh calc_4vh_width border_025vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9 box_shadow_hover_none background_light_yellow_0 text_align_center float_right pseudo_arrow_bottom_left_outside_light_yellow_0">
+                <div class="overflow_hidden width_100 height_100 position_relative top_0 left_0 display_flex_flow">
+                  <div class="calc_2vh_width margin_1vh position_relative float_left">
+                    <p class="font_size_2vh line_height_205vh">
+                    simple
+                    </p>
+                  </div>
+                </div>
+              </span>
+            </span>
+
+            </span>
+
+            </span>
+
+            </span>
+
+          </span>
 
         </div>
     `
@@ -1806,7 +5583,7 @@ let element_interaction_player = () => {
         \
       </div>\
       \
-      <div id="component_app_interaction_helper_body" class="easing_025 width_100 height_100 margin_auto position_absolute bottom_0 left_0 float_left margin_auto interaction_workspace_man_standing_1">\
+      <div id="component_app_interaction_helper_body" class="easing_01 width_100 height_100 margin_auto position_absolute bottom_0 left_0 float_left margin_auto interaction_workspace_man_standing_1">\
         \
       </div>\
       \
@@ -1841,7 +5618,7 @@ let element_effect_vignette = () => {
 
 
 let element_nav_top = '\
-    <div id="component_app_modal_element_nav_top" class="easing_01 display_none opacity_0 easing_01 transform_translate3d_top0 position_fixed top_0 left_0 right_0 height_10vh width_100 display_webkit_box webkit_box_pack_center webkit_box_align z_index_1 ">\
+    <div id="component_app_modal_element_nav_top" class="easing_01 display_none opacity_0 easing_01 transform_translate3d_top0 position_fixed top_0 left_0 right_0 height_10vh width_100 display_flex_flow z_index_1 ">\
       \
     </div>\
     '
@@ -1849,14 +5626,14 @@ let element_nav_top = '\
 let element_nav_left = '\
     <div id="component_app_modal_element_nav_left" class="easing_01 transform_translate3d_left0 display_none opacity_0 position_fixed top_0 left_0 bottom_0 height_100 width_10vh z_index_1 margin_auto">\
       \
-      <div class="position_absolute bottom_0 left_0 right_0 float_left calc_02vh display_webkit_box webkit_box_pack_center webkit_box_align border_01vh_dark_yellow_9">\
+      <div class="position_absolute bottom_0 left_0 right_0 float_left calc_02vh display_flex_flow border_01vh_dark_yellow_9">\
       </div>\
       \
     </div>\
     '
 
 let element_nav_bottom = '\
-    <div id="component_app_modal_element_nav_bottom" class="easing_01 transform_translate3d_top0 display_none opacity_0 position_fixed bottom_0 left_0 right_0 height_10vh width_100 z_index_1 display_webkit_box webkit_box_pack_center webkit_box_align margin_auto">\
+    <div id="component_app_modal_element_nav_bottom" class="easing_01 transform_translate3d_top0 display_none opacity_0 position_fixed bottom_0 left_0 right_0 height_10vh width_100 z_index_1 display_flex_flow margin_auto">\
       \
     </div>\
     '
@@ -2923,6 +6700,7 @@ let element_gradient_right = '\
 
 export default {
   element_gradient,
+  element_gui_scroll_y,
   element_slider_1,
   element_slider_2,
   element_slider_3,

@@ -90,9 +90,10 @@ let colors = [
 
       </div>
 
+      ${imported_elements.element_gui_scroll_y()}
 
       ${imported_elements.element_gradient('gradient_light_yellow_0_bottom')}
-
+      
       ${imported_elements.element_title('feature: element_slider_1')}
 
       ${imported_elements.element_container(
@@ -103,72 +104,72 @@ let colors = [
                       (
                         imported_elements.element_slider_1()
                       ),
-                      'calc_02vh min_height_33vh float_left position_relative border_01vh_dark_yellow_9 background_light_yellow_9'),
-                      'min_height_33vh width_33 float_left position_relative background_light_yellow_0') +
+                      'calc_02vh min_height_33vh float_left position_relative border_01vh_dark_yellow_9 background_light_yellow_9 display_flex_flow'),
+                      'min_height_33vh width_33 float_left position_relative background_light_yellow_0 ') +
 
                 imported_elements.element_container(
                     imported_elements.element_container(
                       (
                         imported_elements.element_slider_2()
                       ),
-                      'calc_02vh min_height_33vh float_left position_relative border_01vh_dark_yellow_9 background_light_yellow_9'),
-                      'min_height_33vh width_33 float_left position_relative background_light_yellow_0') +
+                      'calc_02vh min_height_33vh float_left position_relative border_01vh_dark_yellow_9 background_light_yellow_9 display_flex_flow'),
+                      'min_height_33vh width_33 float_left position_relative background_light_yellow_0 ') +
 
                 imported_elements.element_container(
                     imported_elements.element_container(
                       (
                         imported_elements.element_slider_3()
                       ),
-                      'calc_02vh min_height_33vh float_left position_relative border_01vh_dark_yellow_9 background_light_yellow_9'),
-                      'min_height_33vh width_33 float_left position_relative background_light_yellow_0') +
+                      'calc_02vh min_height_33vh float_left position_relative border_01vh_dark_yellow_9 background_light_yellow_9 display_flex_flow'),
+                      'min_height_33vh width_33 float_left position_relative background_light_yellow_0 ') +
 
                 imported_elements.element_container(
                     imported_elements.element_container(
                       (
                         imported_elements.element_slider_4()
                       ),
-                      'calc_02vh min_height_33vh float_left position_relative border_01vh_dark_yellow_9 background_light_yellow_9'),
-                      'min_height_33vh width_33 float_left position_relative background_light_yellow_0') +
+                      'calc_02vh min_height_33vh float_left position_relative border_01vh_dark_yellow_9 background_light_yellow_9 display_flex_flow'),
+                      'min_height_33vh width_33 float_left position_relative background_light_yellow_0 ') +
 
                 imported_elements.element_container(
                     imported_elements.element_container(
                       (
                         imported_elements.element_slider_5()
                       ),
-                      'calc_02vh min_height_33vh float_left position_relative border_01vh_dark_yellow_9 background_light_yellow_9'),
-                      'min_height_33vh width_33 float_left position_relative background_light_yellow_0') +
+                      'calc_02vh min_height_33vh float_left position_relative border_01vh_dark_yellow_9 background_light_yellow_9 display_flex_flow'),
+                      'min_height_33vh width_33 float_left position_relative background_light_yellow_0 ') +
 
                 imported_elements.element_container(
                     imported_elements.element_container(
                       (
                         imported_elements.element_slider_6()
                       ),
-                      'calc_02vh min_height_33vh float_left position_relative border_01vh_dark_yellow_9 background_light_yellow_9'),
-                      'min_height_33vh width_33 float_left position_relative background_light_yellow_0') +
+                      'calc_02vh min_height_33vh float_left position_relative border_01vh_dark_yellow_9 background_light_yellow_9 display_flex_flow'),
+                      'min_height_33vh width_33 float_left position_relative background_light_yellow_0 ') +
 
                 imported_elements.element_container(
                     imported_elements.element_container(
                       (
                         imported_elements.element_slider_7()
                       ),
-                      'calc_02vh min_height_33vh float_left position_relative border_01vh_dark_yellow_9 background_light_yellow_9'),
-                      'min_height_33vh width_33 float_left position_relative background_light_yellow_0') +
+                      'calc_02vh min_height_33vh float_left position_relative border_01vh_dark_yellow_9 background_light_yellow_9 display_flex_flow'),
+                      'min_height_33vh width_33 float_left position_relative background_light_yellow_0 ') +
 
                 imported_elements.element_container(
                     imported_elements.element_container(
                       (
                         imported_elements.element_slider_7()
                       ),
-                      'calc_02vh min_height_33vh float_left position_relative border_01vh_dark_yellow_9 background_light_yellow_9'),
-                      'min_height_33vh width_33 float_left position_relative background_light_yellow_0') +
+                      'calc_02vh min_height_33vh float_left position_relative border_01vh_dark_yellow_9 background_light_yellow_9 display_flex_flow'),
+                      'min_height_33vh width_33 float_left position_relative background_light_yellow_0 ') +
 
                 imported_elements.element_container(
                     imported_elements.element_container(
                       (
                         imported_elements.wp_home_posts()
                       ),
-                      'calc_02vh min_height_33vh float_left position_relative border_01vh_dark_yellow_9 background_light_yellow_9'),
-                      'min_height_33vh width_33 float_left position_relative background_light_yellow_0')
+                      'calc_02vh min_height_33vh float_left position_relative border_01vh_dark_yellow_9 background_light_yellow_9 display_flex_flow'),
+                      'min_height_33vh width_33 float_left position_relative background_light_yellow_0 ')
               ),
 
         'calc_10vh padding_5vh float_left position_relative background_light_yellow_0')
