@@ -226,7 +226,6 @@ let Handle_Firebase_Refs_and_Render = () => {
 
                         }, 1000);
                         console.clear();
-                        Handle_EventListeners();
                     }, 0);
 
                 };
@@ -641,24 +640,25 @@ let Handle_check_states = () => {
 
 let Handle_get_state_from_events = () => {
     state = imported_events.Handle_return_state_from_events();
+    values_update();
     console.log('state in index from events');
     // console.log(state);
 };
 
 let Handle_EventListeners = () => {
 
-    if (document.getElementById('component_app_gui_top_left') != null) {
+        alert ('Handle_EventListeners');
 
         document.getElementById('component_app_gui_logo_icon').addEventListener("click", function(event) {
             state.ui.modal.page.bottom.display = true;
             state.ui.modal.page.bottom.transform = !state.ui.modal.page.bottom.transform;
-            alert('yo');
+            alert(state.ui.modal.page.bottom.transform);
         });
 
         document.getElementById('component_app_gui_menu_icon').addEventListener("click", function(event) {
             state.ui.modal.nav.top.display = true;
             state.ui.modal.nav.top.transform = !state.ui.modal.nav.top.transform;
-            alert('yo');
+            alert(state.ui.modal.nav.top.transform);
         });
 
         document.getElementById('component_app_gui_top_left').addEventListener("click", function(event) {
@@ -1172,9 +1172,6 @@ let Handle_EventListeners = () => {
         document.getElementById('component_app_status_transform_overlay_right').addEventListener("click", function(event) {
             state.ui.modal.overlay.right.transform = !state.ui.modal.overlay.right.transform;
         });
-
-    };
-
 };
 
 // Create
@@ -1539,8 +1536,11 @@ window.onload = () => {
     // render firebase data
     Handle_Firebase_Refs_and_Render();
 
+    // render route: null
     Handle_check_route(state.app.route);
 
+    // add events
+    Handle_EventListeners();
 
     // start timer
     (() => {
@@ -2744,5 +2744,6 @@ window.onresize = () => {
 export default {
   Handle_get_state_from_events,
   Handle_return_state,
-  Handle_check_route
+  Handle_check_route,
+  values_update
 };

@@ -10,7 +10,6 @@ let colors = [
     innerHTML: `
 
     <div id="component">
-      ${imported_elements.element_guis()}
       ${imported_elements.element_pop_top}
       ${imported_elements.element_pop_left}
       ${imported_elements.element_pop_bottom}
@@ -55,6 +54,8 @@ let colors = [
       ${imported_elements.element_nav_left}
       ${imported_elements.element_nav_bottom}
       ${imported_elements.element_nav_right}
+      
+      ${imported_elements.element_guis()}
     </div>
 
     <div id="component" class="width_100 height_100vh float_left position_fixed top_0 left_0 display opacity_1 overflow_hidden">

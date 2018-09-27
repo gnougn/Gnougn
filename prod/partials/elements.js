@@ -4980,42 +4980,42 @@ let stage_outside = () => {
 let component_app_stage_enneagon = () => {
 
   let component = '\
-    <span id="component_app_stage_enneagon" class="display_none opacity_0 transform_translate3d_top0 easing_01 position_absolute top_0 left_0 right_0 width_100vw height_100vh display_flex_flow">\
+    <span id="component_app_stage_enneagon" class="display_none opacity_0 transform_translate3d_top0 easing_01 position_absolute top_0 left_0 right_0 width_100vw height_100vh webkit_box_pack_center webkit_box_align display_webkit_box">\
     <span id="column1" class="position_relative float_left width_100vw height_100vh easing_01">\
-    <span class="width_100 height_100 float_left position_relative overflow_hidden display_flex_flow">\
+    <span class="width_100 height_100 float_left position_relative overflow_hidden webkit_box_pack_center webkit_box_align display_webkit_box">\
     <div class="width_100 height_100 position_absolute top_0 left_0 bottom_0 right_0 margin_auto overflow_hidden ">\
             ' + stage_outside() + '\
     </div>landing1 Left Top</span>\
-    <span class="width_100 height_100 float_left position_relative overflow_hidden display_flex_flow">\
+    <span class="width_100 height_100 float_left position_relative overflow_hidden webkit_box_pack_center webkit_box_align display_webkit_box">\
     <div class="width_100 height_100 position_absolute top_0 left_0 bottom_0 right_0 margin_auto overflow_hidden ">\
     \
     </div>landing2 Left Center</span>\
-    <span class="width_100 height_100 float_left position_relative overflow_hidden display_flex_flow">\
+    <span class="width_100 height_100 float_left position_relative overflow_hidden webkit_box_pack_center webkit_box_align display_webkit_box">\
     <div class="width_100 height_100 position_absolute top_0 left_0 bottom_0 right_0 margin_auto overflow_hidden ">\
             ' + stage_sky() + '\
     </div>landing2 Left Bottom</span>\
     </span>\
     <span id="column1" class="position_relative float_left width_100vw height_100vh">\
-    <span class="width_100 height_100 float_left position_relative overflow_hidden display_flex_flow">\
+    <span class="width_100 height_100 float_left position_relative overflow_hidden webkit_box_pack_center webkit_box_align display_webkit_box">\
     <div class="width_100 height_100 position_absolute top_0 left_0 bottom_0 right_0 margin_auto overflow_hidden ">\
     </div>landing1 Center Top</span>\
-    <span class="width_100 height_100 float_left position_relative overflow_hidden display_flex_flow">\
+    <span class="width_100 height_100 float_left position_relative overflow_hidden webkit_box_pack_center webkit_box_align display_webkit_box">\
     <div class="width_100 height_100 position_absolute top_0 left_0 bottom_0 right_0 margin_auto overflow_hidden ">\
             ' + stage_office() + '\
             ' + pieces_workspace() + '\
             ' + pieces_office() + '\
     </div>landing2 Center Mid</span>\
-    <span class="width_100 height_100 float_left position_relative overflow_hidden display_flex_flow">\
+    <span class="width_100 height_100 float_left position_relative overflow_hidden webkit_box_pack_center webkit_box_align display_webkit_box">\
     <div class="width_100 height_100 position_absolute top_0 left_0 bottom_0 right_0 margin_auto overflow_hidden ">\
     </div>landing2 Center Bottom</span>\
     </span>\
     <span id="column1" class="position_relative float_left width_100vw height_100vh">\
-    <span class="width_100 height_100 float_left position_relative overflow_hidden display_flex_flow">\
+    <span class="width_100 height_100 float_left position_relative overflow_hidden webkit_box_pack_center webkit_box_align display_webkit_box">\
     <div class="width_100 height_100 position_absolute top_0 left_0 bottom_0 right_0 margin_auto overflow_hidden ">\
     </div>landing1 Right Top</span>\
-    <span class="width_100 height_100 float_left position_relative overflow_hidden display_flex_flow">\
+    <span class="width_100 height_100 float_left position_relative overflow_hidden webkit_box_pack_center webkit_box_align display_webkit_box">\
     <div class="width_100 height_100 position_absolute top_0 left_0 bottom_0 right_0 margin_auto overflow_hidden ">\
-    </div>landing2 Right Mid</span>  <span class="width_100 height_100 float_left position_relative overflow_hidden display_flex_flow">\
+    </div>landing2 Right Mid</span>  <span class="width_100 height_100 float_left position_relative overflow_hidden webkit_box_pack_center webkit_box_align display_webkit_box">\
     <div class="width_100 height_100 position_absolute top_0 left_0 bottom_0 right_0 margin_auto overflow_hidden ">\
     </div>landing2 Right Bottom</span>\
     </span>\

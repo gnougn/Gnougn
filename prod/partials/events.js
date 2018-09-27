@@ -815,7 +815,6 @@ if (!(/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent))) {
         // tab
         if (event.keyCode == 9) {
             console.log('tab');
-            from_index.Handle_check_route('reset');
         };
 
         // enter
@@ -833,7 +832,7 @@ if (!(/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent))) {
         // esc
         if (event.keyCode == 27) {
             console.log('esc');
-            state.ui.gui.top_left.display = !state.ui.gui.top_left.display;
+            from_index.Handle_check_route('home');
         };
 
         // arrow left
