@@ -5054,7 +5054,7 @@ let element_guis = () => {
 
             </span>
 
-            <span class="position_relative text_align_center font_size_2vh line_height_3vh padding_1vh float_right">
+            <span id="score_current_user" class="position_relative text_align_center font_size_2vh line_height_3vh padding_1vh float_right">
 
             </span>
 
@@ -5094,7 +5094,7 @@ let element_guis = () => {
 
             </span>
 
-            <span class="position_relative text_align_center font_size_2vh line_height_3vh padding_1vh float_right">
+            <span id="score_current_area" class="position_relative text_align_center font_size_2vh line_height_3vh padding_1vh float_right">
 
             </span>
 
@@ -5121,6 +5121,43 @@ let element_guis = () => {
         </div>
 
         <div id="component_app_gui_right" class="display_none opacity_0 easing_01 transform_translate3d_left0 width_10vh calc_20vh_height float_left position_fixed top_0 bottom_0 right_0 margin_auto z_index_7">
+
+          <span class="margin_auto position_absolute top_0 left_0 right_0 margin_auto margin_auto z_index_1 display_flex_flow">
+
+            <span class="margin_auto position_relative float_left top_0">
+
+            <span class="margin_auto position_relative float_left top_1vh">
+
+            <span class="position_relative hover_top_0 top_-1vh easing_01 background_light_green_9 width_100 text_align_center float_right display_flex_flow  pseudo_button_bottom_dark_yellow_8 pseudo_button_bottom_dark_yellow_8_shadow_border_02 pseudo_hover">
+
+            <span class=" position_absolute top_0 left_0 right_0 float_left calc_05vh margin_auto display_flex_flow border_025vh_dark_yellow_9 background_dark_yellow_0">
+
+            </span>
+
+            <span id="score_current_met" class="position_relative text_align_center font_size_2vh line_height_3vh padding_1vh float_right">
+
+            </span>
+
+            <span id="wp_component_meta" class="position_absolute width_25vh right_0 left_0 bottom_100 float_left line_height_5vh font_size_205vh text_shadow_01vh_dark_yellow_1 margin_205vh_bottom hover_show">
+              <span class="position_relative top_0vh left_0vh easing_01 margin_2vh calc_4vh_width border_025vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9 box_shadow_hover_none background_light_yellow_0 text_align_center float_right pseudo_arrow_bottom_left_outside_light_yellow_0">
+                <div class="overflow_hidden width_100 height_100 position_relative top_0 left_0 display_flex_flow">
+                  <div class="calc_2vh_width margin_1vh position_relative float_left">
+                    <p class="font_size_2vh line_height_205vh">
+                    Whats this
+                    </p>
+                  </div>
+                </div>
+              </span>
+            </span>
+
+            </span>
+
+            </span>
+
+            </span>
+
+          </span>
+
 
           <div class="position_absolute top_0 left_0 bottom_0 margin_auto width_10vh height_10vh float_right">
 
@@ -5163,19 +5200,23 @@ let element_guis = () => {
 
           </div>
 
-          <span class="margin_auto position_absolute top_0 left_0 right_0 margin_auto margin_auto z_index_1 display_flex_flow">
+        </div>
+
+        <div id="component_app_gui_left" class="display_none opacity_0 easing_01 transform_translate3d_left0 width_10vh calc_20vh_height float_left position_fixed top_0 bottom_0 left_0 margin_auto z_index_7">
+
+          <span class="margin_auto position_relative margin_auto z_index_1 display_flex_flow">
 
             <span class="margin_auto position_relative float_left top_0">
 
             <span class="margin_auto position_relative float_left top_1vh">
 
-            <span class="position_relative hover_top_0 top_-1vh easing_01 background_light_green_9 width_100 text_align_center float_right display_flex_flow  pseudo_button_bottom_dark_yellow_8 pseudo_button_bottom_dark_yellow_8_shadow_border_02 pseudo_hover">
+            <span class="position_relative hover_top_0 top_-1vh easing_01 background_light_yellow_9 width_100 text_align_center float_right display_flex_flow  pseudo_button_bottom_dark_yellow_8 pseudo_button_bottom_dark_yellow_8_shadow_border_02 pseudo_hover">
 
             <span class=" position_absolute top_0 left_0 right_0 float_left calc_05vh margin_auto display_flex_flow border_025vh_dark_yellow_9 background_dark_yellow_0">
 
             </span>
 
-            <span class="position_relative text_align_center font_size_2vh line_height_3vh padding_1vh float_right">
+            <span id="score_current_messages" class="position_relative text_align_center font_size_2vh line_height_3vh padding_1vh float_right">
 
             </span>
 
@@ -5184,7 +5225,7 @@ let element_guis = () => {
                 <div class="overflow_hidden width_100 height_100 position_relative top_0 left_0 display_flex_flow">
                   <div class="calc_2vh_width margin_1vh position_relative float_left">
                     <p class="font_size_2vh line_height_205vh">
-                    Whats this
+                    simple
                     </p>
                   </div>
                 </div>
@@ -5198,10 +5239,6 @@ let element_guis = () => {
             </span>
 
           </span>
-
-        </div>
-
-        <div id="component_app_gui_left" class="display_none opacity_0 easing_01 transform_translate3d_left0 width_10vh calc_20vh_height float_left position_fixed top_0 bottom_0 left_0 margin_auto z_index_7">
 
           <div class="position_absolute top_0 left_0 bottom_0 margin_auto width_10vh height_5vh float_right display_flex_flow">
 
@@ -5232,42 +5269,6 @@ let element_guis = () => {
 
           </div>
 
-          <span class="margin_auto position_relative margin_auto z_index_1 display_flex_flow">
-
-            <span class="margin_auto position_relative float_left top_0">
-
-            <span class="margin_auto position_relative float_left top_1vh">
-
-            <span class="position_relative hover_top_0 top_-1vh easing_01 background_light_yellow_9 width_100 text_align_center float_right display_flex_flow  pseudo_button_bottom_dark_yellow_8 pseudo_button_bottom_dark_yellow_8_shadow_border_02 pseudo_hover">
-
-            <span class=" position_absolute top_0 left_0 right_0 float_left calc_05vh margin_auto display_flex_flow border_025vh_dark_yellow_9 background_dark_yellow_0">
-
-            </span>
-
-            <span class="position_relative text_align_center font_size_2vh line_height_3vh padding_1vh float_right">
-
-            </span>
-
-            <span id="wp_component_meta" class="position_absolute width_25vh right_0 left_0 bottom_100 float_left line_height_5vh font_size_205vh text_shadow_01vh_dark_yellow_1 margin_205vh_bottom hover_show">
-              <span class="position_relative top_0vh left_0vh easing_01 margin_2vh calc_4vh_width border_025vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9 box_shadow_hover_none background_light_yellow_0 text_align_center float_right pseudo_arrow_bottom_left_outside_light_yellow_0">
-                <div class="overflow_hidden width_100 height_100 position_relative top_0 left_0 display_flex_flow">
-                  <div class="calc_2vh_width margin_1vh position_relative float_left">
-                    <p class="font_size_2vh line_height_205vh">
-                    simple
-                    </p>
-                  </div>
-                </div>
-              </span>
-            </span>
-
-            </span>
-
-            </span>
-
-            </span>
-
-          </span>
-
         </div>
 
         <div id="component_app_gui_bottom_left" class="display_none opacity_0 easing_01 transform_translate3d_top0 width_10vh height_10vh float_left position_fixed bottom_0 left_0 margin_auto z_index_7">
@@ -5289,7 +5290,7 @@ let element_guis = () => {
 
             <span class="position_relative hover_top_0 top_-1vh easing_01 background_light_yellow_9 width_100 text_align_center float_right display_flex_flow  pseudo_button_bottom_dark_yellow_8 pseudo_button_bottom_dark_yellow_8_shadow_border_02 pseudo_hover">
 
-            <span class=" position_absolute top_0 left_0 right_0 float_left calc_05vh margin_auto display_flex_flow border_025vh_dark_yellow_9 background_dark_yellow_0">
+            <span id="score_current_data" class=" position_absolute top_0 left_0 right_0 float_left calc_05vh margin_auto display_flex_flow border_025vh_dark_yellow_9 background_dark_yellow_0">
 
             </span>
 
@@ -5329,7 +5330,7 @@ let element_guis = () => {
 
             </span>
 
-            <span class="position_relative text_align_center font_size_2vh line_height_3vh padding_1vh float_right">
+            <span id="score_current_fans" class="position_relative text_align_center font_size_2vh line_height_3vh padding_1vh float_right">
 
             </span>
 
@@ -5369,7 +5370,7 @@ let element_guis = () => {
 
             </span>
 
-            <span class="position_relative text_align_center font_size_2vh line_height_3vh padding_1vh float_right">
+            <span id="score_current_likes" class="position_relative text_align_center font_size_2vh line_height_3vh padding_1vh float_right">
 
             </span>
 

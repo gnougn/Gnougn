@@ -5,12 +5,13 @@ import from_index from '../index.js';
       let state = from_index.Handle_return_state();
 
       if (document.getElementById('score_current_area') != null) {
-          document.getElementById('score_current_area').innerText = state.data.score.current.area;
-          document.getElementById('score_current_met').innerText = state.data.score.current.met;
-      };
-
-      if (document.getElementById('time') != null) {
-          document.getElementById('time').innerText = time;
+          document.getElementById('score_current_area').innerText = `area: ${state.data.score.current.area}`;
+          document.getElementById('score_current_met').innerText = `met: ${state.data.score.current.met}`;
+          document.getElementById('score_current_user').innerText = `user: ${state.data.score.current.met}`;
+          document.getElementById('score_current_fans').innerText = `fans: ${state.data.score.current.met}`;
+          document.getElementById('score_current_messages').innerText = `messages: ${state.data.score.current.met}`;
+          document.getElementById('score_current_likes').innerText = `data: ${state.data.score.current.met}`;
+          document.getElementById('score_current_data').innerText = `data: ${state.data.score.current.met}`;
       };
 
       // page

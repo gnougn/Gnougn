@@ -69,7 +69,7 @@ require = (function (modules, cache, entry) {
 
   // Override the current require with this new one
   return newRequire;
-})({112:[function(require,module,exports) {
+})({5:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -916,7 +916,7 @@ exports.default = {
   from_Import,
   default_state
 };
-},{}],113:[function(require,module,exports) {
+},{}],6:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -1220,7 +1220,7 @@ exports.default = {
   Toggle_display_and_opacity_on_with_no_delay,
   Toggle_display_and_opacity_off_with_delay
 };
-},{"../index.js":3}],114:[function(require,module,exports) {
+},{"../index.js":3}],7:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -1843,19 +1843,13 @@ if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
 
     // enter
     if (event.keyCode == 13) {
-
-      state.ui.gui.scroll.y.display = true;
-      state.ui.gui.scroll.y.opacity = true;
-
-      setTimeout(function () {
-        state.ui.gui.scroll.y.transform = !state.ui.gui.scroll.y.transform;
-      }, 1000);
+      _index2.default.Handle_check_route('start');
     };
 
     // esc
     if (event.keyCode == 27) {
       console.log('esc');
-      _index2.default.Handle_check_route('home');
+      _index2.default.Handle_check_route('reset');
     };
 
     // arrow left
@@ -6972,7 +6966,7 @@ let element_guis = () => {
 
             </span>
 
-            <span class="position_relative text_align_center font_size_2vh line_height_3vh padding_1vh float_right">
+            <span id="score_current_user" class="position_relative text_align_center font_size_2vh line_height_3vh padding_1vh float_right">
 
             </span>
 
@@ -7012,7 +7006,7 @@ let element_guis = () => {
 
             </span>
 
-            <span class="position_relative text_align_center font_size_2vh line_height_3vh padding_1vh float_right">
+            <span id="score_current_area" class="position_relative text_align_center font_size_2vh line_height_3vh padding_1vh float_right">
 
             </span>
 
@@ -7039,6 +7033,43 @@ let element_guis = () => {
         </div>
 
         <div id="component_app_gui_right" class="display_none opacity_0 easing_01 transform_translate3d_left0 width_10vh calc_20vh_height float_left position_fixed top_0 bottom_0 right_0 margin_auto z_index_7">
+
+          <span class="margin_auto position_absolute top_0 left_0 right_0 margin_auto margin_auto z_index_1 display_flex_flow">
+
+            <span class="margin_auto position_relative float_left top_0">
+
+            <span class="margin_auto position_relative float_left top_1vh">
+
+            <span class="position_relative hover_top_0 top_-1vh easing_01 background_light_green_9 width_100 text_align_center float_right display_flex_flow  pseudo_button_bottom_dark_yellow_8 pseudo_button_bottom_dark_yellow_8_shadow_border_02 pseudo_hover">
+
+            <span class=" position_absolute top_0 left_0 right_0 float_left calc_05vh margin_auto display_flex_flow border_025vh_dark_yellow_9 background_dark_yellow_0">
+
+            </span>
+
+            <span id="score_current_met" class="position_relative text_align_center font_size_2vh line_height_3vh padding_1vh float_right">
+
+            </span>
+
+            <span id="wp_component_meta" class="position_absolute width_25vh right_0 left_0 bottom_100 float_left line_height_5vh font_size_205vh text_shadow_01vh_dark_yellow_1 margin_205vh_bottom hover_show">
+              <span class="position_relative top_0vh left_0vh easing_01 margin_2vh calc_4vh_width border_025vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9 box_shadow_hover_none background_light_yellow_0 text_align_center float_right pseudo_arrow_bottom_left_outside_light_yellow_0">
+                <div class="overflow_hidden width_100 height_100 position_relative top_0 left_0 display_flex_flow">
+                  <div class="calc_2vh_width margin_1vh position_relative float_left">
+                    <p class="font_size_2vh line_height_205vh">
+                    Whats this
+                    </p>
+                  </div>
+                </div>
+              </span>
+            </span>
+
+            </span>
+
+            </span>
+
+            </span>
+
+          </span>
+
 
           <div class="position_absolute top_0 left_0 bottom_0 margin_auto width_10vh height_10vh float_right">
 
@@ -7081,19 +7112,23 @@ let element_guis = () => {
 
           </div>
 
-          <span class="margin_auto position_absolute top_0 left_0 right_0 margin_auto margin_auto z_index_1 display_flex_flow">
+        </div>
+
+        <div id="component_app_gui_left" class="display_none opacity_0 easing_01 transform_translate3d_left0 width_10vh calc_20vh_height float_left position_fixed top_0 bottom_0 left_0 margin_auto z_index_7">
+
+          <span class="margin_auto position_relative margin_auto z_index_1 display_flex_flow">
 
             <span class="margin_auto position_relative float_left top_0">
 
             <span class="margin_auto position_relative float_left top_1vh">
 
-            <span class="position_relative hover_top_0 top_-1vh easing_01 background_light_green_9 width_100 text_align_center float_right display_flex_flow  pseudo_button_bottom_dark_yellow_8 pseudo_button_bottom_dark_yellow_8_shadow_border_02 pseudo_hover">
+            <span class="position_relative hover_top_0 top_-1vh easing_01 background_light_yellow_9 width_100 text_align_center float_right display_flex_flow  pseudo_button_bottom_dark_yellow_8 pseudo_button_bottom_dark_yellow_8_shadow_border_02 pseudo_hover">
 
             <span class=" position_absolute top_0 left_0 right_0 float_left calc_05vh margin_auto display_flex_flow border_025vh_dark_yellow_9 background_dark_yellow_0">
 
             </span>
 
-            <span class="position_relative text_align_center font_size_2vh line_height_3vh padding_1vh float_right">
+            <span id="score_current_messages" class="position_relative text_align_center font_size_2vh line_height_3vh padding_1vh float_right">
 
             </span>
 
@@ -7102,7 +7137,7 @@ let element_guis = () => {
                 <div class="overflow_hidden width_100 height_100 position_relative top_0 left_0 display_flex_flow">
                   <div class="calc_2vh_width margin_1vh position_relative float_left">
                     <p class="font_size_2vh line_height_205vh">
-                    Whats this
+                    simple
                     </p>
                   </div>
                 </div>
@@ -7116,10 +7151,6 @@ let element_guis = () => {
             </span>
 
           </span>
-
-        </div>
-
-        <div id="component_app_gui_left" class="display_none opacity_0 easing_01 transform_translate3d_left0 width_10vh calc_20vh_height float_left position_fixed top_0 bottom_0 left_0 margin_auto z_index_7">
 
           <div class="position_absolute top_0 left_0 bottom_0 margin_auto width_10vh height_5vh float_right display_flex_flow">
 
@@ -7150,42 +7181,6 @@ let element_guis = () => {
 
           </div>
 
-          <span class="margin_auto position_relative margin_auto z_index_1 display_flex_flow">
-
-            <span class="margin_auto position_relative float_left top_0">
-
-            <span class="margin_auto position_relative float_left top_1vh">
-
-            <span class="position_relative hover_top_0 top_-1vh easing_01 background_light_yellow_9 width_100 text_align_center float_right display_flex_flow  pseudo_button_bottom_dark_yellow_8 pseudo_button_bottom_dark_yellow_8_shadow_border_02 pseudo_hover">
-
-            <span class=" position_absolute top_0 left_0 right_0 float_left calc_05vh margin_auto display_flex_flow border_025vh_dark_yellow_9 background_dark_yellow_0">
-
-            </span>
-
-            <span class="position_relative text_align_center font_size_2vh line_height_3vh padding_1vh float_right">
-
-            </span>
-
-            <span id="wp_component_meta" class="position_absolute width_25vh right_0 left_0 bottom_100 float_left line_height_5vh font_size_205vh text_shadow_01vh_dark_yellow_1 margin_205vh_bottom hover_show">
-              <span class="position_relative top_0vh left_0vh easing_01 margin_2vh calc_4vh_width border_025vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9 box_shadow_hover_none background_light_yellow_0 text_align_center float_right pseudo_arrow_bottom_left_outside_light_yellow_0">
-                <div class="overflow_hidden width_100 height_100 position_relative top_0 left_0 display_flex_flow">
-                  <div class="calc_2vh_width margin_1vh position_relative float_left">
-                    <p class="font_size_2vh line_height_205vh">
-                    simple
-                    </p>
-                  </div>
-                </div>
-              </span>
-            </span>
-
-            </span>
-
-            </span>
-
-            </span>
-
-          </span>
-
         </div>
 
         <div id="component_app_gui_bottom_left" class="display_none opacity_0 easing_01 transform_translate3d_top0 width_10vh height_10vh float_left position_fixed bottom_0 left_0 margin_auto z_index_7">
@@ -7207,7 +7202,7 @@ let element_guis = () => {
 
             <span class="position_relative hover_top_0 top_-1vh easing_01 background_light_yellow_9 width_100 text_align_center float_right display_flex_flow  pseudo_button_bottom_dark_yellow_8 pseudo_button_bottom_dark_yellow_8_shadow_border_02 pseudo_hover">
 
-            <span class=" position_absolute top_0 left_0 right_0 float_left calc_05vh margin_auto display_flex_flow border_025vh_dark_yellow_9 background_dark_yellow_0">
+            <span id="score_current_data" class=" position_absolute top_0 left_0 right_0 float_left calc_05vh margin_auto display_flex_flow border_025vh_dark_yellow_9 background_dark_yellow_0">
 
             </span>
 
@@ -7247,7 +7242,7 @@ let element_guis = () => {
 
             </span>
 
-            <span class="position_relative text_align_center font_size_2vh line_height_3vh padding_1vh float_right">
+            <span id="score_current_fans" class="position_relative text_align_center font_size_2vh line_height_3vh padding_1vh float_right">
 
             </span>
 
@@ -7287,7 +7282,7 @@ let element_guis = () => {
 
             </span>
 
-            <span class="position_relative text_align_center font_size_2vh line_height_3vh padding_1vh float_right">
+            <span id="score_current_likes" class="position_relative text_align_center font_size_2vh line_height_3vh padding_1vh float_right">
 
             </span>
 
@@ -8678,7 +8673,7 @@ exports.default = {
   element_overlay_bottom,
   element_overlay_right
 };
-},{}],115:[function(require,module,exports) {
+},{}],9:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -8883,7 +8878,7 @@ let colors = [{
 exports.default = {
   colors
 };
-},{"./elements":123}],116:[function(require,module,exports) {
+},{"./elements":123}],8:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -9311,7 +9306,7 @@ exports.default = {
   get_components_handled
 
 };
-},{"../index.js":3}],118:[function(require,module,exports) {
+},{"../index.js":3}],10:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -9329,12 +9324,13 @@ let values_update = () => {
   let state = _index2.default.Handle_return_state();
 
   if (document.getElementById('score_current_area') != null) {
-    document.getElementById('score_current_area').innerText = state.data.score.current.area;
-    document.getElementById('score_current_met').innerText = state.data.score.current.met;
-  };
-
-  if (document.getElementById('time') != null) {
-    document.getElementById('time').innerText = time;
+    document.getElementById('score_current_area').innerText = `area: ${state.data.score.current.area}`;
+    document.getElementById('score_current_met').innerText = `met: ${state.data.score.current.met}`;
+    document.getElementById('score_current_user').innerText = `user: ${state.data.score.current.met}`;
+    document.getElementById('score_current_fans').innerText = `fans: ${state.data.score.current.met}`;
+    document.getElementById('score_current_messages').innerText = `messages: ${state.data.score.current.met}`;
+    document.getElementById('score_current_likes').innerText = `data: ${state.data.score.current.met}`;
+    document.getElementById('score_current_data').innerText = `data: ${state.data.score.current.met}`;
   };
 
   // page
@@ -9882,7 +9878,7 @@ exports.default = {
   values_update,
   from_Import
 };
-},{"../index.js":3}],117:[function(require,module,exports) {
+},{"../index.js":3}],11:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -10402,36 +10398,36 @@ let Handle_check_route = (route, info) => {
         // gui
         setTimeout(function () {
 
-          state.ui.gui.top.display = true;
-          state.ui.gui.top.opacity = true;
+          state.ui.gui.top.display = false;
+          state.ui.gui.top.opacity = false;
           state.ui.gui.top.transform = false;
 
-          state.ui.gui.top_right.display = true;
-          state.ui.gui.top_right.opacity = true;
+          state.ui.gui.top_right.display = false;
+          state.ui.gui.top_right.opacity = false;
           state.ui.gui.top_right.transform = false;
 
           state.ui.gui.top_left.display = true;
           state.ui.gui.top_left.opacity = true;
           state.ui.gui.top_left.transform = false;
 
-          state.ui.gui.right.display = true;
-          state.ui.gui.right.opacity = true;
+          state.ui.gui.right.display = false;
+          state.ui.gui.right.opacity = false;
           state.ui.gui.right.transform = false;
 
-          state.ui.gui.left.display = true;
-          state.ui.gui.left.opacity = true;
+          state.ui.gui.left.display = false;
+          state.ui.gui.left.opacity = false;
           state.ui.gui.left.transform = false;
 
-          state.ui.gui.bottom.display = true;
-          state.ui.gui.bottom.opacity = true;
+          state.ui.gui.bottom.display = false;
+          state.ui.gui.bottom.opacity = false;
           state.ui.gui.bottom.transform = false;
 
-          state.ui.gui.bottom_right.display = true;
-          state.ui.gui.bottom_right.opacity = true;
+          state.ui.gui.bottom_right.display = false;
+          state.ui.gui.bottom_right.opacity = false;
           state.ui.gui.bottom_right.transform = false;
 
-          state.ui.gui.bottom_left.display = true;
-          state.ui.gui.bottom_left.opacity = true;
+          state.ui.gui.bottom_left.display = false;
+          state.ui.gui.bottom_left.opacity = false;
           state.ui.gui.bottom_left.transform = false;
 
           state.ui.gui.scroll.y.display = false;
@@ -10595,11 +10591,40 @@ let Handle_check_route = (route, info) => {
       state.ui.modal.pop.right.transform = false;
     };
 
+    if (route == 'start') {
+
+      state.ui.gui.top_right.display = true;
+      state.ui.gui.top.display = true;
+      state.ui.gui.top_left.display = true;
+
+      state.ui.gui.left.display = true;
+      state.ui.gui.right.display = true;
+
+      state.ui.gui.bottom_right.display = true;
+      state.ui.gui.bottom.display = true;
+      state.ui.gui.bottom_left.display = true;
+
+      state.ui.modal.nav.bottom.transform = true;
+      state.ui.modal.nav.left.transform = true;
+      state.ui.modal.nav.top.transform = true;
+      state.ui.modal.nav.right.transform = true;
+
+      state.ui.modal.pop.bottom.transform = true;
+      state.ui.modal.pop.left.transform = true;
+      state.ui.modal.pop.top.transform = true;
+      state.ui.modal.pop.right.transform = true;
+
+      state.ui.modal.page.bottom.transform = true;
+      state.ui.modal.page.left.transform = true;
+      state.ui.modal.page.top.transform = true;
+      state.ui.modal.page.right.transform = true;
+    };
+
     if (route == 'home') {
 
       state.ui.gui.top_right.display = false;
       state.ui.gui.top.display = false;
-      // state.ui.gui.top_left.display = !state.ui.gui.top_left.display;
+      state.ui.gui.top_left.display = true;
 
       state.ui.gui.left.display = false;
       state.ui.gui.right.display = false;
@@ -10699,18 +10724,16 @@ let Handle_get_state_from_events = () => {
 
 let Handle_EventListeners = () => {
 
-  alert('Handle_EventListeners');
-
   document.getElementById('component_app_gui_logo_icon').addEventListener("click", function (event) {
-    state.ui.modal.page.bottom.display = true;
-    state.ui.modal.page.bottom.transform = !state.ui.modal.page.bottom.transform;
-    alert(state.ui.modal.page.bottom.transform);
-  });
-
-  document.getElementById('component_app_gui_menu_icon').addEventListener("click", function (event) {
     state.ui.modal.nav.top.display = true;
     state.ui.modal.nav.top.transform = !state.ui.modal.nav.top.transform;
     alert(state.ui.modal.nav.top.transform);
+  });
+
+  document.getElementById('component_app_gui_menu_icon').addEventListener("click", function (event) {
+    state.ui.modal.page.bottom.display = true;
+    state.ui.modal.page.bottom.transform = !state.ui.modal.page.bottom.transform;
+    alert(state.ui.modal.page.bottom.transform);
   });
 
   document.getElementById('component_app_gui_top_left').addEventListener("click", function (event) {});
@@ -11629,10 +11652,9 @@ window.onload = () => {
       let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
       let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
       let date = new Date();
-      let time = 'Today is ' + days[date.getDay()] + ', ' + months[date.getMonth()] + ', ' + date.getDay() + ', ' + date.getFullYear() + '. Current time: ' + date.getHours() + ':' + date.getMinutes() + '.' + date.getSeconds() + '.' + date.getMilliseconds();
-      console.log(time);
-      document.getElementById('time').innerText = time;
-      state.data.time = time;
+      state.data.time = 'Today is ' + days[date.getDay()] + ', ' + months[date.getMonth()] + ', ' + date.getDay() + ', ' + date.getFullYear() + '. Current time: ' + date.getHours() + ':' + date.getMinutes() + '.' + date.getSeconds() + '.' + date.getMilliseconds();
+      console.log(state.data.time);
+      document.getElementById('time').innerText = state.data.time;
     }, 1000);
   })();
 
@@ -12683,7 +12705,7 @@ exports.default = {
   Handle_check_route,
   values_update
 };
-},{"./partials/state":112,"./partials/functions":113,"./partials/events":114,"./partials/defaults":115,"./partials/components":116,"./partials/values":118,"./partials/ui":117}],0:[function(require,module,exports) {
+},{"./partials/state":5,"./partials/functions":6,"./partials/events":7,"./partials/defaults":9,"./partials/components":8,"./partials/values":10,"./partials/ui":11}],0:[function(require,module,exports) {
 var global = (1, eval)('this');
 var OldModule = module.bundle.Module;
 function Module() {
@@ -12701,7 +12723,7 @@ function Module() {
 module.bundle.Module = Module;
 
 if (!module.bundle.parent && typeof WebSocket !== 'undefined') {
-  var ws = new WebSocket('ws://' + window.location.hostname + ':62794/');
+  var ws = new WebSocket('ws://' + window.location.hostname + ':64338/');
   ws.onmessage = function(event) {
     var data = JSON.parse(event.data);
 

@@ -819,20 +819,13 @@ if (!(/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent))) {
 
         // enter
         if (event.keyCode == 13) {
-
-            state.ui.gui.scroll.y.display = true;
-            state.ui.gui.scroll.y.opacity = true;
-
-            setTimeout(function() {
-                state.ui.gui.scroll.y.transform = !state.ui.gui.scroll.y.transform;
-            }, 1000);
-
+            from_index.Handle_check_route('start');
         };
 
         // esc
         if (event.keyCode == 27) {
             console.log('esc');
-            from_index.Handle_check_route('home');
+            from_index.Handle_check_route('reset');
         };
 
         // arrow left

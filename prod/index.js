@@ -335,36 +335,36 @@ let Handle_check_route = (route, info) => {
                     // gui
                     setTimeout(function() {
 
-                        state.ui.gui.top.display = true;
-                        state.ui.gui.top.opacity = true;
+                        state.ui.gui.top.display = false;
+                        state.ui.gui.top.opacity = false;
                         state.ui.gui.top.transform = false;
 
-                        state.ui.gui.top_right.display = true;
-                        state.ui.gui.top_right.opacity = true;
+                        state.ui.gui.top_right.display = false;
+                        state.ui.gui.top_right.opacity = false;
                         state.ui.gui.top_right.transform = false;
 
                         state.ui.gui.top_left.display = true;
                         state.ui.gui.top_left.opacity = true;
                         state.ui.gui.top_left.transform = false;
 
-                        state.ui.gui.right.display = true;
-                        state.ui.gui.right.opacity = true;
+                        state.ui.gui.right.display = false;
+                        state.ui.gui.right.opacity = false;
                         state.ui.gui.right.transform = false;
 
-                        state.ui.gui.left.display = true;
-                        state.ui.gui.left.opacity = true;
+                        state.ui.gui.left.display = false;
+                        state.ui.gui.left.opacity = false;
                         state.ui.gui.left.transform = false;
 
-                        state.ui.gui.bottom.display = true;
-                        state.ui.gui.bottom.opacity = true;
+                        state.ui.gui.bottom.display = false;
+                        state.ui.gui.bottom.opacity = false;
                         state.ui.gui.bottom.transform = false;
 
-                        state.ui.gui.bottom_right.display = true;
-                        state.ui.gui.bottom_right.opacity = true;
+                        state.ui.gui.bottom_right.display = false;
+                        state.ui.gui.bottom_right.opacity = false;
                         state.ui.gui.bottom_right.transform = false;
 
-                        state.ui.gui.bottom_left.display = true;
-                        state.ui.gui.bottom_left.opacity = true;
+                        state.ui.gui.bottom_left.display = false;
+                        state.ui.gui.bottom_left.opacity = false;
                         state.ui.gui.bottom_left.transform = false;
 
                         state.ui.gui.scroll.y.display = false;
@@ -539,11 +539,41 @@ let Handle_check_route = (route, info) => {
         
         };
 
+        if (route == 'start') {
+
+            state.ui.gui.top_right.display = true;
+            state.ui.gui.top.display = true;
+            state.ui.gui.top_left.display = true;
+
+            state.ui.gui.left.display = true;
+            state.ui.gui.right.display = true;
+
+            state.ui.gui.bottom_right.display = true;
+            state.ui.gui.bottom.display = true;
+            state.ui.gui.bottom_left.display = true;
+
+            state.ui.modal.nav.bottom.transform = true;
+            state.ui.modal.nav.left.transform = true;
+            state.ui.modal.nav.top.transform = true;
+            state.ui.modal.nav.right.transform = true;
+
+            state.ui.modal.pop.bottom.transform = true;
+            state.ui.modal.pop.left.transform = true;
+            state.ui.modal.pop.top.transform = true;
+            state.ui.modal.pop.right.transform = true;
+
+            state.ui.modal.page.bottom.transform = true;
+            state.ui.modal.page.left.transform = true;
+            state.ui.modal.page.top.transform = true;
+            state.ui.modal.page.right.transform = true;
+
+        };
+
         if (route == 'home') {
 
             state.ui.gui.top_right.display = false;
             state.ui.gui.top.display = false;
-            // state.ui.gui.top_left.display = !state.ui.gui.top_left.display;
+            state.ui.gui.top_left.display = true;
 
             state.ui.gui.left.display = false;
             state.ui.gui.right.display = false;
@@ -568,6 +598,7 @@ let Handle_check_route = (route, info) => {
             state.ui.modal.page.right.transform = true;
 
         };
+
 
     })();
 
@@ -647,18 +678,16 @@ let Handle_get_state_from_events = () => {
 
 let Handle_EventListeners = () => {
 
-        alert ('Handle_EventListeners');
-
         document.getElementById('component_app_gui_logo_icon').addEventListener("click", function(event) {
-            state.ui.modal.page.bottom.display = true;
-            state.ui.modal.page.bottom.transform = !state.ui.modal.page.bottom.transform;
-            alert(state.ui.modal.page.bottom.transform);
-        });
-
-        document.getElementById('component_app_gui_menu_icon').addEventListener("click", function(event) {
             state.ui.modal.nav.top.display = true;
             state.ui.modal.nav.top.transform = !state.ui.modal.nav.top.transform;
             alert(state.ui.modal.nav.top.transform);
+        });
+
+        document.getElementById('component_app_gui_menu_icon').addEventListener("click", function(event) {
+            state.ui.modal.page.bottom.display = true;
+            state.ui.modal.page.bottom.transform = !state.ui.modal.page.bottom.transform;
+            alert(state.ui.modal.page.bottom.transform);
         });
 
         document.getElementById('component_app_gui_top_left').addEventListener("click", function(event) {
@@ -1593,10 +1622,9 @@ window.onload = () => {
             let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
             let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
             let date = new Date();
-            let time = 'Today is ' + (days[date.getDay()]) + ', ' + (months[date.getMonth()]) + ', ' + (date.getDay()) + ', ' + date.getFullYear() + '. Current time: ' + date.getHours() + ':' + date.getMinutes() + '.' + date.getSeconds() + '.' + date.getMilliseconds();
-            console.log(time);
-            document.getElementById('time').innerText = time;
-            state.data.time = time;
+            state.data.time = 'Today is ' + (days[date.getDay()]) + ', ' + (months[date.getMonth()]) + ', ' + (date.getDay()) + ', ' + date.getFullYear() + '. Current time: ' + date.getHours() + ':' + date.getMinutes() + '.' + date.getSeconds() + '.' + date.getMilliseconds();
+            console.log(state.data.time);
+            document.getElementById('time').innerText = state.data.time;
         }, 1000);
     })();
 
