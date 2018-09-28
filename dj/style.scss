@@ -1,0 +1,119 @@
+/*
+Theme Name: Knewest Theme (WP Parcel)
+Theme URI: gnougn.com
+Author: Gnougn Team
+Author URI: https://gnougn.com/
+Description: Mixing JS, Firebase, Wordpress JSON, SCSS and some PHP, oh Boy!
+Version: 1.1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: Javascript, Jquery, JSON, PHP, CSS, SASS, SCSS, AJAX, XML, HTTP, PHP
+Tags: Javascript, Jquery, JSON, PHP, CSS, SASS, SCSS, AJAX, XML, HTTP, PHP
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+ 
+// imports
+@import './styles/_reset.scss';
+@import './styles/_font.scss';  
+@import './styles/_normal.scss';
+@import './styles/_colors.scss';
+@import './styles/_background.scss'; 
+@import './styles/_calc.scss';
+@import './styles/_color.scss';
+@import './styles/_display.scss'; 
+@import './styles/_float.scss';
+@import './styles/_font_size.scss';
+@import './styles/_height.scss';
+@import './styles/_index.scss';
+@import './styles/_line_height.scss';
+@import './styles/_easing.scss'; 
+@import './styles/_margin.scss';
+@import './styles/_opacity.scss'; 
+@import './styles/_overflow.scss';
+@import './styles/_padding.scss';
+@import './styles/_position.scss';
+@import './styles/_text_align.scss';
+@import './styles/_transform.scss';
+@import './styles/_webkit.scss';
+@import './styles/_width.scss';
+@import './styles/_border.scss';
+@import './styles/_radius.scss';
+@import './styles/_box-shadow.scss';
+@import './styles/_text-shadow.scss';
+@import './styles/_pseudo.scss';
+@import './styles/_hover.scss';
+@import './styles/_mouseover.scss';
+@import './styles/_photos.scss';
+@import './styles/_gradient.scss';
+@import './styles/_scrollbar.scss';
+@import './styles/_inputs.scss';  
+@import './styles/_list.scss'; 
+@import './styles/_form.scss'; 
+
+@import './styles/graphics/_pieces.scss';
+@import './styles/animation/_animated.scss';
+@import './styles/animation/_motion.scss';
+@import './styles/animation/_delay.scss';
+
+@import './styles/_wordpress.scss';
+@import './styles/_responsive.scss';
+
+// Cursor
+:root {
+    cursor: url("./assets/gui/gui_cursor_handdrawn.svg"), auto;
+}
+
+:root:active {
+    cursor: url("./assets/gui/gui_cursor_handdrawn_active.svg"), auto; 
+}
+
+.auto, .default, .none, .context-menu, .help, .pointer, .progress, .wait, .cell, .crosshair, .text, .vertical-text, .alias, .copy, .move, .no-drop, .not-allowed, .all-scroll, .col-resize, .row-resize, .n-resize, .e-resize, .s-resize, .w-resize, .ns-resize, .ew-resize, .ne-resize, .nw-resize, .se-resize, .sw-resize, .nesw-resize, .nwse-resize {
+    cursor: url("./assets/gui/gui_cursor_handdrawn_active.svg"), auto;
+}
+
+xmp {
+  white-space:pre-wrap;
+  word-wrap:break-word;
+}
+
+body {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+pre {
+  width: min-content;
+font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", 
+"Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", 
+"Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
+  white-space: pre-wrap;
+  tab-width: 4;
+}
+
+iframe {
+	width: 100%;
+	height: 100%;
+	float: left;
+	position: relative;
+}
+
+.player .vp-player-layout {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+hr {
+  position:relative;
+  border: none;
+  height: 0;
+  width: 100%;
+  float: left;
+  margin: 0 auto;
+    border-top: 0.1vh solid $light-yellow-0;
+    border-bottom: 0.1vh solid $dark-yellow-9;
+}
