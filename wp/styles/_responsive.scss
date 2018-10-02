@@ -1,0 +1,312 @@
+.card > li {
+
+   #content {
+      display: none;
+    };
+
+   #title {
+      display: none;
+    };
+
+   #image {
+      // display: none;
+    };
+
+   #interaction {
+      display: none;
+    };
+
+   #meta {
+      display: none;
+    };
+
+   #user {
+      display: none;
+    };
+
+};
+
+#element_ol_firebase_roster, #element_ol_firebase_library, #element_ol_firebase_skills, #element_ol_firebase_abilities, #element_ol_firebase_services, #element_ol_firebase_partners  {
+
+  > li {
+      min-height: 33vh;
+  };
+
+};
+
+@media (min-width: 1401px) {
+
+  #element_ol_firebase_roster, #element_ol_firebase_library, #element_ol_firebase_skills, #element_ol_firebase_abilities, #element_ol_firebase_services, #element_ol_firebase_partners {
+
+    > li {
+        width: 10%;
+
+      #container {
+            border: 0.1vh solid $dark-yellow-9;
+        };
+    };
+
+    li:nth-child(10n + 1) {
+      position: relative;
+      float: left;
+      clear: left;
+    };
+
+  };
+
+};
+
+@media (max-width: 1400px) and (min-width: 1201px) {
+
+  #element_ol_firebase_roster, #element_ol_firebase_library, #element_ol_firebase_skills, #element_ol_firebase_abilities, #element_ol_firebase_services, #element_ol_firebase_partners {
+
+    > li {
+        width: 11.1111%;
+
+      #container {
+            border: 0.1vh solid $dark-yellow-9;
+        }
+    };
+
+  li:nth-child(9n + 1) {
+      position: relative;
+      float: left;
+      clear: left;
+      }
+
+  };
+
+};
+
+@media (max-width: 1200px) and (min-width: 1151px) {
+
+  #element_ol_firebase_roster, #element_ol_firebase_library, #element_ol_firebase_skills, #element_ol_firebase_abilities, #element_ol_firebase_services, #element_ol_firebase_partners {
+
+    > li {
+        width: 12.5%;
+
+      #container {
+            border: 0.1vh solid $dark-yellow-9;
+        }
+    };
+
+  li:nth-child(8n + 1) {
+      position: relative;
+      float: left;
+      clear: left;
+      }
+
+  };
+
+};
+
+@media (max-width: 120px) and (min-width: 1151px) {
+
+  #element_ol_firebase_roster, #element_ol_firebase_library, #element_ol_firebase_skills, #element_ol_firebase_abilities, #element_ol_firebase_services, #element_ol_firebase_partners {
+
+    > li {
+        width: 14.2857143%;
+
+      #container {
+            border: 0.1vh solid $dark-yellow-9;
+        }
+    };
+
+  li:nth-child(7n + 1) {
+      position: relative;
+      float: left;
+      clear: left;
+      }
+
+  };
+
+};
+
+@media (max-width: 1150px) and (min-width: 1101px) {
+
+  #element_ol_firebase_roster, #element_ol_firebase_library, #element_ol_firebase_skills, #element_ol_firebase_abilities, #element_ol_firebase_services, #element_ol_firebase_partners {
+
+    > li {
+        width: 16.6666%;
+
+      #container {
+            border: 0.1vh solid $dark-yellow-9;
+        }
+    };
+
+  li:nth-child(6n + 1) {
+      position: relative;
+      float: left;
+      clear: left;
+      }
+
+  };
+
+};
+
+@media (max-width: 1100px) and (min-width: 1001px) {
+
+  #element_ol_firebase_roster, #element_ol_firebase_library, #element_ol_firebase_skills, #element_ol_firebase_abilities, #element_ol_firebase_services, #element_ol_firebase_partners {
+
+    > li {
+        width: 20%;
+
+      #container {
+            border: 0.1vh solid $dark-yellow-9;
+        }
+    };
+
+  li:nth-child(5n + 1) {
+      position: relative;
+      float: left;
+      clear: left;
+      }
+
+  };
+
+};
+
+@media (max-width: 1000px) and (min-width: 901px) {
+
+  #element_ol_firebase_roster, #element_ol_firebase_library, #element_ol_firebase_skills, #element_ol_firebase_abilities, #element_ol_firebase_services, #element_ol_firebase_partners {
+
+    > li {
+        width: 25%;
+
+      #container {
+            border: 0.1vh solid $dark-yellow-9;
+        }
+    };
+
+  li:nth-child(4n + 1) {
+      position: relative;
+      float: left;
+      clear: left;
+      }
+
+  };
+
+};
+
+@media (max-width: 900px) and (min-width: 801px) {
+
+
+  #element_ol_firebase_roster, #element_ol_firebase_library, #element_ol_firebase_skills, #element_ol_firebase_abilities, #element_ol_firebase_services, #element_ol_firebase_partners {
+
+    > li {
+        width: 33%;
+
+      #container {
+            border: 0.1vh solid $dark-yellow-9;
+        }
+    };
+
+  li:nth-child(3n + 1) {
+      width: 33%;
+      position: relative;
+      float: left;
+      clear: left;
+      }
+
+      li:nth-child(3n + 2) {
+      width: 33%;
+      position: relative;
+      float: left;
+      margin: 0% .5% 0;
+      }
+
+      li:nth-child(3n + 3) {
+      width: 33%;
+      position: relative;
+      float: left;
+      }
+
+  };
+
+};
+
+
+@media (max-width: 800px) and (min-width: 601px) {
+
+  #element_ol_firebase_library {
+  };
+
+  #element_ol_firebase_library, #element_ol_firebase_roster {
+
+    > li {
+      width: 50%;
+      border-bottom: 0.1vh solid $dark-yellow-9;
+    };
+
+    > li:nth-child(3n + 1), > li:nth-child(3n + 2), > li:nth-child(3n + 3) {
+      width: 50% !important;;
+      margin: auto !important;
+    };
+
+    > li:after {
+      position: absolute;
+      left: .5vh;
+      top: .5vh;
+    };
+
+    > li:before {
+      position: absolute;
+      left: 1.5vh;
+      top: 1.5vh;
+    };
+
+    li > #container {
+      margin: auto;
+      width: calc(100% - 5vh);
+      border: none;
+    };
+
+  };
+
+}
+
+
+@media (max-width: 600px) {
+
+  #element_ol_firebase_library {
+    width: 100%;
+     margin: 0;
+  };
+
+  #element_ol_firebase_library {
+
+    > li {
+      width: 100%;
+      border-bottom: 0.1vh solid $dark-yellow-9;
+      #container {
+        border-left: none;
+        border-right: none;
+      }
+    };
+
+    > li:nth-child(3n + 1), > li:nth-child(3n + 2), > li:nth-child(3n + 3) {
+      width: 100% !important;
+      margin: auto !important;
+    }
+
+    > li:after {
+      position: absolute;
+      left: .5vh;
+      top: .5vh;
+    };
+
+    > li:before {
+      position: absolute;
+      left: 1.5vh;
+      top: 1.5vh;
+    };
+
+    li > #container {
+      margin: auto;
+      width: calc(100% - 5vh);
+      border: none;
+    }
+
+  };
+
+}

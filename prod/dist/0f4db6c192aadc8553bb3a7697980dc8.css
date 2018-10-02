@@ -13119,6 +13119,54 @@ div:hover.mouseover_width_100vh, span:hover.mouseover_width_100vh, li:hover.mous
 div:hover.mouseover_width_100, span:hover.mouseover_width_100, li:hover.mouseover_width_100, ol:hover.mouseover_width_100, ul:hover.mouseover_width_100 {
   width: 100%; }
 
+.photo_dj1 {
+  background: url("http://gnougn.com/photos/dj1.JPG");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+
+.photo_dj2 {
+  background: url("http://gnougn.com/photos/dj2.JPG");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+
+.photo_dj3 {
+  background: url("http://gnougn.com/photos/dj3.JPG");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+
+.photo_dj4 {
+  background: url("http://gnougn.com/photos/dj4.JPG");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+
+.photo_dj5 {
+  background: url("http://gnougn.com/photos/dj5.JPG");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+
+.photo_dj6 {
+  background: url("http://gnougn.com/photos/dj6.JPG");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+
+.photo_dj7 {
+  background: url("http://gnougn.com/photos/dj7.JPG");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+
+.photo_dj8 {
+  background: url("http://gnougn.com/photos/dj8.JPG");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+
 .photo_person1 {
   background: url("http://gnougn.com/photos/person1.jpg");
   background-repeat: no-repeat;
@@ -15823,6 +15871,102 @@ input[type=text] {
   background-position: center;
   background-size: contain; }
 
+.gui_logo_dj_progession {
+  background: url("14ae87eb02264c660ff8a8ceaadf5641.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain; }
+
+.gui_logo_dj_final {
+  background: url("1f264c3101d9894b2185dd22964c31d5.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain; }
+
+.gui_logo_dj_final_mark {
+  background: url("8d7382304b6b5258bd20e19622aad437.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain; }
+
+.gui_logo_dj_1 {
+  background: url("6432131812eb9963437ba68a30df2c03.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain; }
+
+.gui_logo_dj_2 {
+  background: url("0b6c0e778fcfd62079be5ecd85d0e75e.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain; }
+
+.gui_logo_dj_3 {
+  background: url("c4e85ee67cd00b834040420391cc7edd.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain; }
+
+.gui_logo_dj_4 {
+  background: url("b54f83f98656b289e0c26a27c4ac898f.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+
+.gui_logo_dj_5 {
+  background: url("3b890327bc0c358f65d9148bf068dcaa.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain; }
+
+.gui_logo_dj_6 {
+  background: url("5d8a0bc080fb38bf431375f5897aeff2.svg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover; }
+
+.icon_dj_animation_1 {
+  background: url("0b5a8c6a7fcfadd2830a14f5c9004c04.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain; }
+
+.icon_dj_animation_2 {
+  background: url("d12f078238a6224ea7341de358c4fb1f.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain; }
+
+.icon_dj_animation_3 {
+  background: url("fccb9538775d40cafaeaadaf5c088ca6.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain; }
+
+.icon_dj_animation_4 {
+  background: url("957a6edc39d8f21c5f5edb731c803203.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain; }
+
+.icon_dj_loading {
+  background: url("f2b6d7909c67ecd33ad1bd0e0e0e4954.svg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: contain; }
+
+.gui_logo_dj {
+  background: url("0b38a67f1e98b4a2b6c1c98e0f0c0ed2.svg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: contain; }
+
+.gui_logo_dj_mark {
+  background: url("5a943431d2febeeccf46001d7e1d1ae2.svg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: contain; }
+
 .cpu {
   webkit-transform: translate3d(0, 0, 0);
   transform: translateZ(0);
@@ -16618,6 +16762,38 @@ input[type=text] {
 .shrink {
   -webkit-animation-name: shrink;
   animation-name: shrink; }
+
+@-webkit-keyframes shrink_dj {
+  from {
+    width: 100vw;
+    height: 100vw; }
+  25% {
+    width: 100%;
+    height: 100%; }
+  50% {
+    width: 100%;
+    height: 100%; }
+  to {
+    width: 100%;
+    height: 100%; } }
+
+@keyframes shrink_dj {
+  from {
+    width: 100vw;
+    height: 100vw; }
+  25% {
+    width: 100%;
+    height: 100%; }
+  50% {
+    width: 100%;
+    height: 100%; }
+  to {
+    width: 100%;
+    height: 100%; } }
+
+.shrink_dj {
+  -webkit-animation-name: shrink_dj;
+  animation-name: shrink_dj; }
 
 @-webkit-keyframes overgrow_and_hide {
   0% {
@@ -18639,7 +18815,9 @@ body {
 
 pre {
   width: min-content;
-  font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console",  "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono",  "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
+  font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", 
+ "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", 
+ "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
   white-space: pre-wrap;
   tab-width: 4; }
 

@@ -225,7 +225,6 @@ let Handle_Firebase_Refs_and_Render = () => {
                             }, 1000 / 24);
 
                         }, 1000);
-                        console.clear();
                     }, 0);
 
                 };
@@ -681,13 +680,11 @@ let Handle_EventListeners = () => {
         document.getElementById('component_app_gui_logo_icon').addEventListener("click", function(event) {
             state.ui.modal.nav.top.display = true;
             state.ui.modal.nav.top.transform = !state.ui.modal.nav.top.transform;
-            alert(state.ui.modal.nav.top.transform);
         });
 
         document.getElementById('component_app_gui_menu_icon').addEventListener("click", function(event) {
             state.ui.modal.page.bottom.display = true;
             state.ui.modal.page.bottom.transform = !state.ui.modal.page.bottom.transform;
-            alert(state.ui.modal.page.bottom.transform);
         });
 
         document.getElementById('component_app_gui_top_left').addEventListener("click", function(event) {
@@ -1542,6 +1539,8 @@ let find_type = () => {
 
 // Lifecycle hooks
 window.onload = () => {
+
+    document.getElementById('componentSound').play();
 
     // garage('monster', 'monster');
     console.log(localStorage);
@@ -2648,6 +2647,54 @@ window.onload = () => {
     }());
 
     */
+
+    // icon_handdrawn_head
+    (function() {
+        let interval = 1;
+
+        setInterval(
+            function() {
+
+        let MANIPULATED = document.getElementById('icon_dj_animation');
+
+                if (MANIPULATED != null) {
+                    MANIPULATED.innerHTML = '';
+                    if (interval == 1) {
+                        MANIPULATED.classList.remove('icon_dj_animation_1');
+                        MANIPULATED.classList.remove('icon_dj_animation_2');
+                        MANIPULATED.classList.remove('icon_dj_animation_3');
+                        MANIPULATED.classList.remove('icon_dj_animation_4');
+                        MANIPULATED.classList.add('icon_dj_animation_1');
+                    };
+                    if (interval == 2) {
+                        MANIPULATED.classList.remove('icon_dj_animation_1');
+                        MANIPULATED.classList.remove('icon_dj_animation_2');
+                        MANIPULATED.classList.remove('icon_dj_animation_3');
+                        MANIPULATED.classList.remove('icon_dj_animation_4');
+                        MANIPULATED.classList.add('icon_dj_animation_2');
+                    };
+                    if (interval == 3) {
+                        MANIPULATED.classList.remove('icon_dj_animation_1');
+                        MANIPULATED.classList.remove('icon_dj_animation_2');
+                        MANIPULATED.classList.remove('icon_dj_animation_3');
+                        MANIPULATED.classList.remove('icon_dj_animation_4');
+                        MANIPULATED.classList.add('icon_dj_animation_3');
+                    };
+                    if (interval == 4) {
+                        MANIPULATED.classList.remove('icon_dj_animation_1');
+                        MANIPULATED.classList.remove('icon_dj_animation_2');
+                        MANIPULATED.classList.remove('icon_dj_animation_3');
+                        MANIPULATED.classList.remove('icon_dj_animation_4');
+                        MANIPULATED.classList.add('icon_dj_animation_4');
+                        interval = 0;
+                    };
+
+                    interval += 1;
+                }
+
+            }, 1000 / state.animation.framerate);
+
+    }());
 
     /* 1000 ms */
     // Bounce

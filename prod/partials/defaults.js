@@ -58,42 +58,71 @@ let colors = [
       ${imported_elements.element_guis()}
     </div>
 
-    <div id="component" class="width_100 height_100vh float_left position_fixed top_0 left_0 display opacity_1 overflow_hidden">
+    <div id="color_component" class="width_100 height_100vh float_left position_fixed top_0 left_0 display opacity_1 overflow_hidden">
 
       ${imported_elements.element_colors()}
       ${imported_elements.element_grid_cross()}
       ${imported_elements.element_grid_depth_90()}
       ${imported_elements.stage_load_verticle()}
       ${imported_elements.stage_load_horizontal()}
-      ${imported_elements.component_app_stage_enneagon()}
       ${imported_elements.element_accent_noise()}
       ${imported_elements.element_effect_vignette()}
       ${imported_elements.element_particles()}
       ${imported_elements.element_interaction_player()}
 
-      <div id="component_app_gui_logo_combo_feature_container" class="position_absolute width_0 height_0 margin_auto float_left">
-        <div id="component_app_gui_logo_combo_feature" class="position_absolute left_-50 top_-50 width_100 height_100 overflow_hidden float_left gui_keyhole">
-        </div>
-      </div>
-
-      <div id="logo_load_container" class="position_absolute margin_auto float_left width_0 height_0 ">
-        <div id="component_app_gui_logo_combo_feature" class="position_absolute left_-50 top_-50 width_100 height_100 overflow_hidden float_left gui_key">
-        </div>
-      </div>
     </div>
 
-    <div id="component" class="width_100 float_left position_relative">
+    <div id="gui_component" class="width_100 float_left position_relative">
 
-      <div id="component" class="width_100 height_100vh float_left position_relative display opacity_1 overflow_hidden">
 
-        <div id="" class="position_absolute left_0 top_0 right_0 bottom_0 margin_auto width_33 height_33 overflow_hidden float_left gui_logo_combo_layers">
-        </div>
-
-      </div>
-
-      ${imported_elements.element_gui_scroll_y()}
+      ${imported_elements.element_dj_logo('gradient_light_yellow_0_bottom')}
 
       ${imported_elements.element_gradient('gradient_light_yellow_0_bottom')}
+
+      <div id="component" class="width_100 height_100vh float_left position_relative display opacity_1 background_white">\
+      
+        <div class="position_absolute left_0 top_0 right_0 bottom_0 margin_auto width_50 height_50 float_left">
+          <div id="" class="position_absolute left_0 top_0 right_0 margin_auto width_100 height_100 float_left gui_logo_dj_final">
+          </div>
+        </div>
+        
+      </div>
+
+      <div id="component" class="width_100 height_100vh float_left position_relative display opacity_1 background_white">\
+      
+        <div class="position_absolute left_0 top_0 right_0 bottom_0 margin_auto width_100 height_50 float_left">
+          <div id="" class="position_absolute left_0 top_0 right_0 margin_auto width_100 height_100 float_left gui_logo_dj_progession">
+          </div>
+        </div>
+        
+      </div>
+
+      ${imported_elements.element_container(
+
+        '\
+          <div class="width_100 height_100vh position_relative float_left display_flex_flow">\
+            \
+            <div class="calc_10vh margin_5vh position_relative float_left display_flex_flow">\
+                \
+                <div class="width_100 height_100 position_relative float_left display_flex_flow">\
+                    <div class="calc_10vh position_relative float_left photo_dj1 border_01vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9">\
+                        \
+                        <div class="position_absolute bottom_0 left_0 float_left display_flex_flow">\
+                            <div class="position_relative float_left background-light-yellow-0 border_01vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9">\
+                                <p class="font_size_205vh padding_205vh position_relative float_left">top100</p>\
+                            </div>\
+                        </div>\
+                        \
+                    </div>\
+                    \
+                </div>\
+                \
+            </div>\
+            \
+          </div>\
+        ',
+
+        'width_100 float_left position_relative background_light_yellow_0')}
       
       ${imported_elements.element_title('feature: element_slider_1')}
 

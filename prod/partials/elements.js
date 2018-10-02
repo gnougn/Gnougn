@@ -26,6 +26,232 @@ let element_container_center = (info) => {
     return element
 };
 
+let element_nownigel_logo = () => {
+
+    let element = '\
+      <div id="component" class="width_100 height_100vh float_left position_relative display opacity_1 overflow_hidden">\
+\
+        <div id="" class="position_absolute left_0 top_0 right_0 bottom_0 margin_auto width_33 height_33 overflow_hidden float_left gui_logo_combo_layers">\
+        </div>\
+\
+      </div>\
+\
+    '
+    return element
+};
+
+
+let element_dj_logo = () => {
+
+    let element = `
+    <div id="component" class="width_100 height_100vh float_left position_relative display opacity_1">\
+    
+      <div id="" class="fadeIn delay1 animated1">
+        <div id="" class="fadeOut delay3 animated1">
+        <div class="position_absolute left_0 top_0 right_0 bottom_0 margin_auto width_33 height_33 float_left">
+          <div id="" class="position_absolute left_0 top_100 right_0 margin_auto width_100 height_100 float_left icon_dj_loading">
+          </div>
+        </div>
+        <div class="position_absolute left_0 top_0 right_0 bottom_0 margin_auto width_33 height_33 float_left">
+          <div id="icon_dj_animation" class="position_absolute left_0 top_0 bottom_0 right_0 margin_auto width_50 height_50 icon_dj_animation_1 float_left">
+          </div>
+        </div>
+        </div>
+      </div>
+
+      <div id="" class="fadeIn delay4 animated1">
+
+        <div id="" class="position_absolute left_0 right_0 bottom_0 margin_auto width_100 height_100 float_left gui_logo_dj_4">
+        </div>
+
+      </div>
+
+      <div id="" class="fadeIn delay5 animated1">
+
+        <div id="" class="position_absolute right_0 bottom_0 margin_auto width_50 height_50 float_left gui_logo_dj_5">
+        </div>
+
+      </div>
+
+      <div id="" class="fadeIn delay6 animated1">
+
+        <div id="" class="position_absolute left_-25 bottom_0 margin_auto width_100 height_100 float_left gui_logo_dj_6">
+        </div>
+
+      </div>
+
+      <div id="" class="fadeIn delay7 animated1">
+
+        <div id="" class="position_absolute right_0 left_0 bottom_0 margin_auto width_100 height_100 float_left gui_logo_dj_2">
+        </div>
+
+      </div>
+
+      <div id="" class="fadeIn delay8 animated1">
+
+        <div id="" class="position_absolute right_-25 bottom_-25 margin_auto width_74 height_74 float_left gui_logo_dj_3">
+        </div>
+
+      </div>
+
+      <div id="dj_body" class="fadeIn delay9 animated1">
+        <div id="" class="position_fixed left_0 bottom_0 margin_auto width_50 height_75 float_left gui_logo_dj_1 animated30 pulse infinite">
+        </div>
+      </div>
+
+      <div id="dj_buttons" class="fadeIn delay10 animated1">
+        <div id="" class="position_absolute right_0 bottom_0 right_0 top_-10 left_0 margin_auto width_50 height_33 float_left">
+          
+          <div id="" class="position_absolute right_0 bottom_0 right_0 top_0 left_0 margin_auto width_100 height_100 float_left gui_logo_dj_final animated5 pulse infinite"></div>
+
+          <div id="" class="position_absolute right_0 bottom_0 right_0 top_0 left_0 margin_auto width_50 height_50 float_left gui_logo_dj_mark animated5 delay05 pulse infinite"></div>
+
+          <div id="" class="position_absolute left_0 top_100 right_0 margin_auto width_100 height_100 float_left display_flex_flow">
+
+            <div id="" class="position_relative margin_auto float_left">
+
+              <span class="margin_auto position_relative float_left z_index_1 display_flex_flow">
+
+                <span class="margin_auto position_relative float_left top_0">
+
+                <span class="margin_auto position_relative float_left top_1vh">
+
+                <span class="position_relative hover_top_0 top_-1vh easing_01 background_light_yellow_9 width_100 text_align_center float_right display_flex_flow  pseudo_button_bottom_dark_yellow_8 pseudo_button_bottom_dark_yellow_8_shadow_border_02 pseudo_hover">
+
+                <span class=" position_absolute top_0 left_0 right_0 float_left calc_05vh margin_auto display_flex_flow border_025vh_dark_yellow_9 background_dark_yellow_0">
+
+                </span>
+
+                <span id="" class="position_relative text_align_center font_size_2vh line_height_3vh padding_1vh float_right">
+                  enter site
+                </span>
+
+                <span id="wp_component_meta" class="position_absolute width_25vh right_0 left_0 bottom_100 float_left line_height_5vh font_size_205vh text_shadow_01vh_dark_yellow_1 margin_205vh_bottom hover_show">
+                  <span class="position_relative top_0vh left_0vh easing_01 margin_2vh calc_4vh_width border_025vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9 box_shadow_hover_none background_light_yellow_0 text_align_center float_right pseudo_arrow_bottom_left_outside_light_yellow_0">
+                    <div class="overflow_hidden width_100 height_100 position_relative top_0 left_0 display_flex_flow">
+                      <div class="calc_2vh_width margin_1vh position_relative float_left">
+                        <p class="font_size_2vh line_height_205vh">
+                        simple
+                        </p>
+                      </div>
+                    </div>
+                  </span>
+                </span>
+
+                </span>
+
+                </span>
+
+                </span>
+
+              </span>
+
+              <span class="margin_auto position_relative float_left z_index_1 width_1vh height_5vh display_flex_flow"></span>
+
+              <span class="margin_auto position_relative float_left z_index_1 display_flex_flow">
+
+                <span class="margin_auto position_relative float_left top_0">
+
+                <span class="margin_auto position_relative float_left top_1vh">
+
+                <span class="position_relative hover_top_0 top_-1vh easing_01 background_light_yellow_9 width_100 text_align_center float_right display_flex_flow  pseudo_button_bottom_dark_yellow_8 pseudo_button_bottom_dark_yellow_8_shadow_border_02 pseudo_hover">
+
+                <span class=" position_absolute top_0 left_0 right_0 float_left calc_05vh margin_auto display_flex_flow border_025vh_dark_yellow_9 background_dark_yellow_0">
+
+                </span>
+
+                <span id="" class="position_relative text_align_center font_size_2vh line_height_3vh padding_1vh float_right">
+                  Learn more
+                </span>
+
+                <span id="wp_component_meta" class="position_absolute width_25vh right_0 left_0 bottom_100 float_left line_height_5vh font_size_205vh text_shadow_01vh_dark_yellow_1 margin_205vh_bottom hover_show">
+                  <span class="position_relative top_0vh left_0vh easing_01 margin_2vh calc_4vh_width border_025vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9 box_shadow_hover_none background_light_yellow_0 text_align_center float_right pseudo_arrow_bottom_left_outside_light_yellow_0">
+                    <div class="overflow_hidden width_100 height_100 position_relative top_0 left_0 display_flex_flow">
+                      <div class="calc_2vh_width margin_1vh position_relative float_left">
+                        <p class="font_size_2vh line_height_205vh">
+                        simple
+                        </p>
+                      </div>
+                    </div>
+                  </span>
+                </span>
+
+                </span>
+
+                </span>
+
+                </span>
+
+              </span>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div id="" class="fadeIn delay10 animated1">
+        <div class="position_absolute top_0 right_0 margin_auto float_right z_index_7 display_flex_flow">
+
+          <span class="margin_auto padding_205vh position_relative float_left z_index_1 ">
+
+              <div id="" class="gui_i width_5vh height_5vh float_left position_relative float_left margin_auto margin_1vh_left">
+              </div>
+
+              <div id="" class="gui_circle width_5vh height_5vh float_left position_relative float_left margin_auto margin_1vh_left">
+              </div>
+
+              <span class="margin_auto margin_1vh_left position_relative float_left z_index_1 display_flex_flow">
+
+                <span class="margin_auto position_relative float_left top_0">
+
+                <span class="margin_auto position_relative float_left top_1vh">
+
+                <span class="position_relative hover_top_0 top_-1vh easing_01 background_light_yellow_9 width_100 text_align_center float_right display_flex_flow  pseudo_button_bottom_dark_yellow_8 pseudo_button_bottom_dark_yellow_8_shadow_border_02 pseudo_hover">
+
+                <span class=" position_absolute top_0 left_0 right_0 float_left calc_05vh margin_auto display_flex_flow border_025vh_dark_yellow_9 background_dark_yellow_0">
+
+                </span>
+
+                <span id="" class="position_relative text_align_center font_size_2vh line_height_3vh padding_1vh float_right">
+                  Book Me
+                </span>
+
+                <span id="wp_component_meta" class="position_absolute width_25vh right_0 left_0 bottom_100 float_left line_height_5vh font_size_205vh text_shadow_01vh_dark_yellow_1 margin_205vh_bottom hover_show">
+                  <span class="position_relative top_0vh left_0vh easing_01 margin_2vh calc_4vh_width border_025vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9 box_shadow_hover_none background_light_yellow_0 text_align_center float_right pseudo_arrow_bottom_left_outside_light_yellow_0">
+                    <div class="overflow_hidden width_100 height_100 position_relative top_0 left_0 display_flex_flow">
+                      <div class="calc_2vh_width margin_1vh position_relative float_left">
+                        <p class="font_size_2vh line_height_205vh">
+                        simple
+                        </p>
+                      </div>
+                    </div>
+                  </span>
+                </span>
+
+                </span>
+
+                </span>
+
+                </span>
+
+              </span>
+
+           </span>
+
+        </div>
+      </div>
+
+    </div>
+
+
+    `
+
+    return element
+};
+
 let element_content_card = () => {
   let component = '\
   \
@@ -490,6 +716,259 @@ let element_gui_scroll_y = () => {
         \
         '+element_container('\
             \
+            ' + element_title('feature: dj') + '\
+            \
+            '+element_container('\
+              \
+              <div class="calc_10vh margin_5vh position_relative float_left display_flex_flow">\
+                  \
+                  <div class="width_100 height_100 position_relative float_left display_flex_flow">\
+                      <div class="calc_10vh position_relative float_left photo_dj1 border_01vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9">\
+                          \
+                          <div class="position_absolute bottom_0 left_0 float_left display_flex_flow">\
+                              <div class="position_relative float_left background-light-yellow-0 border_01vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9">\
+                                  <p class="font_size_205vh padding_205vh position_relative float_left">top100</p>\
+                              </div>\
+                          </div>\
+                          \
+                      </div>\
+                      \
+                  </div>\
+                  \
+              </div>\
+              \
+              <div class="calc_10vh margin_5vh position_relative float_left display_flex_flow">\
+                  \
+                  <div class="width_100 height_100 position_relative float_left display_flex_flow">\
+                      <div class="calc_10vh position_relative float_left photo_dj2 border_01vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9">\
+                          \
+                          <div class="position_absolute bottom_0 left_0 float_left display_flex_flow">\
+                              <div class="position_relative float_left background-light-yellow-0 border_01vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9">\
+                                  <p class="font_size_205vh padding_205vh position_relative float_left">top100</p>\
+                              </div>\
+                          </div>\
+                          \
+                      </div>\
+                      \
+                  </div>\
+                  \
+              </div>\
+              \
+              <div class="calc_10vh margin_5vh position_relative float_left display_flex_flow">\
+                  \
+                  <div class="width_100 height_100 position_relative float_left display_flex_flow">\
+                      <div class="calc_10vh position_relative float_left photo_dj3 border_01vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9">\
+                          \
+                          <div class="position_absolute bottom_0 left_0 float_left display_flex_flow">\
+                              <div class="position_relative float_left background-light-yellow-0 border_01vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9">\
+                                  <p class="font_size_205vh padding_205vh position_relative float_left">top100</p>\
+                              </div>\
+                          </div>\
+                          \
+                      </div>\
+                      \
+                  </div>\
+                  \
+              </div>\
+              \
+              <div class="calc_10vh margin_5vh position_relative float_left display_flex_flow">\
+                  \
+                  <div class="width_100 height_100 position_relative float_left display_flex_flow">\
+                      <div class="calc_10vh position_relative float_left photo_dj4 border_01vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9">\
+                          \
+                          <div class="position_absolute bottom_0 left_0 float_left display_flex_flow">\
+                              <div class="position_relative float_left background-light-yellow-0 border_01vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9">\
+                                  <p class="font_size_205vh padding_205vh position_relative float_left">top100</p>\
+                              </div>\
+                          </div>\
+                          \
+                      </div>\
+                      \
+                  </div>\
+                  \
+              </div>\
+              \
+              <div class="calc_10vh margin_5vh position_relative float_left display_flex_flow">\
+                  \
+                  <div class="width_100 height_100 position_relative float_left display_flex_flow">\
+                      <div class="calc_10vh position_relative float_left photo_dj5 border_01vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9">\
+                          \
+                          <div class="position_absolute bottom_0 left_0 float_left display_flex_flow">\
+                              <div class="position_relative float_left background-light-yellow-0 border_01vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9">\
+                                  <p class="font_size_205vh padding_205vh position_relative float_left">top100</p>\
+                              </div>\
+                          </div>\
+                          \
+                      </div>\
+                      \
+                  </div>\
+                  \
+              </div>\
+              \
+              <div class="calc_10vh margin_5vh position_relative float_left display_flex_flow">\
+                  \
+                  <div class="width_100 height_100 position_relative float_left display_flex_flow">\
+                      <div class="calc_10vh position_relative float_left photo_dj6 border_01vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9">\
+                          \
+                          <div class="position_absolute bottom_0 left_0 float_left display_flex_flow">\
+                              <div class="position_relative float_left background-light-yellow-0 border_01vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9">\
+                                  <p class="font_size_205vh padding_205vh position_relative float_left">top100</p>\
+                              </div>\
+                          </div>\
+                          \
+                      </div>\
+                      \
+                  </div>\
+                  \
+              </div>\
+              \
+              <div class="calc_10vh margin_5vh position_relative float_left display_flex_flow">\
+                  \
+                  <div class="width_100 height_100 position_relative float_left display_flex_flow">\
+                      <div class="calc_10vh position_relative float_left photo_dj7 border_01vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9">\
+                          \
+                          <div class="position_absolute bottom_0 left_0 float_left display_flex_flow">\
+                              <div class="position_relative float_left background-light-yellow-0 border_01vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9">\
+                                  <p class="font_size_205vh padding_205vh position_relative float_left">top100</p>\
+                              </div>\
+                          </div>\
+                          \
+                      </div>\
+                      \
+                  </div>\
+                  \
+              </div>\
+              \
+              <div class="calc_10vh margin_5vh position_relative float_left display_flex_flow">\
+                  \
+                  <div class="width_100 height_100 position_relative float_left display_flex_flow">\
+                      <div class="calc_10vh position_relative float_left photo_dj8 border_01vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9">\
+                          \
+                          <div class="position_absolute bottom_0 left_0 float_left display_flex_flow">\
+                              <div class="position_relative float_left background-light-yellow-0 border_01vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9">\
+                                  <p class="font_size_205vh padding_205vh position_relative float_left">top100</p>\
+                              </div>\
+                          </div>\
+                          \
+                      </div>\
+                      \
+                  </div>\
+                  \
+              </div>\
+              \
+              ', 'calc_4vh padding_1vh margin_1vh float_left position_relative border_01vh_dark_yellow_9 background_light_yellow_9')+'\
+          \
+        ', 'width_100 height_100vh float_left position_relative background_light_yellow_0')+'\
+        \
+        '+element_container('\
+            \
+            '+element_container('\
+              \
+              <div class="position_relative background_light_yellow_9 margin_auto width_100 height_5vh float_right">\
+                \
+                <div class="position_relative margin_auto height_5vh float_left padding_1vh_left padding_1vh_right">\
+                  \
+                  <div class="position_relative margin_auto height_5vh width_5vh float_left display_flex_flow">\
+                    \
+                    <div id="" class="gui_i width_50 height_50 float_left position_relative float_left margin_auto">\
+                    </div>\
+                    \
+                  </div>\
+                  \
+                  <a id="" class="position_relative margin_auto font_size_205vh line_height_5vh text_align_center float_left">\
+                    Home\
+                  </a>\
+                  \
+                </div>\
+                \
+                <div class="position_relative margin_auto height_5vh float_left padding_1vh_left padding_1vh_right">\
+                  \
+                  <a id="" class="position_relative margin_auto font_size_205vh line_height_5vh text_align_center float_left">\
+                    Search\
+                  </a>\
+                  \
+                </div>\
+                \
+                <div class="position_relative margin_auto height_5vh float_left padding_1vh_left padding_1vh_right">\
+                  \
+                  <a id="" class="position_relative margin_auto font_size_205vh line_height_5vh text_align_center float_left">\
+                    About\
+                  </a>\
+                  \
+                </div>\
+                \
+                <div class="position_relative margin_auto height_5vh float_left padding_1vh_left padding_1vh_right">\
+                  \
+                  <a id="" class="position_relative margin_auto font_size_205vh line_height_5vh text_align_center float_left">\
+                    Hire\
+                  </a>\
+                  \
+                </div>\
+                \
+                <div class="position_relative margin_auto height_5vh float_left padding_1vh_left padding_1vh_right">\
+                  \
+                  <a id="" class="position_relative margin_auto font_size_205vh line_height_5vh text_align_center float_left">\
+                    Contact\
+                  </a>\
+                  \
+                </div>\
+                \
+                <div class="position_relative margin_auto width_5vh height_5vh float_right display_flex_flow">\
+                  \
+                  <div id="" class="gui_i width_50 height_50 float_left position_relative float_left margin_auto">\
+                  </div>\
+                  \
+                </div>\
+                \
+                <div class="position_relative margin_auto width_5vh height_5vh float_right display_flex_flow">\
+                  \
+                  <div id="" class="gui_i width_50 height_50 float_left position_relative float_left margin_auto">\
+                  </div>\
+                  \
+                </div>\
+                \
+                <div class="position_relative margin_auto width_5vh height_5vh float_right display_flex_flow">\
+                  \
+                  <div id="" class="gui_i width_50 height_50 float_left position_relative float_left margin_auto">\
+                  </div>\
+                  \
+                </div>\
+                \
+              </div>\
+              \
+              ', 'width_100 float_left position_relative border_01vh_dark_yellow_9 background_light_yellow_9')+'\
+          \
+        ', 'width_100 float_left position_relative')+'\
+        \
+        '+element_container('\
+            \
+            ' + element_title('feature: start gnougn') + '\
+            \
+            '+element_container('\
+              \
+              <div class="calc_10vh margin_5vh position_relative float_left display_flex_flow">\
+                  \
+                  <div class="width_100 height_100 position_relative float_left display_flex_flow">\
+                      <div class="calc_10vh position_relative float_left photo_person1 border_01vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9">\
+                          \
+                          <div class="position_absolute bottom_0 left_0 float_left display_flex_flow">\
+                              <div class="position_relative float_left background-light-yellow-0 border_01vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9">\
+                                  <p class="font_size_205vh padding_205vh position_relative float_left">top100</p>\
+                              </div>\
+                          </div>\
+                          \
+                      </div>\
+                      \
+                  </div>\
+                  \
+              </div>\
+              \
+              ', 'calc_4vh padding_1vh margin_1vh float_left position_relative border_01vh_dark_yellow_9 background_light_yellow_9')+'\
+          \
+        ', 'width_100 height_100vh float_left position_relative background_light_yellow_0')+'\
+        \
+        '+element_container('\
+            \
             ' + element_title('feature: element_slider_1') + '\
             \
             '+element_container('\
@@ -589,7 +1068,7 @@ let element_gui_scroll_y = () => {
         <div id="component_transform_1" class="overflow_hidden width_100 height_50vh position_relative float_left background-light-yellow-9 display_flex_flow">\
             \
             \
-            <div id="route_firebase" class="overflow_hidden width_25 height_100 position_relative float_left background-light-yellow-9 display_flex_flow">\
+            <div id="" class="overflow_hidden width_25 height_100 position_relative float_left background-light-yellow-9 display_flex_flow">\
                 \
                 <div class="top0 left0 easing_1 width_100 height_100 position_absolute float_left background-light-yellow-9 display_flex_flow">\
                     \
@@ -5032,12 +5511,84 @@ let element_guis = () => {
 
         <div id="component_app_gui_top_left" class="display_none opacity_0 easing_01 transform_translate3d_top0 width_10vh height_10vh float_left position_fixed top_0 left_0 margin_auto z_index_7">
 
-          <div id="component_app_gui_logo_icon" class="gui_logo width_50 height_100 float_left position_relative float_left margin_auto z_index_7">
+          <div id="component_app_gui_logo_icon" class="gui_logo_dj_final_mark width_50 height_100 float_left position_relative float_left margin_auto z_index_7 margin_1vh_left">
           </div>
 
           <div id="component_app_gui_menu_icon" class="gui_menu width_50 height_100 float_left position_relative float_left margin_auto z_index_7">
           </div>
 
+        </div>
+        
+        <div class="fadeIn delay10 animated1 position_fixed bottom_0 left_0 right_0 background_light_yellow_9 margin_auto width_100 height_5vh float_right z_index_7">
+          
+          <div class="position_relative margin_auto height_5vh float_left padding_1vh_left padding_1vh_right">
+            
+            <div class="position_relative margin_auto height_5vh width_5vh float_left display_flex_flow">
+              
+              <div id="" class="gui_i width_50 height_50 float_left position_relative float_left margin_auto">
+              </div>
+              
+            </div>
+            
+            <a id="" class="position_relative margin_auto font_size_205vh line_height_5vh text_align_center float_left">
+              Home
+            </a>
+            
+          </div>
+          
+          <div class="position_relative margin_auto height_5vh float_left padding_1vh_left padding_1vh_right">
+            
+            <a id="" class="position_relative margin_auto font_size_205vh line_height_5vh text_align_center float_left">
+              Search
+            </a>
+            
+          </div>
+          
+          <div class="position_relative margin_auto height_5vh float_left padding_1vh_left padding_1vh_right">
+            
+            <a id="" class="position_relative margin_auto font_size_205vh line_height_5vh text_align_center float_left">
+              About
+            </a>
+            
+          </div>
+          
+          <div class="position_relative margin_auto height_5vh float_left padding_1vh_left padding_1vh_right">
+            
+            <a id="" class="position_relative margin_auto font_size_205vh line_height_5vh text_align_center float_left">
+              Hire
+            </a>
+            
+          </div>
+          
+          <div class="position_relative margin_auto height_5vh float_left padding_1vh_left padding_1vh_right">
+            
+            <a id="" class="position_relative margin_auto font_size_205vh line_height_5vh text_align_center float_left">
+              Contact
+            </a>
+            
+          </div>
+          
+          <div class="position_relative margin_auto width_5vh height_5vh float_right display_flex_flow">
+            
+            <div id="" class="gui_i width_50 height_50 float_left position_relative float_left margin_auto">
+            </div>
+            
+          </div>
+          
+          <div class="position_relative margin_auto width_5vh height_5vh float_right display_flex_flow">
+            
+            <div id="" class="gui_i width_50 height_50 float_left position_relative float_left margin_auto">
+            </div>
+            
+          </div>
+          
+          <div class="position_relative margin_auto width_5vh height_5vh float_right display_flex_flow">
+            
+            <div id="" class="gui_i width_50 height_50 float_left position_relative float_left margin_auto">
+            </div>
+            
+          </div>
+          
         </div>
 
         <div id="component_app_gui_top_center" class="display_none opacity_0 easing_01 transform_translate3d_top0 float_left display_flex_flow position_fixed calc_20vh_width top_0 left_0 right_0 margin_auto z_index_7">
@@ -5422,27 +5973,27 @@ let stage_load_verticle = () => {
     let component = '\
     <div id="component_app_stage_load_verticle" class="display_none opacity_0 easing_01 transform_translate3d_top0 width_100 height_100vh position_absolute top_0 left_0 margin_auto overflowhidden">\
       <div class="width_100 height_100 position_absolute bottom_0 left_0 margin_auto overflow_hidden animated1 enterBottomLeaveTop ">\
-        <div class="width_100 height_100 margin_auto position_absolute top_0 left_0 right_0 float_left margin_auto background_light_yellow_1">\
+        <div class="width_100 height_100 margin_auto position_absolute top_0 left_0 right_0 float_left margin_auto">\
         </div>\
       </div>\
       <div class="width_100 height_100 position_absolute bottom_0 left_0 margin_auto overflow_hidden animated1 enterBottomLeaveTop delay05">\
-        <div class="width_100 height_100 margin_auto position_absolute top_0 left_0 right_0 float_left margin_auto background_light_yellow_2">\
+        <div class="width_100 height_100 margin_auto position_absolute top_0 left_0 right_0 float_left margin_auto">\
         </div>\
       </div>\
       <div class="width_100 height_100 position_absolute bottom_0 left_0 margin_auto overflow_hidden animated1 enterBottomLeaveTop delay1">\
-        <div class="width_100 height_100 margin_auto position_absolute top_0 left_0 right_0 float_left margin_auto background_light_yellow_3">\
+        <div class="width_100 height_100 margin_auto position_absolute top_0 left_0 right_0 float_left margin_auto">\
         </div>\
       </div>\
       <div class="width_100 height_100 position_absolute bottom_0 left_0 margin_auto overflow_hidden animated1 enterBottomLeaveTop delay15">\
-        <div class="width_100 height_100 margin_auto position_absolute top_0 left_0 right_0 float_left margin_auto background_light_yellow_4">\
+        <div class="width_100 height_100 margin_auto position_absolute top_0 left_0 right_0 float_left margin_auto">\
         </div>\
       </div>\
       <div class="width_100 height_100 position_absolute bottom_0 left_0 margin_auto overflow_hidden animated1 enterBottomLeaveTop delay2">\
-        <div class="width_100 height_100 margin_auto position_absolute top_0 left_0 right_0 float_left margin_auto background_light_yellow_5">\
+        <div class="width_100 height_100 margin_auto position_absolute top_0 left_0 right_0 float_left margin_auto">\
         </div>\
       </div>\
       <div class="width_100 height_100 position_absolute bottom_0 left_0 margin_auto overflow_hidden animated05 enterBottom delay25">\
-        <div class="width_100 height_100 margin_auto position_absolute top_0 left_0 right_0 float_left margin_auto background_light_yellow_6">\
+        <div class="width_100 height_100 margin_auto position_absolute top_0 left_0 right_0 float_left margin_auto">\
         </div>\
       </div>\
     </div>\
@@ -5454,27 +6005,27 @@ let stage_load_horizontal = () => {
     let component = '\
       <div id="component_app_stage_load_horizontal" class="display_none opacity_0 easing_01 transform_translate3d_top0 width_100 height_100vh position_fixed top_0 left_0 margin_auto overflowhidden">\
         <div class="width_100 height_100 position_absolute bottom_0 left_0 margin_auto overflow_hidden animated1 enterRightLeaveLeft ">\
-          <div class="width_100 height_100 margin_auto position_absolute top_0 left_0 right_0 float_left margin_auto background_light_yellow_5">\
+          <div class="width_100 height_100 margin_auto position_absolute top_0 left_0 right_0 float_left margin_auto">\
           </div>\
         </div>\
         <div class="width_100 height_100 position_absolute bottom_0 left_0 margin_auto overflow_hidden animated1 enterRightLeaveLeft delay05">\
-          <div class="width_100 height_100 margin_auto position_absolute top_0 left_0 right_0 float_left margin_auto background_light_yellow_4">\
+          <div class="width_100 height_100 margin_auto position_absolute top_0 left_0 right_0 float_left margin_auto">\
           </div>\
         </div>\
         <div class="width_100 height_100 position_absolute bottom_0 left_0 margin_auto overflow_hidden animated1 enterRightLeaveLeft delay1">\
-          <div class="width_100 height_100 margin_auto position_absolute top_0 left_0 right_0 float_left margin_auto background_light_yellow_3">\
+          <div class="width_100 height_100 margin_auto position_absolute top_0 left_0 right_0 float_left margin_auto">\
           </div>\
         </div>\
         <div class="width_100 height_100 position_absolute bottom_0 left_0 margin_auto overflow_hidden animated1 enterRightLeaveLeft delay15">\
-          <div class="width_100 height_100 margin_auto position_absolute top_0 left_0 right_0 float_left margin_auto background_light_yellow_2">\
+          <div class="width_100 height_100 margin_auto position_absolute top_0 left_0 right_0 float_left margin_auto">\
           </div>\
         </div>\
         <div class="width_100 height_100 position_absolute bottom_0 left_0 margin_auto overflow_hidden animated1 enterRightLeaveLeft delay2">\
-          <div class="width_100 height_100 margin_auto position_absolute top_0 left_0 right_0 float_left margin_auto background_light_yellow_1">\
+          <div class="width_100 height_100 margin_auto position_absolute top_0 left_0 right_0 float_left margin_auto">\
           </div>\
         </div>\
         <div class="width_100 height_100 position_absolute bottom_0 left_0 margin_auto overflow_hidden animated05 enterRight delay25">\
-          <div class="width_100 height_100 margin_auto position_absolute top_0 left_0 right_0 float_left margin_auto background_light_yellow_0">\
+          <div class="width_100 height_100 margin_auto position_absolute top_0 left_0 right_0 float_left margin_auto">\
           </div>\
         </div>\
       </div>\
@@ -5541,55 +6092,64 @@ let element_particles = () => {
 };
 
 let element_interaction_player = () => {
-  let component = '\
-    <div id="element_interaction_player" class="display_none opacity_0 easing_01 transform_translate3d_top0 width_100 height_100vh position_absolute top_0 left_0 margin_auto">\
-      \
-      <div id="component_app_interaction_easel" class="width_100 height_100 easing_01 position_absolute top_0 left_0 bottom_0 right_0 margin_auto">\
-        \
-      </div>\
-      \
-      <div id="bounce" class="margin_auto position_absolute float_left margin_auto background_light_yellow_9 width_1205vw height_1205vh">\
-        \
-      </div>\
-      \
-      <div id="bullets" class="margin_auto position_absolute float_left margin_auto width_100 height_100vh">\
-          \
-          <div id="bullets_verticle" class="margin_auto position_absolute float_left margin_auto width_100 height_100vh"></div>\
-          \
-          <div id="track_x" class="margin_auto position_absolute float_left margin_auto background_light_yellow_9 width_1vw height_1vh"></div>\
-          \
-          <div id="track_y" class="margin_auto position_absolute float_left margin_auto background_light_yellow_9 width_1vw height_1vh"></div>\
-          \
-      </div>\
-      \
-      <div id="element_ball" class="width_5vh height_5vh background_light_yellow_9 float_left position_absolute easing_01">\
-        \
-      </div>\
-      \
-      <div id="component_app_interaction_game_players_1" class="width_100 height_100 easing_01 position_absolute top_0 left_0 bottom_0 right_0 margin_auto">\
-          \
-          <div id="component_app_interaction_game_players_1_body" class="interaction_workspace_man_standing_1 opacity_1 easing_01 easing_01 width_1205vh height_50 margin_auto position_absolute bottom_0 left_0 float_left margin_auto">\
-          </div>\
-          \
-      </div>\
-      \
-      <div id="component_app_interaction_hands" class="width_100 height_100 easing_01 position_absolute margin_auto">\
-          \
-          <div id="component_app_interaction_hand" class="interaction_hands width_100 height_100 margin_auto position_absolute bottom_0 left_-25 float_left margin_auto">\
-          </div>\
-          \
-      </div>\
-      \
-      <div id="component_app_interaction_enemy" class="easing_01 margin_auto position_absolute bottom_0 left_0 float_left margin_auto interaction_workspace_man_standing_1">\
-        \
-      </div>\
-      \
-      <div id="component_app_interaction_helper_body" class="easing_01 width_100 height_100 margin_auto position_absolute bottom_0 left_0 float_left margin_auto interaction_workspace_man_standing_1">\
-        \
-      </div>\
-      \
-    </div>\
-  ';
+  let component = `
+    <div id="element_interaction_player" class="display_none opacity_0 easing_01 transform_translate3d_top0 width_100 height_100vh position_absolute top_0 left_0 margin_auto">
+      
+      <div id="component_app_interaction_easel" class="width_100 height_100 easing_01 position_absolute top_0 left_0 bottom_0 right_0 margin_auto">
+        
+      </div>
+      
+      <div id="bounce" class="display_none opacity_0 easing_01 transform_translate3d_top0 margin_auto position_absolute float_left margin_auto background_light_yellow_9 width_1205vw height_1205vh">
+        
+      </div>
+      
+      <div id="bullets" class="display_none opacity_0 easing_01 transform_translate3d_top0 margin_auto position_absolute float_left margin_auto width_100 height_100vh">
+          
+          <div id="bullets_verticle" class="margin_auto position_absolute float_left margin_auto width_100 height_100vh"></div>
+          
+          <div id="track_x" class="margin_auto position_absolute float_left margin_auto background_light_yellow_9 width_1vw height_1vh"></div>
+          
+          <div id="track_y" class="margin_auto position_absolute float_left margin_auto background_light_yellow_9 width_1vw height_1vh"></div>
+          
+      </div>
+      
+      <div id="element_ball" class="display_none opacity_0 easing_01 transform_translate3d_top0 width_5vh height_5vh background_light_yellow_9 float_left position_absolute easing_01">
+        
+      </div>
+      
+      <div id="component_app_interaction_game_players_1" class="display_none opacity_0 easing_01 transform_translate3d_top0 width_100 height_100 easing_01 position_absolute top_0 left_0 bottom_0 right_0 margin_auto">
+          
+          <div id="component_app_interaction_game_players_1_body" class="interaction_workspace_man_standing_1 opacity_1 easing_01 easing_01 width_1205vh height_50 margin_auto position_absolute bottom_0 left_0 float_left margin_auto">
+          </div>
+          
+      </div>
+      
+      <div id="component_app_interaction_hands" class="display_none opacity_0 easing_01 transform_translate3d_top0 width_100 height_100 easing_01 position_absolute margin_auto">
+          
+          <div id="component_app_interaction_hand" class="interaction_hands width_100 height_100 margin_auto position_absolute bottom_0 left_-25 float_left margin_auto">
+          </div>
+          
+      </div>
+      
+      <div id="component_app_interaction_enemy" class="display_none opacity_0 easing_01 transform_translate3d_top0 easing_01 margin_auto position_absolute bottom_0 left_0 float_left margin_auto interaction_workspace_man_standing_1">
+        
+      </div>
+      
+      <div id="component_app_interaction_helper_body" class="display_none opacity_0 easing_01 transform_translate3d_top0 easing_01 width_100 height_100 margin_auto position_absolute bottom_0 left_0 float_left margin_auto interaction_workspace_man_standing_1">
+        
+      </div>
+      
+      <div id="component_app_gui_logo_combo_feature_container" class="display_none opacity_0 easing_01 transform_translate3d_top0 position_absolute width_0 height_0 margin_auto float_left">
+        <div id="component_app_gui_logo_combo_feature" class="position_absolute left_-50 top_-50 width_100 height_100 overflow_hidden float_left gui_keyhole">
+        </div>
+      </div>
+
+      <div id="logo_load_container" class="display_none opacity_0 easing_01 transform_translate3d_top0 position_absolute margin_auto float_left width_0 height_0 ">
+        <div id="component_app_gui_logo_combo_feature" class="position_absolute left_-50 top_-50 width_100 height_100 overflow_hidden float_left gui_key">
+        </div>
+      </div>
+    </div>
+    `
 
   return component
 };
@@ -5646,14 +6206,15 @@ let element_nav_right = '\
     '
 
 
-let element_page_top = '\
-    <div id="component_app_modal_element_page_top" class="easing_01 display_none opacity_0 transform_translate3d_top0 position_fixed top_0 left_0 right_0 height_100vh width_100 z_index_7 margin_auto">\
-      <div id="component_app_modal_element_page_top_content" class="position_absolute top_0 left_0 right_0 bottom_0 calc_02vh overflow_hidden box_shadow_bottom_1vh_dark border_01vh_dark_yellow_9 background_light_yellow_9 z_index_1 margin_auto">\
-      \
-      \
-      </div>\
-    </div>\
-    '
+let element_page_top = `
+    <div id="component_app_modal_element_page_top" class="easing_01 display_none opacity_0 transform_translate3d_top0 position_fixed top_0 left_0 right_0 height_100vh width_100 z_index_7 margin_auto">
+      <div id="component_app_modal_element_page_top_content" class="position_absolute top_0 left_0 right_0 bottom_0 calc_02vh overflow_hidden box_shadow_bottom_1vh_dark border_01vh_dark_yellow_9 background_light_yellow_9 z_index_1 margin_auto">
+      
+        ${element_gui_scroll_y()};
+
+      </div>
+    </div>
+    `
 
 let element_page_left = '\
     <div id="component_app_modal_element_page_left" class="easing_01 transform_translate3d_left0 opacity_0 display_none position_fixed top_0 left_0 bottom_0 height_100vh width_100 z_index_7 margin_auto">\
@@ -6763,4 +7324,6 @@ export default {
   element_overlay_left,
   element_overlay_bottom,
   element_overlay_right,
+element_nownigel_logo,
+element_dj_logo
 }

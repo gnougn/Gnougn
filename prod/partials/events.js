@@ -815,17 +815,26 @@ if (!(/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent))) {
         // tab
         if (event.keyCode == 9) {
             console.log('tab');
+            document.getElementById('componentSound1').play();
         };
 
         // enter
         if (event.keyCode == 13) {
             from_index.Handle_check_route('start');
+            document.getElementById('componentSound2').play();
         };
 
         // esc
         if (event.keyCode == 27) {
             console.log('esc');
             from_index.Handle_check_route('reset');
+            document.getElementById('componentSound').play();
+        };
+
+        // spacebar
+        if (event.keyCode == 32) {
+            state.ui.modal.page.bottom.display = true;
+            state.ui.modal.page.bottom.transform = !state.ui.modal.page.bottom.transform;
         };
 
         // arrow left
