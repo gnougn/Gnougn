@@ -88,7 +88,7 @@ let colors = [
 
       </div>
 
-      <div id="gui_content_component" class="width_100 float_left position_relative">
+      <div id="gui_content_component" class="width_100 float_left position_relative display_none">
         
         ${imported_elements.element_gradient('gradient_light_yellow_0_bottom')}
 

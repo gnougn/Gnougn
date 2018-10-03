@@ -246,7 +246,7 @@ let element_nownigel_logo = () => {
 
         <div class="width_100 height_100vh float_left position_relative display opacity_1 overflow_hidden">
        
-          <div id="" class="position_absolute right_0 bottom_0 right_0 top_-10 left_0 margin_auto width_50 height_33 float_left">
+          <div id="logo" class="position_absolute margin_auto float_left">
             
             <div id="" class="position_absolute right_0 bottom_0 right_0 top_0 left_0 margin_auto width_100 height_100 float_left gui_logo_combo_layers animated5 pulse infinite"></div>
 
@@ -299,7 +299,7 @@ let element_nownigel_logo = () => {
 
                 </span>
 
-                <span class="margin_auto padding_205vh_top padding_205vh_bottom padding_105vh_left position_relative float_left z_index_1 ">
+                <a href="#gui_content_component" class="margin_auto padding_205vh_top padding_205vh_bottom padding_105vh_left position_relative float_left z_index_1 ">
 
                     <span class="margin_auto position_relative float_left z_index_1 display_flex_flow">
 
@@ -337,7 +337,7 @@ let element_nownigel_logo = () => {
 
                     </span>
 
-                </span>
+                </a>
 
                 <span id="learn_more" class="margin_auto padding_205vh_top padding_205vh_bottom position_relative float_left z_index_1 ">
 
@@ -6213,15 +6213,39 @@ let element_guis = () => {
               
             </div>
             
-            <a id="" class="position_relative margin_auto font_size_205vh line_height_5vh text_align_center float_left">
+            <a href="#gui_fold_component" class="position_relative margin_auto font_size_205vh line_height_5vh text_align_center float_left">
               Home
+            </a>
+            
+          </div>
+
+          <div class="position_relative margin_auto height_5vh float_left padding_1vh_left padding_1vh_right">
+            
+            <a href="#gui_content_component" class="position_relative margin_auto font_size_205vh line_height_5vh text_align_center float_left">
+              Start
+            </a>
+            
+          </div>
+
+          <div class="position_relative margin_auto height_5vh float_left padding_1vh_left padding_1vh_right">
+            
+            <a href="#gui_content_component" class="position_relative margin_auto font_size_205vh line_height_5vh text_align_center float_left">
+              Enter
+            </a>
+            
+          </div>
+
+          <div class="position_relative margin_auto height_5vh float_left padding_1vh_left padding_1vh_right">
+            
+            <a href="#gui_content_component" class="position_relative margin_auto font_size_205vh line_height_5vh text_align_center float_left">
+              Learn
             </a>
             
           </div>
           
           <div class="position_relative margin_auto height_5vh float_left padding_1vh_left padding_1vh_right">
             
-            <a id="" class="position_relative margin_auto font_size_205vh line_height_5vh text_align_center float_left">
+            <a href="#gui_fold_component" class="position_relative margin_auto font_size_205vh line_height_5vh text_align_center float_left">
               Search
             </a>
             
@@ -6229,7 +6253,7 @@ let element_guis = () => {
           
           <div class="position_relative margin_auto height_5vh float_left padding_1vh_left padding_1vh_right">
             
-            <a id="" class="position_relative margin_auto font_size_205vh line_height_5vh text_align_center float_left">
+            <a href="#gui_fold_component" class="position_relative margin_auto font_size_205vh line_height_5vh text_align_center float_left">
               About
             </a>
             
@@ -6237,7 +6261,7 @@ let element_guis = () => {
           
           <div class="position_relative margin_auto height_5vh float_left padding_1vh_left padding_1vh_right">
             
-            <a id="" class="position_relative margin_auto font_size_205vh line_height_5vh text_align_center float_left">
+            <a href="#gui_fold_component" class="position_relative margin_auto font_size_205vh line_height_5vh text_align_center float_left">
               Hire
             </a>
             
@@ -6245,7 +6269,7 @@ let element_guis = () => {
           
           <div class="position_relative margin_auto height_5vh float_left padding_1vh_left padding_1vh_right">
             
-            <a id="" class="position_relative margin_auto font_size_205vh line_height_5vh text_align_center float_left">
+            <a href="#gui_fold_component" class="position_relative margin_auto font_size_205vh line_height_5vh text_align_center float_left">
               Contact
             </a>
             
@@ -6253,21 +6277,21 @@ let element_guis = () => {
           
           <div class="position_relative margin_auto width_5vh height_5vh float_right display_flex_flow">
             
-            <div id="" class="gui_i width_50 height_50 float_left position_relative float_left margin_auto">
+            <div href="#gui_fold_component" class="gui_i width_50 height_50 float_left position_relative float_left margin_auto">
             </div>
             
           </div>
           
           <div class="position_relative margin_auto width_5vh height_5vh float_right display_flex_flow">
             
-            <div id="" class="gui_i width_50 height_50 float_left position_relative float_left margin_auto">
+            <div href="#gui_fold_component" class="gui_i width_50 height_50 float_left position_relative float_left margin_auto">
             </div>
             
           </div>
           
           <div class="position_relative margin_auto width_5vh height_5vh float_right display_flex_flow">
             
-            <div id="" class="gui_i width_50 height_50 float_left position_relative float_left margin_auto">
+            <div href="#gui_fold_component" class="gui_i width_50 height_50 float_left position_relative float_left margin_auto">
             </div>
             
           </div>

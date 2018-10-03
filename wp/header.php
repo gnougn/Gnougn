@@ -16,8 +16,7 @@
 </head>
 
    <body id="component_app_body" class="position_relative width_100 float_left overflow_y scrollbaryhidden">
-      <header 
-        id="component_app_header" class="position_relative width_100 height_1vh float_left overflow_y scrollbaryhidden background_white"></header>
+      <header></header>
       <section
         tabindex="1"
         id="component_app"

@@ -802,19 +802,29 @@ let Handle_EventListeners = () => {
         });
 
         document.getElementById('component_content_scroll').addEventListener("click", function(event) {
-            state.ui.modal.pop.top.display = true;
 
             setTimeout( () => {
-                state.ui.modal.pop.top.transform = !state.ui.modal.pop.top.transform;
+                state.ui.gui.scroll.y.display = !state.ui.gui.scroll.y.display;
 
-                if (state.ui.modal.pop.top.transform == false) {
+                if (state.ui.gui.scroll.y.display == true) {
                     document.getElementById('component_content_scroll').classList.remove('display');
                     document.getElementById('component_content_scroll').classList.add('display_none');
                 };
 
-                if (state.ui.modal.pop.top.transform == true) {
+                if (state.ui.gui.scroll.y.display == false) {
                     document.getElementById('component_content_scroll').classList.remove('display_none');
                     document.getElementById('component_content_scroll').classList.add('display');
+                };
+
+
+                if (state.ui.gui.scroll.y.display == true) {
+                    document.getElementById('gui_content_component').classList.add('display');
+                    document.getElementById('gui_content_component').classList.remove('display_none');
+                };
+
+                if (state.ui.gui.scroll.y.display == false) {
+                    document.getElementById('gui_content_component').classList.add('display_none');
+                    document.getElementById('gui_content_component').classList.remove('display');
                 };
 
             }, 100);
