@@ -9,6 +9,10 @@ let colors = [
     classList: '',
     innerHTML: `
 
+    <div id="gui_component">
+      ${imported_elements.element_guis()}
+    </div>
+
     <div id="modal_component">
       ${imported_elements.element_pop_top}
       ${imported_elements.element_pop_left}
@@ -56,12 +60,6 @@ let colors = [
       ${imported_elements.element_nav_right}
     </div>
 
-    <div id="gui_component">
-
-      ${imported_elements.element_guis()}
-
-    </div>
-
     <div id="color_component" class="width_100 height_100vh float_left position_fixed top_0 left_0 display opacity_1 overflow_hidden">
 
       ${imported_elements.element_colors()}
@@ -100,21 +98,235 @@ let colors = [
 
           <div id="component" class="max_width_50 width_100 float_left position_relative ">
 
+            ${imported_elements.element_title('feature: inputs: input_drawn')}
+            <div id="component" class="width_100 float_left position_relative display opacity_1 background_light_yellow_0 display_flex_flow">
+              <div class="calc_10vh position_relative float_left background_white padding_205vh margin_205vh border_01vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9">
+                
+                <span class="margin_auto padding_205vh_top padding_205vh_bottom padding_205vh_left position_relative float_left z_index_1 ">
+
+                    <span class="margin_auto position_relative float_left z_index_1 display_flex_flow">
+
+                      <span class="margin_auto position_relative float_left top_0">
+
+                      <span class="margin_auto position_relative float_left top_1vh">
+
+                      <span class="position_relative hover_top_0 top_-1vh easing_01 background_light_yellow_9 width_100 text_align_center float_right display_flex_flow  pseudo_button_bottom_dark_yellow_8 pseudo_button_bottom_dark_yellow_8_shadow_border_02 pseudo_hover">
+
+                      <span class=" position_absolute top_0 left_0 right_0 float_left calc_05vh margin_auto display_flex_flow border_025vh_dark_yellow_9 background_dark_yellow_0">
+
+                      </span>
+
+                      <div class=" width_5vh height_5vh float_left position_relative float_left margin_auto display_flex_flow">
+                        <div class="gui_i width_50 height_50 float_left position_relative float_left margin_auto margin_auto">
+                        </div>
+                      </div>
+
+                      <span id="" class="position_relative text_align_center font_size_2vh line_height_3vh padding_1vh_right padding_1vh_top padding_1vh_bottom float_right">
+                        enter site
+                      </span>
+
+                      <span id="wp_component_meta" class="position_absolute width_25vh right_0 left_0 bottom_100 float_left line_height_5vh font_size_205vh text_shadow_01vh_dark_yellow_1 margin_205vh_bottom hover_show">
+                        <span class="position_relative top_0vh left_0vh easing_01 margin_2vh calc_4vh_width border_025vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9 box_shadow_hover_none background_light_yellow_0 text_align_center float_right pseudo_arrow_bottom_left_outside_light_yellow_0">
+                          <div class="overflow_hidden width_100 height_100 position_relative top_0 left_0 display_flex_flow">
+                            <div class="calc_2vh_width margin_1vh position_relative float_left">
+                              <p class="font_size_2vh line_height_205vh">
+                              simple
+                              </p>
+                            </div>
+                          </div>
+                        </span>
+                      </span>
+
+                      </span>
+
+                      </span>
+
+                      </span>
+
+                    </span>
+
+                </span>
+
+                <span class="margin_auto padding_205vh_top padding_205vh_bottom padding_205vh_left position_relative float_left z_index_1 ">
+
+                    <span class="margin_auto position_relative float_left z_index_1 display_flex_flow">
+
+                      <div class=" width_5vh height_5vh float_left position_relative float_left margin_auto display_flex_flow">
+                        <div class="gui_i width_50 height_50 float_left position_relative float_left margin_auto margin_auto">
+                        </div>
+                      </div>
+
+                      <span class="margin_auto position_relative float_left top_0">
+
+                      <span class="margin_auto position_relative float_left top_1vh">
+
+                      <span class="position_relative hover_top_0 top_-1vh easing_01 background_light_yellow_9 width_100 text_align_center float_right display_flex_flow  pseudo_button_bottom_dark_yellow_8 pseudo_button_bottom_dark_yellow_8_shadow_border_02 pseudo_hover">
+
+                      <span class=" position_absolute top_0 left_0 right_0 float_left calc_05vh margin_auto display_flex_flow border_025vh_dark_yellow_9 background_dark_yellow_0">
+
+                      </span>
+
+                      <span id="" class="position_relative text_align_center font_size_2vh line_height_3vh padding_1vh float_right">
+                        Roster
+                      </span>
+
+                      <span id="wp_component_meta" class="position_absolute width_25vh right_0 left_0 bottom_100 float_left line_height_5vh font_size_205vh text_shadow_01vh_dark_yellow_1 margin_205vh_bottom hover_show">
+                        <span class="position_relative top_0vh left_0vh easing_01 margin_2vh calc_4vh_width border_025vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9 box_shadow_hover_none background_light_yellow_0 text_align_center float_right pseudo_arrow_bottom_left_outside_light_yellow_0">
+                          <div class="overflow_hidden width_100 height_100 position_relative top_0 left_0 display_flex_flow">
+                            <div class="calc_2vh_width margin_1vh position_relative float_left">
+                              <p class="font_size_2vh line_height_205vh">
+                              simple
+                              </p>
+                            </div>
+                          </div>
+                        </span>
+                      </span>
+
+                      </span>
+
+                      </span>
+
+                      </span>
+
+                    </span>
+
+                </span>
+
+                <span class="margin_auto padding_205vh_top padding_205vh_bottom padding_205vh_left position_relative float_left z_index_1 ">
+
+                    <span class="margin_auto position_relative float_left z_index_1 display_flex_flow">
+
+                      <span class="margin_auto position_relative float_left top_0">
+
+                      <span class="margin_auto position_relative float_left top_1vh">
+
+                      <span class="position_relative hover_top_0 top_-1vh easing_01 width_100 text_align_center float_right display_flex_flow">
+
+                      <span class=" position_absolute top_0 left_0 right_0 float_left calc_05vh margin_auto display_flex_flow">
+
+                      </span>
+
+                      <div class=" width_5vh height_5vh float_left position_relative float_left margin_auto display_flex_flow">
+                        <div class="gui_i width_50 height_50 float_left position_relative float_left margin_auto margin_auto">
+                        </div>
+                      </div>
+
+                      <span id="" class="position_relative text_align_center font_size_2vh line_height_3vh padding_1vh float_right">
+                        About
+                      </span>
+
+                      <span id="wp_component_meta" class="position_absolute width_25vh right_0 left_0 bottom_100 float_left line_height_5vh font_size_205vh text_shadow_01vh_dark_yellow_1 margin_205vh_bottom hover_show">
+                        <span class="position_relative top_0vh left_0vh easing_01 margin_2vh calc_4vh_width border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9 box_shadow_hover_none background_light_yellow_0 text_align_center float_right pseudo_arrow_bottom_left_outside_light_yellow_0">
+                          <div class="overflow_hidden width_100 height_100 position_relative top_0 left_0 display_flex_flow">
+                            <div class="calc_2vh_width margin_1vh position_relative float_left">
+                              <p class="font_size_2vh line_height_205vh">
+                              simple
+                              </p>
+                            </div>
+                          </div>
+                        </span>
+                      </span>
+
+                      </span>
+
+                      </span>
+
+                      </span>
+
+                    </span>
+
+                </span>
+
+                <span class="margin_auto padding_205vh_top padding_205vh_bottom padding_205vh_left position_relative float_left z_index_1 ">
+
+                    <span class="margin_auto position_relative float_left z_index_1 display_flex_flow">
+
+                      <div class=" width_5vh height_5vh float_left position_relative float_left margin_auto display_flex_flow">
+                        <div class="gui_i width_50 height_50 float_left position_relative float_left margin_auto margin_auto">
+                        </div>
+                      </div>
+
+                      <span class="margin_auto position_relative float_left top_0">
+
+                      <span class="margin_auto position_relative float_left top_1vh">
+
+                      <span class="position_relative hover_top_0 top_-1vh easing_01 background_light_yellow_9 border_radius_1vh border_025vh_dark_yellow_9 width_100 text_align_center float_right display_flex_flow ">
+
+                      <span id="" class="position_relative text_align_center font_size_2vh line_height_3vh padding_1vh float_right">
+                        Services
+                      </span>
+
+                      <span id="wp_component_meta" class="position_absolute width_25vh right_0 left_0 bottom_100 float_left line_height_5vh font_size_205vh text_shadow_01vh_dark_yellow_1 margin_205vh_bottom hover_show">
+                        <span class="position_relative top_0vh left_0vh easing_01 margin_2vh calc_4vh_width border_025vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9 box_shadow_hover_none background_light_yellow_0 text_align_center float_right pseudo_arrow_bottom_left_outside_light_yellow_0">
+                          <div class="overflow_hidden width_100 height_100 position_relative top_0 left_0 display_flex_flow">
+                            <div class="calc_2vh_width margin_1vh position_relative float_left">
+                              <p class="font_size_2vh line_height_205vh">
+                              simple
+                              </p>
+                            </div>
+                          </div>
+                        </span>
+                      </span>
+
+                      </span>
+
+                      </span>
+
+                      </span>
+
+                    </span>
+
+                </span>
+                
+              </div>
+            </div>
+
+            ${imported_elements.element_title('feature: inputs: input_drawn')}
+            <div id="component" class="width_100 float_left position_relative display opacity_1 background_light_yellow_0 display_flex_flow">
+              <div class="calc_10vh position_relative float_left background_white padding_205vh margin_205vh border_01vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9">
+                ${imported_elements.input_drawn()}
+              </div>
+            </div>
+
+            ${imported_elements.element_title('feature: inputs: input_range_drag')}
+            <div id="component" class="width_100 float_left position_relative display opacity_1 background_light_yellow_0 display_flex_flow">
+              <div class="calc_10vh position_relative float_left background_white padding_205vh margin_205vh border_01vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9">
+                ${imported_elements.input_range_drag()}
+              </div>
+            </div>
+
+            ${imported_elements.element_title('feature: inputs: input_vertical_range')}
+            <div id="component" class="width_100 float_left position_relative display opacity_1 background_light_yellow_0 display_flex_flow">
+              <div class="calc_10vh position_relative float_left background_white padding_205vh margin_205vh border_01vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9">
+                ${imported_elements.input_vertical_range()}
+              </div>
+            </div>
+
+            ${imported_elements.element_title('feature: inputs: input_horizontal_range')}
+            <div id="component" class="width_100 float_left position_relative display opacity_1 background_light_yellow_0 display_flex_flow">
+              <div class="calc_10vh position_relative float_left background_white padding_205vh margin_205vh border_01vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9">
+                ${imported_elements.input_horizontal_range()}
+              </div>
+            </div>
+
+            ${imported_elements.element_title('feature: inputs: element_checkbox')}
+            <div id="component" class="width_100 float_left position_relative display opacity_1 background_light_yellow_0 display_flex_flow">
+              <div class="calc_10vh position_relative float_left background_white padding_205vh margin_205vh border_01vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9">
+                ${imported_elements.element_checkbox()}
+              </div>
+            </div>
+
+            ${imported_elements.element_title('feature: inputs: element_radio')}
+            <div id="component" class="width_100 float_left position_relative display opacity_1 background_light_yellow_0 display_flex_flow">
+              <div class="calc_10vh position_relative float_left background_white padding_205vh margin_205vh border_01vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9">
+                ${imported_elements.element_radio()}
+              </div>
+            </div>
+
+            ${imported_elements.element_title('feature: inputs: form')}
             <div id="component" class="width_100 float_left position_relative display opacity_1 background_light_yellow_0 display_flex_flow">
               <div class="calc_10vh position_relative float_left background_white padding_205vh margin_205vh border_01vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9">
                 ${imported_elements.element_form_filter_1()}
-              </div>
-            </div>
-
-            <div id="component" class="width_100 float_left position_relative display opacity_1 background_light_yellow_0 display_flex_flow">
-              <div class="calc_10vh position_relative float_left background_white padding_205vh margin_205vh border_01vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9">
-                ${imported_elements.element_form_filter_2()}
-              </div>
-            </div>
-
-            <div id="component" class="width_100 float_left position_relative display opacity_1 background_light_yellow_0 display_flex_flow">
-              <div class="calc_10vh position_relative float_left background_white padding_205vh margin_205vh border_01vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9">
-                ${imported_elements.element_form_filter_3()}
               </div>
             </div>
 
@@ -142,6 +354,27 @@ let colors = [
 
 
         ${imported_elements.element_title('feature: cards: empty')}
+
+        <div id="component" class="width_100 height_33vh float_left position_relative display opacity_1 background_light_yellow_0 display_flex_flow">
+        <div id="component" class="width_33flex height_33vh float_left position_relative display opacity_1 background_light_yellow_0 display_flex_flow">
+
+          <div class="calc_10vh position_relative float_left background_white border_01vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9">
+                                
+              <a href="http://gnougn.com" target="_blank" class="position_absolute left_0 top_0 right_0 bottom_0 margin_auto width_50 height_50 float_left">
+                <div id="" class="position_absolute left_0 top_0 right_0 margin_auto width_100 height_100 float_left gui_logo_dj_final">
+                </div>
+              </a>
+
+              <div class="position_absolute bottom_0 left_0 right_0 top_0 float_left display_flex_flow height_100 width_100">
+                  <div class="margin_auto position_relative float_left background_light_yellow_9 border_01vh_dark_yellow_9 border_radius_1vh box_shadow_bottom_left_1vh_dark_yellow_9">
+                      <p class="font_size_205vh padding_205vh position_relative float_left">gnougn.com</p>
+                  </div>
+              </div>
+              
+          </div>
+            
+        </div>
+        </div>
 
         ${imported_elements.element_title('feature: card center')}
 
@@ -562,83 +795,6 @@ let colors = [
 
         ${imported_elements.element_title(imported_elements.randomizer())}
         ${imported_elements.element_title('search')}
-
-        <input type="text" placeholder="search..." id="element_input_filter"/>
-
-        <div class="width_20 float_left">
-          ${imported_elements.element_title('sort')}
-          <input type="text" placeholder="sort by metas: likesup, likesdown" id="element_input_sort"/>
-        </div>
-
-        <div class="width_20 float_left">
-          ${imported_elements.element_title('view')}
-          <input type="text" placeholder="card, grid or list" id="element_input_view"/>
-        </div>
-
-        <div class="width_20 float_left">
-          ${imported_elements.element_title('type')}
-          <input type="text" placeholder="code, slider, photo, graphic, read, video, gallery or ux/ui" id="element_input_type"/>
-        </div>
-
-        <div class="width_20 float_left">
-          ${imported_elements.element_title('category')}
-          <input type="text" placeholder="code, slider, photo, graphic, read, video, gallery or ux/ui" id="element_input_type"/>
-        </div>
-
-        <div class="width_20 float_left">
-          ${imported_elements.element_title('tag')}
-          <input type="text" placeholder="code, slider, photo, graphic, read, video, gallery or ux/ui" id="element_input_type"/>
-        </div>
-
-        <div class="width_20 float_left">
-          ${imported_elements.element_title('author')}
-          <input type="text" placeholder="code, slider, photo, graphic, read, video, gallery or ux/ui" id="element_input_type"/>
-        </div>
-
-        <div class="width_20 float_left">
-          ${imported_elements.element_title('word count')}
-          <input type="text" placeholder="code, slider, photo, graphic, read, video, gallery or ux/ui" id="element_input_type"/>
-        </div>
-
-        <div class="width_20 float_left">
-          ${imported_elements.element_title('video length')}
-          <input type="text" placeholder="code, slider, photo, graphic, read, video, gallery or ux/ui" id="element_input_type"/>
-        </div>
-
-        <div class="width_20 float_left">
-          ${imported_elements.element_title('difficulty')}
-          <input type="text" placeholder="code, slider, photo, graphic, read, video, gallery or ux/ui" id="element_input_type"/>
-        </div>
-
-        <div class="width_20 float_left">
-          ${imported_elements.element_title('distance')}
-          <input type="text" placeholder="state, city or zip code" id="element_input_type"/>
-        </div>
-
-        <div class="width_20 float_left">
-          ${imported_elements.element_title('latest')}
-          <input type="text" placeholder="now, 1hr, today, 24 hours, yesterday, this week, month" id="element_input_type"/>
-        </div>
-
-        <div class="width_20 float_left">
-          ${imported_elements.element_title('popularity')}
-          <input type="text" placeholder="code, slider, photo, graphic, read, video, gallery or ux/ui" id="element_input_type"/>
-        </div>
-
-        <div class="width_20 float_left">
-          ${imported_elements.element_title('relavence')}
-          <input type="text" placeholder="suggested, subscribed, followers, "/>
-        </div>
-
-        <div class="width_20 float_left">
-          ${imported_elements.element_title('price')}
-          <input type="text" placeholder="range"/>
-        </div>
-
-        <div class="width_20 float_left">
-          ${imported_elements.element_title('files')}
-          <input type="text" placeholder="suggested, subscribed, followers, "/>
-        </div>
 
         <ul id="element_ol_firebase_roster"></ul>
         <ul id="element_ol_firebase_library"></ul>

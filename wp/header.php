@@ -15,10 +15,11 @@
     <script src="https://www.gstatic.com/firebasejs/4.8.0/firebase.js"></script>
 </head>
 
-    <body class="position_relative width_100 float_left overflow_y">
-
-    <section
-    tabindex="1"
-    id="component_app"
-    class="position_relative width_100 min_height_100vh float_left overflow_y background_white">
-    </section>
+   <body id="component_app_body" class="position_relative width_100 float_left overflow_y scrollbaryhidden">
+      <header 
+        id="component_app_header" class="position_relative width_100 height_1vh float_left overflow_y scrollbaryhidden background_white"></header>
+      <section
+        tabindex="1"
+        id="component_app"
+        class="position_relative width_100 height_100vh min_height_100vh float_left overflow_y scrollbaryhidden background_white">
+      </section>

@@ -2,6 +2,7 @@
 import from_index from '../index.js';
 
 let state = '';
+let component_app_gui_scroll_y_position = 0;
 
 setTimeout(
     (() => {
@@ -621,6 +622,8 @@ if (!(/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent))) {
 
         if (event.deltaY > 0) {
             console.log('scrolling down');
+            document.getElementById('component_content_scroll').classList.remove('display');
+            document.getElementById('component_content_scroll').classList.add('display_none');
         };
 
         from_index.Handle_get_state_from_events();
@@ -628,6 +631,66 @@ if (!(/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent))) {
     });
 
     document.getElementById('component_app').addEventListener('scroll', (event) => {
+
+        // scrolling
+        console.log('event.srcElement.clientWidth: ' + event.srcElement.clientWidth);
+        console.log('event.srcElement.clientHeight: ' + event.srcElement.clientHeight);
+        console.log('event.srcElement.scrollLeft: ' + event.srcElement.scrollLeft);
+        console.log('event.srcElement.scrollTop: ' + event.srcElement.scrollTop);
+        console.log('event.srcElement.scrollWidth: ' + event.srcElement.scrollWidth);
+        console.log('event.srcElement.scrollHeight: ' + event.srcElement.scrollHeight);
+
+        if (event.srcElement.scrollTop > component_app_gui_scroll_y_position) {
+            console.log('component_app_gui_scroll_y_position increasing');
+            let target = document.getElementById('component_modal_scroll_fixed_feature_bg');
+            target.classList.remove('display');
+            target.classList.add('display_none');
+        }
+
+        if (event.srcElement.scrollTop < component_app_gui_scroll_y_position) {
+            console.log('component_app_gui_scroll_y_position decreasing');
+            let target = document.getElementById('component_modal_scroll_fixed_feature_bg');
+            target.classList.add('display');
+            target.classList.remove('display_none');
+        }
+
+        if (event.srcElement.scrollTop == 0) {
+            console.log('top met');
+            document.getElementById('component_app_modal_element_nav_top').classList.remove('background_dark_yellow_0');
+        }
+
+        if (event.srcElement.scrollTop > 1) {
+            console.log('scrolling started');
+            document.getElementById('component_app_modal_element_nav_top').classList.add('background_dark_yellow_0');
+        }
+
+        if (event.srcElement.scrollTop < event.srcElement.clientHeight) {
+            console.log('inside lead');
+            document.getElementById('component_modal_scroll_fixed_feature_1').classList.remove('display');
+            document.getElementById('component_modal_scroll_fixed_feature_1').classList.add('display_none');
+            document.getElementById('component_modal_scroll_fixed_feature_2').classList.remove('display_none');
+            document.getElementById('component_modal_scroll_fixed_feature_2').classList.add('display');
+        }
+
+        if (event.srcElement.scrollTop > event.srcElement.clientHeight) {
+            console.log('past lead')
+            document.getElementById('component_modal_scroll_fixed_feature_1').classList.remove('display_none');
+            document.getElementById('component_modal_scroll_fixed_feature_1').classList.add('display');
+            document.getElementById('component_modal_scroll_fixed_feature_2').classList.remove('display');
+            document.getElementById('component_modal_scroll_fixed_feature_2').classList.add('display_none');
+        }
+
+        if (((event.srcElement.scrollHeight) - event.srcElement.clientHeight) < (event.srcElement.scrollTop + event.srcElement.offsetHeight)) {
+            console.log('100vh before bottom met')
+        }
+
+        if ((event.srcElement.scrollHeight) < (event.srcElement.scrollTop + event.srcElement.offsetHeight)) {
+            document.getElementById('component_app_modal_element_nav_top').classList.remove('background_dark_yellow_0');
+            console.log('bottom met')
+        }
+
+        component_app_gui_scroll_y_position = event.srcElement.scrollTop;
+
         state = from_index.Handle_return_state();
         // console.log('state in events');
 
