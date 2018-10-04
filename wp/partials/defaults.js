@@ -94,6 +94,59 @@ let colors = [
 
         ${imported_elements.element_title('feature: inputs')}
 
+
+          <div class="width_50 float_left position_absolute top_0 right_0 margin_auto overflow_hidden display_flex_flow ">
+              
+              ${imported_elements.element_scroll_x_scrollbar_styled([{
+              link: 'death_ride'
+              }, {
+              link: 'death_ride'
+              }, {
+              link: 'death_ride'
+              }, {
+              link: 'death_ride'
+              }, {
+              link: 'death_ride'
+              }, {
+              link: 'death_ride'
+              }, {
+              link: 'death_ride'
+              }, {
+              link: 'death_ride'
+              }, {
+              link: 'death_ride'
+              }, {
+              link: 'death_ride'
+              }, {
+              link: 'death_ride'
+              }, {
+              link: 'death_ride'
+              }, {
+              link: 'death_ride'
+              }, {
+              link: 'death_ride'
+              }, {
+              link: 'death_ride'
+              }, {
+              link: 'death_ride'
+              }, {
+              link: 'death_ride'
+              }, {
+              link: 'death_ride'
+              }, {
+              link: 'death_ride'
+              }, {
+              link: 'death_ride'
+              }, {
+              link: 'death_ride'
+              }, {
+              link: 'death_ride'
+              }, ])}
+              
+            
+          </div>
+          
+
         <div id="component" class="width_100 float_left position_relative display opacity_1 background_light_yellow_0 display_flex_flow">
 
           <div id="component" class="max_width_50 width_100 float_left position_relative ">

@@ -394,7 +394,6 @@ let element_nownigel_logo = () => {
 
       </div>
 
-
       <div id="component_content_scroll" class="fadeIn delay10 animated1 display">\
         
         <div class="z_index_1 gui_arrow_down width_10vh height_10vh position_absolute left_0 right_0 bottom_10vh margin_auto infinite pulse animated1"></div>
@@ -7832,6 +7831,7 @@ export default {
   element_interaction_player,
   element_accent_noise,
   element_effect_vignette,
+  element_scroll_x_scrollbar_styled,
   element_scroll_y,
   element_scroll_y_scrollbar,
   element_scroll_y_scrollbar_styled,

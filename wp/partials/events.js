@@ -618,6 +618,8 @@ if (!(/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent))) {
 
         if (event.deltaY < 0) {
             console.log('scrolling up');
+            document.getElementById('component_content_scroll').classList.add('display');
+            document.getElementById('component_content_scroll').classList.remove('display_none');
         };
 
         if (event.deltaY > 0) {
